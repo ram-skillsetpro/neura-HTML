@@ -1,0 +1,76 @@
+// main css to compile
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+//variables
+
+:root {
+	--default-background-color: #090909;
+	--default-font-color: #ADADAD;
+	--default-boilerplate-color: #62666f;
+	--top-nav-background-color: #1C1E21;
+	--logo: url(images/simpleo-ai-logo-reverse@4x.png);
+	--logo-color: #ff6868;
+	--button-red: #ef4747;
+	--link-color: #ffffff;
+	--default-dark-font-color: #232323;
+	--form-background-color: #dfe8eb;
+}
+
+//styles 
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 64px;
+	line-height: 72px;
+	letter-spacing: -0.32px;
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 56px;
+	letter-spacing: -0.32px;
+}
+
+h3 {
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: -0.32px;
+}
+
+a {
+	cursor: pointer;
+}
+
+.container {
+	width: auto;
+	height: auto;
+	background-color: var(--default-background-color);
+	color: var(--default-font-color);
+	padding: 0;
+	margin: 0;
+}
+
+//imports
+@import 'controls';
+@import 'top-nav';
+@import 'slides';
+@import 'boilerplate';
+@import 'popups';
+
+
+
+
+

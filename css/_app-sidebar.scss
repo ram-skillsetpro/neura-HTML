@@ -1,0 +1,230 @@
+// app-sidebar
+
+.dashboard-container {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 4;
+	height: 100%;
+}
+
+.dashboard-control {
+	--app-sidebar-background: #232323;
+	--app-sidebar-lighter-background: #343434;
+	--app-sidebar-lighter-background-2: #454545;
+	--app-sidebar-font: #9a9a9a;
+	--app-sidebar-font-hover: #ffffff;
+	--list-border: 1px solid #555;
+	--plus-image: url(images/icon-plus.svg);
+	--minus-image: url(images/icon-minus.svg);
+	
+	&.light {
+		--app-sidebar-background: #ffffff;
+		--app-sidebar-lighter-background: #F2F2F2;
+		--app-sidebar-lighter-background-2: #ffffff;
+		--app-sidebar-font: #9C9C9C;
+		--app-sidebar-font-hover: #121212;
+		--list-border: 1px solid #e3e3e3;
+		--plus-image: url(images/icon-plus-dark.svg);
+		--minus-image: url(images/icon-minus-dark.svg);
+		
+		a {
+			display: block;
+			text-decoration: none;
+			color: inherit;
+			// font-size: 1.1em;
+			padding: 12px 18px;
+			font-weight: normal;
+			
+			&.icon {
+				background-repeat: no-repeat;
+				background-position: 4% center;
+				background-size: 24px;
+				padding: 12px 18px 12px 38px;
+			}
+			
+			&:hover, &:focus, &.active {
+				color: var(--app-sidebar-font-hover);
+				background-color: var(--app-sidebar-lighter-background);
+			}
+		}
+		
+		
+	}
+	
+	width: 260px;
+	position: relative;
+	font-size: 12px;
+	background-color: var(--app-sidebar-background);
+	color: var(--app-sidebar-font);
+	height: 100%;	
+	overflow: scroll;
+	
+	h4 {
+		text-transform: uppercase; 
+		letter-spacing: .2em;
+		font-size: .9em;
+		font-weight: normal;
+	}
+	
+	a {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+		
+		&:hover, &:focus {
+			color: var(--app-sidebar-font-hover);
+		}
+	}
+	
+	.control-key {
+		color: var(--app-sidebar-font-hover);
+		padding: 6px 0 0 0;
+		margin: 0;
+	}
+	
+	.control-value {
+		padding: 0 0 6px 0;
+		margin: 0;
+	}
+	
+	&-wrapper {
+		padding: 60px 0 0 0;
+		height: calc(100% - 60px);
+	}
+	
+	ul {
+		padding: 12px 0;
+		margin: 0;
+		list-style: none;
+		
+		li {
+			border-bottom: var(--list-border);
+			
+			&.spacer {
+				height: 24px ;
+				border: none;
+			}
+			
+			&:last-child {
+				border-bottom: none;
+			}
+			
+			h4 {
+				padding: 18px 18px;
+				margin: 0;
+				display: block;
+				cursor: pointer;
+			}
+			
+			a {
+				padding: 4px 18px;
+				margin: 0;
+				display: block;
+				cursor: pointer;
+			}
+			
+			h4 {
+				background-repeat: no-repeat;
+				background-position: 92% center;
+				background-size: 18px;
+				background-image: var(--plus-image);
+				
+				&:hover {
+					color: var(--app-sidebar-font-hover);
+				}
+			}
+						
+			> ul {
+				padding: 0px 0;
+				display: none;
+				background-color: var(--app-sidebar-lighter-background);
+				
+				li {
+					border-bottom: var(--list-border);
+					
+					&:last-child {
+						border-bottom: none;
+					}
+					
+					> ul {
+						padding: 0px 0;
+						display: none;
+						background-color: var(--app-sidebar-lighter-background-2);
+						
+						li {
+							border-bottom: var(--list-border);
+							
+							&:last-child {
+								border-bottom: none;
+							}
+						}
+					}
+					
+					&.open {
+						
+						background-color: var(--app-sidebar-lighter-background-2);
+						
+						> h4 {
+							background-image: var(--minus-image);
+						}
+					}
+				}
+			}
+			
+			&.open {
+				
+				background-color: var(--app-sidebar-lighter-background);
+				
+				> h4 {
+					background-image: var(--minus-image);
+				}
+			}
+		}
+	}
+}
+
+
+//icons 
+
+.my-contracts {
+	background-image: url(images/icon-my-contracts-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-my-contracts-active.svg);
+	}
+}
+
+.shared {
+	background-image: url(images/icon-shared-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-shared-active.svg);
+	}
+	
+}
+
+.starred {
+	background-image: url(images/icon-starred-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-starred-active.svg);
+	}
+}
+
+.trash {
+	background-image: url(images/icon-trash-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-trash-active.svg);
+	}
+}
+
+.archived {
+	background-image: url(images/icon-trash-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-trash-active.svg);
+	}
+}
+
+.processing {
+	background-image: url(images/icon-trash-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-trash-active.svg);
+	}
+}

@@ -1,0 +1,56 @@
+// top nav
+.navigation {
+	margin: 0 24px;
+	padding: 24px 0;
+	
+	//try 
+	
+	position: sticky;
+	top: -22px;
+	z-index: 998;
+	
+	nav {
+		background-color: var(--top-nav-background-color);
+		display: flex;
+		flex-direction: row;
+		border-radius: 16px;
+		max-width: 1280px;
+		margin: 0 auto;
+		font-size: 14px;
+		height: 70px;
+		justify-content: space-between;
+		align-items: center;
+		
+		a {
+			padding: 6px 18px;
+			display: block;
+		}
+		
+		ul {
+			margin: 0; 
+			padding: 0;
+			list-style: none; 
+			display: flex;
+			flex-direction: row;
+			li {
+				padding: 4px;
+			}	
+		}
+		
+		.logo-navigation {
+			a.logo {
+				background-image: url(images/simpleo-ai-logo-reverse@4x.png);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: contain;
+				height: 34px; 
+				width: 120px;
+				margin: 0 18px;
+			}
+		}
+		.page-navigation {}
+		.account-navigation {
+			padding: 0px 18px;
+		}
+	}
+}

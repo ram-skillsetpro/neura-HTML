@@ -1,0 +1,52 @@
+// main css to compile
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+//variables
+
+:root {
+	--default-background-color: #E9E9E9;
+	--default-font-color: #232323;
+	--app-navigation-background-color: #ffffff;
+	--logo-color: #ff6868;
+	--button-red: #ef4747;
+	--link-color: #ffffff;
+}
+
+//styles 
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+.container {
+	width: auto;
+	height: 100vh; //auto;
+	background-color: var(--default-background-color);
+	color: var(--default-font-color);
+	padding: 0;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	min-width: 980px; //Stop after
+	// display: flex;
+	// flex-direction: column;
+}
+
+
+@import 'controls';
+@import 'app-navigation';
+@import 'app-sidebar';
+@import 'app-dashboard-viewer';
+@import 'app-dashboard-filelister';
+
+// @import 'boilerplate';
+// @import 'popups';
+
+
+
