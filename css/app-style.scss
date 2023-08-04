@@ -12,7 +12,7 @@
 	--app-navigation-background-color: #ffffff;
 	--logo-color: #ff6868;
 	--button-red: #ef4747;
-	--link-color: #ffffff;
+	--link-color: #121212;
 }
 
 //styles 
@@ -39,7 +39,7 @@ body {
 }
 
 
-@import 'controls';
+@import 'app-controls';
 @import 'app-navigation';
 @import 'app-sidebar';
 @import 'app-dashboard-viewer';
@@ -47,6 +47,4 @@ body {
 
 // @import 'boilerplate';
 // @import 'popups';
-
-
 

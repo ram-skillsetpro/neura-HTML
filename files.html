@@ -68,174 +68,213 @@
 				<div class="dashboard-viewer">
 					<div class="dashboard-viewer-wrapper">
 						<div class="files-container">
-							<div class="scroller"><div class="files-container-list">
-								<div class="wrapper nobg">
-									<h3>Uploading</h3>	
-									<p class="meta">2 Files</p>
-								</div>					
-								<div class="wrapper">
-									<div class="file-item header-row">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon"></div>
-										<div class="file-item-name">Name</div>
-										<div class="file-item-owner">Owner</div>
-										<div class="file-item-uploading"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">SimpleO AI Contract PDF</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-uploading">Uploading
-											<div class="uploader-bar">
-												<div class="progress" style="width: 85%"></div>
-											</div>
+							<div class="scroller">
+								<div class="files-container-list ">
+									<div class="wrapper nobg list-controls">
+										<div class="breadcrumb">
+											<ul class="" id="breadcrumb-collapse">
+												<!-- Check logic in JS to show hide -->
+												<li><a href="">My Contracts</a></li>
+												<li><a href="">George Benson</a></li>
+												<!-- <li><a href="">2022 - 2023</a></li>
+												<li><a href="">Approved</a></li>
+												<li><a href="">George Benson</a></li>
+												<li><a href="">2022 - 2023</a></li>
+												<li><a href="">Approved</a></li>
+												<li><a href="">2022 - 2023</a></li> -->
+												<li><a href="">Approved</a></li>
+												<li><a href="">George Benson</a></li>
+												<li><a href="">2022 - 2023</a></li>
+												<li><a href="">Approved</a></li>
+											</ul>	
+										</div>
+										<div class="list-meta">
+											<p><a class="button button-red" id="showuploader">Upload</a>
+											<a class="button button-red-outline" id="showfolderdialog">Add Folder</a></p>
+										</div>
+									</div>					
+								</div>
+								<div class="files-container-list" id="uploader">
+									<div class="wrapper nobg">
+										<h3>Upload Files</h3>	
+										<p class="meta">No files added</p>
+									</div>					
+									<div class="wrapper nobg">
+										<div class="upload-dragdrop-box">
+											<div><h3>Drag and drop here or <a class="button button-red" id="demobutton">Click to Select</a></h3></div>
 										</div>
 									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">SimpleO AI Contract PDF</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-parsing">Parsing
-											<div class="parsing-bar">
-												<div class="progress" style="width: 65%"></div>
+								</div>
+								
+								<div class="files-container-list">
+									<div class="wrapper nobg">
+										<h3>Uploading</h3>	
+										<p class="meta">3 Files, 2 Uploading</p>
+									</div>					
+									<div class="wrapper">
+										<div class="file-item header-row">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"></div>
+											<div class="file-item-name"><p>Name</p></div>
+											<div class="file-item-owner"><p>Owner</p></div>
+											<div class="file-item-uploading"></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon folder"></span></p></div>
+											<div class="file-item-name"><p>SimpleO AI Contract PDF</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-uploading"><p>Uploading</p>
+												<div class="uploader-bar">
+													<div class="progress" style="width: 85%"></div>
+												</div>
 											</div>
 										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon txt"></span></p></div>
+											<div class="file-item-name"><p>SimpleO AI Contract PDF</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-parsing"><p>Parsing</p>
+												<div class="parsing-bar">
+													<div class="progress" style="width: 65%"></div>
+												</div>
+											</div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
+											<div class="file-item-name"><p>Another File</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-ready"><p>Verify</p></div>
+										</div>
 									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">Another File</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-ready">Verify</div>
+								</div>
+								<div class="files-container-list">
+									<div class="wrapper nobg">
+										<h3>Recent files</h3>	
+										<p class="meta">7 Files</p>
+									</div>					
+									<div class="wrapper">
+										<div class="file-item header-row">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"></div>
+											<div class="file-item-name"><p>Name</p></div>
+											<div class="file-item-owner"><p>Owner</p></div>
+											<div class="file-item-date"><p>Last Modified</p></div>
+											<div class="file-item-size"><p>File Size</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
+											<div class="file-item-name"><p>SimpleO AI Contract PDF</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon xls"></span></p></div>
+											<div class="file-item-name"><p>Another File</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon doc"></span></p></div>
+											<div class="file-item-name"><p>Someone look at this.PDF</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon folder"></span></p></div>
+											<div class="file-item-name"><p>Yet Another File</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>284 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
+											<div class="file-item-name"><p>Some other PDF</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon rtf"></span></p></div>
+											<div class="file-item-name"><p>OMG Price is very HIGH File</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+									</div>
+								</div>
+								<div class="files-container-list">		
+									<div class="wrapper nobg">
+										<h3>Older files</h3>	
+										<p class="meta">5 Files</p>
+									</div>
+									<div class="wrapper">
+										<div class="file-item header-row">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"></div>
+											<div class="file-item-name"><p>Name</p></div>
+											<div class="file-item-owner"><p>Owner</p></div>
+											<div class="file-item-date"><p>Last Modified</p></div>
+											<div class="file-item-size"><p>File Size</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon anyfile"></span></p></div>
+											<div class="file-item-name"><p>SimpleO AI Contract PDF</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
+											<div class="file-item-name"><p>Yet Another File</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon anyfile"></span></p></div>
+											<div class="file-item-name"><p>Some other PDF</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
+										<div class="file-item each-item">
+											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
+											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
+											<div class="file-item-name"><p>OMG Price is very HIGH File</p></div>
+											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-controls"><p></p></div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="files-container-list">
-								<div class="wrapper nobg">
-									<h3>Recent files</h3>	
-									<p class="meta">7 Files</p>
-								</div>					
-								<div class="wrapper">
-									<div class="file-item header-row">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon"></div>
-										<div class="file-item-name">Name</div>
-										<div class="file-item-owner">Owner</div>
-										<div class="file-item-date">Last Modified</div>
-										<div class="file-item-size">File Size</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">SimpleO AI Contract PDF</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">Another File</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">Someone look at this.PDF</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">Yet Another File</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">Some other PDF</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">OMG Price is very HIGH File</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-								</div>
-							</div>
-							<div class="files-container-list">		
-								<div class="wrapper nobg">
-									<h3>Older files</h3>	
-									<p class="meta">5 Files</p>
-								</div>
-								<div class="wrapper">
-									<div class="file-item header-row">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon"></div>
-										<div class="file-item-name">Name</div>
-										<div class="file-item-owner">Owner</div>
-										<div class="file-item-date">Last Modified</div>
-										<div class="file-item-size">File Size</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">SimpleO AI Contract PDF</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">Yet Another File</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">Some other PDF</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-									<div class="file-item each-item">
-										<div class="file-item-selector"><input type="checkbox" /></div>
-										<div class="file-item-icon pdf"></div>
-										<div class="file-item-name">OMG Price is very HIGH File</div>
-										<div class="file-item-owner">SimpleO AI</div>
-										<div class="file-item-date">23rd July 2023</div>
-										<div class="file-item-size">28 Mb</div>
-										<div class="file-item-controls"></div>
-									</div>
-								</div>
-							</div></div>
 						</div>
 					</div>
 				</div>
@@ -246,9 +285,23 @@
 
 	<script>
 		$( document ).ready(function() {
-				// $('.dashboard-control-wrapper > ul > li:first-child').addClass('open');
-				// $('.dashboard-control-wrapper > ul > li:first-child > ul').show('fast');
-				// $('.document-container-content > div:first-child').addClass('open');
+				$('.dashboard-control-wrapper > ul > li:first-child').addClass('open');
+				$('.dashboard-control-wrapper > ul > li:first-child > ul').show('fast');
+				$('.document-container-content > div:first-child').addClass('open');
+				
+				var breadcrumb = $('#breadcrumb-collapse');
+				var breadcrumbLength = breadcrumb.children().length;
+				if(breadcrumbLength > 7) {
+					breadcrumb.children('li:nth-child(1)').addClass('open');
+					breadcrumb.children('li:nth-child(' + (breadcrumbLength) + ')').addClass('open');
+				} else if(breadcrumbLength > 5) {
+					breadcrumb.children('li:nth-child(1)').addClass('open');
+					breadcrumb.children('li:nth-child(2)').addClass('open');
+					breadcrumb.children('li:nth-child(' + (breadcrumbLength - 1) + ')').addClass('open');
+					breadcrumb.children('li:nth-child(' + (breadcrumbLength) + ')').addClass('open');
+				} else if(breadcrumbLength <= 5){
+					breadcrumb.children('li').addClass('open');
+				}
 		});
 		
 		$('.dashboard-control-wrapper > ul > li').click(function () {
@@ -257,6 +310,18 @@
 				$(this).children('ul').show('fast');
 				$(this).siblings().removeClass('open');
 				$(this).siblings().children('ul').hide('fast');
+			}
+		})
+		
+		$('#showuploader').click(function () {
+			$('#uploader').slideToggle('fast');
+			
+			if($(this).hasClass('opened')) {
+				$(this).text('Upload');
+				$(this).removeClass('opened');
+			} else {
+				$(this).text('Close');
+				$(this).addClass('opened');
 			}
 		})
 		

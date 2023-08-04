@@ -6,9 +6,9 @@
 	
 	
 	&-wrapper {
-		padding: 72px 0 0 0;
+		padding: 60px 0 0 0;
 		position: relative;
-		height: calc(100% - 72px);
+		height: calc(100% - 60px);
 	}
 }
 
@@ -73,8 +73,8 @@
 	}
 	
 	&-content {
-		height: calc(100% - 157px);
-		max-height: calc(100% - 157px);
+		height: calc(100% - 145px);
+		max-height: calc(100% - 145px);
 		z-index: 200;
 		position: relative;
 		overflow: scroll;
