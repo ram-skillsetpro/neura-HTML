@@ -39,8 +39,10 @@ a {
   cursor: pointer;
   border-radius: 4px;
 }
-.button-flat {
-  border: 1px solid #ffffff;
+.button-flat, .button.disabled {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: inherit;
 }
 .button-red {
   border: 1px solid var(--logo-color);
@@ -61,7 +63,7 @@ span.forgot-password {
 }
 
 input {
-  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
 }
 
 label {
@@ -87,28 +89,31 @@ label {
 
 input[type=text], input[type=email], input[type=password] {
   -webkit-appearance: none;
-  display: inline-block;
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid #ccc;
-  height: 42px;
-  width: 360px;
-  font-size: 18px;
+  height: 30px;
   color: var(--default-font-color);
   padding: 12px;
   box-sizing: border-box;
+  margin-right: 6px;
+  min-width: 240px;
 }
 
 input[type=submit], input[type=button] {
   -webkit-appearance: none;
-  display: inline-block;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: bold;
+  border-radius: 4px;
   color: #fff;
+  font-weight: bold;
+  background-color: var(--logo-color);
+  border: 1px solid var(--logo-color);
+  height: 30px;
+  min-width: 120px;
+  box-sizing: border-box;
+  margin-right: 6px;
+}
+input[type=submit]:hover, input[type=button]:hover {
   background-color: var(--button-red);
   border: 1px solid var(--button-red);
-  height: 42px;
-  width: 360px;
 }
 
 input[type=checkbox] {
@@ -122,8 +127,8 @@ input[type=checkbox] {
   margin-right: 6px;
 }
 input[type=checkbox]:checked {
-  background-color: var(--button-red);
-  border-color: var(--button-red);
+  background-color: var(--logo-color);
+  border-color: var(--logo-color);
 }
 
 .navigation {
@@ -748,7 +753,7 @@ input[type=checkbox]:checked {
   text-align: center;
 }
 
-#uploader {
+#uploader, #addfolder {
   display: none;
 }
 
@@ -775,49 +780,64 @@ input[type=checkbox]:checked {
   border: none;
 }
 .file-item > div {
-  padding: 12px 1%;
   box-sizing: border-box;
 }
 .file-item-selector {
   width: 6%;
   padding: 9px 1% !important;
   text-align: center;
+  padding: 12px 1%;
 }
 .file-item-icon {
   width: 3%;
   text-align: center;
+  padding: 12px 1%;
 }
 .file-item-name {
   width: 60%;
   text-align: left;
+  padding: 12px 1%;
 }
 .file-item-owner {
   width: 20%;
   text-align: left;
+  padding: 12px 1%;
 }
 .file-item-date {
   width: 15%;
   text-align: right;
+  padding: 12px 1%;
 }
 .file-item-size {
   width: 10%;
   text-align: right;
+  padding: 12px 1%;
 }
 .file-item-controls {
   width: 2%;
   text-align: right;
+  padding: 12px 1%;
 }
 .file-item-uploading {
   width: 27%;
   text-align: left;
+  padding: 12px 1%;
 }
 .file-item-parsing {
   width: 27%;
   text-align: left;
+  padding: 12px 1%;
 }
 .file-item-ready {
   width: 27%;
   text-align: left;
+  padding: 12px 1%;
+}
+.file-item-form {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 1px 2%;
 }
 .file-item .icon {
   background-repeat: no-repeat;

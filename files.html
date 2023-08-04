@@ -90,7 +90,7 @@
 										</div>
 										<div class="list-meta">
 											<p><a class="button button-red" id="showuploader">Upload</a>
-											<a class="button button-red-outline" id="showfolderdialog">Add Folder</a></p>
+											<a class="button disabled" id="showfolderdialog">Add Folder</a></p>
 										</div>
 									</div>					
 								</div>
@@ -101,7 +101,23 @@
 									</div>					
 									<div class="wrapper nobg">
 										<div class="upload-dragdrop-box">
-											<div><h3>Drag and drop here or <a class="button button-red" id="demobutton">Click to Select</a></h3></div>
+											<div><h3>Drag and drop here or <a class="button button-flat" id="demobutton">Click to Select</a></h3></div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="files-container-list" id="addfolder">
+									<div class="wrapper nobg">
+										<h3>Add a folder</h3>	
+									</div>					
+									<div class="wrapper">
+										<div class="file-item header-row">
+											<div class="file-item-form">
+												<p>
+													<input type="text" class="inline-list"/>
+													<input type="button" value="Add"  />
+												</p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -315,9 +331,23 @@
 		
 		$('#showuploader').click(function () {
 			$('#uploader').slideToggle('fast');
-			
+			$('#addfolder').slideUp('fast');
+			$('#showfolderdialog').text('Add Folder');
 			if($(this).hasClass('opened')) {
 				$(this).text('Upload');
+				$(this).removeClass('opened');
+			} else {
+				$(this).text('Close');
+				$(this).addClass('opened');
+			}
+		})
+		
+		$('#showfolderdialog').click(function () {
+			$('#addfolder').slideToggle('fast');
+			$('#uploader').slideUp('fast');
+			$('#showuploader').text('Upload');
+			if($(this).hasClass('opened')) {
+				$(this).text('Add Folder');
 				$(this).removeClass('opened');
 			} else {
 				$(this).text('Close');
