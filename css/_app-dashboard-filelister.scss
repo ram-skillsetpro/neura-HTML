@@ -382,7 +382,7 @@
 		padding: 12px 1%;
 	}
 	&-icon { 
-		width: 3%; 
+		width: 3.4%; 
 		text-align: center;
 		padding: 12px 1%;
 		
@@ -449,14 +449,14 @@
 	.icon {
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 1em;
-		height: 1em;
-		width: 1em;
+		background-size: 1.6em;
+		height: 1.6em;
+		width: 1.6em;
 		cursor: pointer; 
 		display: inline-block;
 		vertical-align: baseline;
 		margin-right: 1em;
-		margin-top: 2px;
+		margin-top: 0;
 		display: inline-block;
 		
 		&.pdf {
