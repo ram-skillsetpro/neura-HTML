@@ -212,29 +212,6 @@
 		</div>
 	</body>
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-	<script>
-		$('.scroller-text .scroller-slide').click(function () {
-			$(this).addClass('open');
-			$(this).children('.scroller-slide-content').show('fast');
-			$(this).siblings().removeClass('open');
-			$(this).siblings().children('.scroller-slide-content').hide('fast');
-			var index = $(this).index();
-			console.log(index);
-			var image = $('.scroller-image .scroller-image-container:nth-child('+(index + 1)+')');
-			image.siblings().removeClass('open');
-			image.addClass('open');
-		})
-		
-		$('#loginbutton').click(function () {
-			$('#login-popup').addClass('open');
-		})
-		
-		$('#demobutton , #demobutton-2, #demobutton-3').click(function () {
-			$('#demo-popup').addClass('open');
-		})
-		
-		$('.close-popups').click(function () {
-			$(this).closest('.open').removeClass('open');
-		})
-	</script>
+	<script src="js/simpleo.js"></script>
+
 </html>

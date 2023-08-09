@@ -449,15 +449,15 @@
 	.icon {
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 1.6em;
-		height: 1.6em;
-		width: 1.6em;
+		background-size: 20px;
+		height: 20px;
+		width: 20px;
 		cursor: pointer; 
-		display: inline-block;
-		vertical-align: baseline;
+		vertical-align: bottom;
 		margin-right: 1em;
-		margin-top: 0;
+		margin-top: 0px;
 		display: inline-block;
+		text-align: center;
 		
 		&.pdf {
 			background-image: url(images/icon-pdf.svg);
@@ -488,23 +488,33 @@
 		}
 		
 		&.team {
-			background-image: url(images/icon-team.svg);
+			background-image: url(images/icon-team-color.svg);
+			background-color: #cccccc;
+			border-radius: 100%;
 		}
 		
-		&.user {
+		&.member {
 			margin-right: 2em;
-			margin-top: 0;
-			height: 1.6em;
-			width: 1.6em;
+			
 			img {
 				object-fit: cover;
 				width: inherit;
 				height: inherit;
 				border-radius: 100%;
 			}
+			
+			&.empty {
+				background-color: #4a4a4a;
+				border-radius: 100%;
+				color: #ffffff;
+				font-size: 10px;
+				padding: 3px 0;
+				height: 14px;
+				text-align: center;
+				text-transform: uppercase;
+			}
 		}
 	}
-
 }
 
 .uploader-bar {
