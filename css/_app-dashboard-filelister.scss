@@ -400,11 +400,18 @@
 		text-align: left;
 		padding: 12px 1%;
 	}
-	&-date, &-access, &-role { 
+	&-date { 
 		width: 15%;
 		text-align: right;
 		padding: 12px 1%;
 	}
+	
+	&-access, &-role { 
+		width: 15%;
+		text-align: left;
+		padding: 12px 1%;
+	}
+	
 	&-size { 
 		width: 10%;
 		text-align: right;

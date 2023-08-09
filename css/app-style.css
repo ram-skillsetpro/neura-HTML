@@ -850,9 +850,14 @@ input[type=checkbox]:checked {
   text-align: left;
   padding: 12px 1%;
 }
-.file-item-date, .file-item-access, .file-item-role {
+.file-item-date {
   width: 15%;
   text-align: right;
+  padding: 12px 1%;
+}
+.file-item-access, .file-item-role {
+  width: 15%;
+  text-align: left;
   padding: 12px 1%;
 }
 .file-item-size {
