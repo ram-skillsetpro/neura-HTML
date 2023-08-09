@@ -264,11 +264,13 @@
 				background-size: .9em;
 				background-repeat: no-repeat;
 				background-position: left center;
-				width: 20px;
+				min-width: 20px;
+				width: auto;
 				overflow: hidden;
 				white-space: nowrap;
 				text-overflow: ellipsis;
 				vertical-align: middle;
+				max-width: 20px;
 				
 				&:first-child {
 					background-image: none;
@@ -277,7 +279,7 @@
 				
 				&.open {
 					width: auto;
-					max-width: 15%;
+					max-width: none;
 				}
 			}
 		}
@@ -337,7 +339,7 @@
 	}
 }
 
-#uploader, #addfolder {
+#uploader, #addfolder, #addteam, #addmember {
 	display: none;
 }
 
@@ -394,7 +396,7 @@
 		text-align: left;
 		padding: 12px 1%;
 	}
-	&-date { 
+	&-date, &-access, &-role { 
 		width: 15%;
 		text-align: right;
 		padding: 12px 1%;
@@ -473,6 +475,14 @@
 		&.anyfile {
 			background-image: url(images/icon-generic-file.svg);
 		}
+		
+		&.team {
+			background-image: url(images/icon-team.svg);
+		}
+		
+		&.member {
+			background-image: url(images/icon-team.svg);
+		}
 	}
 
 }
@@ -485,6 +495,7 @@
 		background-color: #f6d273;
 		width: 1%;
 		height: 4px;
+		border-radius: 4px;
 	}
 }
 
@@ -496,6 +507,7 @@
 		background-color: #ff9600;
 		width: 1%;
 		height: 4px;
+		border-radius: 4px;
 	}
 }
 

@@ -31,16 +31,16 @@
 				<div class="dashboard-control light">
 					<div class="dashboard-control-wrapper">
 						<ul>
-							<li><a class="icon my-contracts active">My Contracts</a></li>
-							<li><a class="icon shared">Shared with me</a></li>
-							<li><a class="icon starred">Starred</a></li>
-							<li><a class="icon trash">Trash</a></li>
+							<li><a class="icon organisation active">My Organisation Teams</a></li>
+							<li><a class="icon team-members">Team Members</a></li>
+							<li><a class="icon external-members">External Members</a></li>
+							<li><a class="icon deactivated-members">Deactivated</a></li>
 							<li class="spacer"></li>
-							<li><a class="icon archived">Archived</a></li>
-							<li><a class="icon processing">Processing ...</a></li>
+							<li><a class="icon billing">Billing and Payments</a></li>
+							<li><a class="icon api-usage">API Usage</a></li>
 						</ul>
 						
-						<ul>
+						<!-- <ul>
 							<li><a>Filter By</a></li>
 							<li><h4>Date</h4>
 								<ul>
@@ -62,7 +62,7 @@
 									</li>
 								</ul>
 							</li>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
 				<div class="dashboard-viewer">
@@ -74,47 +74,25 @@
 										<div class="breadcrumb">
 											<ul class="" id="breadcrumb-collapse">
 												<!-- Check logic in JS to show hide -->
-												<li><a href="">My Contracts</a></li>
-												<li><a href="">George Benson</a></li>
-												<!-- <li><a href="">2022 - 2023</a></li>
-												<li><a href="">Approved</a></li>
-												<li><a href="">George Benson</a></li>
-												<li><a href="">2022 - 2023</a></li>
-												<li><a href="">Approved</a></li>
-												<li><a href="">2022 - 2023</a></li> -->
-												<li><a href="">Approved</a></li>
-												<li><a href="">George Benson</a></li>
-												<li><a href="">2022 - 2023</a></li>
-												<li><a href="">Approved</a></li>
+												<li><a href="">My Organisation Teams</a></li>
 											</ul>	
 										</div>
 										<div class="list-meta">
-											<p><a class="button button-red" id="showuploader">Upload</a>
-											<a class="button disabled" id="showfolderdialog">Add Folder</a></p>
+											<p><a class="button button-red" id="showaddteam">Add New Team</a>
 										</div>
 									</div>					
-								</div>
-								<div class="files-container-list" id="uploader">
-									<div class="wrapper nobg">
-										<h3>Upload Files</h3>	
-										<p class="meta">No files added</p>
-									</div>					
-									<div class="wrapper nobg">
-										<div class="upload-dragdrop-box">
-											<div><h3>Drag and drop here or <a class="button button-flat" id="demobutton">Click to Select</a></h3></div>
-										</div>
-									</div>
 								</div>
 								
-								<div class="files-container-list" id="addfolder">
+								<div class="files-container-list" id="addteam">
 									<div class="wrapper nobg">
-										<h3>Add a folder</h3>	
+										<h3>Add a Team</h3>	
 									</div>					
 									<div class="wrapper">
 										<div class="file-item header-row">
 											<div class="file-item-form">
 												<p>
-													<input type="text" class="inline-list" placeholder="New folder name"/>
+													<input type="text" class="inline-list" placeholder="New Team Name"/>
+													<input type="text" class="inline-list" placeholder="Short Description"/>
 													<input type="button" value="Add"  />
 												</p>
 											</div>
@@ -122,170 +100,139 @@
 									</div>
 								</div>
 								
+								
 								<div class="files-container-list">
 									<div class="wrapper nobg">
-										<h3>Uploading</h3>	
-										<p class="meta">3 Files, 2 Uploading</p>
+										<h3>Recently Active Teams</h3>	
+										<p class="meta">2 Teams, 78 Files</p>
 									</div>					
 									<div class="wrapper">
 										<div class="file-item header-row">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
 											<div class="file-item-icon"></div>
-											<div class="file-item-name"><p>Name</p></div>
-											<div class="file-item-owner"><p>Owner</p></div>
-											<div class="file-item-uploading"></div>
+											<div class="file-item-name"><p>Team Name</p></div>
+											<div class="file-item-owner"><p>Creator</p></div>
+											<div class="file-item-access"><p>Access</p></div>
+											<div class="file-item-date"><p>Last Active</p></div>
+											<div class="file-item-size"><p>People</p></div>
+											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon folder"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>SimpleO AI Contract PDF</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
-											<div class="file-item-uploading"><p>Uploading</p>
-												<div class="uploader-bar">
-													<div class="progress" style="width: 85%"></div>
-												</div>
-											</div>
+											<div class="file-item-access"><p>Global</p></div>
+											<div class="file-item-date"><p>23rd July 2023</p></div>
+											<div class="file-item-size"><p>28</p></div>
+											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon txt"></span></p></div>
-											<div class="file-item-name"><p>SimpleO AI Contract PDF</p></div>
-											<div class="file-item-owner"><p>SimpleO AI</p></div>
-											<div class="file-item-parsing"><p>Parsing</p>
-												<div class="parsing-bar">
-													<div class="progress" style="width: 65%"></div>
-												</div>
-											</div>
-										</div>
-										<div class="file-item each-item">
-											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>Another File</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
-											<div class="file-item-ready"><p>Verify</p></div>
-										</div>
-									</div>
-								</div>
-								<div class="files-container-list">
-									<div class="wrapper nobg">
-										<h3>Recent files</h3>	
-										<p class="meta">7 Files</p>
-									</div>					
-									<div class="wrapper">
-										<div class="file-item header-row">
-											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"></div>
-											<div class="file-item-name"><p>Name</p></div>
-											<div class="file-item-owner"><p>Owner</p></div>
-											<div class="file-item-date"><p>Last Modified</p></div>
-											<div class="file-item-size"><p>File Size</p></div>
-											<div class="file-item-controls"><p></p></div>
-										</div>
-										<div class="file-item each-item">
-											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
-											<div class="file-item-name"><p>SimpleO AI Contract PDF</p></div>
-											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-access"><p>Folder</p></div>
 											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-size"><p>28</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon xls"></span></p></div>
-											<div class="file-item-name"><p>Another File</p></div>
-											<div class="file-item-owner"><p>SimpleO AI</p></div>
-											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>28 Mb</p></div>
-											<div class="file-item-controls"><p></p></div>
-										</div>
-										<div class="file-item each-item">
-											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon doc"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>Someone look at this.PDF</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-access"><p>Global</p></div>
 											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-size"><p>28</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon folder"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>Yet Another File</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-access"><p>Global</p></div>
 											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>284 Mb</p></div>
+											<div class="file-item-size"><p>284</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>Some other PDF</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-access"><p>Files</p></div>
 											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-size"><p>28</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon rtf"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>OMG Price is very HIGH File</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-access"><p>Global</p></div>
 											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-size"><p>28</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 									</div>
 								</div>
 								<div class="files-container-list">		
 									<div class="wrapper nobg">
-										<h3>Older files</h3>	
-										<p class="meta">5 Files</p>
+										<h3>Inactive Teams</h3>	
+										<p class="meta">5 Teams</p>
 									</div>
 									<div class="wrapper">
 										<div class="file-item header-row">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
 											<div class="file-item-icon"></div>
-											<div class="file-item-name"><p>Name</p></div>
-											<div class="file-item-owner"><p>Owner</p></div>
-											<div class="file-item-date"><p>Last Modified</p></div>
-											<div class="file-item-size"><p>File Size</p></div>
+											<div class="file-item-name"><p>Team Name</p></div>
+											<div class="file-item-owner"><p>Creator</p></div>
+											<div class="file-item-access"><p>Access</p></div>
+											<div class="file-item-date"><p>Last Active</p></div>
+											<div class="file-item-size"><p>People</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon anyfile"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>SimpleO AI Contract PDF</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-access"><p>Global</p></div>
 											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-size"><p>28</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>Yet Another File</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-access"><p>Global</p></div>
 											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-size"><p>28</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon anyfile"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>Some other PDF</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-access"><p>Global</p></div>
 											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-size"><p>28</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 										<div class="file-item each-item">
 											<div class="file-item-selector"><p><input type="checkbox" /></p></div>
-											<div class="file-item-icon"><p><span class="icon pdf"></span></p></div>
+											<div class="file-item-icon"><p><span class="icon team"></span></p></div>
 											<div class="file-item-name"><p>OMG Price is very HIGH File</p></div>
 											<div class="file-item-owner"><p>SimpleO AI</p></div>
+											<div class="file-item-access"><p>Global</p></div>
 											<div class="file-item-date"><p>23rd July 2023</p></div>
-											<div class="file-item-size"><p>28 Mb</p></div>
+											<div class="file-item-size"><p>28</p></div>
 											<div class="file-item-controls"><p></p></div>
 										</div>
 									</div>
@@ -348,6 +295,17 @@
 			$('#showuploader').text('Upload');
 			if($(this).hasClass('opened')) {
 				$(this).text('Add Folder');
+				$(this).removeClass('opened');
+			} else {
+				$(this).text('Close');
+				$(this).addClass('opened');
+			}
+		})
+		
+		$('#showaddteam').click(function () {
+			$('#addteam').slideToggle('fast');
+			if($(this).hasClass('opened')) {
+				$(this).text('Add New Team');
 				$(this).removeClass('opened');
 			} else {
 				$(this).text('Close');

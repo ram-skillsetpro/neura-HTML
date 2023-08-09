@@ -402,17 +402,59 @@ input[type=checkbox]:checked {
 }
 
 .archived {
-  background-image: url(images/icon-trash-inactive.svg);
+  background-image: url(images/icon-archive-inactive.svg);
 }
 .archived:hover, .archived:focus, .archived.active {
-  background-image: url(images/icon-trash-active.svg);
+  background-image: url(images/icon-archive-active.svg);
 }
 
 .processing {
-  background-image: url(images/icon-trash-inactive.svg);
+  background-image: url(images/icon-processing-inactive.svg);
 }
 .processing:hover, .processing:focus, .processing.active {
-  background-image: url(images/icon-trash-active.svg);
+  background-image: url(images/icon-processing-active.svg);
+}
+
+.organisation {
+  background-image: url(images/icon-organisation-inactive.svg);
+}
+.organisation:hover, .organisation:focus, .organisation.active {
+  background-image: url(images/icon-organisation-active.svg);
+}
+
+.team-members {
+  background-image: url(images/icon-team-members-inactive.svg);
+}
+.team-members:hover, .team-members:focus, .team-members.active {
+  background-image: url(images/icon-team-members-active.svg);
+}
+
+.external-members {
+  background-image: url(images/icon-external-members-inactive.svg);
+}
+.external-members:hover, .external-members:focus, .external-members.active {
+  background-image: url(images/icon-external-members-active.svg);
+}
+
+.deactivated-members {
+  background-image: url(images/icon-deactivated-members-inactive.svg);
+}
+.deactivated-members:hover, .deactivated-members:focus, .deactivated-members.active {
+  background-image: url(images/icon-deactivated-members-active.svg);
+}
+
+.billing {
+  background-image: url(images/icon-billing-inactive.svg);
+}
+.billing:hover, .billing:focus, .billing.active {
+  background-image: url(images/icon-billing-active.svg);
+}
+
+.api-usage {
+  background-image: url(images/icon-api-usage-inactive.svg);
+}
+.api-usage:hover, .api-usage:focus, .api-usage.active {
+  background-image: url(images/icon-api-usage-active.svg);
 }
 
 .dashboard-viewer {
@@ -692,11 +734,13 @@ input[type=checkbox]:checked {
   background-size: 0.9em;
   background-repeat: no-repeat;
   background-position: left center;
-  width: 20px;
+  min-width: 20px;
+  width: auto;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   vertical-align: middle;
+  max-width: 20px;
 }
 .files-container .breadcrumb ul > li:first-child {
   background-image: none;
@@ -704,7 +748,7 @@ input[type=checkbox]:checked {
 }
 .files-container .breadcrumb ul > li.open {
   width: auto;
-  max-width: 15%;
+  max-width: none;
 }
 .files-container p.meta {
   font-size: 0.9em;
@@ -753,7 +797,7 @@ input[type=checkbox]:checked {
   text-align: center;
 }
 
-#uploader, #addfolder {
+#uploader, #addfolder, #addteam, #addmember {
   display: none;
 }
 
@@ -803,7 +847,7 @@ input[type=checkbox]:checked {
   text-align: left;
   padding: 12px 1%;
 }
-.file-item-date {
+.file-item-date, .file-item-access, .file-item-role {
   width: 15%;
   text-align: right;
   padding: 12px 1%;
@@ -873,6 +917,12 @@ input[type=checkbox]:checked {
 .file-item .icon.anyfile {
   background-image: url(images/icon-generic-file.svg);
 }
+.file-item .icon.team {
+  background-image: url(images/icon-team.svg);
+}
+.file-item .icon.member {
+  background-image: url(images/icon-team.svg);
+}
 
 .uploader-bar {
   height: 4px;
@@ -883,6 +933,7 @@ input[type=checkbox]:checked {
   background-color: #f6d273;
   width: 1%;
   height: 4px;
+  border-radius: 4px;
 }
 
 .parsing-bar {
@@ -894,6 +945,7 @@ input[type=checkbox]:checked {
   background-color: #ff9600;
   width: 1%;
   height: 4px;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=app-style.css.map */

@@ -192,7 +192,6 @@
 		background-image: url(images/icon-my-contracts-active.svg);
 	}
 }
-
 .shared {
 	background-image: url(images/icon-shared-inactive.svg);
 	&:hover, &:focus, &.active {
@@ -200,31 +199,78 @@
 	}
 	
 }
-
 .starred {
 	background-image: url(images/icon-starred-inactive.svg);
 	&:hover, &:focus, &.active {
 		background-image: url(images/icon-starred-active.svg);
 	}
 }
-
 .trash {
 	background-image: url(images/icon-trash-inactive.svg);
 	&:hover, &:focus, &.active {
 		background-image: url(images/icon-trash-active.svg);
 	}
 }
-
 .archived {
-	background-image: url(images/icon-trash-inactive.svg);
+	background-image: url(images/icon-archive-inactive.svg);
 	&:hover, &:focus, &.active {
-		background-image: url(images/icon-trash-active.svg);
+		background-image: url(images/icon-archive-active.svg);
+	}
+}
+.processing {
+	background-image: url(images/icon-processing-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-processing-active.svg);
+	}
+}
+.organisation {
+	background-image: url(images/icon-organisation-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-organisation-active.svg);
 	}
 }
 
-.processing {
-	background-image: url(images/icon-trash-inactive.svg);
+.team-members {
+	background-image: url(images/icon-team-members-inactive.svg);
 	&:hover, &:focus, &.active {
-		background-image: url(images/icon-trash-active.svg);
+		background-image: url(images/icon-team-members-active.svg);
 	}
 }
+
+.external-members {
+	background-image: url(images/icon-external-members-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-external-members-active.svg);
+	}
+}
+
+.deactivated-members {
+	background-image: url(images/icon-deactivated-members-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-deactivated-members-active.svg);
+	}
+}
+
+.billing {
+	background-image: url(images/icon-billing-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-billing-active.svg);
+	}
+}
+
+.api-usage {
+	background-image: url(images/icon-api-usage-inactive.svg);
+	&:hover, &:focus, &.active {
+		background-image: url(images/icon-api-usage-active.svg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
