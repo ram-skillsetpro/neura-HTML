@@ -385,6 +385,10 @@
 		width: 3%; 
 		text-align: center;
 		padding: 12px 1%;
+		
+		&:has(.user) {
+			width: 4%; 
+		}
 	}
 	&-name { 
 		width: 60%;
@@ -438,9 +442,9 @@
 	.icon {
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 1.6em;
-		height: 1em;;
-		width: 1em;;
+		background-size: 1em;
+		height: 1em;
+		width: 1em;
 		cursor: pointer; 
 		display: inline-block;
 		vertical-align: baseline;
@@ -480,8 +484,17 @@
 			background-image: url(images/icon-team.svg);
 		}
 		
-		&.member {
-			background-image: url(images/icon-team.svg);
+		&.user {
+			margin-right: 2em;
+			margin-top: 0;
+			height: 1.6em;
+			width: 1.6em;
+			img {
+				object-fit: cover;
+				width: inherit;
+				height: inherit;
+				border-radius: 100%;
+			}
 		}
 	}
 

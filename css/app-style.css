@@ -837,6 +837,9 @@ input[type=checkbox]:checked {
   text-align: center;
   padding: 12px 1%;
 }
+.file-item-icon:has(.user) {
+  width: 4%;
+}
 .file-item-name {
   width: 60%;
   text-align: left;
@@ -886,7 +889,7 @@ input[type=checkbox]:checked {
 .file-item .icon {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 1.6em;
+  background-size: 1em;
   height: 1em;
   width: 1em;
   cursor: pointer;
@@ -920,8 +923,17 @@ input[type=checkbox]:checked {
 .file-item .icon.team {
   background-image: url(images/icon-team.svg);
 }
-.file-item .icon.member {
-  background-image: url(images/icon-team.svg);
+.file-item .icon.user {
+  margin-right: 2em;
+  margin-top: 0;
+  height: 1.6em;
+  width: 1.6em;
+}
+.file-item .icon.user img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: 100%;
 }
 
 .uploader-bar {
