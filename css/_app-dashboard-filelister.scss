@@ -391,12 +391,12 @@
 		}
 	}
 	&-name { 
-		width: 60%;
+		width: 40%;
 		text-align: left;
 		padding: 12px 1%;
 	}
 	&-owner {
-		width: 20%;
+		width: 30%;
 		text-align: left;
 		padding: 12px 1%;
 	}
@@ -418,22 +418,22 @@
 		padding: 12px 1%;
 	}
 	&-controls { 
-		width: 2%;
+		width: 3.4%; 
 		text-align: right;
 		padding: 12px 1%;
 	}
 	&-uploading { 
-		width: 27%;
+		width: 60%;
 		text-align: left;
 		padding: 12px 1%;
 	}
 	&-parsing { 
-		width: 27%;
+		width: 60%;
 		text-align: left;
 		padding: 12px 1%;
 	}
 	&-ready { 
-		width: 27%;
+		width: 60%;
 		text-align: left;
 		padding: 12px 1%;
 	}
@@ -493,6 +493,11 @@
 			border-radius: 100%;
 		}
 		
+		&.control {
+			background-image: url(images/icon-more-vertical-dark.svg);
+			margin-right: 0;
+		}
+		
 		&.member {
 			margin-right: 2em;
 			
@@ -517,15 +522,34 @@
 	}
 }
 
+@keyframes progress-bar {
+	100% {
+		background-position: 60vw 0vw;
+	}
+}
+
+.progress {
+	background-size: 400% 400%;
+	animation: progress-bar 10s linear infinite;
+}
+
 .uploader-bar {
 	height: 4px; 
 	width: 100%;
 	border-radius: 4px;
+	margin-top: 2px;
 	.progress {
 		background-color: #f6d273;
 		width: 1%;
-		height: 4px;
+		height: 6px;
 		border-radius: 4px;
+		background-image: repeating-linear-gradient(
+			45deg,
+			#f6d273,
+			#f6d273 10px,
+			#f69973 10px,
+			#f69973 20px
+		);
 	}
 }
 
@@ -533,11 +557,19 @@
 	height: 4px; 
 	width: 100%;
 	border-radius: 4px;
+	margin-top: 2px;
 	.progress {
 		background-color: #ff9600;
 		width: 1%;
-		height: 4px;
+		height: 6px;
 		border-radius: 4px;
+		background-image: repeating-linear-gradient(
+			45deg,
+			#ff9600,
+			#ff9600 10px,
+			#ff4a00 10px,
+			#ff4a00 20px
+		);
 	}
 }
 
