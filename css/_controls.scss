@@ -47,7 +47,7 @@ input {
 label {
 	// width: 360px; 
 	font-size: 14px;
-	margin-top: 18px;
+	margin-top: 12px;
 	margin-bottom: 2px;
 	display: inline-block; 
 }
@@ -65,7 +65,7 @@ label {
 	cursor: pointer;
 }
 
-input[type=text], input[type=email], input[type=password] {
+input[type=text], input[type=email], input[type=password], input[type=tel] {
 	-webkit-appearance: none;
 	display: inline-block; 
 	border-radius: 8px;
