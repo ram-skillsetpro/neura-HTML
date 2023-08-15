@@ -40,7 +40,42 @@
 		border-radius: 12px;
 		overflow: hidden;
 		
+		ul, ol {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			> li {
+				position: relative;
+				padding-left: 24px;
+				&:before {
+					content: "-";
+					color: var(--logo-color);
+					font-size: 24px;
+					font-weight: bold;
+					position: absolute;
+					left: 0px;
+					top: -8px;
+				}
+			}
+		}
+		
 		.wrapper {
+			position: relative;
+			.close-popups {
+				cursor: pointer;
+				position: absolute;
+				right: 12px;
+				top: 12px;
+				width: 24px;
+				height: 24px;
+				border-radius: 100%;
+				background-color: var(--logo-color);
+				background-image: url(images/icon-cross.svg);
+				background-size: 16px;
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+			
 			.inner-wrapper {
 				display: flex;
 				align-items: stretch; 
@@ -141,15 +176,13 @@
 				form {
 					text-align: left;
 				}
+				
+				
 			}
 		}
 	}
 }
 
-#demo-popup {
-	
-}
-
-#login-popup {
+#demo-popup, #login-popup, #signup-popup {
 	
 }

@@ -16,6 +16,10 @@ $('#loginbutton').click(function () {
 	$('#login-popup').addClass('open');
 })
 
+$('#signupbutton').click(function () {
+	$('#signup-popup').addClass('open');
+})
+
 $('#demobutton , #demobutton-2, #demobutton-3').click(function () {
 	$('#demo-popup').addClass('open');
 })

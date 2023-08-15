@@ -25,7 +25,7 @@
 					<div class="account-navigation">
 						<ul>
 							<li><a class="button button-flat"  id="loginbutton">Login</a></li>
-							<li><a class="button button-red" id="demobutton">Get a Demo</a></li>
+							<li><a class="button button-red" id="signupbutton">SignUp</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -126,6 +126,7 @@
 		<div class="popup-container" id="login-popup">
 			<div class="popup" id="">
 				<div class="wrapper">
+					<div class="close-popups"></div>
 					<div class="inner-wrapper">
 						<div class="popup-slide">
 							<div class="popup-slide-image">
@@ -158,7 +159,58 @@
 									</form>
 								</div>
 								<div class="text">
-									<p>Don't have an account?&nbsp;<a href="">Sign Up</a>&nbsp;<a class="close-popups">Close</a></p>
+									<p>Don't have an account?&nbsp;<a href="">Signup</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-container" id="signup-popup">
+			<div class="popup" id="">
+				<div class="wrapper">
+					<div class="close-popups"></div>
+					<div class="inner-wrapper">
+						<div class="popup-slide">
+							<div class="popup-slide-image">
+								<div class="popup-slide-image-container"><img src="images/list-view.png" alt="list view preview" /></div>
+							</div>
+							<div class="popup-slide-text">
+								<h3>The Future of Contract Management is here.</h3>
+								<h4>The advantages of signing up with us</h4>
+								<ul>
+									<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> 
+									<li>Nulla pretium et ipsum sed consequat.</li> 
+									<li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="popup-form">
+							<div class="popup-form-wrapper">
+								<div class="logo"></div>
+								<div class="text">
+									<h4>Signup!</h4>
+								</div>
+								<div class="popup-form-container">
+									<form>
+										<label for="name">Name</label>
+										<input type="text" name="email" value="" placeholder="John Smith" tabindex="1" />
+										<label for="email">Email</label>
+										<input type="email" name="email" value="" placeholder="john.smith@domain.com" tabindex="1" />
+										<label for="password">Password</label>
+										<input type="password" name="password" value="" placeholder="" tabindex="2"/>
+										<label for="company_name">Company Name</label>
+										<input type="text" name="company_name" value="" placeholder="My Awesome Company" tabindex="1" />
+										<p class="controls">
+											<span class="remember"><input type="checkbox" name="terms" id="terms" tabindex="3"/>
+											<label class="checkbox-label" for="terms">I agree to the <a href="">Terms nad Conditions</a></label></span>
+										</p>
+										<input type="button" name="submit" value="Signup" placeholder="" tabindex="4"/>
+									</form>
+								</div>
+								<div class="text">
+									<p>Already have an account?&nbsp;<a href="">Login</a></p>
 								</div>
 							</div>
 						</div>
@@ -169,6 +221,7 @@
 		<div class="popup-container" id="demo-popup">
 			<div class="popup" id="">
 				<div class="wrapper">
+					<div class="close-popups"></div>
 					<div class="inner-wrapper">
 						<div class="popup-slide">
 							<div class="popup-slide-text">
@@ -198,11 +251,11 @@
 											<span class="remember"><input type="checkbox" name="terms" id="terms" tabindex="3"/>
 											<label class="checkbox-label" for="terms">I agree to the <a href="">Terms nad Conditions</a></label></span>
 										</p>
-										<input type="button" name="submit" value="Login" placeholder="" tabindex="4"/>
+										<input type="button" name="submit" value="Get a Demo" placeholder="" tabindex="4"/>
 									</form>
 								</div>
 								<div class="text">
-									<p>I have already made up my mind to&nbsp;<a href="">Sign Up</a>&nbsp;<a class="close-popups">Close</a></p>
+									<p>I have already made up my mind to&nbsp;<a href="">Signup</a></p>
 								</div>
 							</div>
 						</div>
