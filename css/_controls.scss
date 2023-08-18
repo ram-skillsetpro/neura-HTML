@@ -50,6 +50,10 @@ label {
 	margin-top: 12px;
 	margin-bottom: 2px;
 	display: inline-block; 
+	@media all and (max-height: 720px) {
+		margin: 2px 0px;
+		font-size: 10px;
+	}
 }
 .controls {
 	display: flex;
@@ -76,6 +80,9 @@ input[type=text], input[type=email], input[type=password], input[type=tel] {
 	color: var(--default-font-color);
 	padding: 12px;
 	box-sizing: border-box;
+	@media all and (max-height: 720px) {
+		height: 36px;
+	}
 }
 
 input[type=password] {
@@ -93,6 +100,9 @@ input[type=submit], input[type=button] {
 	border: 1px solid var(--button-red);
 	height: 42px;
 	width: 360px; 
+	@media all and (max-height: 720px) {
+		height: 36px;
+	}
 }
 
 input[type=checkbox] {

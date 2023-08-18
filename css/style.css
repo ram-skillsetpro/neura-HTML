@@ -99,6 +99,12 @@ label {
   margin-bottom: 2px;
   display: inline-block;
 }
+@media all and (max-height: 720px) {
+  label {
+    margin: 2px 0px;
+    font-size: 10px;
+  }
+}
 
 .controls {
   display: flex;
@@ -126,6 +132,11 @@ input[type=text], input[type=email], input[type=password], input[type=tel] {
   padding: 12px;
   box-sizing: border-box;
 }
+@media all and (max-height: 720px) {
+  input[type=text], input[type=email], input[type=password], input[type=tel] {
+    height: 36px;
+  }
+}
 
 input[type=submit], input[type=button] {
   -webkit-appearance: none;
@@ -138,6 +149,11 @@ input[type=submit], input[type=button] {
   border: 1px solid var(--button-red);
   height: 42px;
   width: 360px;
+}
+@media all and (max-height: 720px) {
+  input[type=submit], input[type=button] {
+    height: 36px;
+  }
 }
 
 input[type=checkbox] {
@@ -416,6 +432,7 @@ input[type=checkbox]:checked {
 .popup-container {
   width: 100vw;
   height: 100vh;
+  min-height: 600px;
   position: fixed;
   top: 0;
   left: 0;
@@ -429,6 +446,7 @@ input[type=checkbox]:checked {
   -webkit-backdrop-filter: blur(4px);
   z-index: 999;
   display: none;
+  overflow: scroll;
 }
 .popup-container.open {
   display: flex;
@@ -440,6 +458,10 @@ input[type=checkbox]:checked {
   background: linear-gradient(to bottom right, #ffffff, #775d5d);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+.popup-container h4 {
+  padding: 0;
+  margin: 8px 0;
 }
 .popup-container p {
   font-size: 14px;
@@ -495,7 +517,7 @@ input[type=checkbox]:checked {
   width: 38%;
   background-color: #111111;
   color: #fff;
-  padding: 24px 6%;
+  padding: 0px 6%;
 }
 .popup-container .popup-slide-image {
   width: auto;
@@ -508,7 +530,7 @@ input[type=checkbox]:checked {
   position: relative;
 }
 .popup-container .popup-slide-image-container img {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 12px;
   z-index: 200;
@@ -516,7 +538,7 @@ input[type=checkbox]:checked {
 }
 .popup-container .popup-slide-image-container:before {
   content: "";
-  width: 96%;
+  width: 86%;
   height: 90%;
   border-radius: 12px;
   background-color: #ffffff;
@@ -529,7 +551,7 @@ input[type=checkbox]:checked {
 }
 .popup-container .popup-slide-image-container:after {
   content: "";
-  width: 92%;
+  width: 82%;
   height: 90%;
   border-radius: 12px;
   background-color: #ffffff;
@@ -543,13 +565,13 @@ input[type=checkbox]:checked {
 }
 .popup-container .popup-slide-text {
   width: auto;
-  margin: 48px 0;
+  margin: 12px 0;
 }
 .popup-container .popup-form {
   width: 42%;
   background-color: var(--form-background-color);
   color: var(--default-dark-font-color);
-  padding: 24px 4%;
+  padding: 24px 4% 12px 4%;
   text-align: center;
 }
 .popup-container .popup-form a {
@@ -557,7 +579,7 @@ input[type=checkbox]:checked {
   text-decoration: underline;
 }
 .popup-container .popup-form-wrapper {
-  padding: 24px;
+  padding: 12px 24px;
 }
 .popup-container .popup-form .logo {
   background-image: url(images/simpleo-ai-logo@4x.png);
@@ -566,7 +588,13 @@ input[type=checkbox]:checked {
   background-size: contain;
   height: 24px;
   width: auto;
-  margin: 24px 0 48px 0;
+  margin: 24px 0 24px 0;
+}
+@media all and (max-height: 720px) {
+  .popup-container .popup-form .logo {
+    height: 20px;
+    margin: 12px 0 12px 0;
+  }
 }
 .popup-container .popup-form-container form {
   text-align: left;
