@@ -115,7 +115,7 @@ $('.dashboard-control-wrapper > ul > li > ul > li').click(function () {
 	}
 })
 
-$('.document-container-tabs > ul > li').click(function () {
+$('.dashboard-viewer-tabs > ul > li').click(function () {
 	$(this).addClass('active-tab');
 	$(this).siblings().removeClass('active-tab');
 	var index = $(this).index();

@@ -1,218 +1,13 @@
 // app-dashboard-viewer
 
-.dashboard-viewer {
-	flex-grow: 4;
-	height: 100%;
-	
-	
-	&-wrapper {
-		padding: 60px 0 0 0;
-		position: relative;
-		height: calc(100% - 60px);
-	}
-}
-
-.document-pagination {
-	height: 32px;
-	position: absolute;
-	z-index: 999;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	
-	&-wrapper {
-		background-color: #232323;
-		border-top: 1px solid #ccc;
-		box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
-		font-size: 11px;
-		color: #aaa;
-		width: 94%;
-		margin: 0 auto;
-		border-radius: 8px 8px 0 0;
-	}
-	
-	p {
-		padding: 8px 18px;
-		margin: 0;
-	}
-}
-
-.document-container {
-	width: 60vw;
-	max-width: 80vw;
-	margin: 0 auto 0 auto;
-	height: inherit;
-	height: 100vh;
-	font-size: 1vw;
-	
-	&.comments-on {
-		margin: 0 auto 0 4%;
-		width: auto;
-		
-		.wrapper {
-			margin: 0 auto 0 0;
-		}
-	}
-	
-	.original {
-		height: 100%;
-		// overflow: scroll;
-		box-sizing: border-box;
-	}
-	
-	.parsed {
-		height: 100%;
-		// overflow-y: scroll;
-		// overflow-x: visible;
-		box-sizing: border-box;
-	}
-	
-	.files {
-		height: auto;
-		box-sizing: border-box;
-		display: block;
-	}
-	
-	// &-content {
-	// 	height: calc(100% - 145px);
-	// 	max-height: calc(100% - 145px);
-	// 	z-index: 200;
-	// 	position: relative;
-	// 	overflow: scroll;
-	// 	
-	// 	.content-block {
-	// 		position: relative;
-	// 		
-	// 		.markers {
-	// 			height: auto;
-	// 			width: 260px;
-	// 			position: absolute;
-	// 			z-index: 1000;
-	// 			left: 110.5%;
-	// 			top: 0;
-	// 			font-size: .8rem;
-	// 			color: #999;
-	// 			
-	// 			div {
-	// 				.icon {
-	// 					background-repeat: no-repeat;
-	// 					background-position: center center;
-	// 					background-size: 1.6rem;
-	// 					border-radius: 20px;
-	// 					height: 28px;
-	// 					width: 28px;
-	// 					cursor: pointer; 
-	// 					display: inline-block;
-	// 					vertical-align: middle;
-	// 					margin-right: 5px;
-	// 				}
-	// 				
-	// 				&:hover {
-	// 					.icon {
-	// 						// box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-	// 					}
-	// 				}
-	// 			}
-	// 			.comment .icon {
-	// 				background-image: url(images/icon-add-comment.svg);
-	// 				background-color: #ffd1d1;					
-	// 			}
-	// 			
-	// 			.highlight .icon {
-	// 				background-image: url(images/icon-add-comment.svg);
-	// 				background-color: #ede6bc;
-	// 			}
-	// 		}
-	// 	}
-	// 	
-	// 	
-	// 	.wrapper {
-	// 		padding: 6vw;
-	// 		max-width: 50vw;
-	// 		background-color: #fff;
-	// 		border-radius: 0 4px 0 0;
-	// 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-	// 		margin: 0 auto;
-	// 	}
-	// 	
-	// 	> div {
-	// 		display: none;
-	// 		
-	// 		&.open {
-	// 			display: block;
-	// 		}
-	// 	}
-	// 	
-	// 	.notice {
-	// 		position: relative;
-	// 		display: inline;
-	// 		
-	// 		&.commented {
-	// 			background-color: #ffd1d1;
-	// 		}
-	// 		
-	// 		&.highlighted{
-	// 			background-color: #ede6bc;
-	// 		}
-	// 	}	
-	// }
-	// 
-	// &-tabs {
-	// 	z-index: 0;
-	// 	margin: 0 aut;
-	// 	
-	// 	ul {
-	// 		padding: 8px 0 0 0;
-	// 		list-style: none;
-	// 		margin: 0;
-	// 		display: flex;
-	// 		flex-direction: row;
-	// 		align-items: flex-end;
-	// 		> li {
-	// 			font-size: 14px;
-	// 			border-radius: 4px 4px 0 0;
-	// 			background-color: #fff;
-	// 			font-weight: bold;
-	// 			color: var(--default-font-color);
-	// 			overflow: hidden;
-	// 			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-	// 			
-	// 			> a, p {
-	// 				padding: 8px 24px;
-	// 				text-decoration: none;
-	// 				display: block;
-	// 				color: inherit;
-	// 				background-image: linear-gradient(180deg, #FDFDFD 0%, #E7E7E7 100%);
-	// 				cursor: pointer;
-	// 				margin: 0;
-	// 				transition: all .2s;
-	// 			}
-	// 			&.active-tab {
-	// 				font-size: 14px;
-	// 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	// 				z-index: 112;
-	// 				> a, p {
-	// 					padding: 12px 24px;
-	// 					background-image: none;
-	// 					background-color: #fff;
-	// 					border-bottom: 2px solid var(--logo-color);
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
-}
-
 .files-container {
-	width: auto;
+	width: 100%;
 	margin: 0 auto 0 auto;
 	height: 100%; //inherit;
 	// min-height: 100vh;
 	// max-height: 100vh;
 	font-size: .8em;
 	overflow-y: scroll;
-	
-	
 	
 	.scroller {
 		height: auto;
@@ -310,11 +105,11 @@
 		
 		.wrapper {
 			padding: 12px 0;
-			max-width: 72vw;
+			width: 96%;
 			background-color: #fff;
 			border-radius: 8px;
 			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-			margin: 0 auto;
+			margin: 0 2%;
 			
 			&.nobg {
 				background-color: transparent;
@@ -524,12 +319,12 @@
 
 @keyframes progress-bar {
 	100% {
-		background-position: 60vw 0vw;
+		background-position: 30vw 0vw;
 	}
 }
 
 .progress {
-	background-size: 400% 400%;
+	background-size: 200px 200px;
 	animation: progress-bar 10s linear infinite;
 }
 

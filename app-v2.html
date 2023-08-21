@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<div class="dashboard-container">
-				<div class="dashboard-control light">
+				<div class="dashboard-control">
 					<div class="dashboard-control-wrapper">
 						<ul>
 							<li class="open"><h4>Summary</h4>
@@ -184,15 +184,16 @@
 				</div>
 				<div class="dashboard-viewer">
 					<div class="dashboard-viewer-wrapper">
+						<div class="dashboard-viewer-tabs">
+							<ul>
+								<li class="active-tab"><p>Parsed</p></li>
+								<li><p>Extracted Clauses</p></li>
+								<li><p>Exceptions</p></li>
+								<li><p>Table Data</p></li>
+								<li><p>Original</p></li>
+							</ul>
+						</div>
 						<div class="document-container comments-on">
-							<div class="document-container-tabs">
-								<ul>
-									<li class="active-tab"><p>Parsed</p></li>
-									<li><p>Extracted Clauses</p></li>
-									<li><p>Table Data</p></li>
-									<li><p>Original</p></li>
-								</ul>
-							</div>
 							<div class="document-container-content">					
 								<div class="parsed open" id="parsed" data-target="Parsed">
 									<div class="wrapper">
@@ -239,7 +240,7 @@
 											hereby agreed that: </span></p>
 											<div class="markers">
 												<div class="comment">
-													<p><span class="icon"></span>By <strong>Shubho</strong> on <strong>23rd July 2023</strong></p>
+													<p><span class="icon">12</span></p>
 												</div>
 											</div>
 											</div>
@@ -258,7 +259,7 @@
 											<!-- To be inserted -->
 											<div class="markers">
 												<div class="highlight">
-													<p><span class="icon"></span>By <strong>Vivek</strong> on <strong>23rd July 2023</strong></p>
+													<p><span class="icon">3</span></p>
 												</div>
 											</div>
 											</div>
@@ -429,13 +430,126 @@
 									</div>
 								</div>
 								<div class="table" id="tables" data-target="Table Data">&nbsp;</div>
+								<div class="exceptions" id="clauses" data-target="Extracted Clauses">
+									<div class="wrapper">
+										<h3>Nullam aliquet, augue non bibendum euismod, neque dui blandit mauris, posuere posuere orci dolor vel elit. Donec eu semper risus.</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit lectus magna, scelerisque volutpat elit gravida ac. Pellentesque faucibus sed nibh non rhoncus. Quisque ullamcorper vel quam ut ultricies. Vestibulum laoreet fringilla dignissim. Donec non pulvinar mauris. Suspendisse sollicitudin dolor eu felis condimentum luctus. Nulla a dui nunc. Nullam vitae quam massa. Curabitur posuere dignissim eros vitae condimentum. Integer ut semper ipsum. Nullam aliquet, augue non bibendum euismod, neque dui blandit mauris, posuere posuere orci dolor vel elit. Donec eu semper risus. Nulla fringilla arcu in risus pulvinar efficitur.</p>
+											
+										<h3>Duis ornare posuere maximus. Integer velit urna, dapibus id luctus ac</h3>
+										<p>Maecenas hendrerit tellus in semper convallis. Duis ornare posuere maximus. Integer velit urna, dapibus id luctus ac, eleifend auctor nisi. Curabitur non rutrum neque. Mauris finibus sit amet eros vitae ultricies. Pellentesque viverra commodo enim sit amet ullamcorper. Suspendisse fermentum euismod suscipit. In hac habitasse platea dictumst.</p>
+										
+										<p>Suspendisse potenti. Mauris ut eros ac quam tristique ultrices ut quis dolor. Nullam vitae ullamcorper dolor. Morbi feugiat sed ligula non efficitur. Mauris nunc ex, scelerisque et porttitor non, semper nec augue. Nullam euismod volutpat est, interdum aliquet enim porttitor ut. Etiam vel placerat elit. Mauris at leo a sem porta convallis. Vestibulum erat sapien, volutpat sit amet purus vel, pellentesque gravida dui. Curabitur venenatis, elit pretium dignissim ultricies, metus dolor pellentesque lorem, ac consequat eros nulla sed sem. Ut ante nisi, cursus ut lorem eget, fermentum imperdiet dolor. Etiam eget tempus enim, at facilisis risus. Ut euismod in <p>erat quis aliquet.</p>
+										<h3>Vivamus vulputate, velit eu pretium luctus</h3>
+										<p>Vivamus vulputate, velit eu pretium luctus, ante leo sagittis lacus, non semper nisi enim et lacus. Praesent sem mi, faucibus ac aliquet nec, consectetur auctor enim. Cras luctus imperdiet lectus sit amet pretium. Nullam id dui mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ligula tellus, tempor id iaculis iaculis, vestibulum fringilla mi. In tincidunt diam ut tortor placerat vehicula.</p>
+										
+										<h3>Duis ornare posuere maximus. Integer velit urna, dapibus id luctus ac</h3>
+										<p>Curabitur ut est sit amet arcu posuere ullamcorper. Vivamus mattis porttitor faucibus. Phasellus non mollis odio. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ante elit, vulputate sit amet fringilla in, vehicula vel purus. Nam quis urna vel tortor tempor suscipit in ut ipsum. Maecenas tincidunt placerat magna, ac ultricies nisl. Aliquam rutrum semper justo, et iaculis dui lacinia nec. Duis blandit fringilla euismod. Aenean tincidunt eu mi sed vehicula. Cras enim nisi, accumsan ut mattis et, pretium nec diam. Aenean ultrices egestas sem, quis volutpat nisi pretium ac. Etiam consectetur tellus eget faucibus varius. Aenean pellentesque dapibus pretium.</p>
+										
+										<h3>Nullam aliquet, augue non bibendum euismod, neque dui blandit mauris, posuere posuere orci dolor vel elit. Donec eu semper risus.</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit lectus magna, scelerisque volutpat elit gravida ac. Pellentesque faucibus sed nibh non rhoncus. Quisque ullamcorper vel quam ut ultricies. Vestibulum laoreet fringilla dignissim. Donec non pulvinar mauris. Suspendisse sollicitudin dolor eu felis condimentum luctus. Nulla a dui nunc. Nullam vitae quam massa. Curabitur posuere dignissim eros vitae condimentum. Integer ut semper ipsum. Nullam aliquet, augue non bibendum euismod, neque dui blandit mauris, posuere posuere orci dolor vel elit. Donec eu semper risus. Nulla fringilla arcu in risus pulvinar efficitur.</p>
+											
+										<h3>Duis ornare posuere maximus. Integer velit urna, dapibus id luctus ac</h3>
+										<p>Maecenas hendrerit tellus in semper convallis. Duis ornare posuere maximus. Integer velit urna, dapibus id luctus ac, eleifend auctor nisi. Curabitur non rutrum neque. Mauris finibus sit amet eros vitae ultricies. Pellentesque viverra commodo enim sit amet ullamcorper. Suspendisse fermentum euismod suscipit. In hac habitasse platea dictumst.</p>
+										
+										<p>Suspendisse potenti. Mauris ut eros ac quam tristique ultrices ut quis dolor. Nullam vitae ullamcorper dolor. Morbi feugiat sed ligula non efficitur. Mauris nunc ex, scelerisque et porttitor non, semper nec augue. Nullam euismod volutpat est, interdum aliquet enim porttitor ut. Etiam vel placerat elit. Mauris at leo a sem porta convallis. Vestibulum erat sapien, volutpat sit amet purus vel, pellentesque gravida dui. Curabitur venenatis, elit pretium dignissim ultricies, metus dolor pellentesque lorem, ac consequat eros nulla sed sem. Ut ante nisi, cursus ut lorem eget, fermentum imperdiet dolor. Etiam eget tempus enim, at facilisis risus. Ut euismod in <p>erat quis aliquet.</p>
+										<h3>Vivamus vulputate, velit eu pretium luctus</h3>
+										<p>Vivamus vulputate, velit eu pretium luctus, ante leo sagittis lacus, non semper nisi enim et lacus. Praesent sem mi, faucibus ac aliquet nec, consectetur auctor enim. Cras luctus imperdiet lectus sit amet pretium. Nullam id dui mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ligula tellus, tempor id iaculis iaculis, vestibulum fringilla mi. In tincidunt diam ut tortor placerat vehicula.</p>
+										
+										<h3>Duis ornare posuere maximus. Integer velit urna, dapibus id luctus ac</h3>
+										<p>Curabitur ut est sit amet arcu posuere ullamcorper. Vivamus mattis porttitor faucibus. Phasellus non mollis odio. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ante elit, vulputate sit amet fringilla in, vehicula vel purus. Nam quis urna vel tortor tempor suscipit in ut ipsum. Maecenas tincidunt placerat magna, ac ultricies nisl. Aliquam rutrum semper justo, et iaculis dui lacinia nec. Duis blandit fringilla euismod. Aenean tincidunt eu mi sed vehicula. Cras enim nisi, accumsan ut mattis et, pretium nec diam. Aenean ultrices egestas sem, quis volutpat nisi pretium ac. Etiam consectetur tellus eget faucibus varius. Aenean pellentesque dapibus pretium.</p>
+									
+									</div>
+								</div>
 								<div class="original" id="original" data-target="Original" >
 									<iframe src="pdfs/Legal Agreement Form.pdf" width="100%" height="100%"></iframe>
 								</div>
 							</div>
 						</div>
 						<div class="document-pagination">
-						<div class="document-pagination-wrapper">	<p>Page <strong>11</strong> of <strong>23</strong></p></div>
+							<div class="document-pagination-wrapper">	<p>Page <strong>11</strong> of <strong>23</strong></p></div>
+						</div>
+					</div>
+				</div>
+				<div class="dashboard-comments">
+					<div class="dashboard-comments-wrapper">
+						<div class="comments">
+							<ul>
+								<li>
+									<div class="comment">
+											<div class="comment-header">
+												<p><span class="icon user">
+													<img src="images/harry.jpg" /> 
+												</span>
+												<strong>Dev Yadav</strong></p>
+											</div>
+											<div class="comment-text">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. Integer suscipit enim porta, ullamcorper ipsum ut, eleifend est. Mauris condimentum, lectus non finibus mattis, dui elit iaculis nibh, in placerat ex nulla non mauris. Phasellus dignissim hendrerit elementum. Curabitur arcu risus, vehicula quis euismod vitae, ultrices pretium nunc. Proin felis magna, rutrum sed libero fermentum, porttitor aliquet libero.</p>
+											</div>
+											<div class="comment-footer">
+												<p><a href="">Reply</a><a href="">Delete</a></p>
+											</div>
+									</div>
+								</li>
+								<li>
+									<div class="comment">
+											<div class="comment-header">
+												<p><span class="icon user">
+													<img src="images/harry.jpg" /> 
+												</span>
+												<strong>Dev Yadav</strong></p>
+											</div>
+											<div class="comment-text">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. Integer suscipit enim porta, ullamcorper ipsum ut, eleifend est. Mauris condimentum, </p>
+											</div>
+									</div>
+									<div class="comment">
+											<div class="comment-header">
+												<p><span class="icon user">
+													<img src="images/harry.jpg" /> 
+												</span>
+												<strong>Dev Yadav</strong></p>
+											</div>
+											<div class="comment-text">
+												<p><strong>This is a reply. </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. Integer suscipit enim porta, ullamcorper ipsum ut, eleifend est. Mauris condimentum, </p>
+											</div>
+											<div class="comment-footer">
+												<p><a href="">Reply</a><a href="">Delete</a></p>
+											</div>
+									</div>
+								</li>
+								<li>
+									<div class="comment">
+											<div class="comment-header">
+												<p><span class="icon user">
+													<img src="images/harry.jpg" /> 
+												</span>
+												<strong>Dev Yadav</strong></p>
+											</div>
+											<div class="comment-text">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. Integer suscipit enim porta, ullamcorper ipsum ut, eleifend est. Mauris condimentum, </p>
+											</div>
+											<div class="comment-footer">
+												<p><a href="">Reply</a><a href="">Delete</a></p>
+											</div>
+									</div>
+								</li>
+								<li>
+									<div class="comment">
+											<div class="comment-header">
+												<p><span class="icon user">
+													<img src="images/harry.jpg" /> 
+												</span>
+												<strong>Dev Yadav</strong></p>
+											</div>
+											<div class="comment-text">
+												<p><strong>This is a long comment.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. Integer suscipit enim porta, ullamcorper ipsum ut, eleifend est. Mauris condimentum, lectus non finibus mattis, dui elit iaculis nibh, in placerat ex nulla non mauris. Phasellus dignissim hendrerit lectus non finibus, ... <a href="">Show More</a></p>
+											</div>
+											<div class="comment-footer">
+												<p><a href="">Reply</a><a href="">Delete</a></p>
+											</div>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -443,37 +557,5 @@
 		</div>
 	</body>
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-
-	<script>
-		$( document ).ready(function() {
-				$('.dashboard-control-wrapper > ul > li:first-child').addClass('open');
-				$('.dashboard-control-wrapper > ul > li:first-child > ul').show('fast');
-				$('.document-container-content > div:first-child').addClass('open');
-		});
-		
-		$('.dashboard-control-wrapper > ul > li').click(function () {
-			$(this).addClass('open');
-			$(this).children('ul').show('fast');
-			$(this).siblings().removeClass('open');
-			$(this).siblings().children('ul').hide('fast');
-		})
-		
-		$('.dashboard-control-wrapper > ul > li > ul > li').click(function () {
-			$(this).addClass('open');
-			$(this).children('ul').show('fast');
-			$(this).siblings().removeClass('open');
-			$(this).siblings().children('ul').hide('fast');
-		})
-		
-		$('.document-container-tabs > ul > li').click(function () {
-			$(this).addClass('active-tab');
-			$(this).siblings().removeClass('active-tab');
-			var index = $(this).index();
-			var dataShow = $('.document-container-content > div:nth-child('+(index + 1)+')')
-			dataShow.siblings().removeClass('open');
-			dataShow.addClass('open');
-		});
-		
-		
-	</script>
+	<script src="js/simpleo.js"></script>
 </html>
