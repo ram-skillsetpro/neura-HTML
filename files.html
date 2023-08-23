@@ -76,8 +76,8 @@
 												<!-- Check logic in JS to show hide -->
 												<li><a href="">My Contracts</a></li>
 												<li><a href="">George Benson</a></li>
-												<!-- <li><a href="">2022 - 2023</a></li>
-												<li><a href="">Approved</a></li>
+												<li><a href="">2022 - 2023</a></li>
+												<!-- <li><a href="">Approved</a></li>
 												<li><a href="">George Benson</a></li>
 												<li><a href="">2022 - 2023</a></li>
 												<li><a href="">Approved</a></li>
@@ -89,8 +89,14 @@
 											</ul>	
 										</div>
 										<div class="list-meta">
-											<p><a class="button button-red" id="showuploader">Upload</a>
-											<a class="button disabled" id="showfolderdialog">Add Folder</a></p>
+											<div class="button button-red has-dropdown">Add<div class="dropdown-list">
+													<ul>
+														<li><a id="showfolderdialog">Add a folder</a></li>
+														<li><a id="showuploader">Upload a file</a></li>
+														<li><a id="showlinkuploader">Upload a from Google Drive or Dropbox</a></li>
+													</ul>
+												</div></div>
+											
 										</div>
 									</div>					
 								</div>
@@ -101,10 +107,32 @@
 									</div>					
 									<div class="wrapper nobg">
 										<div class="upload-dragdrop-box">
-											<div><h3>Drag and drop here or <a class="button button-flat" id="demobutton">Click to Select</a></h3></div>
+											<div class="upload-area"><h3>Drag and drop here or <a class="button button-flat" id="demobutton">Click to Select</a></h3>
+											<p><input type="checkbox" checked name="" id="" /> Parse document after uploading</p>
+											</div>
+											</div>
 										</div>
-									</div>
+										
 								</div>
+								
+								<div class="files-container-list" id="linkuploader">
+									<div class="wrapper nobg">
+										<h3>Upload Files from Internet Locations</h3>	
+										<p class="meta">No files added</p>
+									</div>					
+									<div class="wrapper nobg">
+										<div class="upload-dragdrop-box">
+											<div class="link-area">
+												<h4>You can upload a document from DropBox or Google Drive by adding the link below.</h4>
+												<p><input type="url" placeholder="Add file from DropBox or Google Drive" />
+												<input type="button" value="Add"  /></p>
+												<p><input type="checkbox" checked name="" id="" /> Parse document after uploading</p>
+												</div>
+											</div>
+										</div>
+										
+								</div>
+
 								
 								<div class="files-container-list" id="addfolder">
 									<div class="wrapper nobg">

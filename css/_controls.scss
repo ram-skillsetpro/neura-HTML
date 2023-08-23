@@ -114,6 +114,7 @@ input[type=checkbox] {
 	width: 14px; 
 	vertical-align: middle;
 	margin-right: 6px;
+	margin-top: -1px;
 	
 	&:checked {
 		background-color: var(--button-red);

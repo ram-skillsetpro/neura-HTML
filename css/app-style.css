@@ -47,6 +47,7 @@ a {
 .button-red {
   border: 1px solid var(--logo-color);
   background-color: var(--logo-color);
+  color: #fff;
 }
 .button-red-outline {
   border: 1px solid var(--logo-color);
@@ -87,7 +88,7 @@ label {
   cursor: pointer;
 }
 
-input[type=text], input[type=email], input[type=password] {
+input[type=text], input[type=email], input[type=password], input[type=url] {
   -webkit-appearance: none;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -97,6 +98,10 @@ input[type=text], input[type=email], input[type=password] {
   box-sizing: border-box;
   margin-right: 6px;
   min-width: 240px;
+}
+
+input[type=url] {
+  width: 80%;
 }
 
 input[type=submit], input[type=button] {
@@ -125,10 +130,65 @@ input[type=checkbox] {
   width: 14px;
   vertical-align: middle;
   margin-right: 6px;
+  margin-top: -1px;
 }
 input[type=checkbox]:checked {
   background-color: var(--logo-color);
   border-color: var(--logo-color);
+}
+
+.has-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.has-dropdown:hover .dropdown-list {
+  display: block;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: calc(100% - 3px);
+  right: 0;
+  width: 240px;
+  z-index: 9999;
+  text-align: left;
+  font-weight: normal;
+  display: none;
+}
+.dropdown-list ul {
+  list-style: none;
+  padding: 8px 0;
+  margin: 10px 0 0 0;
+  border-radius: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.dropdown-list ul:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  display: block;
+  width: 0px;
+  height: 0px;
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+.dropdown-list ul > li > a {
+  display: block;
+  color: #464646;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.dropdown-list ul > li > a:hover {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+.dropdown-list ul > li:last-child > a {
+  border: none;
 }
 
 .navigation {
@@ -713,6 +773,7 @@ input[type=checkbox]:checked {
 .files-container .list-meta {
   width: 30%;
   text-align: right;
+  position: relative;
 }
 .files-container .list-meta p {
   margin: 4px 0;
@@ -769,7 +830,6 @@ input[type=checkbox]:checked {
 }
 .files-container-list {
   height: auto;
-  z-index: 200;
   position: relative;
   margin: 12px 0 24px 0;
 }
@@ -791,20 +851,30 @@ input[type=checkbox]:checked {
 }
 
 .upload-dragdrop-box {
-  border-radius: inherit;
-  border: 2px dashed #ccc;
-  height: 12vw;
   display: flex;
   align-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.upload-dragdrop-box > div {
-  width: 80%;
+.upload-dragdrop-box .upload-area {
+  width: 100%;
+  padding: 64px 0;
   margin: 0 auto;
   text-align: center;
+  border-radius: 8px;
+  border: 2px dashed #ccc;
+}
+.upload-dragdrop-box .link-area {
+  width: 96%;
+  padding: 24px 2%;
+  margin: 12px auto 0 auto;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-#uploader, #addfolder, #addteam, #addmember {
+#uploader, #addfolder, #addteam, #addmember, #linkuploader {
   display: none;
 }
 

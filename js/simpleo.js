@@ -72,12 +72,10 @@ $('.dashboard-control-wrapper > ul > li').click(function () {
 $('#showuploader').click(function () {
 	$('#uploader').slideToggle('fast');
 	$('#addfolder').slideUp('fast');
-	$('#showfolderdialog').text('Add Folder');
+	$('#linkuploader').slideUp('fast');
 	if($(this).hasClass('opened')) {
-		$(this).text('Upload');
 		$(this).removeClass('opened');
 	} else {
-		$(this).text('Close');
 		$(this).addClass('opened');
 	}
 })
@@ -85,12 +83,21 @@ $('#showuploader').click(function () {
 $('#showfolderdialog').click(function () {
 	$('#addfolder').slideToggle('fast');
 	$('#uploader').slideUp('fast');
-	$('#showuploader').text('Upload');
+	$('#linkuploader').slideUp('fast');
 	if($(this).hasClass('opened')) {
-		$(this).text('Add Folder');
 		$(this).removeClass('opened');
 	} else {
-		$(this).text('Close');
+		$(this).addClass('opened');
+	}
+})
+
+$('#showlinkuploader').click(function () {
+	$('#linkuploader').slideToggle('fast');
+	$('#uploader').slideUp('fast');
+	$('#addfolder').slideUp('fast');
+	if($(this).hasClass('opened')) {
+		$(this).removeClass('opened');
+	} else {
 		$(this).addClass('opened');
 	}
 })
