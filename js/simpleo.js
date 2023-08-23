@@ -130,3 +130,16 @@ $('.dashboard-viewer-tabs > ul > li').click(function () {
 	dataShow.siblings().removeClass('open');
 	dataShow.addClass('open');
 });
+
+
+$('.has-dropdown').click(function () {
+	if($(this).children('.dropdown-list').hasClass('opened')) {
+		$(this).children('.dropdown-list').hide('fast');
+		$(this).children('.dropdown-list').removeClass('opened');
+	} else {
+		$('.has-dropdown').children('.dropdown-list').removeClass('opened');
+		$('.has-dropdown').children('.dropdown-list').hide('fast');
+		$(this).children('.dropdown-list').addClass('opened');
+		$(this).children('.dropdown-list').show('fast');
+	}
+});

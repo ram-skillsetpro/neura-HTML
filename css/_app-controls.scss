@@ -125,7 +125,7 @@ input[type=checkbox] {
 	display: inline-block;
 	&:hover {
 		.dropdown-list {
-			display: block;
+			// display: block;
 		}
 	}
 }
@@ -133,11 +133,20 @@ input[type=checkbox] {
 	position: absolute;
 	top: calc(100% - 3px);
 	right: 0;
-	width: 240px;
 	z-index: 9999;
 	text-align: left;
 	font-weight: normal;
 	display: none;
+	
+	&.medium {
+		min-width: 240px;
+		max-width: 300px;
+	}
+	
+	&.small {
+		min-width: 120px;
+		max-width: 240px;
+	}
 	
 	ul {
 		list-style: none;
@@ -146,7 +155,7 @@ input[type=checkbox] {
 		border-radius: 8px;
 		background-color: #fff;
 		border-radius: 8px;
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 		position: relative;
 		
 		&:before {
