@@ -143,3 +143,7 @@ $('.has-dropdown').click(function () {
 		$(this).children('.dropdown-list').show('fast');
 	}
 });
+
+$('.app-close-popups').click(function () {
+	$(this).parents('.files-container-list').slideUp('fast');
+})

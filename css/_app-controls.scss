@@ -192,3 +192,23 @@ input[type=checkbox] {
 		}
 	}
 }
+
+.app-close-popups {
+	cursor: pointer;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	width: 24px;
+	height: 24px;
+	border-radius: 100%;
+	// background-color: var(--logo-color);
+	background-image: url(images/icon-cross-dark.svg);
+	background-size: 16px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: all .3s;
+	
+	&:hover {
+		transform: rotate(90deg);
+	}
+}

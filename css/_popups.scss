@@ -81,6 +81,11 @@
 				background-size: 16px;
 				background-position: center center;
 				background-repeat: no-repeat;
+				transition: all .3s;
+				
+				&:hover {
+					transform: rotate(90deg);
+				}
 			}
 			
 			.inner-wrapper {

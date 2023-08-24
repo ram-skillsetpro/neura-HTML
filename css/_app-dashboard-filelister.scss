@@ -110,19 +110,23 @@
 			background-color: #fff;
 			border-radius: 8px;
 			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-			margin: 0 2%;
+			margin: 0px 2%;
+			position: relative;
+			box-sizing: border-box;
 			
 			&.nobg {
 				background-color: transparent;
 				box-shadow: none;
+			}
+			
+			&:has(.upload-dragdrop-box) {
+				padding: 0;
 			}
 		}
 	}
 }
 
 .upload-dragdrop-box {
-	
-	// height: 12vw;
 	display: flex;
 	align-content: center;
 	align-items: center;
@@ -142,9 +146,7 @@
 		padding: 24px 2%;
 		margin: 12px auto 0 auto;
 		text-align: left;
-		background-color: #fff;
 		border-radius: 8px;
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 	}
 }
 

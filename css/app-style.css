@@ -194,6 +194,24 @@ input[type=checkbox]:checked {
   border: none;
 }
 
+.app-close-popups {
+  cursor: pointer;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-image: url(images/icon-cross-dark.svg);
+  background-size: 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+.app-close-popups:hover {
+  transform: rotate(90deg);
+}
+
 .navigation {
   background-color: var(--app-navigation-background-color);
   height: 60px;
@@ -846,11 +864,16 @@ input[type=checkbox]:checked {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  margin: 0 2%;
+  margin: 0px 2%;
+  position: relative;
+  box-sizing: border-box;
 }
 .files-container-list .wrapper.nobg {
   background-color: transparent;
   box-shadow: none;
+}
+.files-container-list .wrapper:has(.upload-dragdrop-box) {
+  padding: 0;
 }
 
 .upload-dragdrop-box {
@@ -872,9 +895,7 @@ input[type=checkbox]:checked {
   padding: 24px 2%;
   margin: 12px auto 0 auto;
   text-align: left;
-  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 #uploader, #addfolder, #addteam, #addmember, #linkuploader {
