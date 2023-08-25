@@ -996,12 +996,17 @@ input[type=checkbox]:checked {
   margin: 0 auto;
   padding: 1px 2%;
 }
-.file-item-snippet {
+.file-item-table {
   min-width: 100%;
-  padding: 12px 6% 36px 6%;
+  padding: 12px 4%;
   font-size: 1.2em;
   color: var(--default-font-color);
-  border-top: 1px solid #e3e3e3;
+}
+.file-item-snippet {
+  min-width: 100%;
+  padding: 12px 6% 6px 6%;
+  font-size: 1.2em;
+  color: var(--default-font-color);
 }
 .file-item-snippet p {
   max-width: 640px;
@@ -1114,6 +1119,39 @@ input[type=checkbox]:checked {
 .highlighted {
   background-color: #ede6bc;
   color: var(--default-font-color);
+}
+
+table {
+  margin: 4px auto;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  border-left: none;
+  border-right: none;
+  border-collapse: collapse;
+  text-align: left;
+}
+table.compact {
+  font-size: 0.8em;
+}
+table.compact p {
+  padding: 6px 12px;
+}
+table tr td, table tr th {
+  border: 1px solid #e3e3e3;
+}
+table tr td:first-child, table tr th:first-child {
+  border-left: none;
+}
+table tr td:last-child, table tr th:last-child {
+  border-right: none;
+}
+table tr td.number, table tr th.number {
+  text-align: right;
+  width: 15%;
+}
+table tr td.name, table tr th.name {
+  width: 27.5%;
 }
 
 /*# sourceMappingURL=app-style.css.map */
