@@ -15,7 +15,7 @@ a {
 	&-flat, &.disabled {
 		border: 1px solid #ccc;
 		background-color: #ccc;
-		color: inherit;
+		color: #fff; //inherit;
 	}
 	
 	&-red {

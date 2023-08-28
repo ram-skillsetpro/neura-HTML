@@ -42,7 +42,7 @@ a {
 .button-flat, .button.disabled {
   border: 1px solid #ccc;
   background-color: #ccc;
-  color: inherit;
+  color: #fff;
 }
 .button-red {
   border: 1px solid var(--logo-color);
