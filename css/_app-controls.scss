@@ -8,7 +8,7 @@ a {
 .button {
 	margin: 0 0 0 6px;
 	font-weight: bold;
-	padding: 4px 12px;
+	padding: 6px 12px;
 	cursor: pointer;
 	border-radius: 4px;
 	
@@ -67,11 +67,11 @@ label {
 	cursor: pointer;
 }
 
-input[type=text], input[type=email], input[type=password], input[type=url]  {
+input[type=text], input[type=email], input[type=password], input[type=url], input[type=search]  {
 	-webkit-appearance: none;
 	border-radius: 4px;
 	border: 1px solid #ccc;
-	height: 30px;
+	height: 36px;
 	color: var(--default-font-color);
 	padding: 12px;
 	box-sizing: border-box;
@@ -93,7 +93,7 @@ input[type=submit], input[type=button] {
 	font-weight: bold;
 	background-color: var(--logo-color);
 	border: 1px solid var(--logo-color);
-	height: 30px;
+	height: 36px;
 	min-width: 120px;
 	box-sizing: border-box;
 	margin-right: 6px;

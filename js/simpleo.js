@@ -147,3 +147,7 @@ $('.has-dropdown').click(function () {
 $('.app-close-popups').click(function () {
 	$(this).parents('.files-container-list').slideUp('fast');
 })
+
+$('.showshare').click(function () {
+	$('#share-popup').addClass('open');
+})

@@ -50,3 +50,81 @@ body {
 // @import 'boilerplate';
 // @import 'popups';
 
+.popup-container {
+	width: 100vw;
+	height: 100vh;
+	min-height: 600px;
+	position: fixed; 
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	z-index: 999;
+	display: none;
+	overflow: scroll;
+	
+	&.open {
+		display: flex;
+	}
+	
+	.popup {
+		min-width: 860px;
+		max-width: 960px;
+		height: auto;
+		border-radius: 12px;
+		// overflow: hidden;
+		background: #fff;
+		border-radius: 12px;
+		width: 60vw;
+		position: relative;
+		padding: 24px 0 12px 0;
+		
+		.close-popups {
+			cursor: pointer;
+			position: absolute;
+			right: 12px;
+			top: 12px;
+			width: 24px;
+			height: 24px;
+			border-radius: 100%;
+			background-color: var(--logo-color);
+			background-image: url(images/icon-cross.svg);
+			background-size: 16px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			transition: all .3s;
+			
+			&:hover {
+				transform: rotate(90deg);
+			}
+		}
+		
+		
+		
+		.files-share-list {
+			width: 100%;
+			
+			.wrapper {
+				padding: 12px 2%;
+				width: 96%
+			}
+			
+			.file-item  {
+				width: 100%;
+				
+			}
+			
+			input[type=search] {
+				padding: 12px;
+				width: 75%;
+				// height: auto;
+			}
+		}
+	}
+}
