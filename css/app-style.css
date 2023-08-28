@@ -1107,7 +1107,7 @@ table.files-table tr.file-row th, table.files-table tr.file-row td {
   border-right: none;
 }
 
-.icon {
+.file-row .icon, .each-item .icon {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px;
@@ -1120,46 +1120,46 @@ table.files-table tr.file-row th, table.files-table tr.file-row td {
   display: inline-block;
   text-align: center;
 }
-.icon.pdf {
+.file-row .icon.pdf, .each-item .icon.pdf {
   background-image: url(images/icon-pdf.svg);
 }
-.icon.folder {
+.file-row .icon.folder, .each-item .icon.folder {
   background-image: url(images/icon-folder.svg);
 }
-.icon.doc {
+.file-row .icon.doc, .each-item .icon.doc {
   background-image: url(images/icon-word.svg);
 }
-.icon.xls {
+.file-row .icon.xls, .each-item .icon.xls {
   background-image: url(images/icon-xls.svg);
 }
-.icon.rtf {
+.file-row .icon.rtf, .each-item .icon.rtf {
   background-image: url(images/icon-txt.svg);
 }
-.icon.txt {
+.file-row .icon.txt, .each-item .icon.txt {
   background-image: url(images/icon-txt.svg);
 }
-.icon.anyfile {
+.file-row .icon.anyfile, .each-item .icon.anyfile {
   background-image: url(images/icon-generic-file.svg);
 }
-.icon.team {
+.file-row .icon.team, .each-item .icon.team {
   background-image: url(images/icon-team-color.svg);
   background-color: #cccccc;
   border-radius: 100%;
 }
-.icon.control {
+.file-row .icon.control, .each-item .icon.control {
   background-image: url(images/icon-more-vertical-dark.svg);
   margin-right: 0;
 }
-.icon.member {
+.file-row .icon.member, .each-item .icon.member {
   margin-right: 2em;
 }
-.icon.member img {
+.file-row .icon.member img, .each-item .icon.member img {
   object-fit: cover;
   width: inherit;
   height: inherit;
   border-radius: 100%;
 }
-.icon.member.empty {
+.file-row .icon.member.empty, .each-item .icon.member.empty {
   background-color: #4a4a4a;
   border-radius: 100%;
   color: #ffffff;
