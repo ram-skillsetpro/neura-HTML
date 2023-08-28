@@ -355,6 +355,7 @@ table {
 	
 	&.compact {
 		font-size: 0.8em;
+		border-collapse: collapse;
 		
 		p {
 			padding: 6px 12px;
@@ -363,7 +364,7 @@ table {
 	
 	tr {
 		td, th {
-			border: 1px solid #e3e3e3;
+			border-top: 1px solid #e3e3e3;
 			
 			&:first-child {
 				border-left: none;
@@ -410,6 +411,14 @@ table {
 			th, td {
 				border-left: none;
 				border-right: none;
+			}
+			
+			&:hover {
+				th, td {
+					color: #000000;
+					cursor: pointer;
+					background-color: #f7f7f7;
+				}
 			}
 		}
 	}

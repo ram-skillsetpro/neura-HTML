@@ -1071,12 +1071,13 @@ table {
 }
 table.compact {
   font-size: 0.8em;
+  border-collapse: collapse;
 }
 table.compact p {
   padding: 6px 12px;
 }
 table tr td, table tr th {
-  border: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
 }
 table tr td:first-child, table tr th:first-child {
   border-left: none;
@@ -1105,6 +1106,11 @@ table.files-table tbody tr.file-row:last-child th, table.files-table tbody tr.fi
 table.files-table tr.file-row th, table.files-table tr.file-row td {
   border-left: none;
   border-right: none;
+}
+table.files-table tr.file-row:hover th, table.files-table tr.file-row:hover td {
+  color: #000000;
+  cursor: pointer;
+  background-color: #f7f7f7;
 }
 
 .file-row .icon, .each-item .icon {
