@@ -1,0 +1,44 @@
+// datatables custom style
+
+
+.dataTables_wrapper {
+	.dataTables_length {
+		padding: 0px 12px;
+		label {
+			display: inline-block;
+		}
+		
+		select {
+			
+		}
+	}
+	
+	.dataTables_filter {
+		padding: 0px 12px;
+		
+		input[type=search] {
+			padding: 2px 5px;
+			border-color: #e3e3e3;
+			margin-left: 5px;
+		}
+	}
+	
+	.dataTables_info {
+		padding: 8px 12px;
+	}
+	
+	.dataTables_paginate {
+		padding: 0px 12px;
+		
+		.paginate_button {
+			border: none !important;
+			background: none;
+			
+			&.current, &:hover {
+				border: none !important;
+				background: none !important;
+				color: var(--logo-color) !important;
+			}
+		}
+	}
+}

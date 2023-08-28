@@ -5,8 +5,10 @@
 		
 		<!-- insert og here --> 
 
+		
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/app-style.css" />
-	</head>
+ 	</head>
 	<body>
 		<div class="container">
 			<div class="navigation">
@@ -115,7 +117,6 @@
 										</div>
 										
 								</div>
-								
 								<div class="files-container-list" id="linkuploader">
 									<div class="wrapper nobg">
 										<h3>Upload Files from Internet Locations</h3>	
@@ -133,8 +134,6 @@
 											</div>
 										</div>
 								</div>
-
-								
 								<div class="files-container-list" id="addfolder">
 									<div class="wrapper nobg">
 										<h3>Add a folder</h3>	
@@ -151,7 +150,6 @@
 										</div>
 									</div>
 								</div>
-								
 								<div class="files-container-list">
 									<div class="wrapper nobg">
 										<h3>Uploading</h3>	
@@ -375,6 +373,659 @@
 												</div></div></div>
 										</div>
 									</div>
+								</div> 
+								<div class="files-container-list">		
+									<div class="wrapper nobg">
+										<h3>Files as a Table with Search</h3>	
+										<p class="meta">5 Files</p>
+									</div>
+									<div class="wrapper">
+										<table class="files-table datatable" id="myTable">
+											<thead>
+												<tr class="file-row">
+													<th class="file-row-selector"><p><input type="checkbox" /></p></th>
+													<th class="file-row-icon"></th>
+													<th class="file-row-name"><p>Name</p></th>
+													<th class="file-row-owner"><p>Owner</p></th>
+													<th class="file-row-date"><p>Last Modified</p></th>
+													<th class="file-row-size"><p>File Size</p></th>
+													<th class="file-row-controls"><p></p></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>28 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>Some other file</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd August 2023</p></td>
+													<td class="file-row-size"><p>8 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Roger Walter Mohan PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>4 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Monthly Recurring PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd February 2023</p></td>
+													<td class="file-row-size"><p>12 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon txt"></span></p></td>
+													<td class="file-row-name"><p>Fixed Payment Contract TXT</p></td>
+													<td class="file-row-owner"><p>Chappel</p></td>
+													<td class="file-row-date"><p>23rd March 2023</p></td>
+													<td class="file-row-size"><p>32 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>Brahmma</p></td>
+													<td class="file-row-date"><p>21st July 2021</p></td>
+													<td class="file-row-size"><p>34 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>28 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>Some other file</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd August 2023</p></td>
+													<td class="file-row-size"><p>8 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Roger Walter Mohan PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>4 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Monthly Recurring PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd February 2023</p></td>
+													<td class="file-row-size"><p>12 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon txt"></span></p></td>
+													<td class="file-row-name"><p>Fixed Payment Contract TXT</p></td>
+													<td class="file-row-owner"><p>Chappel</p></td>
+													<td class="file-row-date"><p>23rd March 2023</p></td>
+													<td class="file-row-size"><p>32 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>Brahmma</p></td>
+													<td class="file-row-date"><p>21st July 2021</p></td>
+													<td class="file-row-size"><p>34 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>28 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>Some other file</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd August 2023</p></td>
+													<td class="file-row-size"><p>8 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Roger Walter Mohan PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>4 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Monthly Recurring PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd February 2023</p></td>
+													<td class="file-row-size"><p>12 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon txt"></span></p></td>
+													<td class="file-row-name"><p>Fixed Payment Contract TXT</p></td>
+													<td class="file-row-owner"><p>Chappel</p></td>
+													<td class="file-row-date"><p>23rd March 2023</p></td>
+													<td class="file-row-size"><p>32 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>Brahmma</p></td>
+													<td class="file-row-date"><p>21st July 2021</p></td>
+													<td class="file-row-size"><p>34 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>28 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>Some other file</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd August 2023</p></td>
+													<td class="file-row-size"><p>8 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Roger Walter Mohan PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>4 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Monthly Recurring PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd February 2023</p></td>
+													<td class="file-row-size"><p>12 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon txt"></span></p></td>
+													<td class="file-row-name"><p>Fixed Payment Contract TXT</p></td>
+													<td class="file-row-owner"><p>Chappel</p></td>
+													<td class="file-row-date"><p>23rd March 2023</p></td>
+													<td class="file-row-size"><p>32 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>Brahmma</p></td>
+													<td class="file-row-date"><p>21st July 2021</p></td>
+													<td class="file-row-size"><p>34 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>28 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>Some other file</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd August 2023</p></td>
+													<td class="file-row-size"><p>8 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Roger Walter Mohan PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>4 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Monthly Recurring PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd February 2023</p></td>
+													<td class="file-row-size"><p>12 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon txt"></span></p></td>
+													<td class="file-row-name"><p>Fixed Payment Contract TXT</p></td>
+													<td class="file-row-owner"><p>Chappel</p></td>
+													<td class="file-row-date"><p>23rd March 2023</p></td>
+													<td class="file-row-size"><p>32 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>Brahmma</p></td>
+													<td class="file-row-date"><p>21st July 2021</p></td>
+													<td class="file-row-size"><p>34 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>28 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>Some other file</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd August 2023</p></td>
+													<td class="file-row-size"><p>8 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Roger Walter Mohan PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>4 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Monthly Recurring PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd February 2023</p></td>
+													<td class="file-row-size"><p>12 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon txt"></span></p></td>
+													<td class="file-row-name"><p>Fixed Payment Contract TXT</p></td>
+													<td class="file-row-owner"><p>Chappel</p></td>
+													<td class="file-row-date"><p>23rd March 2023</p></td>
+													<td class="file-row-size"><p>32 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>Brahmma</p></td>
+													<td class="file-row-date"><p>21st July 2021</p></td>
+													<td class="file-row-size"><p>34 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>28 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon anyfile"></span></p></td>
+													<td class="file-row-name"><p>Some other file</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd August 2023</p></td>
+													<td class="file-row-size"><p>8 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Roger Walter Mohan PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd July 2023</p></td>
+													<td class="file-row-size"><p>4 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>Monthly Recurring PDF</p></td>
+													<td class="file-row-owner"><p>SimpleO AI</p></td>
+													<td class="file-row-date"><p>23rd February 2023</p></td>
+													<td class="file-row-size"><p>12 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon txt"></span></p></td>
+													<td class="file-row-name"><p>Fixed Payment Contract TXT</p></td>
+													<td class="file-row-owner"><p>Chappel</p></td>
+													<td class="file-row-date"><p>23rd March 2023</p></td>
+													<td class="file-row-size"><p>32 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+												<tr  class="file-row">
+													<td class="file-row-selector"><p><input type="checkbox" /></p></td>
+													<td class="file-row-icon"><p><span class="icon pdf"></span></p></td>
+													<td class="file-row-name"><p>SimpleO AI Contract PDF</p></td>
+													<td class="file-row-owner"><p>Brahmma</p></td>
+													<td class="file-row-date"><p>21st July 2021</p></td>
+													<td class="file-row-size"><p>34 Mb</p></td>
+													<td class="file-row-controls"><div class="icon control has-dropdown"><div class="dropdown-list small">
+															<ul>
+																<li><a >Open</a></li>
+																<li><a >Move</a></li>
+																<li><a >Share</a></li>
+															</ul>
+														</div></div></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -383,6 +1034,11 @@
 			</div>
 		</div>
 	</body>
+	
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script src="js/simpleo.js"></script>
+	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+	<script>
+		let table = new DataTable('#myTable');
+	</script>
 </html>

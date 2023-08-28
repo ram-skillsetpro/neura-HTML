@@ -1015,68 +1015,6 @@ input[type=checkbox]:checked {
   flex-basis: 100%;
   height: 0;
 }
-.file-item .icon {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 20px;
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
-  vertical-align: bottom;
-  margin-right: 1em;
-  margin-top: 0px;
-  display: inline-block;
-  text-align: center;
-}
-.file-item .icon.pdf {
-  background-image: url(images/icon-pdf.svg);
-}
-.file-item .icon.folder {
-  background-image: url(images/icon-folder.svg);
-}
-.file-item .icon.doc {
-  background-image: url(images/icon-word.svg);
-}
-.file-item .icon.xls {
-  background-image: url(images/icon-xls.svg);
-}
-.file-item .icon.rtf {
-  background-image: url(images/icon-txt.svg);
-}
-.file-item .icon.txt {
-  background-image: url(images/icon-txt.svg);
-}
-.file-item .icon.anyfile {
-  background-image: url(images/icon-generic-file.svg);
-}
-.file-item .icon.team {
-  background-image: url(images/icon-team-color.svg);
-  background-color: #cccccc;
-  border-radius: 100%;
-}
-.file-item .icon.control {
-  background-image: url(images/icon-more-vertical-dark.svg);
-  margin-right: 0;
-}
-.file-item .icon.member {
-  margin-right: 2em;
-}
-.file-item .icon.member img {
-  object-fit: cover;
-  width: inherit;
-  height: inherit;
-  border-radius: 100%;
-}
-.file-item .icon.member.empty {
-  background-color: #4a4a4a;
-  border-radius: 100%;
-  color: #ffffff;
-  font-size: 10px;
-  padding: 3px 0;
-  height: 14px;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 @keyframes progress-bar {
   100% {
@@ -1152,6 +1090,226 @@ table tr td.number, table tr th.number {
 }
 table tr td.name, table tr th.name {
   width: 27.5%;
+}
+table.files-table {
+  border-top: none;
+  border-bottom: none;
+  margin: 0px auto;
+}
+table.files-table thead tr.file-row:first-child th, table.files-table thead tr.file-row:first-child td {
+  border-top: none;
+}
+table.files-table tbody tr.file-row:last-child th, table.files-table tbody tr.file-row:last-child td {
+  border-bottom: none;
+}
+table.files-table tr.file-row th, table.files-table tr.file-row td {
+  border-left: none;
+  border-right: none;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  vertical-align: bottom;
+  margin-right: 1em;
+  margin-top: 0px;
+  display: inline-block;
+  text-align: center;
+}
+.icon.pdf {
+  background-image: url(images/icon-pdf.svg);
+}
+.icon.folder {
+  background-image: url(images/icon-folder.svg);
+}
+.icon.doc {
+  background-image: url(images/icon-word.svg);
+}
+.icon.xls {
+  background-image: url(images/icon-xls.svg);
+}
+.icon.rtf {
+  background-image: url(images/icon-txt.svg);
+}
+.icon.txt {
+  background-image: url(images/icon-txt.svg);
+}
+.icon.anyfile {
+  background-image: url(images/icon-generic-file.svg);
+}
+.icon.team {
+  background-image: url(images/icon-team-color.svg);
+  background-color: #cccccc;
+  border-radius: 100%;
+}
+.icon.control {
+  background-image: url(images/icon-more-vertical-dark.svg);
+  margin-right: 0;
+}
+.icon.member {
+  margin-right: 2em;
+}
+.icon.member img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: 100%;
+}
+.icon.member.empty {
+  background-color: #4a4a4a;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 3px 0;
+  height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.file-row {
+  border-bottom: 1px solid #e3e3e3;
+  color: #818181;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.file-row p {
+  padding: 0;
+  margin: 0;
+}
+.file-row.header-row {
+  font-weight: 500;
+  color: #000000;
+}
+.file-row.each-item:hover, .file-row.each-item:active {
+  color: #000000;
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+.file-row:last-child {
+  border: none;
+}
+.file-row > div {
+  box-sizing: border-box;
+}
+.file-row-selector {
+  width: 6%;
+  padding: 9px 1% !important;
+  text-align: left;
+  padding: 12px 1%;
+}
+.file-row-icon {
+  width: 3.4%;
+  text-align: center;
+  padding: 12px 1%;
+}
+.file-row-icon:has(.user) {
+  width: 4%;
+}
+.file-row-name {
+  width: 25%;
+  text-align: left;
+  padding: 12px 1%;
+  flex-grow: 2;
+}
+.file-row-owner {
+  width: 20%;
+  text-align: left;
+  padding: 12px 1%;
+  flex-grow: 2;
+}
+.file-row-date {
+  width: 15%;
+  text-align: right;
+  padding: 12px 1%;
+}
+.file-row-access, .file-row-role {
+  width: 10%;
+  text-align: left;
+  padding: 12px 1%;
+}
+.file-row-size {
+  width: 10%;
+  text-align: right;
+  padding: 12px 1%;
+}
+.file-row-controls {
+  width: 3.4%;
+  text-align: right;
+  padding: 12px 1%;
+}
+.file-row-uploading {
+  width: 60%;
+  text-align: left;
+  padding: 12px 1%;
+}
+.file-row-parsing {
+  width: 60%;
+  text-align: left;
+  padding: 12px 1%;
+}
+.file-row-ready {
+  width: 60%;
+  text-align: left;
+  padding: 12px 1%;
+}
+.file-row-form {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 1px 2%;
+}
+.file-row-table {
+  min-width: 100%;
+  padding: 12px 4%;
+  font-size: 1.2em;
+  color: var(--default-font-color);
+}
+.file-row-snippet {
+  min-width: 100%;
+  padding: 12px 6% 6px 6%;
+  font-size: 1.2em;
+  color: var(--default-font-color);
+}
+.file-row-snippet p {
+  max-width: 640px;
+}
+.file-row-breakrow {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.dataTables_wrapper .dataTables_length {
+  padding: 0px 12px;
+}
+.dataTables_wrapper .dataTables_length label {
+  display: inline-block;
+}
+.dataTables_wrapper .dataTables_filter {
+  padding: 0px 12px;
+}
+.dataTables_wrapper .dataTables_filter input[type=search] {
+  padding: 2px 5px;
+  border-color: #e3e3e3;
+  margin-left: 5px;
+}
+.dataTables_wrapper .dataTables_info {
+  padding: 8px 12px;
+}
+.dataTables_wrapper .dataTables_paginate {
+  padding: 0px 12px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border: none !important;
+  background: none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  border: none !important;
+  background: none !important;
+  color: var(--logo-color) !important;
 }
 
 /*# sourceMappingURL=app-style.css.map */
