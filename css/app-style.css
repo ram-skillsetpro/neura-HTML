@@ -633,7 +633,7 @@ input[type=checkbox]:checked {
 }
 
 .document-container {
-  width: 80%;
+  width: auto;
   margin: 0 3%;
   height: 100vh;
   font-size: 14px;
@@ -717,6 +717,45 @@ input[type=checkbox]:checked {
 .document-container-content .clause-wrapper a {
   color: var(--logo-color);
   text-decoration: none;
+}
+.document-container-content .table-wrapper {
+  padding: 24px 0px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 0 0 12px 0;
+  border-radius: 8px;
+  overflow: scroll;
+}
+.document-container-content .table-wrapper h3 {
+  padding: 12px;
+  max-width: 640px;
+  margin: 0;
+}
+.document-container-content .table-wrapper a {
+  color: var(--logo-color);
+  text-decoration: none;
+}
+.document-container-content .table-wrapper p {
+  padding: 6px 12px;
+  margin: 0;
+}
+.document-container-content .table-wrapper table {
+  width: 100%;
+  font-size: 0.9em;
+}
+.document-container-content .table-wrapper table tr td, .document-container-content .table-wrapper table tr th {
+  text-align: right;
+  vertical-align: middle;
+}
+.document-container-content .table-wrapper table tr td:first-child, .document-container-content .table-wrapper table tr th:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+.document-container-content .table-wrapper table tr:nth-child(2n+2) td, .document-container-content .table-wrapper table tr:nth-child(2n+2) th {
+  background-color: #f7f7f7;
+}
+.document-container-content .table-wrapper table thead, .document-container-content .table-wrapper table tfoot {
+  font-weight: bold;
 }
 .document-container-content > div {
   display: none;
