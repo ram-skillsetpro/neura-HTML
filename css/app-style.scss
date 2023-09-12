@@ -78,12 +78,13 @@ body {
 		max-width: 960px;
 		height: auto;
 		border-radius: 12px;
-		// overflow: hidden;
+		overflow: hidden;
 		background: #fff;
 		border-radius: 12px;
 		width: 60vw;
 		position: relative;
-		padding: 24px 0 12px 0;
+		padding: 0px;
+		
 		
 		.close-popups {
 			cursor: pointer;
@@ -99,6 +100,7 @@ body {
 			background-position: center center;
 			background-repeat: no-repeat;
 			transition: all .3s;
+			z-index: 999;
 			
 			&:hover {
 				transform: rotate(90deg);
@@ -109,10 +111,21 @@ body {
 		
 		.files-share-list {
 			width: 100%;
+			min-height: 480px;
+			max-height: 80vh; 
+			overflow: scroll;
 			
 			.wrapper {
 				padding: 12px 2%;
-				width: 96%
+				width: 96%;
+				
+				&.sticky {
+					position: sticky; 
+					padding-top: 24px;
+					top: 0; 
+					background-color: #fff;
+					box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+				}
 			}
 			
 			.file-item  {
