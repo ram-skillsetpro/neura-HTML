@@ -191,71 +191,77 @@
 		width: 6%; 
 		padding: 9px 1% !important;
 		text-align: center;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	&-icon { 
 		width: 3.4%; 
 		text-align: center;
-		padding: 12px 1%;
+		padding: 12px .25%;
 		
 		&:has(.user) {
 			width: 4%; 
 		}
 	}
 	&-name { 
-		width: 25%;
-		text-align: left;
-		padding: 12px 1%;
-		flex-grow: 2;
-	}
-	&-owner {
 		width: 20%;
 		text-align: left;
-		padding: 12px 1%;
-		flex-grow: 2;
+		padding: 12px .25%;
+		flex-grow: 1;
+	}
+	&-owner {
+		width: 15%;
+		text-align: left;
+		padding: 12px .25%;
+		flex-grow: 1;
 	}
 	&-date { 
-		width: 15%;
+		width: 12%;
 		text-align: right;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	
 	&-access, &-role { 
 		width: 10%;
 		text-align: left;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	
 	&-size { 
 		width: 10%;
 		text-align: right;
-		padding: 12px 1%;
+		padding: 12px .25%;
+	}
+	
+	&-alerton { 
+		width: 10%;
+		text-align: right;
+		padding: 12px .25%;
 	}
 	&-controls { 
 		width: 3.4%; 
 		text-align: right;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	
 	&-button { 
 		width: 15%; 
 		text-align: right;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	&-uploading { 
 		width: 60%;
 		text-align: left;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	&-parsing { 
 		width: 60%;
 		text-align: left;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	&-ready { 
 		width: 60%;
 		text-align: left;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	
 	&-form { 
@@ -436,12 +442,13 @@ table {
 	.icon {
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 20px;
+		background-size: contain;
 		height: 20px;
 		width: 20px;
 		cursor: pointer; 
 		vertical-align: bottom;
-		margin-right: 1em;
+		margin-right: .5em;
+		margin-left: .5em;
 		margin-top: 0px;
 		display: inline-block;
 		text-align: center;
@@ -482,7 +489,24 @@ table {
 		
 		&.control {
 			background-image: url(images/icon-more-vertical-dark.svg);
-			margin-right: 0;
+			margin-right: .5em;
+		}
+		
+		&.email, &.phone, , &.nobell {
+			margin-left: .2em;
+			margin-right: 0em;
+		}
+		
+		&.email {
+			background-image: url(images/icon-email.svg);
+		}
+		
+		&.phone {
+			background-image: url(images/icon-smartphone.svg);
+		}
+		
+		&.nobell {
+			background-image: url(images/icon-nobell.svg);
 		}
 		
 		&.member {
@@ -543,65 +567,72 @@ table {
 		width: 6%; 
 		padding: 9px 1% !important;
 		text-align: left;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	&-icon { 
 		width: 3.4%; 
 		text-align: center;
-		padding: 12px 1%;
+		padding: 12px .25%;
 		
 		&:has(.user) {
 			width: 4%; 
 		}
 	}
 	&-name { 
-		width: 25%;
-		text-align: left;
-		padding: 12px 1%;
-		flex-grow: 2;
-	}
-	&-owner {
 		width: 20%;
 		text-align: left;
-		padding: 12px 1%;
-		flex-grow: 2;
+		padding: 12px .25%;
+		flex-grow: 1;
+	}
+	&-owner {
+		width: 15%;
+		text-align: left;
+		padding: 12px .25%;
+		flex-grow: 1;
 	}
 	&-date { 
 		width: 15%;
 		text-align: right;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	
 	&-access, &-role { 
 		width: 10%;
 		text-align: left;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	
 	&-size { 
 		width: 10%;
 		text-align: right;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
-	&-controls { 
-		width: 3.4%; 
+	
+	&-alerton { 
+		width: 10%;
 		text-align: right;
-		padding: 12px 1%;
+		padding: 12px .25%;
+	}
+	
+	&-controls { 
+		width: 5%; 
+		text-align: right;
+		padding: 12px .25%;
 	}
 	&-uploading { 
 		width: 60%;
 		text-align: left;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	&-parsing { 
 		width: 60%;
 		text-align: left;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	&-ready { 
 		width: 60%;
 		text-align: left;
-		padding: 12px 1%;
+		padding: 12px .25%;
 	}
 	
 	&-form { 

@@ -12,7 +12,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .container {
@@ -1024,67 +1024,72 @@ input[type=checkbox]:checked {
   width: 6%;
   padding: 9px 1% !important;
   text-align: center;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-item-icon {
   width: 3.4%;
   text-align: center;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-item-icon:has(.user) {
   width: 4%;
 }
 .file-item-name {
-  width: 25%;
-  text-align: left;
-  padding: 12px 1%;
-  flex-grow: 2;
-}
-.file-item-owner {
   width: 20%;
   text-align: left;
-  padding: 12px 1%;
-  flex-grow: 2;
+  padding: 12px 0.25%;
+  flex-grow: 1;
+}
+.file-item-owner {
+  width: 15%;
+  text-align: left;
+  padding: 12px 0.25%;
+  flex-grow: 1;
 }
 .file-item-date {
-  width: 15%;
+  width: 12%;
   text-align: right;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-item-access, .file-item-role {
   width: 10%;
   text-align: left;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-item-size {
   width: 10%;
   text-align: right;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
+}
+.file-item-alerton {
+  width: 10%;
+  text-align: right;
+  padding: 12px 0.25%;
 }
 .file-item-controls {
   width: 3.4%;
   text-align: right;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-item-button {
   width: 15%;
   text-align: right;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-item-uploading {
   width: 60%;
   text-align: left;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-item-parsing {
   width: 60%;
   text-align: left;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-item-ready {
   width: 60%;
   text-align: left;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-item-form {
   width: 100%;
@@ -1212,12 +1217,13 @@ table.files-table tr.file-row:hover th, table.files-table tr.file-row:hover td {
 .file-row .icon, .each-item .icon {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 20px;
+  background-size: contain;
   height: 20px;
   width: 20px;
   cursor: pointer;
   vertical-align: bottom;
-  margin-right: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
   margin-top: 0px;
   display: inline-block;
   text-align: center;
@@ -1250,7 +1256,20 @@ table.files-table tr.file-row:hover th, table.files-table tr.file-row:hover td {
 }
 .file-row .icon.control, .each-item .icon.control {
   background-image: url(images/icon-more-vertical-dark.svg);
-  margin-right: 0;
+  margin-right: 0.5em;
+}
+.file-row .icon.email, .file-row .icon.phone, .file-row .icon.nobell, .each-item .icon.email, .each-item .icon.phone, .each-item .icon.nobell {
+  margin-left: 0.2em;
+  margin-right: 0em;
+}
+.file-row .icon.email, .each-item .icon.email {
+  background-image: url(images/icon-email.svg);
+}
+.file-row .icon.phone, .each-item .icon.phone {
+  background-image: url(images/icon-smartphone.svg);
+}
+.file-row .icon.nobell, .each-item .icon.nobell {
+  background-image: url(images/icon-nobell.svg);
 }
 .file-row .icon.member, .each-item .icon.member {
   margin-right: 2em;
@@ -1301,62 +1320,67 @@ table.files-table tr.file-row:hover th, table.files-table tr.file-row:hover td {
   width: 6%;
   padding: 9px 1% !important;
   text-align: left;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-row-icon {
   width: 3.4%;
   text-align: center;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-row-icon:has(.user) {
   width: 4%;
 }
 .file-row-name {
-  width: 25%;
-  text-align: left;
-  padding: 12px 1%;
-  flex-grow: 2;
-}
-.file-row-owner {
   width: 20%;
   text-align: left;
-  padding: 12px 1%;
-  flex-grow: 2;
+  padding: 12px 0.25%;
+  flex-grow: 1;
+}
+.file-row-owner {
+  width: 15%;
+  text-align: left;
+  padding: 12px 0.25%;
+  flex-grow: 1;
 }
 .file-row-date {
   width: 15%;
   text-align: right;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-row-access, .file-row-role {
   width: 10%;
   text-align: left;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-row-size {
   width: 10%;
   text-align: right;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
+}
+.file-row-alerton {
+  width: 10%;
+  text-align: right;
+  padding: 12px 0.25%;
 }
 .file-row-controls {
-  width: 3.4%;
+  width: 5%;
   text-align: right;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-row-uploading {
   width: 60%;
   text-align: left;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-row-parsing {
   width: 60%;
   text-align: left;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-row-ready {
   width: 60%;
   text-align: left;
-  padding: 12px 1%;
+  padding: 12px 0.25%;
 }
 .file-row-form {
   width: 100%;
