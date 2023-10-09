@@ -439,99 +439,101 @@ table {
 // icons 
 
 .file-row, .each-item {
-	.icon {
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: contain;
-		height: 20px;
-		width: 20px;
-		cursor: pointer; 
-		vertical-align: bottom;
-		margin-right: .5em;
-		margin-left: .5em;
-		margin-top: 0px;
-		display: inline-block;
-		text-align: center;
-		
-		&.pdf {
-			background-image: url(images/icon-pdf.svg);
-		}
-		
-		&.folder {
-			background-image: url(images/icon-folder.svg);
-		}
-		
-		&.doc {
-			background-image: url(images/icon-word.svg);
-		}
-		
-		&.xls {
-			background-image: url(images/icon-xls.svg);
-		}
-		
-		&.rtf {
-			background-image: url(images/icon-txt.svg);
-		}
-		
-		&.txt {
-			background-image: url(images/icon-txt.svg);
-		}
-		
-		&.anyfile {
-			background-image: url(images/icon-generic-file.svg);
-		}
-		
-		&.team {
-			background-image: url(images/icon-team-color.svg);
-			background-color: #cccccc;
-			border-radius: 100%;
-		}
-		
-		&.control {
-			background-image: url(images/icon-more-vertical-dark.svg);
-			margin-right: .5em;
-		}
-		
-		&.email, &.phone, , &.nobell {
-			margin-left: .2em;
-			margin-right: 0em;
-		}
-		
-		&.email {
-			background-image: url(images/icon-email.svg);
-		}
-		
-		&.phone {
-			background-image: url(images/icon-smartphone.svg);
-		}
-		
-		&.nobell {
-			background-image: url(images/icon-nobell.svg);
-		}
-		
-		&.member {
-			margin-right: 2em;
-			
-			img {
-				object-fit: cover;
-				width: inherit;
-				height: inherit;
-				border-radius: 100%;
-			}
-			
-			&.empty {
-				background-color: #4a4a4a;
-				border-radius: 100%;
-				color: #ffffff;
-				font-size: 10px;
-				padding: 3px 0;
-				height: 14px;
-				text-align: center;
-				text-transform: uppercase;
-			}
-		}
-	}
+	// .icon {
+	// 	background-repeat: no-repeat;
+	// 	background-position: center center;
+	// 	background-size: contain;
+	// 	height: 20px;
+	// 	width: 20px;
+	// 	cursor: pointer; 
+	// 	vertical-align: bottom;
+	// 	margin-right: .5em;
+	// 	margin-left: .5em;
+	// 	margin-top: 0px;
+	// 	display: inline-block;
+	// 	text-align: center;
+	// 	
+	// 	&.pdf {
+	// 		background-image: url(images/icon-pdf.svg);
+	// 	}
+	// 	
+	// 	&.folder {
+	// 		background-image: url(images/icon-folder.svg);
+	// 	}
+	// 	
+	// 	&.doc {
+	// 		background-image: url(images/icon-word.svg);
+	// 	}
+	// 	
+	// 	&.xls {
+	// 		background-image: url(images/icon-xls.svg);
+	// 	}
+	// 	
+	// 	&.rtf {
+	// 		background-image: url(images/icon-txt.svg);
+	// 	}
+	// 	
+	// 	&.txt {
+	// 		background-image: url(images/icon-txt.svg);
+	// 	}
+	// 	
+	// 	&.anyfile {
+	// 		background-image: url(images/icon-generic-file.svg);
+	// 	}
+	// 	
+	// 	&.team {
+	// 		background-image: url(images/icon-team-color.svg);
+	// 		background-color: #cccccc;
+	// 		border-radius: 100%;
+	// 	}
+	// 	
+	// 	&.control {
+	// 		background-image: url(images/icon-more-vertical-dark.svg);
+	// 		margin-right: .5em;
+	// 	}
+	// 	
+	// 	&.email, &.phone, , &.nobell {
+	// 		margin-left: .2em;
+	// 		margin-right: 0em;
+	// 	}
+	// 	
+	// 	&.email {
+	// 		background-image: url(images/icon-email.svg);
+	// 	}
+	// 	
+	// 	&.phone {
+	// 		background-image: url(images/icon-smartphone.svg);
+	// 	}
+	// 	
+	// 	&.nobell {
+	// 		background-image: url(images/icon-nobell.svg);
+	// 	}
+	// 	
+	// 	&.member {
+	// 		margin-right: 2em;
+	// 		
+	// 		img {
+	// 			object-fit: cover;
+	// 			width: inherit;
+	// 			height: inherit;
+	// 			border-radius: 100%;
+	// 		}
+	// 		
+	// 		&.empty {
+	// 			background-color: #4a4a4a;
+	// 			border-radius: 100%;
+	// 			color: #ffffff;
+	// 			font-size: 10px;
+	// 			padding: 3px 0;
+	// 			height: 14px;
+	// 			text-align: center;
+	// 			text-transform: uppercase;
+	// 		}
+	// 	}
+	// }
 }
+
+
 .file-row {
 	border-bottom: 1px solid #e3e3e3;
 	color: #818181;
@@ -667,3 +669,97 @@ table {
 		height: 0;
 	}
 }
+
+.icon {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+	cursor: pointer; 
+	vertical-align: bottom;
+	margin-right: .5em;
+	margin-left: .5em;
+	margin-top: 0px;
+	display: inline-block;
+	text-align: center;
+	
+	&.pdf {
+		background-image: url(images/icon-pdf.svg);
+	}
+	
+	&.folder {
+		background-image: url(images/icon-folder.svg);
+	}
+	
+	&.doc {
+		background-image: url(images/icon-word.svg);
+	}
+	
+	&.xls {
+		background-image: url(images/icon-xls.svg);
+	}
+	
+	&.rtf {
+		background-image: url(images/icon-txt.svg);
+	}
+	
+	&.txt {
+		background-image: url(images/icon-txt.svg);
+	}
+	
+	&.anyfile {
+		background-image: url(images/icon-generic-file.svg);
+	}
+	
+	&.team {
+		background-image: url(images/icon-team-color.svg);
+		background-color: #cccccc;
+		border-radius: 100%;
+	}
+	
+	&.control {
+		background-image: url(images/icon-more-vertical-dark.svg);
+		margin-right: .5em;
+	}
+	
+	&.email, &.phone, , &.nobell {
+		margin-left: .2em;
+		margin-right: 0em;
+	}
+	
+	&.email {
+		background-image: url(images/icon-email.svg);
+	}
+	
+	&.phone {
+		background-image: url(images/icon-smartphone.svg);
+	}
+	
+	&.nobell {
+		background-image: url(images/icon-nobell.svg);
+	}
+	
+	&.member {
+		margin-right: 2em;
+		
+		img {
+			object-fit: cover;
+			width: inherit;
+			height: inherit;
+			border-radius: 100%;
+		}
+		
+		&.empty {
+			background-color: #4a4a4a;
+			border-radius: 100%;
+			color: #ffffff;
+			font-size: 10px;
+			padding: 3px 0;
+			height: 14px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+

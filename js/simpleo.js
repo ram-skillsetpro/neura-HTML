@@ -47,6 +47,12 @@ $( document ).ready(function() {
 			breadcrumb.children('li').addClass('open');
 		}
 		
+		$('.sharing span.icon.member.empty').each(function(index) {
+			var rand = colarray[Math.floor(Math.random() * colarray.length)];
+			$(this).css('background-color', rand);
+			console.log('Hello Dolly');
+		})
+		
 		$('.file-item-icon span.team').each(function(index) {
 			var rand = colarray[Math.floor(Math.random() * colarray.length)];
 			$(this).css('background-color', rand);
@@ -57,7 +63,9 @@ $( document ).ready(function() {
 			$(this).css('background-color', rand);
 		})
 		
-
+		$('.stats-wrapper > ul > li:first-child ul').show();
+		$('.stats-wrapper > ul > li:first-child').addClass('open');
+		
 });
 
 $('.dashboard-control-wrapper > ul > li').click(function () {
@@ -150,4 +158,13 @@ $('.app-close-popups').click(function () {
 
 $('.showshare').click(function () {
 	$('#share-popup').addClass('open');
+})
+
+$('.stats-wrapper > ul > li').click(function () {
+	if($(this).children('ul').length > 0) {
+		$(this).addClass('open');
+		$(this).children('ul').show('fast');
+		$(this).siblings().removeClass('open');
+		$(this).siblings().children('ul').hide('fast');
+	}
 })

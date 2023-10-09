@@ -1,13 +1,15 @@
 // main css to compile
 
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 //variables
 
 :root {
-	--default-background-color: #E9E9E9;
+	--default-background-color: #dce1e6;
+	--comments-background-color: #f4f6f9;
+	--comments-header-background-color: #c6cdd4;
 	--default-font-color: #232323;
 	--app-navigation-background-color: #ffffff;
 	--logo-color: #ff6868;
@@ -18,7 +20,7 @@
 //styles 
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato','Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
