@@ -168,3 +168,36 @@ $('.stats-wrapper > ul > li').click(function () {
 		$(this).siblings().children('ul').hide('fast');
 	}
 })
+
+//Added by Santosh
+$('#tabs-nav li:first-child').addClass('active');
+$('.app-content-wrap').hide();
+$('.app-content-wrap:first').show();
+
+// Click function
+$('#tabs-nav li').click(function(){
+$('#tabs-nav li').removeClass('active');
+$(this).addClass('active');
+$('.app-content-wrap').hide();
+
+var activeTab = $(this).find('a').attr('href');
+$(activeTab).fadeIn();
+return false;
+});
+// header icon tab
+$('.app-icon-tab').on('click', function(evt) {
+	evt.preventDefault();
+	$('.app-icon-tab').removeClass('active');
+	$(this).addClass('active');
+	var sel = this.getAttribute('data-toggle-target');
+	$('.right-tab-content').removeClass('active').filter(sel).addClass('active');
+});
+//right sharing tab
+$('.app-summary-tab-section > ul > li.tab-icon').click(function () {
+if($(this).children('ul').length > 0) {
+$(this).addClass('open');
+$(this).children('ul').show('fast');
+$(this).siblings().removeClass('open');
+$(this).siblings().children('ul').hide('fast');
+}
+})
