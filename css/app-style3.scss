@@ -15,10 +15,23 @@
 	--logo-color: #ff6868;
 	--button-red: #ef4747;
 	--link-color: #121212;
+	--icon-bg:#E0E4E7;
+	--tab-bg:#F0F2F5;
+	--text-light-color:#525252;
+	--border-color:#AEB7C0;
+	--border-color1:#CCCCCC;
+	--comment-bg:#DFE4EB;
+	--comment-bg1:#F4F6F9;
+	--link-color:#488FCE;
+	--dark-blue:#444488;
 }
 
 //styles 
-
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
 body {
 	font-family: 'Lato','Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 	margin: 0;
@@ -40,13 +53,14 @@ body {
 	// flex-direction: column;
 }
 
-
+@import 'app-main';
+@import 'app-common';
 @import 'app-controls';
-@import 'app-navigation';
-@import 'app-sidebar';
-@import 'app-dashboard-viewer';
-@import 'app-dashboard-filelister';
-@import 'dataTables';
+// @import 'app-navigation';
+// @import 'app-sidebar';
+// @import 'app-dashboard-viewer';
+// @import 'app-dashboard-filelister';
+// @import 'dataTables';
 
 
 // @import 'boilerplate';
