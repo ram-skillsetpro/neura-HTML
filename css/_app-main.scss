@@ -1,7 +1,6 @@
 .app-bg{
 	background-color: var(--comments-header-background-color);
 	width: 100%;
-	display: flex;
 	min-height: 100vh;
 
 }
@@ -22,29 +21,34 @@
 	align-items: center;
 	justify-content: space-between;
 	padding:0 21px;
-	max-width: 1440px;
+	// max-width: 1440px;
 	box-sizing: border-box;
 	margin: auto;
 
 	.app-left-sec{
-		flex: 1 1 auto;
-		min-width: 498px;
-		max-width:900px;
+		flex-grow: 1;
+		// min-width: 498px;
+		// max-width:900px;
 		.app-left-inner{
 			display: flex;
 			align-items: center;
 		}
 	}
 	.app-logo{
-		width:120px;
+		width:155px;
+
 		img {
 			max-width: 120px;
 			width: 100%;
 		}
 	}
 	.app-search{
-		flex: 1 1 auto;
-		margin-left: 32px;
+		flex-grow: 1;
+		.app-search-inner{
+			max-width: 900px;
+			margin: auto;
+		}
+	
 		input[type=search] {
 			height: 42px;
 			border-radius: 4px;
@@ -72,6 +76,9 @@
 		flex: 1 1 426px;
 		max-width:426px;
 		margin-left: 68px;
+		@media only screen and (max-width: 1279px) {
+			margin-left: 24px;
+		}
 	}
 		.app-right-inner{
 			display: flex;
@@ -89,7 +96,23 @@
 				align-items: center;
 				justify-content: center;
 				cursor: pointer;
-				transition: all 0.3s ease-in;				
+				position: relative;
+				transition: all 0.3s ease-in;
+				.alert-message{
+					background-color: var(--logo-color);
+					position: absolute;
+					top:4px;
+					right: 0px;
+					font-size: 11px;
+					font-weight: 700;
+					min-width: 8px;
+					padding: 1px 4px;
+					border-radius: 10px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: var(--app-navigation-background-color);
+				}				
 				&:not(:last-child){
 					margin-right: 10px;
 				}
@@ -157,17 +180,31 @@
 	display: flex;
 	padding: 0 21px;
 	padding-top: 72px;
-	margin-bottom: 72px;
-	max-width: 1440px;
+	// max-width: 1440px;
 	box-sizing: border-box;
+	height: 100%;
 	.left-section{
+		flex-grow: 1;
+		padding-left: 152px;
+		@media only screen and (max-width: 1599px) {
+			padding-left: 0;
+		}
+		.left-section-inner{
+			max-width: 900px;
+			margin: auto;
+		}
 	// width: calc(100% - 426px);
 	// background: red;
 	}
 	.right-section{
 		flex: 1 1 426px;
-		max-width:426px;
+		min-width:426px;
+		max-width: 426px;
 		margin-left: 68px;
+		@media only screen and (max-width: 1279px) {
+			margin-left: 24px;
+		}
+		
 	}
 }
 
@@ -210,11 +247,10 @@ ul.app-tab-style{
 	}
 }
 .app-tabs-sec{
+	margin-bottom: 32px;
 	.app-content-wrap{				
 		.app-content-inner{
-			background: #fff;
-			max-width:820px;
-			width: 820px;
+			background: var(--app-navigation-background-color);
 			padding: 40px;
 			box-sizing: border-box;
 			margin-top: 10px;
@@ -222,13 +258,20 @@ ul.app-tab-style{
 			font-size: 14px;
 			line-height: 1.5;
 			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
 		}
 		.notice.commented {
 			background-color: #ffd1d1;
 		}
 	}
 }
+.right-section-inner{
+	height: 100%;
+
+}
 .right-tab-content {
+	// position: sticky;
+	// top:0px;
 	display: none;
 	&.active{
 		display: block;
@@ -465,10 +508,10 @@ ul.app-tab-style{
 		padding: 10px 0;
 		background: var(--comments-header-background-color);
 	}
-  }
+  	}
   //Dates in Calendar 
 
-  .date-card{
+  .data-card{
 	ul{
 		background: var(--comment-bg);
 		padding: 0 12px;
@@ -485,18 +528,19 @@ ul.app-tab-style{
 		}
 	}
 
-	.date-row{
+	.data-row{
 		display: flex;
 		font-size: 11px;
 		line-height: 1.2;
-		.date-row-left{
+
+		.data-row-left{
 			width:90px;
 			padding-right: 12px;
 		}
-		.date-row-right{
+		.data-row-right{
 			flex-grow: 1;
 		}
-		.date-row-icons{
+		.data-row-icons{
 			width:60px;
 			.calender-status{
 				width:16px;
@@ -512,4 +556,18 @@ ul.app-tab-style{
 		}
 	}
   }
-  
+  .p-card{
+	background: var(--card-bg);
+  }
+  .search-suggestion-list{
+	background: var(--app-navigation-background-color);
+	padding: 12px;
+	border-radius: 0 0 12px 12px;
+	ul{
+		list-style: none;
+		li{
+			border-bottom: 1px soli var(--border-color);
+			padding:4px 0;
+		}
+	}
+  }
