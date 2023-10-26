@@ -47,6 +47,43 @@
 		.app-search-inner{
 			max-width: 900px;
 			margin: auto;
+			position: relative;
+			.src-btn{
+				// background-repeat: no-repeat;
+				// background-position: 8px center;
+				// background-image: url(images/icon-search@4x.png);
+				// background-size: 24px;
+				height:18px;
+				width:18px;
+				border: none;
+				cursor: pointer;
+				position: absolute;
+				right: 14px;
+				top:12px;
+				background: red;
+				img{
+					display: block;
+					height:18px;
+					width:18px;
+					object-fit: cover;
+				}
+			}
+			.search-suggestion-list{
+				background: var(--app-navigation-background-color);
+				padding: 12px;
+				border-radius: 0 0 12px 12px;
+				position: absolute;
+				top:43px;
+				left:20px;
+				ul{
+					list-style: none;
+					li{
+						border-bottom: 1px soli var(--border-color);
+						padding:4px 0;
+						background: red;
+					}
+				}
+			  }
 		}
 	
 		input[type=search] {
@@ -59,17 +96,13 @@
 			height: 42px;
 			font-size: 16px;
 			color: var(--default-font-color);
-			padding: 12px 12px 12px 48px;
+			padding: 12px 48px 12px 12px;
 			box-sizing: border-box;
-			background-repeat: no-repeat;
-			background-position: 8px center;
-			background-image: url(images/icon-search@4x.png);
-			background-size: 24px;
+			position: relative;			
 			width: 100%;
-			min-width: 340px;
 			box-sizing: border-box;			
 			border-radius: 19px;
-
+		
 		}
 	}
 	.app-right-sec{
@@ -270,8 +303,8 @@ ul.app-tab-style{
 
 }
 .right-tab-content {
-	// position: sticky;
-	// top:0px;
+	position: sticky;
+	top:0px;
 	display: none;
 	&.active{
 		display: block;
@@ -559,15 +592,4 @@ ul.app-tab-style{
   .p-card{
 	background: var(--card-bg);
   }
-  .search-suggestion-list{
-	background: var(--app-navigation-background-color);
-	padding: 12px;
-	border-radius: 0 0 12px 12px;
-	ul{
-		list-style: none;
-		li{
-			border-bottom: 1px soli var(--border-color);
-			padding:4px 0;
-		}
-	}
-  }
+ 

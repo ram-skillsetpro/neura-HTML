@@ -94,6 +94,40 @@ body {
 .app-header .app-search .app-search-inner {
   max-width: 900px;
   margin: auto;
+  position: relative;
+}
+.app-header .app-search .app-search-inner .src-btn {
+  height: 18px;
+  width: 18px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  background: red;
+}
+.app-header .app-search .app-search-inner .src-btn img {
+  display: block;
+  height: 18px;
+  width: 18px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app-header .app-search .app-search-inner .search-suggestion-list {
+  background: var(--app-navigation-background-color);
+  padding: 12px;
+  border-radius: 0 0 12px 12px;
+  position: absolute;
+  top: 43px;
+  left: 20px;
+}
+.app-header .app-search .app-search-inner .search-suggestion-list ul {
+  list-style: none;
+}
+.app-header .app-search .app-search-inner .search-suggestion-list ul li {
+  border-bottom: 1px soli var(--border-color);
+  padding: 4px 0;
+  background: red;
 }
 .app-header .app-search input[type=search] {
   height: 42px;
@@ -105,14 +139,10 @@ body {
   height: 42px;
   font-size: 16px;
   color: var(--default-font-color);
-  padding: 12px 12px 12px 48px;
+  padding: 12px 48px 12px 12px;
   box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-position: 8px center;
-  background-image: url(images/icon-search@4x.png);
-  background-size: 24px;
+  position: relative;
   width: 100%;
-  min-width: 340px;
   box-sizing: border-box;
   border-radius: 19px;
 }
@@ -310,6 +340,8 @@ ul.app-tab-style li:not(:last-child) {
 }
 
 .right-tab-content {
+  position: sticky;
+  top: 0px;
   display: none;
 }
 .right-tab-content.active {
@@ -581,19 +613,6 @@ ul.app-tab-style li:not(:last-child) {
 
 .p-card {
   background: var(--card-bg);
-}
-
-.search-suggestion-list {
-  background: var(--app-navigation-background-color);
-  padding: 12px;
-  border-radius: 0 0 12px 12px;
-}
-.search-suggestion-list ul {
-  list-style: none;
-}
-.search-suggestion-list ul li {
-  border-bottom: 1px soli var(--border-color);
-  padding: 4px 0;
 }
 
 .hidden {
