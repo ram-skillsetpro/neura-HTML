@@ -24,19 +24,21 @@
 	--comment-bg1:#F4F6F9;
 	--link-color:#488FCE;
 	--dark-blue:#444488;
+	--card-bg:#B1BAC5;
+	--green-bg:#78D537
 }
 
 //styles 
-html, body {
-    height: 100%;
+html{overflow-y: scroll;}
+html, body {    
     scroll-behavior: smooth;
-    min-height: 100vh;
 }
 body {
 	font-family: 'Lato','Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
+	min-height: 100vh;
 }
 
 .container {

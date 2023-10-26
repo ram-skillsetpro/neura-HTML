@@ -6,6 +6,8 @@
 		<!-- insert og here --> 
 
 		<link rel="stylesheet" type="text/css" href="css/app-style3.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	</head>
 	<body>
 		<div class="app-bg">
@@ -19,9 +21,23 @@
 						</a>
 					</div>
 					<div class="app-search">
+						<div class="app-search-inner">
 						<form>
 							<input tabindex="1" type="search" value="" placeholder="Search for anything and we will figure it out" />
 						</form>
+						<div class="search-suggestion-list" style="display: none;">
+							<ul>
+								<li class="flex items-center">
+									<i class="" style="width:16px;height:16px;"><img src="css/images/icon-pdf.svg" style="width:16px;height:16px;" /></i>
+									<span class="fs12 font-bold">Paradigm Shift NDA Version 1.0 copy 28/12/22</span>
+									<span class="grow"></span>
+									<button class="rounded-12 sm-button tracking-wider font-bold uppercase p-3 button-gray">
+										Compare
+									</button>
+								</li>
+							</ul>
+						</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -29,21 +45,24 @@
 					<div class="app-right-inner">
 						<div class="app-icon-sec">
 							<div class="app-icon-w app-icon-tab active" data-toggle-target=".tab-sharing">
+								<span class="alert-message">1</span>
 								<i class="sharing-ic">
 									<img src="css/images/sharing.svg" />
 								</i>
 							</div>
 							<div class="app-icon-w app-icon-tab" data-toggle-target=".tab-comment">
+								<span class="alert-message">2</span>
 								<i class="comment-ic">
 									<img src="css/images/comments.svg" />
 								</i>
 							</div>
-							<div class="app-icon-w app-icon-tab" data-toggle-target=".tab-calender">
+							<div class="app-icon-w app-icon-tab" data-toggle-target=".tab-calender">								
 								<i class="calender-ic">
 									<img src="css/images/calendar.svg" />
 								</i>
 							</div>
 							<div class="app-icon-w app-icon-tab" data-toggle-target=".tab-playbook">
+								<span class="alert-message">4</span>
 								<i class="playbook-ic">
 									<img src="css/images/playbook.svg" />
 								</i>
@@ -73,6 +92,7 @@
 		</header>
 		<main class="content-sec">
 			<div class="left-section">
+				<div class="left-section-inner">
 				<div class="app-breadcrumbs">
 					<button class="back-btn">
 						<img src="css/images/back-icon.svg" />
@@ -350,14 +370,20 @@
 						
 					  </div>
 					  <div id="tab5" class="app-content-wrap">
-						<div class="app-content-inner">5555 Original	</div>
+						<div>
+							<iframe src="pdfs/Legal Agreement Form.pdf" width="100%" height="600px"></iframe>
+
+						</div>
 						
 					  </div>
 					</div> <!-- END tabs-content -->
 				  </div> <!-- END tabs -->
-			
+			</div>
 			</div>
 			<div class="right-section">
+				<div class="right-section-inner">
+				
+				<!--Sharing start here-->
 				<div class="right-tab-content tab-sharing active">	
 					<div class="right-tab-content-inner">
 						<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal">Sharing</h4>
@@ -579,6 +605,7 @@
 
 					</div>
 				</div>
+				<!--comment start here-->
 				<div class="right-tab-content tab-comment">
 					<div class="right-tab-content-inner">
 						<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal">Comments</h4>
@@ -658,16 +685,17 @@
 					</div>
 					
 				</div>
+				<!--calender start here-->
 				<div class="right-tab-content tab-calender">
 					<div class="right-tab-content-inner">
 						<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal">Dates in Calendar </h4>
-						<div class="date-card rounded-6">
+						<div class="data-card rounded-6">
 							<ul>
 								<li>
-									<div class="date-row">
-										<div class="date-row-left font-bold">Contract Start</div>
-										<div class="date-row-right">12th July 2023</div>
-										<div class="date-row-icons">
+									<div class="data-row">
+										<div class="data-row-left font-bold">Contract Start</div>
+										<div class="data-row-right">12th July 2023</div>
+										<div class="data-row-icons">
 											<button class="calender-status">
 												<img src="css/images/phone-icon.svg" />
 											</button>
@@ -678,10 +706,10 @@
 									</div>
 								</li>
 								<li>
-									<div class="date-row">
-										<div class="date-row-left font-bold">Payment 1</div>
-										<div class="date-row-right">11th September 2024</div>
-										<div class="date-row-icons">
+									<div class="data-row">
+										<div class="data-row-left font-bold">Payment 1</div>
+										<div class="data-row-right">11th September 2024</div>
+										<div class="data-row-icons">
 											<button class="calender-status">
 												<img src="css/images/phone-icon.svg" />
 											</button>
@@ -692,10 +720,10 @@
 									</div>
 								</li>
 								<li>
-									<div class="date-row">
-										<div class="date-row-left font-bold">Payment 2</div>
-										<div class="date-row-right">11th February 2025</div>
-										<div class="date-row-icons">
+									<div class="data-row">
+										<div class="data-row-left font-bold">Payment 2</div>
+										<div class="data-row-right">11th February 2025</div>
+										<div class="data-row-icons">
 											<button class="calender-status">
 												<img src="css/images/phone-icon.svg" />
 											</button>
@@ -706,10 +734,10 @@
 									</div>
 								</li>
 								<li>
-									<div class="date-row">
-										<div class="date-row-left font-bold">Contract End</div>
-										<div class="date-row-right">11th June 2025</div>
-										<div class="date-row-icons">
+									<div class="data-row">
+										<div class="data-row-left font-bold">Contract End</div>
+										<div class="data-row-right">11th June 2025</div>
+										<div class="data-row-icons">
 											<button class="calender-status">
 												<img src="css/images/phone-icon.svg" />
 											</button>
@@ -721,28 +749,131 @@
 								</li>
 							</ul>		
 						</div>
-						<!---->
+						<!--Previous Contracts-->
 						<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal">Previous Contracts </h4>
-						<div class="date-card rounded-6">
+						<div class="data-card rounded-6">
 							<ul>
-								<li class="flex">
-									Paradigm Shift NDA <span class="grow"></span>dsfdsfds
+								<li class="flex items-center">
+								<i class="w-20 h-20 mr-3"><img src="css/images/icon-pdf.svg" /></i>	<span class="fs11">Paradigm Shift NDA</span> <span class="grow"></span><button class="forward-btn"><img src="css/images/forward-icon.svg" /></button>
+								</li>
+								<li class="flex items-center">
+									<i class="w-20 h-20 mr-3"><img src="css/images/icon-pdf.svg" /></i>	<span class="fs11">Paradigm Shift NDA</span> <span class="grow"></span><button class="forward-btn"><img src="css/images/forward-icon.svg" /></button>
+								</li>
+								<li class="flex items-center">
+										<i class="w-20 h-20 mr-3"><img src="css/images/icon-word.svg" /></i>	<span class="fs11">Paradigm Shift NDA - Ammendment - July 2023 </span> <span class="grow"></span><button class="forward-btn"><img src="css/images/forward-icon.svg" /></button>
 								</li>
 								
 							</ul>		
 						</div>
-						<div class="date-card rounded-6">
-							sfsfdsfdsfdsfds
-						</div>
+					<!--Previous Subsequent Contracts-->
+					<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal">Previous Contracts </h4>
+					<div class="data-card rounded-6">
+						<ul>
+							<li class="flex items-center">
+							<i class="w-20 h-20 mr-3"><img src="css/images/icon-pdf.svg" /></i>	<span class="fs11">Paradigm Shift NDA</span> <span class="grow"></span><button class="forward-btn"><img src="css/images/forward-icon.svg" /></button>
+							</li>
+							<li class="flex items-center">
+								<i class="w-20 h-20 mr-3"><img src="css/images/icon-pdf.svg" /></i>	<span class="fs11">Paradigm Shift NDA</span> <span class="grow"></span><button class="forward-btn"><img src="css/images/forward-icon.svg" /></button>
+							</li>
+							<li class="flex items-center">
+									<i class="w-20 h-20 mr-3"><img src="css/images/icon-word.svg" /></i>	<span class="fs11">Paradigm Shift NDA - Ammendment - July 2023 </span> <span class="grow"></span><button class="forward-btn"><img src="css/images/forward-icon.svg" /></button>
+							</li>
+							
+						</ul>		
+					</div>
+<!--End Subsequent Contracts-->
 					</div>
 				</div>
+				<!--Playbook start here-->
 				<div class="right-tab-content tab-playbook">
 					<div class="right-tab-content-inner">
-						<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal">Playbook</h4>
-
-	
+					
+						<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal">Playbook <button class="button-red rounded-12 sm-button tracking-wider font-bold uppercase ml-3">Show All</button></h4>
+						<div class="bg-light p-3 rounded-6 mb-2 text-defaul-color">
+							<div class="fs11 font-bold mb-1">
+								<span class="dot-g mr-2-5 inline-block"></span> 
+								Document Header
+							</div>
+							<div class="body-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. </p>
+							</div>
+						</div>
+						<div class="bg-light p-3 rounded-6 mb-2 text-defaul-color">
+							<div class="fs11 font-bold mb-1">
+								<span class="dot-g mr-2-5 inline-block"></span>
+								First Party Name and Address
+							</div>
+							<div class="body-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. </p>
+							</div>
+						</div>
+						<div class="bg-light1 p-3 rounded-6 mb-2 text-defaul-color">
+							<div class="fs11 font-bold mb-1">
+								<span class="dot-g mr-2-5 inline-block"></span> 
+								Confidentiality
+							</div>
+							<div class="body-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. </p>
+							</div>
+						</div>								
+						<div class="p-3 bg-dark rounded-6 mb-2  text-defaul-color">
+							<div class="fs11 font-bold mb-1">
+								<span class="button-red rounded-12 sm-chips uppercase inline-block mr-2-5">Missing</span>
+								Some other clause that is missing but should be here
+							</div>
+							
+							<div class="body-text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. Vestibulum consectetur lacus quis erat aliquam gravida. Integer suscipit enim porta, ullamcorper ipsum ut, eleifend est.
+								</p>
+							</div>
+						</div>
+						<div class="p-3 bg-dark rounded-6 mb-2  text-defaul-color">
+							<div class="fs11 font-bold mb-1">
+								<span class="button-red rounded-12 sm-chips uppercase inline-block mr-2-5">Missing</span>
+								Some other clause that is missing but should be here
+							</div>
+							
+							<div class="body-text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. Vestibulum consectetur lacus quis erat aliquam gravida. Integer suscipit enim porta, ullamcorper ipsum ut, eleifend est.
+								</p>
+							</div>
+						</div>
+						<div class="p-3 bg-dark rounded-6 mb-2  text-defaul-color">
+							<div class="fs11 font-bold mb-1">
+								<span class="button-red rounded-12 sm-chips uppercase inline-block mr-2-5">Missing</span>
+								Some other clause that is missing but should be here
+							</div>
+							
+							<div class="body-text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. Vestibulum consectetur lacus quis erat aliquam gravida. Integer suscipit enim porta, ullamcorper ipsum ut, eleifend est.
+								</p>
+							</div>
+						</div>
+						<div class="bg-light p-3 rounded-6 mb-2 text-defaul-color">
+							<div class="fs11 font-bold mb-1">
+								<span class="dot-g mr-2-5 inline-block"></span> Document Header
+							</div>
+							<div class="body-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. </p>
+							</div>
+						</div>						
+						<div class="bg-light1 p-3 rounded-6 mb-2 text-defaul-color">
+							<div class="fs11 font-bold mb-1">
+								<span class="dot-g mr-2-5 inline-block"></span> 
+								Confidentiality
+							</div>
+							<div class="body-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lacus quis erat aliquam gravida. </p>
+							</div>
+						</div>
+						<!--End inner content-->
 					</div>
+					
 				</div>
+				<!--Prompt start here-->
 				<div class="right-tab-content tab-prompt">
 					<div class="right-tab-content-inner">
 						<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal">Prompt</h4>
@@ -750,8 +881,9 @@
 					</div>
 					
 				</div>
+				
 			</div>
-
+		</div>
 		</main>
 	</div>
 	</body>
