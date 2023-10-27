@@ -58,9 +58,10 @@
 				border: none;
 				cursor: pointer;
 				position: absolute;
+				z-index:1;
 				right: 14px;
 				top:12px;
-				background: red;
+				background:transparent;
 				img{
 					display: block;
 					height:18px;
@@ -73,6 +74,7 @@
 				padding: 12px;
 				border-radius: 0 0 12px 12px;
 				position: absolute;
+				z-index:1;
 				top:43px;
 				left:20px;
 				ul{
@@ -80,7 +82,7 @@
 					li{
 						border-bottom: 1px soli var(--border-color);
 						padding:4px 0;
-						background: red;
+
 					}
 				}
 			  }
@@ -94,7 +96,7 @@
 			background-color: #F2F2F2;
 			border: 1px solid #F2F2F2;
 			height: 42px;
-			font-size: 16px;
+			font-size: size(16);
 			color: var(--default-font-color);
 			padding: 12px 48px 12px 12px;
 			box-sizing: border-box;
@@ -133,10 +135,11 @@
 				transition: all 0.3s ease-in;
 				.alert-message{
 					background-color: var(--logo-color);
+					z-index:1;
 					position: absolute;
 					top:4px;
 					right: 0px;
-					font-size: 11px;
+					font-size: size(11);
 					font-weight: 700;
 					min-width: 8px;
 					padding: 1px 4px;
@@ -155,9 +158,10 @@
 				.sharing-ic,.comment-ic,.calender-ic,.playbook-ic,.prompt-ic{
 					width:20px;
 					height: 20px;
+					display: flex;
 					img{
 						max-width:20px;
-					max-height: 20px;
+						max-height: 20px;
 					}
 				}
 			}
@@ -180,9 +184,10 @@
 				.alert-text{
 					background-color: var(--logo-color);
 					position: absolute;
+					z-index:1;
 					top:-6px;
 					right: -6px;
-					font-size: 11px;
+					font-size: size(11);
 					font-weight: 700;
 					min-width: 8px;
 					padding: 1px 4px;
@@ -249,7 +254,7 @@ ul.app-tab-style{
 		list-style: none;
 		background: var(--icon-bg);
 		border-radius: 4px;
-		font-size: 12px;
+		font-size: size(12);
 		position: relative;
 		transition: all 0.3s ease-in;	
 		a{
@@ -263,6 +268,7 @@ ul.app-tab-style{
 			background: var(--tab-bg);
 			color: var(--default-font-color);
 			&::after{
+				z-index:1;
 				position: absolute;
 				bottom: 0px;
 				content: '';
@@ -287,10 +293,10 @@ ul.app-tab-style{
 			padding: 40px;
 			box-sizing: border-box;
 			margin-top: 10px;
-			border-radius: 6px 6px 0 0;
-			font-size: 14px;
+			font-size: size(14);
 			line-height: 1.5;
-			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+			h3{margin: 0;}
 
 		}
 		.notice.commented {
@@ -332,7 +338,7 @@ ul.app-tab-style{
 					border-radius: 100%;
 					overflow: hidden;
 					display: flex;
-					font-size:12px;
+					font-size:size(12);
 					align-items: center;
 					justify-content: center;
 					box-shadow:0 2px 4px rgba(0, 0, 0, 0.16);
@@ -370,11 +376,12 @@ ul.app-tab-style{
 	.breadcrumb-ic{
 		width:20px;
 		height:20px;
+		display: flex;
 		margin-right: 14px;
 		img{max-width:20px;}}
   }
   .app-summary-info{
-	font-size: 11px;
+	font-size:size(11);
 	line-height: 1.5;
 	color: var(--default-font-color);
 	p{
@@ -387,7 +394,7 @@ ul.app-tab-style{
 			margin-left: 16px;
 			text-transform: uppercase;
 			letter-spacing: 0.2em;
-			font-size: 10px;
+			font-size: size(10);
 			font-weight: normal;
 			padding: 12px 4px;
 			margin: 0;
@@ -447,7 +454,7 @@ ul.app-tab-style{
 	}
 	.info-row{
 		display: flex;
-		font-size: 11px;
+		font-size: size(11);
 		line-height: 1.2;
 		.info-row-left{
 			width:90px;
@@ -476,7 +483,7 @@ ul.app-tab-style{
 			border-radius: 100%;
 			overflow: hidden;
 			display: flex;
-			font-size:12px;
+			font-size:size(12);
 			font-weight: 700;
 			color: #fff;
 			align-items: center;
@@ -490,7 +497,7 @@ ul.app-tab-style{
 		}
 
 	.c-user-name{
-		font-size: 11px;
+		font-size: size(11);
 		font-weight: 700;
 		color: var(--default-font-color);
 		max-width: 240px;
@@ -508,7 +515,7 @@ ul.app-tab-style{
 			background: var(--comment-bg);
 			padding: 12px;
 			border-radius: 6px;
-			font-size: 11px;
+			font-size: size(11);
 			line-height: 1.5;
 			width: 280px;
 			color: var(--default-font-color);
@@ -522,7 +529,7 @@ ul.app-tab-style{
 			background: var(--comment-bg1);
 			padding: 12px;
 			border-radius: 6px;
-			font-size: 11px;
+			font-size: size(11);
 			line-height: 1.5;
 			width: 280px;
 			color: var(--default-font-color);
@@ -563,7 +570,7 @@ ul.app-tab-style{
 
 	.data-row{
 		display: flex;
-		font-size: 11px;
+		font-size: size(11);
 		line-height: 1.2;
 
 		.data-row-left{

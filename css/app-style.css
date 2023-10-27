@@ -51,6 +51,11 @@ a {
   background-color: var(--logo-color);
   color: #fff;
 }
+.button-dark-gray {
+  border: 1px solid var(--dark-btn-bg);
+  background-color: var(--dark-btn-bg);
+  color: #fff;
+}
 .button-red-outline {
   border: 1px solid var(--logo-color);
   color: var(--logo-color);

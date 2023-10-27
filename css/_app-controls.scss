@@ -9,6 +9,7 @@ a {
 	margin: 0 0 0 6px;
 	font-weight: bold;
 	padding: 6px 12px;
+	font-family: $font-family-primary;
 	cursor: pointer;
 	border-radius: 4px;
 	
@@ -22,6 +23,12 @@ a {
 		border: 1px solid var(--logo-color);
 		background-color: var(--logo-color);
 		color: #fff;
+	}
+	&-dark-gray {
+		border: 1px solid var(--dark-btn-bg);
+		background-color: var(--dark-btn-bg);
+		color: #fff;
+		
 	}
 	
 	&-red-outline {

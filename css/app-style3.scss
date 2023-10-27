@@ -20,24 +20,41 @@
 	--text-light-color:#525252;
 	--border-color:#AEB7C0;
 	--border-color1:#CCCCCC;
+	--border-color2:#E3E3E3;
 	--comment-bg:#DFE4EB;
 	--comment-bg1:#F4F6F9;
 	--link-color:#488FCE;
 	--dark-blue:#444488;
 	--card-bg:#B1BAC5;
-	--green-bg:#78D537
+	--green-bg:#78D537;
+	--dark-btn-bg:#5C677D;
 }
-
+$font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
+$base-size: 16;
+//Function to convert px value into rem
+@function size($target, $context: $base-size) {
+	@return ($target / $context) * 1rem;
+  }
+  $base-font-size: size($base-size);
 //styles 
-html{overflow-y: scroll;}
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+  }
+  ul,ol{
+	list-style: none;
+  }
+html{overflow-y: scroll; font-size:16px;}
 html, body {    
     scroll-behavior: smooth;
-}
+} 
+
 body {
-	font-family: 'Lato','Open Sans','Helvetica Neue', 'Verdana', sans-serif;
+	font-family: $font-family-primary;
+	line-height: 1;
 	margin: 0;
 	padding: 0;
-	font-size: 18px;
 	min-height: 100vh;
 }
 
