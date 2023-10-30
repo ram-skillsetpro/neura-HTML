@@ -21,16 +21,21 @@
 	--border-color:#AEB7C0;
 	--border-color1:#CCCCCC;
 	--border-color2:#E3E3E3;
-	--comment-bg:#DFE4EB;
+	--comment-bg:#DFE3EB;
 	--comment-bg1:#F4F6F9;
+	--comment-bg2:#DFE4EB;
 	--link-color:#488FCE;
 	--dark-blue:#444488;
 	--card-bg:#B1BAC5;
 	--green-bg:#78D537;
 	--dark-btn-bg:#5C677D;
+	--dark-bg:#566373;
+	--tool-tip-bg:#333E4F;
+	--orange-bg:#FFA268;
 }
 $font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 $base-size: 16;
+
 //Function to convert px value into rem
 @function size($target, $context: $base-size) {
 	@return ($target / $context) * 1rem;
@@ -40,12 +45,15 @@ $base-size: 16;
 *{
 	box-sizing: border-box;
 	padding: 0;
-	margin: 0;
+	margin: 0; 
   }
   ul,ol{
 	list-style: none;
   }
-html{overflow-y: scroll; font-size:16px;}
+html{
+	// overflow-y: scroll; 
+	font-size:16px;
+}
 html, body {    
     scroll-behavior: smooth;
 } 
