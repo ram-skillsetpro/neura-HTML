@@ -861,6 +861,10 @@ p {
   margin-top: 12px;
 }
 
+.mt-8 {
+  margin-top: 32px;
+}
+
 .mb-0 {
   margin-bottom: 0 !important;
 }
@@ -1034,6 +1038,22 @@ p {
 }
 .add-btn svg path {
   fill: var(--logo-color);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  line-height: 1;
+  border: 0;
+  background: transparent;
+}
+.btn-icon.down {
+  transform: rotate(90deg);
+}
+.btn-icon img {
+  width: 100%;
+  max-width: 20px;
 }
 
 a {
