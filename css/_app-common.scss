@@ -31,6 +31,14 @@ ul{padding:0; margin:0;}
    line-height: 1.1;
    cursor: pointer;
 }
+.xs-button{ 
+   padding: 0px 12px;
+   font-size: size(10);
+   font-family: $font-family-primary;
+   height:16px;
+   line-height: 1.1;
+   cursor: pointer;
+}
 
 .border-b{border-bottom:1px solid #AEB7C0}
 .border-0{border:0!important;}

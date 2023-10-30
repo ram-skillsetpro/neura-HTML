@@ -815,6 +815,15 @@ ul {
   cursor: pointer;
 }
 
+.xs-button {
+  padding: 0px 12px;
+  font-size: 0.625rem;
+  font-family: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
+  height: 16px;
+  line-height: 1.1;
+  cursor: pointer;
+}
+
 .border-b {
   border-bottom: 1px solid #AEB7C0;
 }
