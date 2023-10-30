@@ -24,22 +24,36 @@ ul{padding:0; margin:0;}
 .rounded-12{border-radius: 12px;}
 .rounded-6{border-radius:6px;}
 .sm-button{ 
-   padding: 0px 20px;
+   padding: 0px 12px;
    font-size: size(10);
    font-family: $font-family-primary;
    height:24px;
    line-height: 1.1;
    cursor: pointer;
 }
+.xs-button{ 
+   padding: 0px 12px;
+   font-size: size(10);
+   font-family: $font-family-primary;
+   height:16px;
+   line-height: 1.1;
+   cursor: pointer;
+}
 
 .border-b{border-bottom:1px solid #AEB7C0}
+.border-0{border:0!important;}
 p{padding:0;margin:0;}
 .mr-3{margin-right: 12px;}
 .ml-3{margin-left: 12px;}
 .mr-2-5{margin-right: 10px;}
 .mb-3{margin-bottom: 12px;}
+.mb-4{margin-bottom: 16px;}
+.mt-3{margin-top: 12px;}
+.mt-8{margin-top: 32px;}
+.mb-0{margin-bottom:0!important;}
 .mb-2{margin-bottom: 8px;}
 .mb-1{margin-bottom: 4px;}
+.mr-5{margin-right: 20px;}
 .text-area{width: 100%;height: 80px; resize: none;background: #fff;font-size: size(14);}
 .w-20{width:20px}
 .h-20{height:20px;}
@@ -61,6 +75,12 @@ p{padding:0;margin:0;}
    background: var(--comment-bg1);
    padding:5px 10px;
    border: none;
+}
+.button-orange {
+   border-radius: 34px;
+   border: 1px solid var(--orange-bg);
+   background-color: var(--orange-bg);
+   color:var(--app-navigation-background-color)
 }
 .bg-dark{background: var(--card-bg);}
 .bg-light{background: var(--comment-bg);}
@@ -99,7 +119,7 @@ p{padding:0;margin:0;}
    padding:10px;
    position: absolute;
    z-index:1;
-   width:220px;
+   min-width:200px;
    right:-6px;
    &::before{
       content:'';
@@ -155,5 +175,38 @@ p{padding:0;margin:0;}
          }
 
       }
+   }
+}
+.add-btn{
+   background: transparent;
+   display: flex;
+   height:16px;
+   padding:0 4px;
+   font-size:size(11);
+   border: none;
+   color: var(--logo-color);
+   cursor: pointer;
+   svg{
+      max-width: 12px;
+      height:auto;
+      path{
+         fill:  var(--logo-color);
+      }
+   }
+}
+.btn-icon{
+   width:20px;
+   height: 20px;
+   cursor: pointer;
+   line-height: 1;
+   border: 0;
+   background: transparent;
+   &.down{
+      transform: rotate(90deg);
+   }
+   img{
+      width: 100%;
+      max-width: 20px;
+
    }
 }
