@@ -33,6 +33,9 @@
 	--tool-tip-bg:#333E4F;
 	--orange-bg:#FFA268;
 	--compare-bg:#C5CCD8;
+	--icon-dark-color:#555B65;
+	--icon-active-color:#7C828D;
+	--white:#fff;
 }
 $font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 $base-size: 16;
@@ -88,6 +91,8 @@ body {
 @import 'middle-outer';
 @import 'right-sharing-tab';
 @import 'right-comments-tab';
+@import 'sidebar-menu';
+@import 'my-drive';
 @import 'app-controls';
 // @import 'app-navigation';
 // @import 'app-sidebar';

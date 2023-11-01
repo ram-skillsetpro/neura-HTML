@@ -35,7 +35,7 @@
 		}
 	}
 	.app-logo{
-		width:155px;
+		width:175px;
 
 		img {
 			max-width: 120px;
@@ -166,24 +166,28 @@
 				}
 				&.active,&:hover{
 					background: var(--icon-bg);
+					.icon-color {
+						background-color: var(--icon-active-color); 
+					}
+					
+				}
+				.icon-color {
+					background-color: var(--icon-dark-color); 
 				}
 				.sharing-ic,.comment-ic,.calender-ic,.playbook-ic,.prompt-ic{
+				
 					width:20px;
 					height: 20px;
 					display: flex;
-					img{
-						max-width:20px;
-						max-height: 20px;
-		
-					}
-
-					svg{
-						max-width:20px;
-						max-height: 20px;
-						path{
-							fill:#555B65;	
-						}
-					}
+					mask-size: 20px 20px;
+					mask-repeat: no-repeat;
+					mask-position: center center;
+					mask-image: var(--background);
+					-webkit-mask-size: 20px 20px;
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center center;
+					-webkit-mask-image: var(--background);
+					
 				}
 			}
 			.app-user{
