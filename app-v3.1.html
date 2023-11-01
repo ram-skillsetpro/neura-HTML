@@ -28,14 +28,31 @@
 						</form>
 						<div class="search-suggestion-list" style="display: none;">
 							<ul>
-								<li class="flex items-center">
-									<i class="" style="width:16px;height:16px;"><img src="css/images/icon-pdf.svg" style="width:16px;height:16px;" /></i>
-									<span class="fs12 font-bold">Paradigm Shift NDA Version 1.0 copy 28/12/22</span>
-									<span class="grow"></span>
-									<button class="rounded-12 sm-button tracking-wider font-bold uppercase p-3 button-gray">
-										Compare
-									</button>
+								<li>
+									<a href="#" class="flex items-center">
+										<div class="mr-3 fs12 font-bold flex items-center">
+											<i class="icon-s20"><img src="css/images/icon-pdf.svg" /></i>
+											Paradigm Shift NDA Version 1.0 copy 28/12/22 
+										</div>
+										<span class="grow"></span>
+										<button class="rounded-12 sm-button tracking-wider font-bold uppercase p-3 button-compare">
+											Compare
+										</button>
+									</a>
 								</li>
+								<li>
+									<a href="#" class="flex items-center">
+										<div class="mr-3 fs12 font-bold flex items-center">
+											<i class="icon-s20"><img src="css/images/icon-pdf.svg" /></i>
+											Paradigm Shift NDA Version 1.0 copy 28/12/22 
+										</div>
+										<span class="grow"></span>
+										<button class="rounded-12 sm-button tracking-wider font-bold uppercase p-3 button-compare">
+											Compare
+										</button>
+									</a>
+								</li>
+
 							</ul>
 						</div>
 						</div>
@@ -144,15 +161,17 @@
 		<main class="content-sec">
 			<div class="left-section">
 				<div class="left-section-inner">
-				<div class="app-breadcrumbs">
-					<button class="back-btn">
-						<img src="css/images/back-icon.svg" />
-					</button>
-					<i class="breadcrumb-ic"><img src="css/images/icon-pdf.svg" /></i>
-					<span class="fs12 font-bold">Paradigm Shift NDA Version 1.0 copy 28/12/22</span>
-				</div>
+
 				<!--Inner HTML-->
 				<div class="app-tabs-sec">
+					<div class="left-inner-sticky">
+					<div class="app-breadcrumbs">
+						<button class="back-btn">
+							<img src="css/images/back-icon.svg" />
+						</button>
+						<i class="breadcrumb-ic"><img src="css/images/icon-pdf.svg" /></i>
+						<span class="fs12 font-bold">Paradigm Shift NDA Version 1.0 copy 28/12/22</span>
+					</div>
 					<div class="flex items-center">
 						<ul class="app-tab-style" id="tabs-nav">
 							<li><a href="#tab1">Extracted Document</a></li>
@@ -178,7 +197,7 @@
 							</div>
 						  </div>
 					</div>
-
+				</div>
 
 					<div id="tabs-content">
 					  <div id="tab1" class="app-content-wrap">
@@ -504,10 +523,19 @@
 											<div class="info-row">
 												<div class="info-row-left font-bold">
 													<span class="block">First Party</span>
+													
+												</div>
+												<div class="info-row-right">
+													<p class="block">TYLER INC.</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="info-row">
+												<div class="info-row-left font-bold">
 													Party Address
 												</div>
 												<div class="info-row-right">
-													<span class="block">TYLER INC.</span>
 													<p>1900 Camden Avenue, Suite 66, San Jose, CA 95124-2948</p>		
 												</div>
 											</div>
@@ -516,10 +544,18 @@
 											<div class="info-row">
 												<div class="info-row-left font-bold">
 													<span class="block">Second Party</span>
-													Party Address
 												</div>
 												<div class="info-row-right">
-													<span class="block">Monako Consultancy L.L.C</span>
+													<p class="block">Monako Consultancy L.L.C</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="info-row">
+												<div class="info-row-left font-bold">												
+													Party Address
+												</div>
+												<div class="info-row-right">												
 													<p>640-F, 23rd Floor, Aspin Tower, PO Box 43214, Dubai, UAE</p>		
 												</div>
 											</div>
@@ -826,6 +862,17 @@
 								<p>Your next payment related to this contract is due on 12th December 2023. </p>
 							</div>
 						</div>
+						<div class="bg-light1 p-3 rounded-6 mb-4 text-defaul-color">
+							<a href="#" class="text-defaul-color forward-arrow">
+							<div class="fs11 font-bold mb-1">
+								<span class="dot-red mr-2-5 inline-block"></span> 
+								4 Deviations from Playbook
+							</div>
+							<div class="body-text">
+								<p>Your next payment related to this contract is due on 12th December 2023. </p>
+							</div>
+						</a>
+						</div>
 						<div class="flex items-center mb-3">
 							<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal mb-0">Dates in Calendar </h4>
 							<span class="grow"></span>
@@ -940,7 +987,7 @@
 						<div class="flex fs12 text-defaul-color mt-8 mb-4 app-breadcrumbs">
 							<i class="breadcrumb-ic"><img src="css/images/icon-pdf.svg"></i>
 							<span class="font-bold">Non Disclosure Agreement Playbook</span> 
-							<span class="grow"></span>
+					
 							<div class="drop-down-modal">
 								<button class="btn-icon down ">
 									<img src="css/images/forward-icon.svg">

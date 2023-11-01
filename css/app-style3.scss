@@ -32,6 +32,7 @@
 	--dark-bg:#566373;
 	--tool-tip-bg:#333E4F;
 	--orange-bg:#FFA268;
+	--compare-bg:#C5CCD8;
 }
 $font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 $base-size: 16;
@@ -52,7 +53,8 @@ $base-size: 16;
   }
 html{
 	// overflow-y: scroll; 
-	font-size:16px;
+	font-size:18px;
+	line-height: 1.5;
 }
 html, body {    
     scroll-behavior: smooth;
@@ -81,7 +83,11 @@ body {
 }
 
 @import 'app-main';
+@import 'app-header';
 @import 'app-common';
+@import 'middle-outer';
+@import 'right-sharing-tab';
+@import 'right-comments-tab';
 @import 'app-controls';
 // @import 'app-navigation';
 // @import 'app-sidebar';

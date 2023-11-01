@@ -1,0 +1,77 @@
+.comment-sec{
+	width: 100%;
+	a {
+		color: var(--link-color);
+		text-decoration: underline;
+	}
+	.comment-user{
+		display: flex;
+		align-items: center;
+		.ic-member{
+			width: 26px;
+			height: 26px;
+			min-width: 26px;
+			border-radius: 100%;
+			overflow: hidden;
+			display: flex;
+			font-size:size(12);
+			font-weight: 600;
+			color: #fff;
+			align-items: center;
+			justify-content: center;
+			box-shadow:0 2px 4px rgba(0, 0, 0, 0.16);
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+	.c-user-name{
+		font-size: size(11);
+		font-weight: 700;
+		color: var(--default-font-color);
+		max-width: 240px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	}
+	
+		.received-message{		
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 8px;
+		.received-card{
+			background: var(--comment-bg2);
+		}
+	  }
+	  .received-card,.send-card{
+		padding: 12px;
+		border-radius: 6px;
+		font-size: size(11);
+		line-height: 1.5;
+		width: 305px;
+		color: var(--default-font-color);
+	  }
+	  .send-message{		
+		display: flex;
+		flex-direction: row-reverse;
+		padding-bottom: 8px;
+		.send-card{
+			background: var(--comment-bg1);			
+		}
+	  }
+  }
+  .comment-form-sec{
+	margin-top: 40px;
+	color: var(--default-font-color);
+	&.fixed-comment{
+		position: fixed;
+		width: 426px;
+		right: 21px;
+		bottom: 0;
+		padding: 10px 0;
+		background: var(--comments-header-background-color);
+	}
+  	}
