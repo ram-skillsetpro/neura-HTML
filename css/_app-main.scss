@@ -73,7 +73,7 @@ ul.app-tab-style{
 
 
   .right-top-sec{
-	padding-bottom: 22px;
+	padding-bottom: 40px;
 	margin-bottom: 12px;
 	border-bottom:1px solid #AEB7C0
 }
@@ -120,17 +120,25 @@ ul.app-tab-style{
 
   .icons-sec{
 	width:60px;
+	.status-color{
+		background-color:var(--dark-blue); 
+	}
 	.calender-status{
 		cursor: pointer;
 		width:16px;
 		height:16px;
-		background: transparent;
+		// background: transparent;
 		border:none;
 		display: inline-flex;
-		img{
-			width: 16px;
-
-		}
+		mask-size: 16px 16px;
+		mask-repeat: no-repeat;
+		mask-position: center center;
+		mask-image: var(--background);
+		-webkit-mask-size: 16px 16px;
+		-webkit-mask-repeat: no-repeat;
+		-webkit-mask-position: center center;
+		-webkit-mask-image: var(--background);
+		
 	}
 }
 
@@ -143,17 +151,21 @@ ul.app-tab-style{
 	}
 }
 .tool-tip-card{
+	font-size: size(11);
 	display: none;
 	background: var(--tool-tip-bg);
 	padding: 6px 12px;
 	color: var(--app-navigation-background-color);
 	min-width:132px;
+	width:150px;
 	position: absolute;
 	font-size: size(11);
+	font-weight: normal;
 	line-height: 1.2;
 	right:50%;
 	transform: translateX(50%);
 	top:30px;
+	z-index: 1;
 	&::before{
 		content:'';
 		position: absolute;

@@ -1,0 +1,68 @@
+.file-list-card{
+   background: var(--comments-background-color);
+   padding: 10px;
+   width:100%;
+   .file-list-row{
+      display: flex;
+      align-items: center;
+      padding: 6px 0;   
+     
+      &:not(:last-child){
+         border-bottom: 1px solid var(--border-color2);
+         margin-bottom: 3px;
+      }
+      .file-list-checkbox-sec{
+         width:10%;
+      }
+      .file-list-name{
+         width:40%;
+      }
+      .file-list-modified{
+         width:20%;
+      }
+      .file-list-shared{
+         width:30%;
+      }
+   }
+}
+
+.my-d-sugg-file-sec{
+   display: flex;
+   flex-wrap: wrap;
+
+   min-height: 140px;
+   gap: 12px;
+   .sugg-card{
+      flex: 1 1 226px;
+      min-width: 226px;
+      max-width: 240px;
+      position: relative;
+      background: var(--icon-bg);
+      border-radius: 4px;
+      padding: 10px;
+      .file-name{
+         font-size: 12px;
+         color: var(--default-font-color);
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+
+      }
+      .file-img-sec{
+        margin-top: 10px;
+         height: 90px;
+         position: relative;
+         background: white;
+         .file-img{
+            height: 90px;
+            width: 100%;
+            overflow: hidden;
+            img{
+               padding-top: 12px;
+               width: 90%;
+               height: auto;
+            }
+         }
+      }
+   }
+}
