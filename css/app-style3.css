@@ -149,6 +149,9 @@ ul.app-tab-style li:not(:last-child) {
   border-bottom: 1px solid #AEB7C0;
 }
 
+.data-card {
+  width: 100%;
+}
 .data-card ul {
   background: var(--comment-bg);
   padding: 0 12px;
@@ -577,6 +580,10 @@ ul {
   border-radius: 6px;
 }
 
+.rounded-full {
+  border-radius: 100%;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -673,6 +680,10 @@ p {
   margin-top: 20px;
 }
 
+.gap-2 {
+  gap: 8px;
+}
+
 .truncate-line1 {
   white-space: nowrap;
   overflow: hidden;
@@ -693,6 +704,14 @@ p {
 
 .h-20 {
   height: 20px;
+}
+
+.w-26 {
+  width: 26px;
+}
+
+.h-26 {
+  height: 26px;
 }
 
 .p-3 {
@@ -896,6 +915,7 @@ p {
 .sharing-members ul li .ic-member {
   width: 26px;
   height: 26px;
+  line-height: 26px;
   border-radius: 100%;
   overflow: hidden;
   display: flex;
@@ -940,6 +960,24 @@ p {
 }
 .icon-bg-size.ic-red {
   background-color: #444488;
+}
+
+.icon-option-dot {
+  cursor: pointer;
+  border: none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background: url("../css/images/icon-more-vertical-dark.svg");
+  background-size: cover;
 }
 
 .app-breadcrumbs {
@@ -989,6 +1027,16 @@ p {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
+}
+
+.sec-2 {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+}
+.sec-2 .col-6 {
+  width: 49%;
 }
 
 .content-sec {
@@ -1232,8 +1280,6 @@ p {
   list-style: none;
   font-size: 0.6875rem;
   margin-bottom: 2px;
-}
-.aside-bar-menu .navigation-vertical ul li:not(:last-child) {
   border-bottom: 1px solid var(--border-color3);
 }
 .aside-bar-menu .navigation-vertical ul li a {
@@ -1356,14 +1402,14 @@ p {
 .page-breadcrum {
   width: 100%;
 }
-.page-breadcrum ul.breacrum-ul {
+.page-breadcrum ul.breadcrum-ul {
   display: flex;
 }
-.page-breadcrum ul.breacrum-ul li {
+.page-breadcrum ul.breadcrum-ul li {
   display: flex;
   align-items: center;
 }
-.page-breadcrum ul.breacrum-ul li .breadcrum-btn {
+.page-breadcrum ul.breadcrum-ul li .breadcrum-btn {
   background: transparent;
   border: none;
   display: flex;
@@ -1373,7 +1419,7 @@ p {
   height: 17px;
   padding-right: 16px;
 }
-.page-breadcrum ul.breacrum-ul li .breadcrum-btn::after {
+.page-breadcrum ul.breadcrum-ul li .breadcrum-btn::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1393,19 +1439,19 @@ p {
   -webkit-mask-image: var(--background);
   background-size: cover;
 }
-.page-breadcrum ul.breacrum-ul li .breadcrum-btn img {
+.page-breadcrum ul.breadcrum-ul li .breadcrum-btn img {
   display: block;
   height: 17px;
 }
-.page-breadcrum ul.breacrum-ul li.list {
+.page-breadcrum ul.breadcrum-ul li.list {
   list-style: none;
   font-size: 0.6875rem;
   margin-bottom: 2px;
 }
-.page-breadcrum ul.breacrum-ul li.list:not(:last-child) {
+.page-breadcrum ul.breadcrum-ul li.list:not(:last-child) {
   margin-right: 12px;
 }
-.page-breadcrum ul.breacrum-ul li.list a {
+.page-breadcrum ul.breadcrum-ul li.list a {
   color: var(--text-light-color);
   padding: 10px 24px 10px 0;
   font-size: 0.75rem;
@@ -1419,7 +1465,7 @@ p {
   text-overflow: ellipsis;
   max-width: 120px;
 }
-.page-breadcrum ul.breacrum-ul li.list a::after {
+.page-breadcrum ul.breadcrum-ul li.list a::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1439,7 +1485,7 @@ p {
   -webkit-mask-image: var(--background);
   background-size: cover;
 }
-.page-breadcrum ul.breacrum-ul li.list a:hover, .page-breadcrum ul.breacrum-ul li.list a.active {
+.page-breadcrum ul.breadcrum-ul li.list a:hover, .page-breadcrum ul.breadcrum-ul li.list a.active {
   font-weight: 700;
 }
 

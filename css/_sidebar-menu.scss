@@ -16,9 +16,7 @@
             list-style: none;
             font-size: size(11);
             margin-bottom: 2px;
-            &:not(:last-child){
-               border-bottom: 1px solid var(--border-color3);
-            }
+            border-bottom: 1px solid var(--border-color3);
             a{
                color: var(--default-font-color);
                padding:10px 0 10px 20px;
