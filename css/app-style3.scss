@@ -3,7 +3,7 @@
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
+$font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 //variables
 
 :root {
@@ -21,6 +21,7 @@
 	--border-color:#AEB7C0;
 	--border-color1:#CCCCCC;
 	--border-color2:#E3E3E3;
+	--border-color3:#B8BDC4;
 	--comment-bg:#DFE3EB;
 	--comment-bg1:#F4F6F9;
 	--comment-bg2:#DFE4EB;
@@ -36,16 +37,17 @@
 	--icon-dark-color:#555B65;
 	--icon-active-color:#7C828D;
 	--white:#fff;
+	--check-bg:#D8D8D8;
 }
-$font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
+
 $base-size: 16;
 
 //Function to convert px value into rem
 @function size($target, $context: $base-size) {
-	@return ($target / $context) * 1rem;
+	@return calc($target / $context) * 1rem;
   }
   $base-font-size: size($base-size);
-//styles 
+//styles   
 *{
 	box-sizing: border-box;
 	padding: 0;

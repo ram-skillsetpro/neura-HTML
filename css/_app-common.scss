@@ -27,6 +27,7 @@ ul{padding:0; margin:0;}
 .grow{flex-grow: 1;}
 .rounded-12{border-radius: 12px;}
 .rounded-6{border-radius:6px;}
+img{width: 100%; height: auto;}
 .sm-button{ 
    padding: 0px 12px;
    font-size: size(10);
@@ -47,6 +48,7 @@ ul{padding:0; margin:0;}
 .border-b{border-bottom:1px solid #AEB7C0}
 .border-0{border:0!important;}
 p{padding:0;margin:0;}
+.pb-1{padding-bottom: 4px;}
 .mr-3{margin-right: 12px;}
 .ml-3{margin-left: 12px;}
 .mr-2-5{margin-right: 10px;}
@@ -57,9 +59,11 @@ p{padding:0;margin:0;}
 .mb-0{margin-bottom:0!important;}
 .mb-2{margin-bottom: 8px;}
 .mb-1{margin-bottom: 4px;}
+.mr-4{margin-right: 16px;}
 .mr-5{margin-right: 20px;}
 .mb-5{margin-bottom: 20px;}
 .mt-5{margin-top: 20px;}
+.truncate-line1{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .text-area{width: 100%;height: 80px; resize: none;background: #fff;font-size: size(14);}
 .w-20{width:20px}
 .h-20{height:20px;}
@@ -138,6 +142,7 @@ p{padding:0;margin:0;}
    z-index:1;
    min-width:200px;
    right:-6px;
+   top:calc(100% + 4px );
    &::before{
       content:'';
       position: absolute;
@@ -170,13 +175,14 @@ p{padding:0;margin:0;}
             position: relative;
             font-size: size(11);
             line-height: 1.4;
+            width: 100%;
             &:hover{
                color: var(--default-font-color);
             }
             &.forward-arrow{
                padding-right:18px;
                &::after{
-                  background:url("/css/images/forward-icon.svg") no-repeat;
+                  background:url("../css/images/forward-icon.svg") no-repeat;
                   background-size:16px;
                   position: absolute;
                   z-index:2;
@@ -331,7 +337,7 @@ p{padding:0;margin:0;}
    position: relative;
    display: block;
    &::after{
-      background:url("/css/images/forward-icon.svg") no-repeat;
+      background:url("../css/images/forward-icon.svg") no-repeat;
       background-size:16px;
       position: absolute;
       z-index:2;
