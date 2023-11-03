@@ -1,0 +1,112 @@
+.share-outer-wrap{
+   width:640px;
+   box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2);
+   background: var(--white);
+   padding: 20px;
+   margin: auto;
+   border-radius: 6px;
+}
+.share-inner{
+   position: relative;
+   margin-bottom: 30px;
+   .share-input{
+      display: flex;
+      input {
+			height: 42px;
+			-webkit-appearance: none;
+			display: block; 
+			background-color: var(--border-color2);
+			border: 1px solid  var(--border-color2);
+			height: 38px;
+			font-size: size(12);
+			color: var(--default-font-color);
+			padding: 12px 48px 12px 12px;
+			box-sizing: border-box;
+			position: relative;			
+			width: 100%;
+			box-sizing: border-box;			
+			border-radius: 19px 0 0 19px;
+         &:focus{
+            outline: none;
+         }
+		
+		}
+      .share-button{
+         background: var(--logo-color);
+         display: flex;
+         border: none;
+         height: 38px;
+         line-height: 38px;
+         color: var(--white);
+         font-weight: 700;
+         border-radius: 0 19px 19px 0;
+         padding:0 20px;
+           cursor: pointer;
+         font-size: size(12);
+      }
+
+   }
+   .remove-button{
+      background: var(--border-color2);
+      display: flex;
+      border: none;
+      height: 24px;
+      line-height: 24px;
+      color: var(--white);
+      font-weight: 700;
+      border-radius: 12px;
+      padding:0 12px;
+      cursor: pointer; 
+      font-size: size(10);
+   }
+   .view-button{
+      background:transparent;
+      display: flex;
+      border: none;
+      height: 24px;
+      line-height: 24px;
+      color: var(--default-font-color);
+      border-radius: 12px;
+      padding:0 12px;
+      cursor: pointer; 
+      font-size: size(10);
+   }
+   .share-user-info{
+      font-size: size(10);
+      color: var(--default-font-color);
+      border-bottom: 1px solid var(--border-color2);
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+   }
+}
+.shared-user-list{
+   ul{
+      li{
+         margin-bottom: 3px;
+         padding: 4px 0;
+         &:not(:last-child){
+            border-bottom: 1px solid var(--border-color2);
+         }
+         &:last-child{
+            margin-bottom: 16px;
+         }
+         .share-user-img{
+            width:26px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            color: var(--white);
+            font-weight: 700;
+            margin-right: 12px;
+            background: var(--logo-color);
+            img{
+               width:26px;
+               height: 26px;
+               display: block;
+               border-radius: 100%;
+            }
+         }
+      }
+   }
+
+}
