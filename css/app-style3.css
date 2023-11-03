@@ -1348,9 +1348,6 @@ p {
   display: flex;
   align-items: center;
 }
-.page-breadcrum ul.breacrum-ul li .brd-h17 {
-  height: 17px;
-}
 .page-breadcrum ul.breacrum-ul li .breadcrum-btn {
   background: transparent;
   border: none;
@@ -1359,6 +1356,27 @@ p {
   justify-content: center;
   width: 30px;
   height: 17px;
+  padding-right: 16px;
+}
+.page-breadcrum ul.breacrum-ul li .breadcrum-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: url("../css/images/forward-icon.svg");
+  width: 20px;
+  height: 20px;
+  display: flex;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
 }
 .page-breadcrum ul.breacrum-ul li .breadcrum-btn img {
   display: block;

@@ -83,9 +83,7 @@ width: 100%;
            
             display: flex;
             align-items: center;
-            .brd-h17{
-               height: 17px;
-            }
+               
             .breadcrum-btn{
                background: transparent;
                border: none;
@@ -94,6 +92,27 @@ width: 100%;
                justify-content: center;
                width: 30px;
                height: 17px;
+               padding-right: 16px;
+               &::after{
+                  content:'';
+                  position: absolute;
+                  top:50%;
+                  transform: translateY(-50%);
+                  right:0;
+                  background: url('../css/images/forward-icon.svg');
+                  width:20px;
+                  height: 20px;
+                  display: flex;
+                  mask-size: 20px 20px;
+                  mask-repeat: no-repeat;
+                  mask-position: center center;
+                  mask-image: var(--background);
+                  -webkit-mask-size: 20px 20px;
+                  -webkit-mask-repeat: no-repeat;
+                  -webkit-mask-position: center center;
+                  -webkit-mask-image: var(--background);
+                  background-size: cover;
+               }
                img{
                   display: block;
                   height: 17px;
