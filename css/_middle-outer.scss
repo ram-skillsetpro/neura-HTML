@@ -8,6 +8,9 @@
 	// max-width: 1440px;
 	box-sizing: border-box;
 	height: 100%;
+	.aside-bar-menu + .left-section{
+		padding-left: 0;
+	}
 	.left-section{
 		flex-grow: 1;
 		padding-left: 175px;
@@ -38,9 +41,13 @@
 .left-inner-sticky{
 	background-color: var(--comments-header-background-color);
 }
-.left-inner-sticky,.right-tab-content{
+.right-content-sec{
+	padding-top: 60px;
+}
+.left-inner-sticky,.right-tab-content,.right-content-sec{
 	position: sticky;
 	top:69px;
+	z-index: 1;
 }
 .right-tab-content {
 	display: none;
