@@ -188,7 +188,7 @@ p{padding:0;margin:0;}
             &.forward-arrow{
                padding-right:18px;
                &::after{
-                  background:url("../css/images/forward-icon.svg") no-repeat;
+                  background:url(/assets/images/forward-icon.svg) no-repeat;
                   background-size:16px;
                   position: absolute;
                   z-index:2;
@@ -404,7 +404,7 @@ p{padding:0;margin:0;}
    -webkit-mask-repeat: no-repeat;
    -webkit-mask-position: center center;
    -webkit-mask-image: var(--background);
-   background: url('../css/images/icon-more-vertical-dark.svg');
+   background: url(/assets/images/icon-more-vertical-dark.svg);
    background-size: cover;
    
 }
@@ -440,7 +440,7 @@ p{padding:0;margin:0;}
    position: relative;
    display: block;
    &::after{
-      background:url("../css/images/forward-icon.svg") no-repeat;
+      background:url(/assets/images/forward-icon.svg) no-repeat;
       background-size:16px;
       position: absolute;
       z-index:2;
