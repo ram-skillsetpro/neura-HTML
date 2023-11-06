@@ -909,7 +909,7 @@ p {
   padding-right: 18px;
 }
 .menu-card ul li a.forward-arrow::after {
-  background: url("../css/images/forward-icon.svg") no-repeat;
+  background: url(/assets/images/forward-icon.svg) no-repeat;
   background-size: 16px;
   position: absolute;
   z-index: 2;
@@ -1113,7 +1113,7 @@ p {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
   -webkit-mask-image: var(--background);
-  background: url("../css/images/icon-more-vertical-dark.svg");
+  background: url(/assets/images/icon-more-vertical-dark.svg);
   background-size: cover;
 }
 
@@ -1154,7 +1154,7 @@ p {
   display: block;
 }
 .forward-arrow::after {
-  background: url("../css/images/forward-icon.svg") no-repeat;
+  background: url(/assets/images/forward-icon.svg) no-repeat;
   background-size: 16px;
   position: absolute;
   z-index: 2;
@@ -1266,7 +1266,7 @@ p {
   border-radius: 6px 6px 0 0;
 }
 .app-summary-tab-section ul li.tab-icon.open h4::before {
-  background: url("../css/images/minus-icon.svg") no-repeat;
+  background: url(/assets/images/minus-icon.svg) no-repeat;
   top: 6px;
 }
 .app-summary-tab-section ul li.tab-icon h4 {
@@ -1277,7 +1277,7 @@ p {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: url("../css/images/plus-icon.svg") no-repeat;
+  background: url(/assets/images/plus-icon.svg) no-repeat;
   background-size: cover;
   width: 12px;
   height: 12px;
@@ -1435,7 +1435,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  background: url("../css/images/forward-icon.svg");
+  background: url(/assets/images/forward-icon.svg);
   width: 16px;
   height: 16px;
   display: flex;
@@ -1562,7 +1562,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
-  background: url("../css/images/forward-icon.svg");
+  background: url(/assets/images/forward-icon.svg);
   width: 20px;
   height: 20px;
   display: flex;
@@ -1608,7 +1608,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
-  background: url("../css/images/forward-icon.svg");
+  background: url(/assets/images/forward-icon.svg);
   width: 20px;
   height: 20px;
   display: flex;
@@ -1653,7 +1653,7 @@ p {
   right: 10px;
   width: 12px;
   height: 12px;
-  background: url("../css/images/icon-cross-dark.svg");
+  background: url(/assets/images/icon-cross-dark.svg);
   background-size: cover;
 }
 
@@ -1677,7 +1677,7 @@ p {
   right: 10px;
   width: 12px;
   height: 12px;
-  background: url("../css/images/forward-icon.svg");
+  background: url(assets/css/images/forward-icon.svg);
   background-size: cover;
 }
 
