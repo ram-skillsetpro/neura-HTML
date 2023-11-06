@@ -194,6 +194,7 @@ ul.app-tab-style{
 		// background: red;
 	 }
 
+
 }
 
 
@@ -239,6 +240,12 @@ ul.app-tab-style{
 		z-index: 2;
 			 // transform: rotate(45deg);
 		// background: red;
+	 }
+	 &.enable-tip{
+		background: var(--dark-blue);
+		&::before{
+			border-bottom:10px solid var(--dark-blue);
+		}
 	 }
 
 }

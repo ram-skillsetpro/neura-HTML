@@ -290,6 +290,12 @@ ul.app-tab-style li:not(:last-child) {
   transform: translateX(50%);
   z-index: 2;
 }
+.error-tool-tip.enable-tip {
+  background: var(--dark-blue);
+}
+.error-tool-tip.enable-tip::before {
+  border-bottom: 10px solid var(--dark-blue);
+}
 
 .app-bg {
   background-color: var(--comments-header-background-color);
@@ -648,7 +654,7 @@ img {
   font-size: 0.625rem;
   font-family: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
   height: 24px;
-  line-height: 1.1;
+  line-height: 1;
   cursor: pointer;
 }
 
