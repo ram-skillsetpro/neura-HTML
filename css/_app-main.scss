@@ -83,6 +83,17 @@ ul.app-tab-style{
 
   .data-card{
 	width: 100%;
+	.u-img-size{
+		min-width:26px;
+		width:26px;
+		height: 26px;
+		img{
+			width:26px;
+			height: 26px;
+			border-radius: 100%;
+			object-fit: cover;	
+		}
+	}
 	ul{
 		background: var(--comment-bg);
 		padding: 0 12px;
@@ -128,18 +139,20 @@ ul.app-tab-style{
 		cursor: pointer;
 		width:16px;
 		height:16px;
-		// background: transparent;
+		background: transparent;
 		border:none;
 		display: inline-flex;
-		mask-size: 16px 16px;
-		mask-repeat: no-repeat;
-		mask-position: center center;
-		mask-image: var(--background);
-		-webkit-mask-size: 16px 16px;
-		-webkit-mask-repeat: no-repeat;
-		-webkit-mask-position: center center;
-		-webkit-mask-image: var(--background);
-		
+		// mask-size: 16px 16px;
+		// mask-repeat: no-repeat;
+		// mask-position: center center;
+		// mask-image: var(--background);
+		// -webkit-mask-size: 16px 16px;
+		// -webkit-mask-repeat: no-repeat;
+		// -webkit-mask-position: center center;
+		// -webkit-mask-image: var(--background);
+		&.disable{
+			opacity: 0.5;
+		}
 	}
 }
 
@@ -171,6 +184,53 @@ ul.app-tab-style{
 		content:'';
 		position: absolute;
 		border-bottom:10px solid var(--tool-tip-bg);
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		top:-6px;
+		right:50%;
+		transform: translateX(50%);
+		z-index: 2;
+			 // transform: rotate(45deg);
+		// background: red;
+	 }
+
+}
+
+
+.error-tip-wrap{
+	cursor: pointer;
+	&:hover{
+		.error-tool-tip{
+			display: block;
+		}
+	}
+}
+.error-tool-tip{
+	&.sm{
+		min-width:100px;
+		width:100px;	
+	}
+	font-size: size(11);
+	display: none;
+	background: var(--logo-color);
+	padding: 6px 12px;
+	color: var(--white);
+	min-width:132px;
+	width:150px;
+	position: absolute;
+	font-size: size(11);
+	font-weight: normal;
+	line-height: 1.2;
+	right:50%;
+	transform: translateX(50%);
+	top:calc(100% + 4px);
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	border-radius: 6px;
+	&::before{
+		content:'';
+		position: absolute;
+		border-bottom:10px solid var(--logo-color);
 		border-left: 8px solid transparent;
 		border-right: 8px solid transparent;
 		top:-6px;
