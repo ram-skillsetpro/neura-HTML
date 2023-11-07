@@ -1395,22 +1395,22 @@ p {
 }
 
 /* width */
-::-webkit-scrollbar {
+.content-sec .left-section .left-section-inner::-webkit-scrollbar, .right-tab-content::-webkit-scrollbar, .right-content-sec::-webkit-scrollbar {
   width: 8px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.content-sec .left-section .left-section-inner::-webkit-scrollbar-track, .right-tab-content::-webkit-scrollbar, .right-content-sec::-webkit-scrollbar {
   background: #fff;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+.content-sec .left-section .left-section-inner::-webkit-scrollbar-thumb, .right-tab-content::-webkit-scrollbar-thumb, .right-content-sec::-webkit-scrollbar-thumb {
   background: #888;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.content-sec .left-section .left-section-inner::-webkit-scrollbar-thumb:hover, .right-tab-content::-webkit-scrollbar-thumb:hover, .right-content-sec::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
@@ -1496,6 +1496,7 @@ p {
 
 .comment-sec {
   width: 100%;
+  padding-bottom: 120px;
 }
 .comment-sec a {
   color: var(--link-color);
@@ -1560,10 +1561,10 @@ p {
 }
 
 .comment-form-sec {
-  margin-top: 40px;
   color: var(--default-font-color);
 }
 .comment-form-sec.fixed-comment {
+  margin-top: 40px;
   position: fixed;
   width: 426px;
   right: 21px;
