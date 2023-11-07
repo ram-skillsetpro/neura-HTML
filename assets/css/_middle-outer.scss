@@ -7,7 +7,7 @@
 	padding-top: 72px;
 	// max-width: 1440px;
 	box-sizing: border-box; 
-	height: 100%;
+	height: calc(100% - 74px);
 	.aside-bar-menu + .left-section{
 		padding-left: 0;
 	}
@@ -52,10 +52,12 @@
 	top:0;
 	z-index: 1;
 }
+
 .right-tab-content,.right-content-sec{
 	height: 100vh;
 	overflow-y: auto;
 	padding-right: 10px;
+
 }
 .right-tab-content {
 	display: none;

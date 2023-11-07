@@ -1330,7 +1330,7 @@ p {
   padding: 0 21px;
   padding-top: 72px;
   box-sizing: border-box;
-  height: 100%;
+  height: calc(100% - 74px);
 }
 .content-sec .aside-bar-menu + .left-section {
   padding-left: 0;
