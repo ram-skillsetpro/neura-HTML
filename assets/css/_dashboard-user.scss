@@ -1,7 +1,37 @@
 .menu-space{
   margin-bottom: 50px;
 }
-
+//dashboar outer structure
+.content-sec .left-section{
+   &.dashboard-left{
+      .left-section-inner{
+         max-width:100%;
+         margin: initial;
+      }
+      .left-inner-sticky{
+         max-width: 900px;
+      }
+   }
+}
+//dashboard-middle structure
+.dash-content-sec{
+   margin-bottom: 24px;
+   .dash-content-inner{
+      display: flex;
+      justify-content: space-between;
+   }
+   .dash-content-left{
+      max-width: 900px;
+      width: 100%;
+    margin: auto;
+   }
+   .dash-right-sec{
+      flex: 1 1 426px;
+    min-width: 426px;
+    max-width: 426px;
+    margin-left: 68px;
+   }
+}
 .dashboard-card{
   background: var(--white);
   border-radius: 6px;
@@ -9,7 +39,7 @@
 }
 
 .dashboard-alert-info{
-   margin-top: 172px;
+  position: relative;
 }
 .dashboard-top-sec{
   display: flex;
