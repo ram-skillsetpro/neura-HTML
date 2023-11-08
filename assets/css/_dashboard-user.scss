@@ -1,0 +1,138 @@
+.menu-space{
+  margin-bottom: 50px;
+}
+//dashboar outer structure
+.content-sec .left-section{
+   &.dashboard-left{
+      .left-section-inner{
+         max-width:100%;
+         margin: initial;
+      }
+      .left-inner-sticky{
+         max-width: 900px;
+      }
+   }
+}
+//dashboard-middle structure
+.dash-content-sec{
+   margin-bottom: 24px;
+   .dash-content-inner{
+      display: flex;
+      justify-content: space-between;
+   }
+   .dash-content-left{
+      max-width: 900px;
+      width: 100%;
+    margin: auto;
+   }
+   .dash-right-sec{
+      flex: 1 1 426px;
+    min-width: 426px;
+    max-width: 426px;
+    margin-left: 68px;
+   }
+}
+.dashboard-card{
+  background: var(--white);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.dashboard-alert-info{
+  position: relative;
+}
+.dashboard-top-sec{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+  gap: 12px;
+  .dashboard-info-card{
+     flex: 1 1 200px;
+     min-width: 200px;
+     max-width: 240px;
+     position: relative;
+     background: var(--comment-bg);
+     border-radius: 4px;
+     padding: 10px;
+     .dash-info-inner{
+      display: flex;
+      justify-content: space-between;
+      // background: red;
+      flex-direction: column;
+      height: 100%;
+     }
+     .dash-info-title{
+        font-size:size(14);
+        line-height: 1.5;
+        color: var(--default-font-color);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+     }
+     .value-title{
+      font-size: size(14);
+      line-height: 1.5;
+      color: var(--logo-color);
+      font-weight: 600;
+     }
+     .sm-title{
+      font-size:size(10);
+      color: var(--default-font-color);
+
+
+   }
+    
+  }
+}
+
+//payment list
+
+.dash-payment-list-sec{
+  position: relative;
+  font-size: size(10);
+  .payment-list-row{
+     display: flex;
+     align-items: center;
+     padding: 6px 0;   
+    
+     &:not(:last-child){
+        border-bottom: 1px solid var(--border-color2);
+        margin-bottom: 3px;
+     }
+    .icon-file{
+      width: 20px;
+        height: 20px;
+        min-width: 20px;
+        display: inline-flex;
+        margin-right: 8px;
+        img{
+          width: 20px;
+          height: 20px;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
+      }
+     .pay-list-name{
+        flex-grow: 1;
+        &.name-space{
+           padding-left: 28px;
+        }
+     }
+     .pay-list-date{
+        width:175px;
+        min-width:175px;
+        text-align: right;
+        padding-right: 36px;
+     }
+     .pay-list-amount{
+      width:100px;
+      text-align: right;
+   }
+     .pay-list-action{
+        width:30px;
+        flex: 0 0 30px;
+        justify-content: right;
+        display: flex;
+     }
+  }
+}

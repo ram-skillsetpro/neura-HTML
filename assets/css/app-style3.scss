@@ -63,6 +63,7 @@ html{
 }
 html, body {    
     scroll-behavior: smooth;
+	overflow: hidden;
 } 
 
 body {
@@ -86,7 +87,8 @@ body {
 	// display: flex;
 	// flex-direction: column;
 }
-
+@import 'tooltip';
+@import 'barchart';
 @import 'app-main';
 @import 'app-header';
 @import 'app-common';
@@ -97,6 +99,7 @@ body {
 @import 'my-drive';
 @import 'share-popup';
 @import 'app-controls';
+@import 'dashboard-user';
 // @import 'app-navigation';
 // @import 'app-sidebar';
 // @import 'app-dashboard-viewer';

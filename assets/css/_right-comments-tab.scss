@@ -1,5 +1,6 @@
 .comment-sec{
 	width: 100%;
+	padding-bottom: 120px;
 	a {
 		color: var(--link-color);
 		text-decoration: underline;
@@ -64,9 +65,10 @@
 	  }
   }
   .comment-form-sec{
-	margin-top: 40px;
+	
 	color: var(--default-font-color);
 	&.fixed-comment{
+		margin-top: 40px;
 		position: fixed;
 		width: 426px;
 		right: 21px;
