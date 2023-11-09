@@ -178,6 +178,7 @@ div:hover > .tooltip {
   background-color: #577196;
   width: 100%;
   top: 300px;
+  border-radius: 6px 6px 0 0;
   opacity: 0.7;
   transition: height 1s ease-in, top 1s ease-in, opacity 0.5s, width 0.5s;
   cursor: pointer;
@@ -1396,25 +1397,6 @@ p {
 }
 
 /* width */
-.content-sec .left-section .left-section-inner::-webkit-scrollbar, .right-tab-content::-webkit-scrollbar, .right-content-sec::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-.content-sec .left-section .left-section-inner::-webkit-scrollbar-track, .right-tab-content::-webkit-scrollbar, .right-content-sec::-webkit-scrollbar {
-  background: #fff;
-}
-
-/* Handle */
-.content-sec .left-section .left-section-inner::-webkit-scrollbar-thumb, .right-tab-content::-webkit-scrollbar-thumb, .right-content-sec::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-.content-sec .left-section .left-section-inner::-webkit-scrollbar-thumb:hover, .right-tab-content::-webkit-scrollbar-thumb:hover, .right-content-sec::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 .app-summary-tab-section h4 {
   padding: 6px 4px;
   margin-left: 16px;
@@ -1586,6 +1568,9 @@ p {
 }
 .aside-bar-menu .navigation-vertical {
   position: relative;
+}
+.aside-bar-menu .navigation-vertical:not(:last-child) {
+  margin-bottom: 50px;
 }
 .aside-bar-menu .navigation-vertical ul li {
   list-style: none;
@@ -2277,20 +2262,19 @@ input[type=checkbox]:checked {
   transform: rotate(90deg);
 }
 
-.menu-space {
-  margin-bottom: 50px;
-}
-
-.content-sec .left-section.dashboard-left .left-section-inner {
+.content-sec .left-section.left-divider-sec .left-section-inner {
   max-width: 100%;
   margin: initial;
 }
-.content-sec .left-section.dashboard-left .left-inner-sticky {
+.content-sec .left-section.left-divider-sec .left-inner-sticky {
   max-width: 900px;
 }
 
 .dash-content-sec {
   margin-bottom: 24px;
+}
+.dash-content-sec.space-0 {
+  margin-bottom: 0;
 }
 .dash-content-sec .dash-content-inner {
   display: flex;
@@ -2305,7 +2289,7 @@ input[type=checkbox]:checked {
   flex: 1 1 426px;
   min-width: 426px;
   max-width: 426px;
-  margin-left: 68px;
+  margin-left: 44px;
 }
 
 .dashboard-card {
@@ -2327,7 +2311,7 @@ input[type=checkbox]:checked {
 .dashboard-top-sec .dashboard-info-card {
   flex: 1 1 200px;
   min-width: 200px;
-  max-width: 240px;
+  max-width: 300px;
   position: relative;
   background: var(--comment-bg);
   border-radius: 4px;
@@ -2405,6 +2389,200 @@ input[type=checkbox]:checked {
   flex: 0 0 30px;
   justify-content: right;
   display: flex;
+}
+
+.view-all-left-space {
+  margin-left: 30px;
+}
+
+.view-all-btn {
+  padding: 0px;
+  background: transparent;
+  font-size: 0.625rem;
+  font-family: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
+  color: var(--default-font-color);
+  height: 24px;
+  padding-right: 20px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+}
+.view-all-btn::before {
+  background: url(../images/forward-icon.svg) no-repeat;
+  background-size: 16px;
+  position: absolute;
+  z-index: 2;
+  content: "";
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.sticky-section {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background: var(--comments-header-background-color);
+}
+
+.admin-setting-sec {
+  margin-bottom: 24px;
+}
+.admin-setting-sec.space-0 {
+  margin-bottom: 0;
+}
+.admin-setting-sec .admin-setting-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.admin-setting-sec .admin-setting-left {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+.admin-setting-sec .admin-setting-right-sec {
+  flex: 1 1 426px;
+  min-width: 426px;
+  max-width: 426px;
+  margin-left: 44px;
+}
+
+.admin-setting-section {
+  background: var(--white);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.admin-setting-card {
+  display: flex;
+}
+.admin-setting-card .admin-card-left {
+  flex: 1 1 110px;
+  min-width: 110px;
+  max-width: 110px;
+}
+.admin-setting-card .admin-card-right {
+  flex-grow: 1;
+}
+.admin-setting-card .user-img-sec {
+  position: relative;
+  margin-right: 8px;
+}
+.admin-setting-card .user-img-sec .user-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: var(--text-light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 12px;
+}
+.admin-setting-card .user-img-sec .user-img img {
+  max-width: 100px;
+  max-height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.admin-setting-row {
+  display: flex;
+  padding: 9px 0;
+  align-items: center;
+  color: var(--default-font-color);
+}
+.admin-setting-row:not(:last-child) {
+  border-bottom: 1px solid var(--border-color3);
+}
+.admin-setting-row .admin-setting-col1 {
+  flex: 1 0 160px;
+  min-width: 160px;
+  max-width: 160px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+.admin-setting-row .admin-setting-col2 {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+.admin-setting-row .admin-setting-col2.fs-lg {
+  font-size: 1rem;
+}
+.admin-setting-row .admin-setting-col3 {
+  flex: 1 0 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
+.admin-setting-row .admin-setting-col3 .sm-button {
+  width: 80px;
+  padding: 0;
+}
+
+.user-upload-img {
+  position: relative;
+  width: 80px;
+  height: 24px;
+  display: inline-block;
+  cursor: pointer;
+}
+.user-upload-img input {
+  width: 100%;
+  cursor: pointer;
+}
+
+.user-upload-img:after {
+  content: "Change";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #5C677D;
+  border-radius: 12px;
+  color: #fff;
+  width: 80px;
+  height: 24px;
+  left: 0;
+  top: 50%;
+  margin: 0 auto;
+  z-index: 3;
+  transform: translateY(-50%);
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.6875rem;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.user-upload-img input[type=file] {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.setting-alert {
+  display: flex;
+  justify-content: flex-end;
+}
+.setting-alert .icons-sec {
+  width: auto;
+}
+.setting-alert .icons-sec .calender-status {
+  width: 26px;
+  height: 26px;
+}
+.setting-alert .icons-sec .calender-status:not(:last-child) {
+  margin-right: 8px;
 }
 
 .popup-container {
