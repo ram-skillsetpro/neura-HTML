@@ -11,6 +11,9 @@
 
    .navigation-vertical{
       position: relative;
+      &:not(:last-child){
+         margin-bottom: 50px;
+      }
       ul{
          li{
             list-style: none;

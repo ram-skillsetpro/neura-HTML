@@ -1,9 +1,9 @@
 .menu-space{
-  margin-bottom: 50px;
+//   margin-bottom: 50px;
 }
 //dashboar outer structure
 .content-sec .left-section{
-   &.dashboard-left{
+   &.left-divider-sec{
       .left-section-inner{
          max-width:100%;
          margin: initial;
@@ -16,6 +16,9 @@
 //dashboard-middle structure
 .dash-content-sec{
    margin-bottom: 24px;
+   &.space-0{
+      margin-bottom: 0;
+   }
    .dash-content-inner{
       display: flex;
       justify-content: space-between;
@@ -29,7 +32,7 @@
       flex: 1 1 426px;
     min-width: 426px;
     max-width: 426px;
-    margin-left: 68px;
+    margin-left: 44px;
    }
 }
 .dashboard-card{
@@ -49,7 +52,7 @@
   .dashboard-info-card{
      flex: 1 1 200px;
      min-width: 200px;
-     max-width: 240px;
+     max-width: 300px;
      position: relative;
      background: var(--comment-bg);
      border-radius: 4px;
@@ -135,4 +138,34 @@
         display: flex;
      }
   }
+}
+
+.view-all-left-space{
+   margin-left: 30px;
+}
+a{}
+.view-all-btn{
+   padding: 0px;
+   background: transparent;
+   font-size: size(10);
+   font-family: $font-family-primary;
+   color: var(--default-font-color);
+   height:24px;
+   padding-right: 20px;
+   cursor: pointer;
+   border: none;
+   position: relative;
+   &::before{
+      background:url(../images/forward-icon.svg) no-repeat;
+      background-size:16px;
+      position: absolute;
+      z-index:2;
+      content: '';
+      right:0;
+      top: 50%;
+      transform: translateY(-50%);
+      width:16px;
+      height:16px;
+
+   }
 }
