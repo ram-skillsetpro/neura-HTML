@@ -42,9 +42,22 @@
 		.received-message{		
 		display: flex;
 		flex-direction: row;
-		padding-bottom: 8px;
+		padding-bottom: 16px;
 		.received-card{
 			background: var(--comment-bg2);
+			&::before{
+				content: "";
+				top: 100%;
+				left:-10px;
+				position: absolute;
+				background: transparent;
+				transform: rotate(-90deg);
+				height: 0px;
+				width: 0px;
+				border-left: 15px solid transparent;
+				border-bottom: 15px solid transparent;
+				border-right: 20px solid var(--comment-bg2);
+			}
 		}
 	  }
 	  .received-card,.send-card{
@@ -54,13 +67,28 @@
 		line-height: 1.5;
 		width: 305px;
 		color: var(--default-font-color);
+		position: relative;
 	  }
 	  .send-message{		
 		display: flex;
 		flex-direction: row-reverse;
-		padding-bottom: 8px;
+		padding-bottom: 16px;
 		.send-card{
-			background: var(--comment-bg1);			
+			background: var(--comment-bg1);
+			position: relative;
+			&::before{
+				content: "";
+				top: 100%;
+				right: -10px;
+				position: absolute;
+				background: transparent;
+				transform: rotate(90deg);
+				height: 0px;
+				width: 0px;
+				border-right: 15px solid transparent;
+				border-bottom: 15px solid transparent;
+				border-left: 20px solid var(--comment-bg1);
+			}			
 		}
 	  }
   }

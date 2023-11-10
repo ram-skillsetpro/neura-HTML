@@ -24,9 +24,19 @@
 			overflow-y: auto;
 			overflow-x:hidden;
 			padding-right: 10px;
+
+			&::-webkit-scrollbar {
+				background-color: transparent;
+				width: 8px;
+			}
+			&:hover::-webkit-scrollbar {
+				width: 8px;
+		   }
+		   &:hover::-webkit-scrollbar-thumb {
+			background-color: rgba(0, 0, 0, .2);
+			border-radius: 24px;
+	   }
 		}
-	// width: calc(100% - 426px);
-	// background: red;
 	}
 	.right-section{
 		flex: 1 1 426px;
@@ -68,24 +78,18 @@
 	h4{padding:0; margin:0 0 12px 0;}	
   }
 
-
-  
- /* width */
-//  .content-sec .left-section .left-section-inner::-webkit-scrollbar,.right-tab-content::-webkit-scrollbar,.right-content-sec::-webkit-scrollbar {
-// 	width: 8px;
-//   }
-  
-//   /* Track */
-//   .content-sec .left-section .left-section-inner::-webkit-scrollbar-track,.right-tab-content::-webkit-scrollbar,.right-content-sec::-webkit-scrollbar {
-// 	background: #fff; 
-//   }
-   
-//   /* Handle */
-//   .content-sec .left-section .left-section-inner::-webkit-scrollbar-thumb,.right-tab-content::-webkit-scrollbar-thumb,.right-content-sec::-webkit-scrollbar-thumb {
-// 	background: #888; 
-//   }
-  
-//   /* Handle on hover */
-//   .content-sec .left-section .left-section-inner::-webkit-scrollbar-thumb:hover,.right-tab-content::-webkit-scrollbar-thumb:hover,.right-content-sec::-webkit-scrollbar-thumb:hover{
-// 	background: #555; 
-//   }
+  .right-tab-content,.right-content-sec{
+	
+	&::-webkit-scrollbar {
+		background-color: transparent;
+		width: 8px;
+	}
+	&:hover::-webkit-scrollbar {
+		width: 8px;
+   }
+   &:hover::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 24px;
+   }
+  }
+ 

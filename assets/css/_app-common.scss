@@ -149,6 +149,9 @@ p{padding:0;margin:0;}
    min-width:200px;
    right:-6px;
    top:calc(100% + 4px );
+   .lg-size{
+      width:427px
+   }
    &::before{
       content:'';
       position: absolute;
