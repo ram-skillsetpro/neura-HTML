@@ -462,3 +462,30 @@ p{padding:0;margin:0;}
    column-gap: 2%;
    .col-6{width: 49%;}
 }
+.load-more-btn{
+   background: transparent;
+   display: flex;
+   padding:6px 10px;
+   font-size:size(11);
+   border: 1px solid var(--button-red);
+   color: var(--button-red);
+   cursor: pointer;
+   border-radius: 4px;
+   font-weight: 600;
+   &:hover{
+      background: var(--button-red);
+      border: 1px solid var(--button-red);
+      color: var(--white);
+   }
+}
+.coming-soon{
+   background: var(--button-red);
+   padding: 3px 4px;
+   color: var(--white);
+   font-size: 9px;
+   position: absolute;
+   font-weight: 600;
+   top:-4px;
+   right:0;
+   border-radius:6px;
+}

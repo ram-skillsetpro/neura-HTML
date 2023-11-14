@@ -196,7 +196,7 @@ div:hover > .tooltip {
 .barGroup .barContainer:hover .bar {
   opacity: 1;
   background-color: #eb4444;
-  z-index: 10;
+  z-index: 2;
 }
 .barGroup .barContainer:first-child .bar, .barGroup .barContainer.source .bar {
   background-color: #75c8e2;
@@ -1323,6 +1323,35 @@ p {
   width: 49%;
 }
 
+.load-more-btn {
+  background: transparent;
+  display: flex;
+  padding: 6px 10px;
+  font-size: 0.6875rem;
+  border: 1px solid var(--button-red);
+  color: var(--button-red);
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.load-more-btn:hover {
+  background: var(--button-red);
+  border: 1px solid var(--button-red);
+  color: var(--white);
+}
+
+.coming-soon {
+  background: var(--button-red);
+  padding: 3px 4px;
+  color: var(--white);
+  font-size: 9px;
+  position: absolute;
+  font-weight: 600;
+  top: -4px;
+  right: 0;
+  border-radius: 6px;
+}
+
 .content-sec {
   position: relative;
   width: 100%;
@@ -1446,7 +1475,7 @@ p {
   border-radius: 6px 6px 0 0;
 }
 .app-summary-tab-section ul li.tab-icon.open h4::before {
-  background: url(/assets/images/minus-icon.svg) no-repeat;
+  background: url(../images/minus-icon.svg) no-repeat;
   top: 6px;
 }
 .app-summary-tab-section ul li.tab-icon h4 {
@@ -1457,7 +1486,7 @@ p {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: url(/assets/images/plus-icon.svg) no-repeat;
+  background: url(../images/plus-icon.svg) no-repeat;
   background-size: cover;
   width: 12px;
   height: 12px;
@@ -2605,7 +2634,7 @@ input[type=checkbox]:checked {
   left: 0;
   top: 50%;
   margin: 0 auto;
-  z-index: 3;
+  z-index: 1;
   transform: translateY(-50%);
   cursor: pointer;
   text-align: center;
