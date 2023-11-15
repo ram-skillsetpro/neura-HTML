@@ -486,6 +486,19 @@ p{padding:0;margin:0;}
    position: absolute;
    font-weight: 600;
    top:-4px;
-   right:0;
+   right:-60px;
    border-radius:6px;
+}
+.no-data-found{
+   background: var(--white);
+   width: 100%;
+   min-height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--default-font-color);
+   border-radius: 6px;
+   &.top-space{
+      margin-top: 70px;
+   }
 }

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
+  --default-font:"Open Sans","Helvetica Neue", "Verdana", sans-serif;
   --default-background-color: #dce1e6;
   --comments-background-color: #f4f6f9;
   --comments-header-background-color: #c6cdd4;
@@ -1348,8 +1349,22 @@ p {
   position: absolute;
   font-weight: 600;
   top: -4px;
-  right: 0;
+  right: -60px;
   border-radius: 6px;
+}
+
+.no-data-found {
+  background: var(--white);
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--default-font-color);
+  border-radius: 6px;
+}
+.no-data-found.top-space {
+  margin-top: 70px;
 }
 
 .content-sec {
@@ -1666,7 +1681,7 @@ p {
   font-size: 0.6875rem;
   font-weight: 400;
   line-height: 1.1;
-  display: block;
+  display: inline-block;
   position: relative;
   transition: all 0.3s ease-in;
 }
@@ -2585,9 +2600,9 @@ input[type=checkbox]:checked {
   border-bottom: 1px solid var(--border-color3);
 }
 .admin-setting-row .admin-setting-col1 {
-  flex: 1 0 160px;
-  min-width: 160px;
-  max-width: 160px;
+  flex: 1 0 180px;
+  min-width: 180px;
+  max-width: 180px;
   font-size: 0.75rem;
   line-height: 1.4;
 }
