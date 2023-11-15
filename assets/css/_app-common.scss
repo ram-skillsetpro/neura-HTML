@@ -490,15 +490,22 @@ p{padding:0;margin:0;}
    border-radius:6px;
 }
 .no-data-found{
-   background: var(--white);
    width: 100%;
-   min-height: 80px;
+   min-height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
    color: var(--default-font-color);
    border-radius: 6px;
-   &.top-space{
-      margin-top: 70px;
+   padding: 10px;
+   flex-direction: column;
+   .file-img{
+      width: 72px;
+      display: flex;
+      img{
+         width: 72px;
+         height:72px;
+      }
    }
+ 
 }
