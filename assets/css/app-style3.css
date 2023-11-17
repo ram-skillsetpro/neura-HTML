@@ -312,8 +312,7 @@ ul.app-tab-style li:not(:last-child) {
   width: 26px;
   height: 26px;
   border-radius: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .data-card ul {
   background: var(--comment-bg);
@@ -510,8 +509,7 @@ ul.app-tab-style li:not(:last-child) {
   display: block;
   height: 18px;
   width: 18px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .app-header .app-search .app-search-inner .search-suggestion-list {
   background: var(--app-navigation-background-color);
@@ -608,26 +606,38 @@ ul.app-tab-style li:not(:last-child) {
   margin-right: 10px;
 }
 .app-header .app-right-inner .app-icon-w.active, .app-header .app-right-inner .app-icon-w:hover {
-  background: var(--icon-bg);
+  background-color: var(--icon-bg);
 }
-.app-header .app-right-inner .app-icon-w.active .icon-color, .app-header .app-right-inner .app-icon-w:hover .icon-color {
-  background-color: var(--icon-active-color);
+.app-header .app-right-inner .app-icon-w.active .any-ic, .app-header .app-right-inner .app-icon-w:hover .any-ic {
+  background-color: #7C828D;
 }
-.app-header .app-right-inner .app-icon-w .icon-color {
-  background-color: var(--icon-dark-color);
-}
-.app-header .app-right-inner .app-icon-w .sharing-ic, .app-header .app-right-inner .app-icon-w .comment-ic, .app-header .app-right-inner .app-icon-w .calender-ic, .app-header .app-right-inner .app-icon-w .playbook-ic, .app-header .app-right-inner .app-icon-w .prompt-ic {
+.app-header .app-right-inner .app-icon-w .any-ic {
   width: 20px;
   height: 20px;
-  display: flex;
   mask-size: 20px 20px;
   mask-repeat: no-repeat;
   mask-position: center center;
-  mask-image: var(--background);
+  mask-image: var(--icon-file);
   -webkit-mask-size: 20px 20px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
-  -webkit-mask-image: var(--background);
+  -webkit-mask-image: var(--icon-file);
+  background-color: #555B65;
+}
+.app-header .app-right-inner .app-icon-w .calender-ic {
+  --icon-file: url("../images/calendar.svg");
+}
+.app-header .app-right-inner .app-icon-w .sharing-ic {
+  --icon-file: url("../images/sharing.svg");
+}
+.app-header .app-right-inner .app-icon-w .comment-ic {
+  --icon-file: url("../images/comments.svg");
+}
+.app-header .app-right-inner .app-icon-w .playbook-ic {
+  --icon-file: url("../images/playbook.svg");
+}
+.app-header .app-right-inner .app-icon-w .prompt-ic {
+  --icon-file: url("../images/prompt.svg");
 }
 .app-header .app-right-inner .app-user {
   width: 28px;
@@ -637,8 +647,7 @@ ul.app-tab-style li:not(:last-child) {
 .app-header .app-right-inner .app-user img {
   width: 28px;
   height: 28px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
 }
 .app-header .app-right-inner .app-alert {
@@ -1178,8 +1187,7 @@ p {
 .sharing-members ul li .ic-member img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .icon-s20 {
@@ -1192,8 +1200,7 @@ p {
 .icon-s20 img {
   width: 20px;
   height: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .share-list-wrap {
@@ -1247,8 +1254,7 @@ p {
   width: 26px;
   height: 26px;
   border-radius: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .share-list-wrap .shared-all-list::before {
   content: "";
@@ -1352,8 +1358,7 @@ p {
 .sec-2 {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 2%;
-       column-gap: 2%;
+  column-gap: 2%;
 }
 .sec-2 .col-6 {
   width: 49%;
@@ -1641,8 +1646,7 @@ p {
 .comment-sec .comment-user .ic-member img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .comment-sec .comment-user .c-user-name {
   font-size: 0.6875rem;
@@ -2757,8 +2761,7 @@ input[type=checkbox]:checked {
 .admin-setting-card .user-img-sec .user-img img {
   width: 100px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .admin-setting-row {
@@ -3063,4 +3066,6 @@ input[type=checkbox]:checked {
 
 input {
   font-family: var(--default-font);
-}/*# sourceMappingURL=app-style3.css.map */
+}
+
+/*# sourceMappingURL=app-style3.css.map */
