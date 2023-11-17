@@ -440,6 +440,7 @@ p{padding:0;margin:0;}
 	.breadcrumb-ic{
 		width:20px;
 		height:20px;
+      min-width: 20px;
 		display: flex;
 		margin-right: 14px;
 		img{max-width:20px;}}
@@ -495,6 +496,11 @@ p{padding:0;margin:0;}
    right:-60px;
    border-radius:6px;
 }
+//table td text color
+.files-table td,.files-table th{
+	color:var(--default-font-color)
+}
+
 .no-data-found{
    width: 100%;
    min-height: 100%;
