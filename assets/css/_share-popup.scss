@@ -8,7 +8,7 @@
 }
 .share-inner{
    position: relative;
-   margin-bottom: 30px;
+   margin-bottom:0;
    .share-input{
       display: flex;
       input {
@@ -48,6 +48,19 @@
    }
    .remove-button{
       background: var(--border-color2);
+      display: flex;
+      border: none;
+      height: 24px;
+      line-height: 24px;
+      color: var(--white);
+      font-weight: 700;
+      border-radius: 12px;
+      padding:0 12px;
+      cursor: pointer; 
+      font-size: size(10);
+   }
+   .green-button{
+      background: var(--success-bg);
       display: flex;
       border: none;
       height: 24px;
@@ -110,3 +123,44 @@
    }
 
 }
+// create file popup
+.input-box{
+   -webkit-appearance: none;
+   display: block; 
+   background-color: var(--border-color2);
+   border: 1px solid  var(--border-color2);
+   font-size: size(14);
+   color: var(--default-font-color);
+   padding: 7px 12px 12px 16px;
+   box-sizing: border-box;
+   position: relative;			
+   width: 100%;
+   box-sizing: border-box;			
+   border-radius: 6px;
+   &:focus{
+      outline: none;
+   }
+   &.error-state{
+      border: 1px solid  var(--logo-color);
+   }
+}
+.error-message{
+   font-size: size(12);
+   color: var(--logo-color);
+   display: block;
+   width: 100%;
+   margin-top: 8px;
+   padding-left: 16px;
+}
+.w-content-left{
+   width: 370px;
+   font-size: size(12);
+   // color: var(--default-font-color);
+   line-height: 1.5;
+}
+.from-group{
+   display: flex;
+   width: 100%;
+   gap: 20px;
+}
+
