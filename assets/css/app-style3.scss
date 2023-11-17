@@ -39,6 +39,7 @@ $font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 	--icon-active-color:#7C828D;
 	--white:#fff;
 	--check-bg:#D8D8D8;
+	--success-bg:#80AB88;
 }
 
 $base-size: 16;
@@ -59,8 +60,11 @@ $base-size: 16;
   }
 html{
 	// overflow-y: scroll; 
-	font-size:18px;
+	font-size:16px;
 	line-height: 1.5;
+	@media(min-width:1367px){
+		font-size:18px;
+	}
 }
 html, body {    
     scroll-behavior: smooth;
@@ -103,6 +107,7 @@ body {
 @import 'dashboard-user';
 @import 'admin-setting';
 @import 'prompt-chat';
+@import 'team';
 // @import 'app-navigation';
 // @import 'app-sidebar';
 // @import 'app-dashboard-viewer';
@@ -203,4 +208,7 @@ body {
 			}
 		}
 	}
+}
+input{
+	font-family: var(--default-font);
 }

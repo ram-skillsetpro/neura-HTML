@@ -1,0 +1,20 @@
+.progress {
+	background-color: var(--white);
+	border-radius: 20px;
+	position: relative;
+	height: 10px;
+	width: 100%;
+   position: relative;
+}
+
+.progress-done {
+	background: var(--logo-color);
+	border-radius: 20px;
+	color: #fff;
+	height: 100%;
+	width: 0;
+	transition: 1s ease 0.3s;
+   position: absolute;
+   z-index: 1;
+   top:0;
+}
