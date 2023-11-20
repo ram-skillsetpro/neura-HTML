@@ -18,7 +18,7 @@
 .fs11{font-size: size(11);}
 .fs12{font-size: size(12);}
 .fs14{font-size: size(14);}
-.lh-0{line-height: 0;}
+.lh-0{line-height: 0!important;}
 .lh1{line-height: 1.2;}
 .lh2{line-height: 1.4;}
 .lh3{line-height: 1.5;}
@@ -296,6 +296,9 @@ p{padding:0;margin:0;}
 	}
 
 
+}
+.w-20.h-20{
+   min-width: 20px;
 }
 .icon-s20{
    width:20px;

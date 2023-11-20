@@ -543,7 +543,6 @@ ul.app-tab-style li:not(:last-child) {
   color: var(--default-font-color);
 }
 .app-header .app-search input[type=search] {
-  height: 42px;
   border-radius: 4px;
   -webkit-appearance: none;
   display: block;
@@ -774,7 +773,7 @@ ul.app-tab-style li:not(:last-child) {
 }
 
 .lh-0 {
-  line-height: 0;
+  line-height: 0 !important;
 }
 
 .lh1 {
@@ -1207,6 +1206,10 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.w-20.h-20 {
+  min-width: 20px;
 }
 
 .icon-s20 {

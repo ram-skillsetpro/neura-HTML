@@ -100,7 +100,6 @@
 		}
 	
 		input[type=search] {
-			height: 42px;
 			border-radius: 4px;
 			-webkit-appearance: none;
 			display: block; 
@@ -172,26 +171,6 @@
 						background-color: #7C828D;
 					}
 				}
-				
-				// NOT REQUIRED
-				// .sharing-ic,.comment-ic,.calender-ic,.playbook-ic,.prompt-ic {
-				// 	width: 20px;
-				// 	height: 20px;
-				// 	
-				// 	img{
-				// 		max-width:20px;
-				// 		max-height: 20px;
-				// 	}
-				// 	
-				// 	svg{
-				// 		max-width:20px;
-				// 		max-height: 20px;
-				// 		path{
-				// 			fill:#555B65;	
-				// 		}
-				// 	}
-				// }
-				
 				.any-ic{
 					width: 20px;
 					height: 20px;
