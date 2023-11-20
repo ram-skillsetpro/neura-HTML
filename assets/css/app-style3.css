@@ -33,6 +33,7 @@
   --white:#fff;
   --check-bg:#D8D8D8;
   --success-bg:#80AB88;
+  --light-text:#7E8BA3;
 }
 
 * {
@@ -312,7 +313,8 @@ ul.app-tab-style li:not(:last-child) {
   width: 26px;
   height: 26px;
   border-radius: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .data-card ul {
   background: var(--comment-bg);
@@ -509,7 +511,8 @@ ul.app-tab-style li:not(:last-child) {
   display: block;
   height: 18px;
   width: 18px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .app-header .app-search .app-search-inner .search-suggestion-list {
   background: var(--app-navigation-background-color);
@@ -547,7 +550,7 @@ ul.app-tab-style li:not(:last-child) {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
   height: 42px;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: var(--default-font-color);
   padding: 12px 48px 12px 12px;
   box-sizing: border-box;
@@ -647,7 +650,8 @@ ul.app-tab-style li:not(:last-child) {
 .app-header .app-right-inner .app-user img {
   width: 28px;
   height: 28px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 100%;
 }
 .app-header .app-right-inner .app-alert {
@@ -757,6 +761,10 @@ ul.app-tab-style li:not(:last-child) {
 
 .fs14 {
   font-size: 0.875rem;
+}
+
+.lh-0 {
+  line-height: 0;
 }
 
 .lh1 {
@@ -1187,7 +1195,8 @@ p {
 .sharing-members ul li .ic-member img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .icon-s20 {
@@ -1200,7 +1209,8 @@ p {
 .icon-s20 img {
   width: 20px;
   height: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .share-list-wrap {
@@ -1254,7 +1264,8 @@ p {
   width: 26px;
   height: 26px;
   border-radius: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .share-list-wrap .shared-all-list::before {
   content: "";
@@ -1358,7 +1369,8 @@ p {
 .sec-2 {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 2%;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
 }
 .sec-2 .col-6 {
   width: 49%;
@@ -1646,7 +1658,8 @@ p {
 .comment-sec .comment-user .ic-member img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .comment-sec .comment-user .c-user-name {
   font-size: 0.6875rem;
@@ -2692,6 +2705,46 @@ input[type=checkbox]:checked {
   cursor: pointer;
 }
 
+.upolad-empty {
+  background: var(--comment-bg2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.upolad-empty.h-lg {
+  height: 500px;
+}
+.upolad-empty.h-sm {
+  height: 250px;
+}
+.upolad-empty .upload-info {
+  color: var(--light-text);
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.upolad-empty .upload-info input[type=file] {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.upolad-empty .upload-info .icon-upload {
+  background: url("../images/up-arrow-light.svg") no-repeat;
+  width: 26px;
+  height: 26px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 10px;
+  background-size: cover;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -2761,7 +2814,8 @@ input[type=checkbox]:checked {
 .admin-setting-card .user-img-sec .user-img img {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .admin-setting-row {
@@ -3066,6 +3120,4 @@ input[type=checkbox]:checked {
 
 input {
   font-family: var(--default-font);
-}
-
-/*# sourceMappingURL=app-style3.css.map */
+}/*# sourceMappingURL=app-style3.css.map */
