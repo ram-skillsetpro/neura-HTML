@@ -678,9 +678,19 @@ ul.app-tab-style li:not(:last-child) {
 .app-header .app-right-inner .app-alert .app-bell-icon {
   width: 20px;
   height: 20px;
+  display: flex;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #555B65;
 }
-.app-header .app-right-inner .app-alert .app-bell-icon img {
-  max-width: 20px;
+.app-header .app-right-inner .app-alert .app-bell-icon.icon-img {
+  --icon-file: url("../images/no-alert.svg");
 }
 
 .hidden {
@@ -2968,26 +2978,25 @@ input[type=checkbox]:checked {
 .prompt-icon-sec.selected, .prompt-icon-sec:hover {
   background: var(--logo-color);
 }
-.prompt-icon-sec.selected .prompt-icon img path, .prompt-icon-sec.selected .prompt-icon svg path, .prompt-icon-sec:hover .prompt-icon img path, .prompt-icon-sec:hover .prompt-icon svg path {
-  fill: var(--white);
-}
-.prompt-icon-sec.selected .prompt-icon img circle, .prompt-icon-sec.selected .prompt-icon svg circle, .prompt-icon-sec:hover .prompt-icon img circle, .prompt-icon-sec:hover .prompt-icon svg circle {
-  fill: var(--white);
+.prompt-icon-sec.selected .prompt-icon, .prompt-icon-sec:hover .prompt-icon {
+  background-color: var(--white);
 }
 .prompt-icon-sec .prompt-icon {
   width: 20px;
   height: 20px;
   display: flex;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: var(--logo-color);
 }
-.prompt-icon-sec .prompt-icon img, .prompt-icon-sec .prompt-icon svg {
-  width: 20px;
-  height: 20px;
-}
-.prompt-icon-sec .prompt-icon img path, .prompt-icon-sec .prompt-icon svg path {
-  fill: var(--logo-color);
-}
-.prompt-icon-sec .prompt-icon img circle, .prompt-icon-sec .prompt-icon svg circle {
-  fill: var(--logo-color);
+.prompt-icon-sec .prompt-icon.icon-img {
+  --icon-file: url("../images/bot-icon.svg");
 }
 
 .prompt-chat-sec {

@@ -50,30 +50,46 @@
     &.selected,&:hover{
         background: var(--logo-color);
         .prompt-icon{
-            img,svg{
-                path{
-                    fill: var(--white);
-                }
-                circle{
-                    fill: var(--white);
-                }
-            }  
+  
+            background-color: var(--white);
+
+            // img,svg{
+            //     path{
+            //         fill: var(--white);
+            //     }
+            //     circle{
+            //         fill: var(--white);
+            //     }
+            // }  
         }
     }
     .prompt-icon{
         width: 20px;
         height: 20px;
         display: flex;
-        img,svg{
-            width:20px;
-            height: 20px;
-            path{
-                fill: var(--logo-color);
-            }
-            circle{
-                fill: var(--logo-color);
-            }
+        mask-size: 20px 20px;
+        mask-repeat: no-repeat;
+        mask-position: center center;
+        mask-image: var(--icon-file);
+        -webkit-mask-size: 20px 20px;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center center;
+        -webkit-mask-image: var(--icon-file);
+
+        background-color: var(--logo-color);
+        &.icon-img{
+            --icon-file: url("../images/bot-icon.svg");
         }
+        // img,svg{
+        //     width:20px;
+        //     height: 20px;
+        //     path{
+        //         fill: var(--logo-color);
+        //     }
+        //     circle{
+        //         fill: var(--logo-color);
+        //     }
+        // }
     }
 }
 .prompt-chat-sec{
