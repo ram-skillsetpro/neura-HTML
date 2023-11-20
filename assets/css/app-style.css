@@ -302,7 +302,8 @@ input[type=checkbox]:checked {
   border-radius: 100%;
   width: 28px;
   height: 28px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 16px auto;
 }
 .navigation input[type=search] {
@@ -879,7 +880,8 @@ input[type=checkbox]:checked {
   border-radius: 100%;
   width: 28px;
   height: 28px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1591,7 +1593,8 @@ table.files-table tr.file-row:hover th, table.files-table tr.file-row:hover td {
   margin-right: 2em;
 }
 .icon.member img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: inherit;
   height: inherit;
   border-radius: 100%;
@@ -1713,6 +1716,4 @@ table.files-table tr.file-row:hover th, table.files-table tr.file-row:hover td {
 .popup-container .popup .files-share-list input[type=search] {
   padding: 12px;
   width: 75%;
-}
-
-/*# sourceMappingURL=app-style.css.map */
+}/*# sourceMappingURL=app-style.css.map */
