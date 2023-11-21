@@ -1,3 +1,9 @@
+.sticky-search{
+   position:sticky;
+   top:0;
+   z-index: 4;
+   background:var(--comments-header-background-color) ;
+}
 .search-result-card{
    background: var(--comments-background-color);
    padding: 10px;
@@ -16,7 +22,7 @@
          flex: 0 0 30px;
       }
       .search-result-name{
-         width:40%;
+         width:45%;
          &.left-space{
             padding-left: 36px;
          }
@@ -28,7 +34,7 @@
          padding-right: 36px;
       }
       .search-result-shared{
-         width:30%;
+         width:32%;
       }
       .search-result-action{
          width:48px;
@@ -51,10 +57,11 @@
 }
 .search-snippet {
    min-width: 100%;
-   padding: 12px 6% 6px 0;
+   padding: 12px 6% 6px 6%;
    font-size:size(14);
    color: var(--default-font-color);
    line-height: 1.5;
+   background: var(--yellow-light);
 }
 
  table.search-info-list {
