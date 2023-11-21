@@ -1051,6 +1051,13 @@ p {
   border-radius: 100%;
 }
 
+.dot-orange {
+  background: var(--orange-bg);
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+}
+
 .sm-chips {
   padding: 2px 16px;
   font-size: 0.625rem;
@@ -1220,6 +1227,19 @@ p {
   margin-right: 8px;
 }
 .icon-s20 img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-size20 {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  display: inline-flex;
+}
+.img-size20 img {
   width: 20px;
   height: 20px;
   -o-object-fit: cover;
