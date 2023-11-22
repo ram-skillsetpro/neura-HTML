@@ -301,6 +301,7 @@ ul.app-tab-style li:not(:last-child) {
   padding-bottom: 40px;
   margin-bottom: 12px;
   border-bottom: 1px solid #AEB7C0;
+  margin-left: 12px;
 }
 
 .data-card {
@@ -494,7 +495,7 @@ ul.app-tab-style li:not(:last-child) {
   flex-grow: 1;
 }
 .app-header .app-search .app-search-inner {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   position: relative;
 }
@@ -563,12 +564,7 @@ ul.app-tab-style li:not(:last-child) {
 .app-header .app-right-sec {
   flex: 1 1 426px;
   max-width: 426px;
-  margin-left: 68px;
-}
-@media only screen and (max-width: 1279px) {
-  .app-header .app-right-sec {
-    margin-left: 24px;
-  }
+  margin-left: 24px;
 }
 .app-header .app-right-inner {
   display: flex;
@@ -888,7 +884,7 @@ p {
 }
 
 .ml-3 {
-  margin-left: 12px;
+  margin-left: 12px !important;
 }
 
 .mr-2-5 {
@@ -1372,9 +1368,21 @@ p {
   border: 0;
   margin-right: 24px;
 }
-.app-breadcrumbs .back-btn img {
-  margin: 0;
-  max-width: 20px;
+.app-breadcrumbs .back-btn .icon-img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  background-color: var(--icon-dark-color);
+  --background: url(../images/back-icon.svg);
 }
 .app-breadcrumbs .breadcrumb-ic {
   width: 20px;
@@ -1513,7 +1521,7 @@ p {
   }
 }
 .content-sec .left-section .left-section-inner {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   height: 100%;
   overflow-y: auto;
@@ -1535,12 +1543,7 @@ p {
   flex: 1 1 426px;
   min-width: 426px;
   max-width: 426px;
-  margin-left: 68px;
-}
-@media only screen and (max-width: 1279px) {
-  .content-sec .right-section {
-    margin-left: 24px;
-  }
+  margin-left: 24px;
 }
 .content-sec .right-section .right-section-inner {
   height: 100%;
@@ -1842,7 +1845,7 @@ p {
 
 .file-list-card {
   background: var(--comments-background-color);
-  padding: 10px;
+  padding: 12px;
   width: 100%;
 }
 .file-list-card .file-list-row {
@@ -1893,7 +1896,7 @@ p {
   position: relative;
   background: var(--icon-bg);
   border-radius: 4px;
-  padding: 10px;
+  padding: 12px;
 }
 .my-d-sugg-file-sec .sugg-card .file-name {
   font-size: 12px;
@@ -2141,7 +2144,7 @@ p {
 .folder-sec {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 .folder-sec .folder-card {
   flex: 1 1 32%;
@@ -2579,7 +2582,7 @@ input[type=checkbox]:checked {
 .dashboard-card {
   background: var(--white);
   border-radius: 6px;
-  padding: 10px;
+  padding: 12px;
 }
 
 .dashboard-alert-info {
@@ -2829,7 +2832,7 @@ input[type=checkbox]:checked {
 
 .admin-setting-section {
   background: var(--white);
-  padding: 10px;
+  padding: 12px;
   border-radius: 6px;
 }
 
