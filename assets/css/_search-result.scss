@@ -61,9 +61,11 @@
    font-size:size(14);
    color: var(--default-font-color);
    line-height: 1.5;
+  
+}
+.search-highlighter{
    background: var(--yellow-light);
 }
-
  table.search-info-list {
    font-size: size(12);
    border-collapse: collapse;
