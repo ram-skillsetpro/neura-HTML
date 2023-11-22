@@ -943,6 +943,10 @@ p {
   margin-top: 20px;
 }
 
+.m-auto {
+  margin: 0 auto;
+}
+
 .gap-2 {
   gap: 8px;
 }
@@ -1428,14 +1432,17 @@ p {
   color: var(--white);
 }
 
+.inactive {
+  color: #7D8286 !important;
+}
+.inactive a {
+  color: #7D8286 !important;
+}
+
 .coming-soon {
   color: #7D8286 !important;
-}
-.coming-soon span {
+  display: block;
   font-size: 0.4375rem;
-}
-.coming-soon a {
-  color: #7D8286 !important;
 }
 
 .files-table td, .files-table th {
@@ -3147,6 +3154,9 @@ input[type=checkbox]:checked {
   font-size: 0.875rem;
   color: var(--default-font-color);
   line-height: 1.5;
+}
+
+.search-highlighter {
   background: var(--yellow-light);
 }
 
@@ -3187,6 +3197,50 @@ table.search-info-list tr td.number, table.search-info-list tr th.number {
 
 table.search-info-list tr td.name, table.search-info-list tr th.name {
   width: 27.5%;
+}
+
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+.empty-state .empty-info {
+  color: var(--light-text);
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.empty-state .empty-info .file-img {
+  width: 36px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.empty-state .empty-info .file-img img {
+  width: 36px;
+  height: 36px;
+  opacity: 0.4;
+}
+.empty-state .empty-info .icon-emty {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  mask-size: 26px 26px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 26px 26px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  background-color: #9199A8;
+  --background: url(../images/back-icon.svg);
 }
 
 .popup-container {
