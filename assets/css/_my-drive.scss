@@ -105,7 +105,7 @@ width: 100%;
                   top:50%;
                   transform: translateY(-50%);
                   right:0;
-                  background: url(../images/forward-icon.svg);
+                  background-color:#555B65;
                   width:20px;
                   height: 20px;
                   display: flex;
@@ -118,6 +118,7 @@ width: 100%;
                   -webkit-mask-position: center center;
                   -webkit-mask-image: var(--background);
                   background-size: cover;
+                  --background:url(../images/forward-icon.svg);
                }
                img{
                   display: block;
@@ -152,7 +153,7 @@ width: 100%;
                   top:50%;
                   transform: translateY(-50%);
                   right:0;
-                  background: url(../images/forward-icon.svg);
+                  background-color:#555B65;
                   width:20px;
                   height: 20px;
                   display: flex;
@@ -165,9 +166,17 @@ width: 100%;
                   -webkit-mask-position: center center;
                   -webkit-mask-image: var(--background);
                   background-size: cover;
+                  --background:url(../images/forward-icon.svg);
                }
                &:hover,&.active{
                   font-weight: 700;
+               }
+            }
+            &:last-child{
+               a{
+                  &::after{
+                     display: none;
+                  }
                }
             }
            }
