@@ -1927,6 +1927,7 @@ p {
 }
 .page-breadcrum ul.breadcrum-ul {
   display: flex;
+  margin-left: 12px;
 }
 .page-breadcrum ul.breadcrum-ul li {
   display: flex;
