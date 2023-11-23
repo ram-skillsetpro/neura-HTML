@@ -45,7 +45,7 @@
 	.app-search{
 		flex-grow: 1;
 		.app-search-inner{
-			max-width: 900px;
+			max-width: 1000px;
 			margin: auto;
 			position: relative;
 			.src-btn{
@@ -120,10 +120,10 @@
 	.app-right-sec{
 		flex: 1 1 426px;
 		max-width:426px;
-		margin-left: 68px;
-		@media only screen and (max-width: 1279px) {
-			margin-left: 24px;
-		}
+		margin-left: 24px;
+		// @media only screen and (max-width: 1279px) {
+		// 	margin-left: 24px;
+		// }
 	}
 		.app-right-inner{
 			display: flex;
