@@ -228,7 +228,7 @@
    position: relative;
    overflow: hidden;
    &.h-lg{
-      height: 500px;
+      height: 400px;
    }
    &.h-sm{
       height:250px;
@@ -246,7 +246,10 @@
       cursor: pointer;
       position: absolute;
       top:0;
-      left: 0;      
+      left: 0;  
+      &.input-bottom-space{
+         height: calc(100% - 30px);
+      }    
     }
     .icon-upload{
       background:url('../images/up-arrow-light.svg') no-repeat;
@@ -258,4 +261,13 @@
       background-size: cover;
     }
    }
+}
+.ch-box-area{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 30px;
+   width: 100%;
+    position: absolute;
+    bottom: 0;
 }
