@@ -261,6 +261,35 @@
 		
 	
 }
-
-
+.icon-tool-tip{
+&:hover{
+	.icon-info{
+		display: block;
+	}
+}	
+}
+.icon-info{
+	background: var(--tool-tip-bg);
+	font-size: size(11);
+	white-space: nowrap;
+	padding: 4px;
+	position: absolute;
+	top:100%;
+	border-radius: 4px;
+	color: var(--white);
+	display: none;
+	&::before{
+		content:'';
+		position: absolute;
+		border-bottom:10px solid var(--tool-tip-bg);
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		top:-6px;
+		right:50%;
+		transform: translateX(50%);
+		z-index: 2;
+			// transform: rotate(45deg);
+		// background: red;
+	  }
+}
 

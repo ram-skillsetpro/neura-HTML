@@ -690,6 +690,33 @@ ul.app-tab-style li:not(:last-child) {
   --icon-file: url("../images/no-alert.svg");
 }
 
+.icon-tool-tip:hover .icon-info {
+  display: block;
+}
+
+.icon-info {
+  background: var(--tool-tip-bg);
+  font-size: 0.6875rem;
+  white-space: nowrap;
+  padding: 4px;
+  position: absolute;
+  top: 100%;
+  border-radius: 4px;
+  color: var(--white);
+  display: none;
+}
+.icon-info::before {
+  content: "";
+  position: absolute;
+  border-bottom: 10px solid var(--tool-tip-bg);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -6px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 2;
+}
+
 .hidden {
   display: none;
 }
@@ -1386,7 +1413,7 @@ p {
   -webkit-mask-image: var(--background);
   background-size: cover;
   background-color: var(--icon-dark-color);
-  --background: url(../images//images/back-icon.svg);
+  --background: url(../images/back-icon.svg);
 }
 .app-breadcrumbs .breadcrumb-ic {
   width: 20px;
