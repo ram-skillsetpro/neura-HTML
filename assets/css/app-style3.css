@@ -989,6 +989,10 @@ p {
   padding: 12px;
 }
 
+.z-2 {
+  z-index: 2;
+}
+
 .forward-btn {
   cursor: pointer;
   width: 20px;
@@ -1382,7 +1386,7 @@ p {
   -webkit-mask-image: var(--background);
   background-size: cover;
   background-color: var(--icon-dark-color);
-  --background: url(../images/back-icon.svg);
+  --background: url(../images//images/back-icon.svg);
 }
 .app-breadcrumbs .breadcrumb-ic {
   width: 20px;
@@ -1496,6 +1500,62 @@ p {
   position: absolute;
   z-index: 1;
   top: 0;
+}
+
+.file-processing {
+  position: relative;
+  min-width: 30px;
+  margin: 0 6px;
+}
+.file-processing .icon-pro {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  background-color: var(--logo-color);
+  --background: url(../images/process-icon.svg);
+}
+.file-processing .tool-file-error {
+  font-size: 0.6875rem;
+  display: none;
+  background: var(--tool-tip-bg);
+  padding: 6px 12px;
+  color: var(--app-navigation-background-color);
+  position: absolute;
+  white-space: nowrap;
+  font-size: 0.6875rem;
+  font-weight: normal;
+  line-height: 1.2;
+  right: 50%;
+  transform: translateX(50%);
+  top: 24px;
+  z-index: 1;
+}
+.file-processing .tool-file-error::before {
+  content: "";
+  position: absolute;
+  border-bottom: 10px solid var(--tool-tip-bg);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -6px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 2;
+}
+
+.file-processing-wrap {
+  cursor: pointer;
+}
+.file-processing-wrap:hover .tool-file-error {
+  display: block;
 }
 
 .content-sec {
@@ -2023,6 +2083,7 @@ p {
   display: flex;
   gap: 10px;
   align-items: center;
+  margin-left: 12px;
 }
 
 .file-btn {
@@ -2768,7 +2829,7 @@ input[type=checkbox]:checked {
   overflow: hidden;
 }
 .upolad-empty.h-lg {
-  height: 500px;
+  height: 400px;
 }
 .upolad-empty.h-sm {
   height: 250px;
@@ -2788,6 +2849,9 @@ input[type=checkbox]:checked {
   top: 0;
   left: 0;
 }
+.upolad-empty .upload-info input[type=file].input-bottom-space {
+  height: calc(100% - 30px);
+}
 .upolad-empty .upload-info .icon-upload {
   background: url("../images/up-arrow-light.svg") no-repeat;
   width: 26px;
@@ -2796,6 +2860,16 @@ input[type=checkbox]:checked {
   display: flex;
   margin-top: 10px;
   background-size: cover;
+}
+
+.ch-box-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .justify-end {
