@@ -82,6 +82,7 @@ p{padding:0;margin:0;}
 .w-26{width:26px}
 .h-26{height:26px;}
 .p-3{padding: 12px;}
+.z-2{z-index: 2;}
 .forward-btn{
    cursor: pointer;
    width:20px;
@@ -469,7 +470,7 @@ p{padding:0;margin:0;}
       -webkit-mask-image: var(--background);
       background-size: cover;
       background-color:var(--icon-dark-color) ;
-      --background: url(../images/back-icon.svg);
+      --background: url(../images//images/back-icon.svg);
      }
 
 	}
