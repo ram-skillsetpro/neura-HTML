@@ -1,0 +1,91 @@
+// main css to compile
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
+//variables
+
+:root {
+	--default-font:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
+	--default-background-color: #dce1e6;
+	--comments-background-color: #f4f6f9;
+	--comments-header-background-color: #c6cdd4;
+	--default-font-color: #232323;
+	--app-navigation-background-color: #ffffff;
+	--logo-color: #ff6868;
+	--button-red: #ef4747;
+	--link-color: #121212;
+	--icon-bg:#E0E4E7;
+	--tab-bg:#F0F2F5;
+	--text-light-color:#525252;
+	--border-color:#AEB7C0;
+	--border-color1:#CCCCCC;
+	--border-color2:#E3E3E3;
+	--border-color3:#B8BDC4;
+	--comment-bg:#DFE3EB;
+	--comment-bg1:#F4F6F9;
+	--comment-bg2:#DFE4EB;
+	--link-color:#488FCE;
+	--dark-blue:#444488;
+	--card-bg:#B1BAC5;
+	--green-bg:#78D537;
+	--dark-btn-bg:#5C677D;
+	--dark-bg:#566373;
+	--tool-tip-bg:#333E4F;
+	--orange-bg:#FFA268;
+	--compare-bg:#C5CCD8;
+	--icon-dark-color:#555B65;
+	--icon-active-color:#7C828D;
+	--white:#fff;
+	--check-bg:#D8D8D8;
+	--success-bg:#80AB88;
+	--light-text:#7E8BA3;
+	--yellow-light:#f9e076;
+	--light-gray:#9199A8;
+	--bg-black:#1E1D22;
+	--bg-button:#5B667E;
+	--bg-color2:#E4E9EE;
+}
+
+$base-size: 16;
+
+//Function to convert px value into rem
+@function size($target, $context: $base-size) {
+	@return calc($target / $context) * 1rem;
+  }
+  $base-font-size: size($base-size);
+//styles   
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0; 
+  }
+  ul,ol{
+	list-style: none;
+  }
+html{
+	// overflow-y: scroll; 
+	font-size:16px;
+	line-height: 1.5;
+	@media(min-width:1367px){
+		font-size:18px;
+	}
+}
+html, body {    
+    scroll-behavior: smooth;
+	// overflow: hidden;
+} 
+
+body {
+	font-family: $font-family-primary;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+@import 'landing';
+
+input{
+	font-family: var(--default-font);
+}
