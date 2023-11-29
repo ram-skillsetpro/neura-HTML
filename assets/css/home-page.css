@@ -88,18 +88,9 @@ body {
   top: 0;
   z-index: 999;
   padding: 0 16px;
-}
-.home-header::after {
-  height: 100%;
-  z-index: 6;
-  background: #C6CDD4;
-  filter: blur(20px);
-  -webkit-filter: blur(20px);
-  width: 100%;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: rgba(198, 205, 212, 0.7);
+  -webkit-backdrop-filter: saturate(100%) blur(6px);
+  backdrop-filter: saturate(100%) blur(6px);
 }
 
 .header-inner {
@@ -185,6 +176,7 @@ body {
 .login-btn {
   background: #fff;
   width: 38px;
+  min-width: 38px;
   height: 38px;
   border-radius: 100%;
   border: 0;
@@ -219,9 +211,14 @@ body {
 }
 
 .main-banner {
-  min-height: 560px;
+  height: 600px;
   display: flex;
   position: relative;
+}
+@media (max-width: 767px) {
+  .main-banner {
+    height: 700px;
+  }
 }
 .main-banner img {
   width: 100%;
@@ -230,6 +227,7 @@ body {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+  position: absolute;
 }
 .main-banner .banner-content {
   display: flex;
@@ -243,7 +241,8 @@ body {
 @media (max-width: 1024px) {
   .main-banner .banner-content {
     justify-content: flex-start;
-    padding-top: 100px;
+    padding-top: 120px;
+    max-width: 600px;
   }
 }
 .main-banner .banner-content h1.home-title {
@@ -304,6 +303,8 @@ body {
 @media (max-width: 767px) {
   .content-wrap {
     width: 100%;
+    justify-content: center;
+    padding: 0 16px;
   }
 }
 
