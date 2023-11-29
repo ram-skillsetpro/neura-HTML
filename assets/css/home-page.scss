@@ -46,6 +46,8 @@ $font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 	--bg-black:#1E1D22;
 	--bg-button:#5B667E;
 	--bg-color2:#E4E9EE;
+	--divider-footer:#979797;
+	--form-background-color: #dfe8eb;
 }
 
 $base-size: 16;
@@ -85,7 +87,120 @@ body {
 	min-height: 100vh;
 }
 @import 'landing';
+@import 'home-slides';
+@import 'home-popups';
+@import 'controls';
 
+.popup-container {
+	width: 100vw;
+	height: 100vh;
+	min-height: 600px;
+	position: fixed; 
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	z-index: 999;
+	display: none;
+	overflow: scroll;
+	
+	&.open {
+		display: flex;
+		overflow: hidden;
+	}
+	
+	.popup {
+		// min-width: 860px;
+		// max-width: 960px;
+		// height: auto;
+		// border-radius: 12px;
+		// overflow: hidden;
+		// background: #fff;
+		// border-radius: 12px;
+		// width: 60vw;
+		// position: relative;
+		// padding: 0px;
+		
+		
+		.close-popups {
+			cursor: pointer;
+			position: absolute;
+			right: 12px;
+			top: 12px;
+			width: 24px;
+			height: 24px;
+			border-radius: 100%;
+			background-color: var(--logo-color);
+			background-image: url(images/icon-cross.svg);
+			background-size: 16px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			transition: all .3s;
+			z-index: 999;
+			
+			&:hover {
+				transform: rotate(90deg);
+			}
+		}
+		
+		
+		
+		.files-share-list {
+			width: 100%;
+			min-height: 480px;
+			max-height: 80vh; 
+			overflow: scroll;
+			
+			.wrapper {
+				padding: 12px 2%;
+				width: 96%;
+				
+				&.sticky {
+					position: sticky; 
+					padding-top: 24px;
+					top: 0; 
+					background-color: #fff;
+					box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+				}
+			}
+			
+			.file-item  {
+				width: 100%;
+				
+			}
+			
+			input[type=search] {
+				padding: 12px;
+				width: 75%;
+				// height: auto;
+			}
+		}
+	}
+}
 input{
 	font-family: var(--default-font);
+	margin-bottom: 8px;
+}
+input[type=checkbox],input[type=radio]{
+	margin-bottom: 0;
+}
+
+.button {
+    margin: 0 0 0 6px;
+    font-weight: bold;
+    padding: 6px 24px;
+    cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+label {
+    margin-bottom: 4px;
+
 }
