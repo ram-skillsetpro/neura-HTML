@@ -3348,6 +3348,93 @@ table.search-info-list tr td.name, table.search-info-list tr th.name {
   --background: url(../images/back-icon.svg);
 }
 
+.content-sec .left-section.left-divider-sec .report-section-inner {
+  max-width: 100%;
+  margin: initial;
+}
+.content-sec .left-section.left-divider-sec .report-inner-sticky {
+  max-width: 100%;
+  background: var(--comments-header-background-color);
+}
+
+.report-inner-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.content-sec .left-section .report-section-inner {
+  max-width: 1000px;
+  margin: auto;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+  padding-bottom: 100px;
+}
+.content-sec .left-section .report-section-inner::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.content-sec .left-section .report-section-inner:hover::-webkit-scrollbar {
+  width: 8px;
+}
+.content-sec .left-section .report-section-inner:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+}
+
+.report-card {
+  background: var(--comments-background-color);
+  padding: 10px;
+  width: 100%;
+}
+
+.table-outer-wrapper {
+  border: 1px solid #ccc;
+  max-width: 1100px;
+}
+
+.scrolling-lock-table-wrapper {
+  overflow-x: auto;
+  overflow-y: visible;
+  width: 100%;
+  padding-left: 410px;
+  position: relative;
+}
+
+.table-outer-wrapper th {
+  white-space: nowrap;
+}
+
+.table-outer-wrapper td, .table-outer-wrapper th {
+  padding: 5px 20px;
+  text-align: left;
+  font-size: 0.75rem;
+}
+
+.table-outer-wrapper th:nth-of-type(1), .table-outer-wrapper td:nth-of-type(1), .table-outer-wrapper th:nth-of-type(2), .table-outer-wrapper td:nth-of-type(2), .table-outer-wrapper th:nth-of-type(3), .table-outer-wrapper td:nth-of-type(3) {
+  background: #fff;
+}
+
+.table-outer-wrapper th:nth-of-type(1), .table-outer-wrapper td:nth-of-type(1) {
+  position: absolute;
+  left: 0;
+  width: 40px;
+}
+
+.table-outer-wrapper th:nth-of-type(2), .table-outer-wrapper td:nth-of-type(2) {
+  position: absolute;
+  left: 40px;
+  width: 120px;
+}
+
+th:nth-of-type(3), td:nth-of-type(3) {
+  position: absolute;
+  left: 160px;
+  width: 250px;
+}
+
 .popup-container {
   width: 100vw;
   height: 100vh;
