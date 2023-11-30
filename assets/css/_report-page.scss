@@ -46,89 +46,54 @@
 	padding: 10px;
 	width:100%;
 } 
-
-
-
 .table-outer-wrapper {
     border:1px solid #ccc;
-    max-width:1100px;
+    max-width:700px;
+	position: relative;
 }
 
 .scrolling-lock-table-wrapper {
-    overflow-x:auto;
+    overflow-x:scroll;
     overflow-y:visible;
     width:100%;
     padding-left: 410px;
-	position: relative;
 }
-.table-outer-wrapper th {
-white-space: nowrap;
+table.report-info-list{
+	border-collapse: 0;
+	padding: 10px;
 }
-.table-outer-wrapper td, .table-outer-wrapper th {
+table.report-info-list td, table.report-info-list th {
     padding: 5px 20px;
     text-align:left;
+    white-space: nowrap;
+    text-align:left;
 	font-size: size(12);
-    
+	background: transparent;
 }
-.table-outer-wrapper th:nth-of-type(1), .table-outer-wrapper td:nth-of-type(1),.table-outer-wrapper th:nth-of-type(2), .table-outer-wrapper td:nth-of-type(2),.table-outer-wrapper th:nth-of-type(3), .table-outer-wrapper td:nth-of-type(3){
-	background: #fff;
-	// height: 100%;
-}
-.table-outer-wrapper th:nth-of-type(1), .table-outer-wrapper td:nth-of-type(1) {
+table.report-info-list th:nth-of-type(1), table.report-info-list td:nth-of-type(1) {
     position: absolute;
     left: 0;
     width: 40px;
-
+	background: #fff;
 }
 
-.table-outer-wrapper th:nth-of-type(2), .table-outer-wrapper td:nth-of-type(2) {
+table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(2) {
     position: absolute;
     left: 40px;
     width: 120px;
+	background: #fff;
 }
 
-th:nth-of-type(3), td:nth-of-type(3) {
+table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(3) {
     position: absolute;
     left: 160px;
     width: 250px;
+	background: #fff;
 }
-// table.report-info-list {
-// 	font-size: size(12);
-// 	border-collapse: collapse;
-// 	margin: 4px auto;
-// 	width: 100%;
-// 	border-top: 1px solid #e3e3e3;
-// 	border-bottom: 1px solid #e3e3e3;
-// 	border-left: none;
-// 	border-right: none;
-// 	border-collapse: collapse;
-// 	text-align: left;
-// 	position: relative;
-//   }
-//   table.report-info-list td, table.report-info-list th{
-// 	padding: 6px 12px;
-// 	line-height: 1.5;
-// 	text-align:left;
-//     white-space: nowrap;
-//   }
-//   table.report-info-list th:nth-of-type(1), table.report-info-list td:nth-of-type(1) {
-//     position: absolute;
-//     left: 0;
-//     width: 40px;
-// }
 
-// table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(2) {
-//     position: absolute;
-//     left: 40px;
-//     width: 150px;
-
-// }
-
-// table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(3) {
-//     position: absolute;
-//     left: 250px;
-//     width: 250px;
-// }
-// table.report-info-list th:nth-of-type(1), table.report-info-list td:nth-of-type(1),table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(3),table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(2){
-// 	background: red;
-// }
+.td-info{
+	max-width: 100%;
+	background: red;
+	white-space: normal;
+	display: block;
+}
