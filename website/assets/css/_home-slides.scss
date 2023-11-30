@@ -186,6 +186,9 @@ text-align: center;
 						z-index: 100;
 						position: relative;
 						margin-top: 48px;
+						@media(max-width:992px){
+							margin-top: 0;	
+						}
 					}
 					
 					&:before {
