@@ -474,6 +474,11 @@ body {
   box-shadow: 0 24px 34px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1024px) {
+  .content-image-sec .img-sec img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1024px) {
   .content-image-sec .img-sec {
     width: 100%;
     margin-bottom: 42px;
@@ -547,6 +552,11 @@ body {
   display: block;
   border-radius: 12px;
   box-shadow: 0 24px 34px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1024px) {
+  .content-image-reverse-sec .img-sec img {
+    max-width: 400px;
+  }
 }
 @media (max-width: 1024px) {
   .content-image-reverse-sec .img-sec {
@@ -898,6 +908,42 @@ body {
     max-width: 1440px;
   }
 }
+@media (max-width: 1024px) {
+  .container-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.image-right-fix {
+  position: relative;
+  right: -4%;
+}
+@media (max-width: 1024px) {
+  .image-right-fix {
+    right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .image-right-fix {
+    right: 0;
+  }
+}
+
+.image-left-fix {
+  position: relative;
+  left: -4%;
+}
+@media (max-width: 1024px) {
+  .image-left-fix {
+    left: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .image-left-fix {
+    left: 0;
+  }
+}
 
 .slide {
   margin: 0;
@@ -940,6 +986,11 @@ body {
   height: 100%;
   max-width: 1280px;
   margin: 0 auto;
+}
+@media (min-width: 1367px) {
+  .slide-roller .wrapper {
+    max-width: 1440px;
+  }
 }
 @media (max-width: 1024px) {
   .slide-roller .wrapper {
@@ -998,10 +1049,9 @@ body {
   }
 }
 .slide-roller .scroller .scroller-image .scroller-image-container {
-  width: 80%;
+  width: 100%;
   height: auto;
   position: relative;
-  margin: 0 auto;
   display: none;
   opacity: 0;
   transition: all 3s;
@@ -1010,8 +1060,15 @@ body {
   display: block;
   opacity: 1;
 }
+@media (min-width: 1024px) {
+  .slide-roller .scroller .scroller-image .scroller-image-container.open {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 .slide-roller .scroller .scroller-image .scroller-image-container img {
   width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 12px;
   display: block;
@@ -1020,9 +1077,10 @@ body {
   margin-top: 48px;
   box-shadow: 0 24px 34px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .slide-roller .scroller .scroller-image .scroller-image-container img {
     margin-top: 0;
+    max-width: 400px;
   }
 }
 
@@ -1410,9 +1468,10 @@ input[type=checkbox], input[type=radio] {
   font-weight: bold;
   padding: 6px 24px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 0.9375rem;
   text-transform: uppercase;
   font-family: var(--default-font);
+  letter-spacing: 0.2em;
 }
 
 label {
