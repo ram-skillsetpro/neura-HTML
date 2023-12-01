@@ -990,7 +990,6 @@ body {
 .slide-roller .scroller .scroller-image {
   width: 50%;
   text-align: center;
-  background: red;
 }
 @media (max-width: 1024px) {
   .slide-roller .scroller .scroller-image {
