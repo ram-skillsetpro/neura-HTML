@@ -924,12 +924,22 @@ body {
     right: 0;
   }
 }
+@media (min-width: 1440px) {
+  .image-right-fix {
+    right: 0;
+  }
+}
 
 .image-left-fix {
   position: relative;
   left: -4%;
 }
 @media (max-width: 1024px) {
+  .image-left-fix {
+    left: 0;
+  }
+}
+@media (min-width: 1440px) {
   .image-left-fix {
     left: 0;
   }
