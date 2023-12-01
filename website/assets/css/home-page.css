@@ -83,7 +83,6 @@ body {
   position: fixed;
   top: 0;
   z-index: 999;
-  padding: 0 20px;
   background: rgba(198, 205, 212, 0.7);
   -webkit-backdrop-filter: saturate(100%) blur(6px);
   backdrop-filter: saturate(100%) blur(6px);
@@ -98,6 +97,8 @@ body {
   z-index: 8;
   max-width: 1280px;
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (min-width: 1440px) {
   .header-inner {
@@ -399,7 +400,7 @@ body {
 }
 @media (max-width: 1024px) {
   .co-piolt-sec {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 }
 
@@ -409,7 +410,7 @@ body {
 }
 @media (max-width: 1024px) {
   .summary-sec {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 }
 
@@ -442,6 +443,8 @@ body {
 }
 
 .content-image-sec {
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1280px;
   margin: auto;
   display: flex;
@@ -523,6 +526,8 @@ body {
 
 .content-image-reverse-sec {
   max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
   display: flex;
   -moz-column-gap: 6%;
@@ -603,14 +608,18 @@ body {
 
 .home-content-sec {
   max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
 }
 .home-content-sec-lg {
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1280px;
   margin: auto;
   width: 100%;
 }
-@media (max-width: 1240px) {
+@media (min-width: 1367px) {
   .home-content-sec-lg {
     max-width: 1440px;
   }
@@ -619,7 +628,7 @@ body {
   }
 }
 .home-content-sec-lg .m-text-center {
-  text-align: center;
+  text-align: left;
 }
 
 .heading1 {
@@ -631,16 +640,6 @@ body {
 @media (max-width: 1024px) {
   .heading1 {
     font-size: 1.75rem;
-  }
-}
-
-.footer-bg {
-  padding: 90px 0;
-  background: var(--comments-header-background-color);
-}
-@media (max-width: 1024px) {
-  .footer-bg {
-    padding: 40px 20px;
   }
 }
 
@@ -708,6 +707,7 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   -moz-column-gap: 90px;
        column-gap: 90px;
 }
@@ -719,7 +719,8 @@ body {
 }
 .delivery-items ul li {
   list-style: none;
-  width: 180px;
+  min-width: 180px;
+  width: 100%;
   flex: 0 1 180px;
   margin-bottom: 24px;
 }
@@ -757,6 +758,8 @@ body {
 
 .footer-wrap {
   max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
 }
 @media (min-width: 1440px) {
@@ -776,7 +779,7 @@ body {
   }
 }
 .footer-top-sec .ft-address-sec {
-  width: 160px;
+  width: 200px;
   border-right: 1px solid var(--divider-footer);
   padding-right: 52px;
   margin-right: 52px;
@@ -792,6 +795,9 @@ body {
   font-size: 0.875rem;
   line-height: 1.4;
   color: var(--default-font-color);
+}
+.footer-top-sec .ft-address-sec .ft-address-info p {
+  line-height: 1.4;
 }
 @media (max-width: 1024px) {
   .footer-top-sec .ft-address-sec {
@@ -896,10 +902,21 @@ body {
   }
 }
 
+.footer-bg {
+  padding: 90px 0;
+  background: var(--comments-header-background-color);
+}
+@media (max-width: 1024px) {
+  .footer-bg {
+    padding: 40px 0;
+  }
+}
+
 .container-sec {
   max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
-  height: 600px;
   position: relative;
   z-index: 9;
 }
@@ -908,23 +925,12 @@ body {
     max-width: 1440px;
   }
 }
-@media (max-width: 1024px) {
-  .container-sec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 
 .image-right-fix {
   position: relative;
   right: -4%;
 }
-@media (max-width: 1024px) {
-  .image-right-fix {
-    right: 0;
-  }
-}
-@media (min-width: 1440px) {
+@media (max-width: 1280px) {
   .image-right-fix {
     right: 0;
   }
@@ -934,12 +940,7 @@ body {
   position: relative;
   left: -4%;
 }
-@media (max-width: 1024px) {
-  .image-left-fix {
-    left: 0;
-  }
-}
-@media (min-width: 1440px) {
+@media (max-width: 1280px) {
   .image-left-fix {
     left: 0;
   }
@@ -986,15 +987,12 @@ body {
   height: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (min-width: 1367px) {
   .slide-roller .wrapper {
     max-width: 1440px;
-  }
-}
-@media (max-width: 1024px) {
-  .slide-roller .wrapper {
-    padding: 0 16px;
   }
 }
 .slide-roller .wrapper .inner-wrapper {
@@ -1080,6 +1078,7 @@ body {
 @media (max-width: 1024px) {
   .slide-roller .scroller .scroller-image .scroller-image-container img {
     margin-top: 0;
+    margin: auto;
     max-width: 400px;
   }
 }
