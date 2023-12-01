@@ -1461,6 +1461,7 @@ input[type=checkbox], input[type=radio] {
   font-size: 0.9375rem;
   text-transform: uppercase;
   font-family: var(--default-font);
+  letter-spacing: 0.2em;
 }
 
 label {
