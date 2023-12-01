@@ -928,7 +928,7 @@ body {
 
 .image-right-fix {
   position: relative;
-  right: -4%;
+  right: -8%;
 }
 @media (max-width: 1280px) {
   .image-right-fix {
@@ -938,7 +938,7 @@ body {
 
 .image-left-fix {
   position: relative;
-  left: -4%;
+  left: -8%;
 }
 @media (max-width: 1280px) {
   .image-left-fix {
