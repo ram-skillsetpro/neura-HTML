@@ -25,7 +25,6 @@
 	position: relative;
 	z-index: 8;
 	max-width: 1280px;
-
 	margin: auto;
 	@media(min-width:1440px){
 		max-width: 1440px;
@@ -163,8 +162,8 @@
  //banner
  .main-banner{
 	min-height: 600px;
-	display: flex;
-	position: relative;
+	// display: flex;
+	// position: relative;
 	&.border-b{
 		border-bottom: 1px solid #979797;
 	}
@@ -177,6 +176,12 @@
 		object-fit: cover;
 		object-position: center center;
 		position: absolute;
+		top:0;
+		z-index: 2;
+		max-height: 600px;
+		@media(max-width:767px){
+			max-height: 700px;
+		}
 	}
 		.banner-content{
 		display: flex;
@@ -185,7 +190,7 @@
 		// justify-content: center;
 		width: 100%;
 		max-width: 740px;
-		z-index: 2;
+		// z-index: 2;
 		color: var(--default-font-color);
 		@media(max-width: 1024px){
 			justify-content: flex-start;
@@ -701,5 +706,15 @@
 				font-size: size(16);
 			}
 		}
+	}
+}
+.container-sec{
+	max-width: 1280px;
+	margin: auto;
+	height: 600px;
+	position: relative;
+	z-index: 9;
+	@media(min-width:1367px){
+		max-width: 1440px;
 	}
 }
