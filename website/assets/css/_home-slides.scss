@@ -136,11 +136,12 @@ text-align: center;
 					
 					&-content {
 						display: none;
+						margin-top: 24px;
 					}
 					&:first-child {
 						.scroller-slide-content {
 							display: block;
-							margin-top: 24px;
+							
 						}
 					}
 					&.open {
