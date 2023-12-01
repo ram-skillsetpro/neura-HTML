@@ -252,8 +252,6 @@ body {
 
 .main-banner {
   min-height: 600px;
-  display: flex;
-  position: relative;
 }
 .main-banner.border-b {
   border-bottom: 1px solid #979797;
@@ -271,6 +269,14 @@ body {
   -o-object-position: center center;
      object-position: center center;
   position: absolute;
+  top: 0;
+  z-index: 2;
+  max-height: 600px;
+}
+@media (max-width: 767px) {
+  .main-banner img {
+    max-height: 700px;
+  }
 }
 .main-banner .banner-content {
   display: flex;
@@ -278,7 +284,6 @@ body {
   padding: 110px 0;
   width: 100%;
   max-width: 740px;
-  z-index: 2;
   color: var(--default-font-color);
 }
 @media (max-width: 1024px) {
@@ -881,6 +886,19 @@ body {
   }
 }
 
+.container-sec {
+  max-width: 1280px;
+  margin: auto;
+  height: 600px;
+  position: relative;
+  z-index: 9;
+}
+@media (min-width: 1367px) {
+  .container-sec {
+    max-width: 1440px;
+  }
+}
+
 .slide {
   margin: 0;
   padding: 0;
@@ -972,6 +990,7 @@ body {
 .slide-roller .scroller .scroller-image {
   width: 50%;
   text-align: center;
+  background: red;
 }
 @media (max-width: 1024px) {
   .slide-roller .scroller .scroller-image {
