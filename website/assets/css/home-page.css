@@ -143,7 +143,7 @@ body {
 }
 .header-inner .home-navigation ul li {
   margin-right: 40px;
-  font-size: 0.9333333333rem;
+  font-size: 0.875rem;
   font-weight: 700;
 }
 .header-inner .home-navigation ul li a {
@@ -156,7 +156,7 @@ body {
 
 .demo-button, a.demo-button {
   margin: 0 20px 0 0;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: bold;
   padding: 0px 18px;
   cursor: pointer;
@@ -175,14 +175,14 @@ body {
 @media (max-width: 600px) {
   .demo-button, a.demo-button {
     padding: 0px 10px;
-    font-size: 0.9333333333rem;
+    font-size: 0.875rem;
     margin: 0 10px 0 0;
   }
 }
 
 .vd-button, a.vd-button {
   margin: 0 0 0 0;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: bold;
   padding: 0px 18px;
   cursor: pointer;
@@ -201,7 +201,7 @@ body {
 @media (max-width: 600px) {
   .vd-button, a.vd-button {
     padding: 0px 10px;
-    font-size: 0.9333333333rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -289,7 +289,7 @@ body {
   }
 }
 .main-banner .banner-content h1.home-title {
-  font-size: 2.8rem;
+  font-size: 2.625rem;
   font-weight: 700;
   color: var(--default-font-color);
   margin-bottom: 24px;
@@ -297,12 +297,12 @@ body {
 }
 @media (max-width: 1024px) {
   .main-banner .banner-content h1.home-title {
-    font-size: 1.8666666667rem;
+    font-size: 1.75rem;
     margin-bottom: 20px;
   }
 }
 .main-banner .banner-content .title2 {
-  font-size: 2.1333333333rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--default-font-color);
@@ -310,7 +310,7 @@ body {
 }
 @media (max-width: 1024px) {
   .main-banner .banner-content .title2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
 }
@@ -318,17 +318,17 @@ body {
   margin-bottom: 24px;
 }
 .main-banner .banner-content .banner-info p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 @media (max-width: 1024px) {
   .main-banner .banner-content .banner-info p {
-    font-size: 1.0666666667rem;
+    font-size: 1rem;
   }
 }
 
 .title1 {
-  font-size: 2.4rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--default-font-color);
@@ -336,7 +336,7 @@ body {
 }
 @media (max-width: 1024px) {
   .title1 {
-    font-size: 1.8666666667rem;
+    font-size: 1.75rem;
     margin-bottom: 20px;
   }
 }
@@ -497,14 +497,14 @@ body {
   }
 }
 .content-image-sec .content-sec .info-para {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   color: var(--default-font-color);
   max-width: 740px;
 }
 @media (max-width: 767px) {
   .content-image-sec .content-sec .info-para {
-    font-size: 1.0666666667rem;
+    font-size: 1rem;
   }
 }
 .content-image-sec .content-sec .info-para p {
@@ -572,14 +572,14 @@ body {
   }
 }
 .content-image-reverse-sec .content-sec .info-para {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   color: var(--default-font-color);
   max-width: 740px;
 }
 @media (max-width: 767px) {
   .content-image-reverse-sec .content-sec .info-para {
-    font-size: 1.0666666667rem;
+    font-size: 1rem;
   }
 }
 .content-image-reverse-sec .content-sec .info-para p {
@@ -608,14 +608,14 @@ body {
 }
 
 .heading1 {
-  font-size: 2.8rem;
+  font-size: 2.625rem;
   font-weight: 700;
   color: var(--default-font-color);
   line-height: 1.4;
 }
 @media (max-width: 1024px) {
   .heading1 {
-    font-size: 1.8666666667rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -630,15 +630,15 @@ body {
 }
 
 .heading2 {
-  font-size: 2.1333333333rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.4;
   color: var(--default-font-color);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 1024px) {
   .heading2 {
-    font-size: 1.0666666667rem;
+    font-size: 1rem;
   }
 }
 
@@ -724,7 +724,7 @@ body {
   height: auto;
 }
 .delivery-items ul li .delivery-heading {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--default-font-color);
   font-weight: 400;
   line-height: 1.4;
@@ -732,7 +732,7 @@ body {
 }
 @media (max-width: 767px) {
   .delivery-items ul li .delivery-heading {
-    font-size: 1.0666666667rem;
+    font-size: 1rem;
   }
 }
 .delivery-items ul li .delivery-heading a {
@@ -774,7 +774,7 @@ body {
   width: 100%;
 }
 .footer-top-sec .ft-address-sec .ft-address-info {
-  font-size: 0.9333333333rem;
+  font-size: 0.875rem;
   line-height: 1.4;
   color: var(--default-font-color);
 }
@@ -790,7 +790,7 @@ body {
   }
 }
 .footer-top-sec .ft-logo-sec .ft-heading {
-  font-size: 0.9333333333rem;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--default-font-color);
 }
@@ -829,7 +829,7 @@ body {
 }
 
 .ft-copywrite {
-  font-size: 0.9333333333rem;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 .ft-copywrite a {
@@ -862,7 +862,7 @@ body {
   }
 }
 .content-outer-wrap .content-inner .info {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   color: var(--default-font-color);
   max-width: 740px;
@@ -877,7 +877,7 @@ body {
 }
 @media (max-width: 767px) {
   .content-outer-wrap .content-inner .info {
-    font-size: 1.0666666667rem;
+    font-size: 1rem;
   }
 }
 
@@ -887,14 +887,14 @@ body {
   text-align: center;
 }
 .slide .h2, .slide h2 {
-  font-size: 2.4rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--default-font-color);
 }
 @media (max-width: 1024px) {
   .slide .h2, .slide h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 .slide p {
@@ -906,7 +906,7 @@ body {
 }
 @media (max-width: 1024px) {
   .slide p {
-    font-size: 1.0666666667rem;
+    font-size: 1rem;
   }
 }
 .slide-roller {

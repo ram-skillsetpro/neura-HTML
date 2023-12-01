@@ -51,7 +51,7 @@ $font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 	--bg-color3:#B2B2B2;
 }
 
-$base-size: 15;
+$base-size: 16;
 
 //Function to convert px value into rem
 @function size($target, $context: $base-size) {
