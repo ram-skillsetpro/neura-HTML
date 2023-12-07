@@ -69,28 +69,39 @@
 							<h1 class="home-title">
 								Tell us a bit about yourself
 							</h1>
-							<form>  
-								<label for="name">Name</label>
-								<input type="email" name="name" value="" placeholder="My Name" tabindex="1">
-								<label for="email">Email</label>
-								<input type="email" name="email" value="" placeholder="my.email@mycompany.com" tabindex="2">
+							
+							<form id="contactusform">
+								<label for="userName">Name</label>
+								<input type="text" name="userName" id="userName" value="" placeholder="My Name" tabindex="1">
+								<label for="emailId">Email</label>
+								<input type="email" name="emailId" id="emailId" value="" placeholder="my.email@mycompany.com" tabindex="2">
+
+				
 								<label for="phone">Phone Number</label>
-								<input type="tel" name="phone" value="" placeholder="12345 67890" tabindex="1">
-								<label for="company_name">Company Name</label>
-								<input type="text" name="company_name" value="" placeholder="My Awesome Company" tabindex="1">
+							    <select name="countryCode" id="countryCode" tabindex="3" class="countryCode">
+							        <!-- Add country codes as options -->
+							        <option value="+1">+1 (USA)</option>
+							        <option value="+44">+44 (UK)</option>
+							        <!-- Add more options as needed -->
+							    </select>
+
+								
+								<input type="tel" name="phone" id="phone" value="" placeholder="12345 67890" tabindex="1">
+								<label for="companyName">Company Name</label>
+								<input type="text" name="companyName" id="companyName" value="" placeholder="My Awesome Company" tabindex="1">
 								<p class="controls">
 									<span class="remember"><input type="checkbox" name="terms" id="terms" tabindex="3">
 									<label class="checkbox-label" for="terms">I agree to the <a href="terms-and-conditions.html">Terms of service</a>, <a href="privacy-policy.html">Privacy Policy</a></label></span>
 								</p>
-								<input type="button" name="submit" value="Get in touch" placeholder="" tabindex="4">
+								<input type="button" name="submitBtn" id ="submitBtn" value="Get in touch" placeholder="" tabindex="4">
 							</form>
-							</div>
 						</div>
+					</div>
 					<picture>
 						<source media="(min-width:1366px)" srcset="assets/images/home/men-discuss@3x.jpg">
 						<source media="(max-width:767px)" srcset="assets/images/home/men-discuss-m@2x.jpg">
 						<img src="assets/images/home/men-discuss.jpg" alt="">
-						</picture>
+					</picture>
 				</section>
 				<!-- <section class="main-banner">
 					<div class="container-sec">

@@ -1328,7 +1328,31 @@ label {
   cursor: pointer;
 }
 
-input[type=text], input[type=email], input[type=password], input[type=tel] {
+.countryCode {
+  display: inline-block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 42px;
+  width: 110px;
+  font-size: 14px;
+  color: var(--default-font-color);
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+input[type=tel] {
+  display: inline-block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 42px;
+  width: 250px;
+  font-size: 14px;
+  color: var(--default-font-color);
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=email], input[type=password] {
   -webkit-appearance: none;
   display: inline-block;
   border-radius: 8px;
@@ -1341,7 +1365,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel] {
   box-sizing: border-box;
 }
 @media all and (max-height: 720px) {
-  input[type=text], input[type=email], input[type=password], input[type=tel] {
+  input[type=text], input[type=email], input[type=password], input[type=countryCode], input[type=tel] {
     height: 36px;
   }
 }
