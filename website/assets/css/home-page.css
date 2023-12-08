@@ -272,8 +272,10 @@ body {
 .main-banner img {
   width: 100%;
   height: inherit;
-  object-fit: cover;
-  object-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   position: absolute;
   top: 0;
   z-index: 2;
@@ -452,7 +454,8 @@ body {
   max-width: 1280px;
   margin: auto;
   display: flex;
-  column-gap: 6%;
+  -moz-column-gap: 6%;
+       column-gap: 6%;
   flex-direction: row;
 }
 @media (min-width: 1440px) {
@@ -533,7 +536,8 @@ body {
   padding-right: 20px;
   margin: auto;
   display: flex;
-  column-gap: 6%;
+  -moz-column-gap: 6%;
+       column-gap: 6%;
   flex-direction: row-reverse;
 }
 @media (min-width: 1440px) {
@@ -710,7 +714,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  column-gap: 90px;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
 }
 @media (max-width: 1024px) {
   .delivery-items ul {
@@ -829,7 +834,8 @@ body {
 .footer-top-sec .ft-logo-sec .ft-cmp-logo ul li img {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 @media (max-width: 1024px) {
@@ -861,7 +867,8 @@ body {
 
 .content-outer-wrap {
   display: flex;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
 }
 @media (max-width: 767px) {
   .content-outer-wrap {
@@ -1328,31 +1335,7 @@ label {
   cursor: pointer;
 }
 
-.countryCode {
-  display: inline-block;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  height: 42px;
-  width: 110px;
-  font-size: 14px;
-  color: var(--default-font-color);
-  padding: 12px;
-  box-sizing: border-box;
-}
-
-input[type=tel] {
-  display: inline-block;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  height: 42px;
-  width: 250px;
-  font-size: 14px;
-  color: var(--default-font-color);
-  padding: 12px;
-  box-sizing: border-box;
-}
-
-input[type=text], input[type=email], input[type=password] {
+input[type=text], input[type=email], input[type=password], input[type=tel] {
   -webkit-appearance: none;
   display: inline-block;
   border-radius: 8px;
@@ -1365,7 +1348,7 @@ input[type=text], input[type=email], input[type=password] {
   box-sizing: border-box;
 }
 @media all and (max-height: 720px) {
-  input[type=text], input[type=email], input[type=password], input[type=countryCode], input[type=tel] {
+  input[type=text], input[type=email], input[type=password], input[type=tel] {
     height: 36px;
   }
 }
@@ -1495,6 +1478,4 @@ input[type=checkbox], input[type=radio] {
 
 label {
   margin-bottom: 4px;
-}
-
-/*# sourceMappingURL=home-page.css.map */
+}/*# sourceMappingURL=home-page.css.map */
