@@ -4,7 +4,7 @@
 		<title>SimpleO.ai - The Future of Contract Management is here</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link  rel="stylesheet" type="text/css" href="assets/css/home-page.css" />
+		<link  rel="stylesheet" type="text/css" href="webassets/css/home-page.css" />
 	</head>
 	<body>
 		<div class="app-bg">
@@ -13,14 +13,14 @@
 					<div class="header-left">
 						<div class="home-logo">
 							<a href="home.html">
-								<img src="assets/images/simpleo-ai-logo@4x.png" alt="" />
+								<img src="webassets/images/simpleo-ai-logo@4x.png" alt="" />
 							</a>
 						</div>
 						<div class="home-navigation">
 							<ul>
 								<li><a href="product.html" >Product</a></li>
-								<li><a href="solution.html">Solution</a></li>
-								<li><a href="contact-us.html">Contact Us</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+								
 								<!-- <li><a href="#">Company</a></li>
 								<li><a href="#">Pricing</a></li> -->
 							</ul>
@@ -184,7 +184,7 @@
 						<div class="ft-address-sec">
 							<div class="ft-logo">
 								<a href="#">
-									<img src="assets/images/simpleo-ai-logo@4x.png" alt="" />
+									<img src="webassets/images/simpleo-ai-logo@4x.png" alt="" />
 								</a>
 							</div>
 							<div class="ft-address-info">
@@ -202,16 +202,16 @@
 							<div class="ft-cmp-logo">
 								<ul>
 									<li>
-										<img src="assets/images/home/gdpr.png" alt="" />
+										<img src="webassets/images/home/gdpr.png" alt="" />
 									</li>
 									<li>
-										<img src="assets/images/home/iso-27001.png" alt="" />
+										<img src="webassets/images/home/iso-27001.png" alt="" />
 									</li>
 									<li>
-										<img src="assets/images/home/hipaa.png" alt="" />
+										<img src="webassets/images/home/hipaa.png" alt="" />
 									</li>
 									<li>
-										<img src="assets/images/home/soc2.png" alt="" />
+										<img src="webassets/images/home/soc2.png" alt="" />
 									</li>									
 								</ul>
 							</div>
@@ -235,7 +235,7 @@
 					<div class="inner-wrapper">
 						<div class="popup-slide">
 							<div class="popup-slide-image">
-								<div class="popup-slide-image-container"><img src="assets/images/home/data-usage.jpg" alt="list view preview" /></div>
+								<div class="popup-slide-image-container"><img src="webassets/images/home/data-usage.jpg" alt="list view preview" /></div>
 							</div>
 							<div class="popup-slide-text">
 								<h3>The Future of Contract Management is here.</h3>
@@ -291,7 +291,7 @@
 								<h3>Experience Power of SimpleO</h3>
 							</div>
 							<div class="popup-slide-image">
-								<div class="popup-slide-image-container"><img src="assets/images/home/data-usage.jpg" alt="list view preview" /></div>
+								<div class="popup-slide-image-container"><img src="webassets/images/home/data-usage.jpg" alt="list view preview" /></div>
 							</div>
 							<div class="popup-slide-text">
 									<p>Tell us a little about yourself and we'll connect you with a SimpleO expert who can share more about the product and answer any questions you have.</p>
@@ -312,21 +312,35 @@
 									<p>Leave your details and we will schedule a demo! </p>
 								</div>
 								<div class="popup-form-container">
-									<form>
-										<label for="name">Name</label>
-										<input type="email" name="name" value="" placeholder="" tabindex="1" />
-										<label for="email">Email</label>
-										<input type="email" name="email" value="" placeholder="" tabindex="2"/>
+									<form id="contactusform">
+								
+										<input type="text" name="userName" id="userName" value="" placeholder="My Name" tabindex="1">
+								
+										<input type="email" name="emailId" id="emailId" value="" placeholder="my.email@mycompany.com" tabindex="2">
+
+						
+								
+									    <select name="countryCode" id="countryCode" tabindex="3" class="countryCode">
+									        <!-- Add country codes as options -->
+									        <option value="+91">IND(+91)</option>
+									        <option value="+1">USA(+1)</option>
+									        <option value="+44">UK(+44)</option>
+									        <!-- Add more options as needed -->
+									    </select>
+
+										
+										<input type="tel" name="phone" id="phone" value="" placeholder="12345 67890" tabindex="1">
+									
+										<input type="text" name="companyName" id="companyName" value="" placeholder="My Awesome Company" tabindex="1">
 										<p class="controls">
-											<span class="remember"><input type="checkbox" name="terms" id="terms" tabindex="3"/>
-											<label class="checkbox-label" for="terms">I agree to the <a href="">Terms nad Conditions</a></label></span>
-										</p>
-										<input type="button" name="submit" value="Get a Demo" placeholder="" tabindex="4"/>
+											<span class="remember">
+												<input type="checkbox" name="demoterms" id="demoterms" tabindex="3">
+												<label class="checkbox-label" for="demoterms">I agree to the <a href="tnc.html">Terms of service</a>, <a href="privacy-policy.html">Privacy Policy</a></label>
+											</span>
+										</p>										<input type="button" name="submitBtn" id ="submitBtn" value="Get in touch" placeholder="" tabindex="4">
 									</form>
 								</div>
-								<!-- <div class="text">
-									<p>I have already made up my mind to&nbsp;<a href="">Signup</a></p>
-								</div> -->
+								
 							</div>
 						</div>
 					</div>
@@ -335,6 +349,6 @@
 		</div>	
 	</body>
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-	<script src="js/simpleo.js"></script>
+	<script src="webassets/js/simpleo.js"></script>
 
 </html>

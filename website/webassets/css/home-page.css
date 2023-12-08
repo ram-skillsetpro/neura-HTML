@@ -228,7 +228,7 @@ body {
   -webkit-mask-position: center center;
   -webkit-mask-image: var(--icon-file);
   background-color: #555B65;
-  --icon-file: url("../images/user-login.svg");
+  --icon-file: url("../../webassets/images/user-login.svg");
   margin: auto;
 }
 
@@ -1243,7 +1243,7 @@ body {
   padding: 12px 24px;
 }
 .popup-container .popup-form .logo {
-  background-image: url(images/simpleo-ai-logo@4x.png);
+  background-image: url(webassets/images/simpleo-ai-logo@4x.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -1329,23 +1329,23 @@ label {
 }
 
 .countryCode {
-  display: inline-block;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  height: 42px;
-  width: 110px;
-  font-size: 14px;
-  color: var(--default-font-color);
-  padding: 12px;
-  box-sizing: border-box;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 125px;
+    font-size: 14px;
+    color: var(--default-font-color);
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 input[type=tel] {
   display: inline-block;
   border-radius: 8px;
   border: 1px solid #ccc;
-  height: 42px;
-  width: 250px;
+  height: 40px;
+  width: 220px;
   font-size: 14px;
   color: var(--default-font-color);
   padding: 12px;
