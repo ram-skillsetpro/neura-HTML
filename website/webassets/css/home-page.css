@@ -228,7 +228,7 @@ body {
   -webkit-mask-position: center center;
   -webkit-mask-image: var(--icon-file);
   background-color: #555B65;
-  --icon-file: url("../../webassets/images/user-login.svg");
+  --icon-file: url("../images/user-login.svg");
   margin: auto;
 }
 
@@ -1243,7 +1243,7 @@ body {
   padding: 12px 24px;
 }
 .popup-container .popup-form .logo {
-  background-image: url(webassets/images/simpleo-ai-logo@4x.png);
+  background-image: url(../images/simpleo-ai-logo@4x.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -1438,7 +1438,7 @@ input[type=checkbox]:checked {
   height: 24px;
   border-radius: 100%;
   background-color: var(--logo-color);
-  background-image: url(images/icon-cross.svg);
+  background-image: url(../images/icon-cross.svg);
   background-size: 16px;
   background-position: center center;
   background-repeat: no-repeat;
