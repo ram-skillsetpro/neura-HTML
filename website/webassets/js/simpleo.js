@@ -467,13 +467,22 @@ jQuery(document).ready(function() {
 
 	const formDataJson = {};
     jQuery("#submitBtn").click(function() {
+
+    	jQuery("#submitBtn").attr("disabled", true);
+    	jQuery("#submitBtn").css("background-color","#808080");
+
+
         // Get form data
         var formData = jQuery("#contactusform").serialize();
         console.log('formData>'+ formData)
 
-        if (validateForm()) {
+        if (validateForm()) {        	
         	const formDataJsonString = JSON.stringify(formDataJson);	
         	console.log('formDataJsonString>'+ formDataJsonString)
+
+        	jQuery('#validationmsg').html('');
+        	jQuery('#validationmsg').addClass('loader');
+            
             // Perform an AJAX POST request
 	        jQuery.ajax({
 	            type: "POST",
@@ -483,20 +492,42 @@ jQuery(document).ready(function() {
 	            success: function(response) {
 	            	// Handle the success response from the server
 	                console.log(response.status);
+	                //remove the loader
+	                jQuery('#validationmsg').removeClass('loader');
 	            	if(response.status == 200){
-						alert("Thank you for getting in touch. We will get back to you shortly!");
-						jQuery('#demo-popup').removeClass('open');
+	            		jQuery('#validationmsg').html('Thank you for getting in touch. We will get back to you shortly!');
+	            		jQuery("#validationmsg").show();
+						jQuery('#contactusform').trigger("reset");
+						
+						setTimeout(function() {
+							jQuery("#validationmsg").hide();
+							jQuery('#validationmsg').html('');
+							jQuery('#demo-popup').removeClass('open');
+						}, 3000);
 	            	} else {
-	            		alert(response.message);
+	            		jQuery("#validationmsg").show();
+            			jQuery("#validationmsg").html(response.message);
 	            	}
-	              
+	              	jQuery('#submitBtn').removeAttr("disabled");
+	              	jQuery("#submitBtn").css("background-color", "var(--button-red)");
+	              	
 	            },
 	            error: function(error) {
 	                // Handle errors
 	                console.error(error);
-	                alert("Registration failed. Please try again.");
+	                
+	                jQuery('#validationmsg').removeClass('loader');
+	                jQuery("#validationmsg").show();
+            		jQuery("#validationmsg").html("Some issue in registering the user, please try after some time.");
+
+            		jQuery('#submitBtn').removeAttr("disabled");
+            		jQuery("#submitBtn").css("background-color", "var(--button-red)");
+            		
 	            }
 	        });
+        } else {
+        	jQuery('#submitBtn').removeAttr("disabled");
+        	jQuery("#submitBtn").css("background-color", "var(--button-red)");
         }
 
         
@@ -506,11 +537,13 @@ jQuery(document).ready(function() {
         // Add your validation logic here
         var isValid = true;
 
+		jQuery("#validationmsg").hide();
         // Example validation: Check if Name is not empty
         var userName = jQuery("#userName").val();
         formDataJson['userName'] = userName.trim();
         if (userName.trim() === "") {
-            alert("Name is required");
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Name is required");
             return false;
         }
 
@@ -518,14 +551,16 @@ jQuery(document).ready(function() {
         var email = jQuery("#emailId").val();
         formDataJson['emailId'] = email.trim();
         if (!isValidEmail(email)) {
-            alert("Invalid Email "+email);
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Invalid Email "+email);
             return false;
         }
 
 		var countryCode = jQuery("#countryCode").val();
 		formDataJson['countryCode'] = countryCode.trim();
 		if (countryCode.trim() === "") {
-            alert("Country code is required");
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Country code is required");
             return false;
         }
 
@@ -533,7 +568,8 @@ jQuery(document).ready(function() {
         var phone = jQuery("#phone").val();
         formDataJson['phone'] = phone.trim();
         if (phone.trim() === "") {
-            alert("Phone number is required");
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Phone number is required");
             return false;
         }
 
@@ -541,7 +577,8 @@ jQuery(document).ready(function() {
         var companyName = jQuery("#companyName").val();
         formDataJson['companyName'] = companyName.trim();
         if (companyName.trim() === "") {
-            alert("Company Name is required");
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Company Name is required");
             return false;
         }
 
@@ -552,7 +589,8 @@ jQuery(document).ready(function() {
 			formDataJson['terms'] = true;	
 		} else {
 			formDataJson['terms'] = false;
-			alert("Please agree to the Terms of service and Privacy Policy");
+			jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Please agree to the Terms of service and Privacy Policy");
             return false;
 		}
 
