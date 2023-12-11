@@ -1,39 +1,39 @@
 var colarray = ['#F26C6C', '#4F4F4F', '#F6744B', '#FFA533', '#60A563', '#60A563' ];
 
-$('.scroller-text .scroller-slide').click(function () {
-	$(this).addClass('open');
-	$(this).children('.scroller-slide-content').show('fast');
-	$(this).siblings().removeClass('open');
-	$(this).siblings().children('.scroller-slide-content').hide('fast');
-	var index = $(this).index();
+jQuery('.scroller-text .scroller-slide').click(function () {
+	jQuery(this).addClass('open');
+	jQuery(this).children('.scroller-slide-content').show('fast');
+	jQuery(this).siblings().removeClass('open');
+	jQuery(this).siblings().children('.scroller-slide-content').hide('fast');
+	var index = jQuery(this).index();
 	console.log(index);
-	var image = $('.scroller-image .scroller-image-container:nth-child('+(index + 1)+')');
+	var image = jQuery('.scroller-image .scroller-image-container:nth-child('+(index + 1)+')');
 	image.siblings().removeClass('open');
 	image.addClass('open');
 })
 
-$('#loginbutton').click(function () {
-	$('#login-popup').addClass('open');
+jQuery('#loginbutton').click(function () {
+	jQuery('#login-popup').addClass('open');
 })
 
-$('#signupbutton').click(function () {
-	$('#signup-popup').addClass('open');
+jQuery('#signupbutton').click(function () {
+	jQuery('#signup-popup').addClass('open');
 })
 
-$('#demobutton , #demobutton-2, #demobutton-3').click(function () {
-	$('#demo-popup').addClass('open');
+jQuery('#demobutton , #demobutton-2, #demobutton-3').click(function () {
+	jQuery('#demo-popup').addClass('open');
 })
 
-$('.close-popups').click(function () {
-	$(this).closest('.open').removeClass('open');
+jQuery('.close-popups').click(function () {
+	jQuery(this).closest('.open').removeClass('open');
 })
 
-$( document ).ready(function() {
-		// $('.dashboard-control-wrapper > ul > li:first-child').addClass('open');
-		$('.dashboard-control-wrapper > ul > li:first-child > ul').show('fast');
-		$('.document-container-content > div:first-child').addClass('open');
+jQuery( document ).ready(function() {
+		// jQuery('.dashboard-control-wrapper > ul > li:first-child').addClass('open');
+		jQuery('.dashboard-control-wrapper > ul > li:first-child > ul').show('fast');
+		jQuery('.document-container-content > div:first-child').addClass('open');
 		
-		var breadcrumb = $('#breadcrumb-collapse');
+		var breadcrumb = jQuery('#breadcrumb-collapse');
 		var breadcrumbLength = breadcrumb.children().length;
 		if(breadcrumbLength > 7) {
 			breadcrumb.children('li:nth-child(1)').addClass('open');
@@ -47,163 +47,163 @@ $( document ).ready(function() {
 			breadcrumb.children('li').addClass('open');
 		}
 		
-		$('.sharing span.icon.member.empty').each(function(index) {
+		jQuery('.sharing span.icon.member.empty').each(function(index) {
 			var rand = colarray[Math.floor(Math.random() * colarray.length)];
-			$(this).css('background-color', rand);
+			jQuery(this).css('background-color', rand);
 			console.log('Hello Dolly');
 		})
 		
-		$('.file-item-icon span.team').each(function(index) {
+		jQuery('.file-item-icon span.team').each(function(index) {
 			var rand = colarray[Math.floor(Math.random() * colarray.length)];
-			$(this).css('background-color', rand);
+			jQuery(this).css('background-color', rand);
 		})
 		
-		$('.file-item-icon span.member.empty').each(function(index) {
+		jQuery('.file-item-icon span.member.empty').each(function(index) {
 			var rand = colarray[Math.floor(Math.random() * colarray.length)];
-			$(this).css('background-color', rand);
+			jQuery(this).css('background-color', rand);
 		})
 		
-		$('.stats-wrapper > ul > li:first-child ul').show();
-		$('.stats-wrapper > ul > li:first-child').addClass('open');
+		jQuery('.stats-wrapper > ul > li:first-child ul').show();
+		jQuery('.stats-wrapper > ul > li:first-child').addClass('open');
 		
 });
 
-$('.dashboard-control-wrapper > ul > li').click(function () {
-	if($(this).children('ul').length > 0) {
-		$(this).addClass('open');
-		$(this).children('ul').show('fast');
-		$(this).siblings().removeClass('open');
-		$(this).siblings().children('ul').hide('fast');
+jQuery('.dashboard-control-wrapper > ul > li').click(function () {
+	if(jQuery(this).children('ul').length > 0) {
+		jQuery(this).addClass('open');
+		jQuery(this).children('ul').show('fast');
+		jQuery(this).siblings().removeClass('open');
+		jQuery(this).siblings().children('ul').hide('fast');
 	}
 })
 
-$('#showuploader').click(function () {
-	$('#uploader').slideToggle('fast');
-	$('#addfolder').slideUp('fast');
-	$('#linkuploader').slideUp('fast');
-	if($(this).hasClass('opened')) {
-		$(this).removeClass('opened');
+jQuery('#showuploader').click(function () {
+	jQuery('#uploader').slideToggle('fast');
+	jQuery('#addfolder').slideUp('fast');
+	jQuery('#linkuploader').slideUp('fast');
+	if(jQuery(this).hasClass('opened')) {
+		jQuery(this).removeClass('opened');
 	} else {
-		$(this).addClass('opened');
+		jQuery(this).addClass('opened');
 	}
 })
 
-$('#showfolderdialog').click(function () {
-	$('#addfolder').slideToggle('fast');
-	$('#uploader').slideUp('fast');
-	$('#linkuploader').slideUp('fast');
-	if($(this).hasClass('opened')) {
-		$(this).removeClass('opened');
+jQuery('#showfolderdialog').click(function () {
+	jQuery('#addfolder').slideToggle('fast');
+	jQuery('#uploader').slideUp('fast');
+	jQuery('#linkuploader').slideUp('fast');
+	if(jQuery(this).hasClass('opened')) {
+		jQuery(this).removeClass('opened');
 	} else {
-		$(this).addClass('opened');
+		jQuery(this).addClass('opened');
 	}
 })
 
-$('#showlinkuploader').click(function () {
-	$('#linkuploader').slideToggle('fast');
-	$('#uploader').slideUp('fast');
-	$('#addfolder').slideUp('fast');
-	if($(this).hasClass('opened')) {
-		$(this).removeClass('opened');
+jQuery('#showlinkuploader').click(function () {
+	jQuery('#linkuploader').slideToggle('fast');
+	jQuery('#uploader').slideUp('fast');
+	jQuery('#addfolder').slideUp('fast');
+	if(jQuery(this).hasClass('opened')) {
+		jQuery(this).removeClass('opened');
 	} else {
-		$(this).addClass('opened');
+		jQuery(this).addClass('opened');
 	}
 })
 
-$('#showaddteam').click(function () {
-	$('#addteam').slideToggle('fast');
-	if($(this).hasClass('opened')) {
-		$(this).text('Add New Team');
-		$(this).removeClass('opened');
+jQuery('#showaddteam').click(function () {
+	jQuery('#addteam').slideToggle('fast');
+	if(jQuery(this).hasClass('opened')) {
+		jQuery(this).text('Add New Team');
+		jQuery(this).removeClass('opened');
 	} else {
-		$(this).text('Close');
-		$(this).addClass('opened');
+		jQuery(this).text('Close');
+		jQuery(this).addClass('opened');
 	}
 })
 
-$('.dashboard-control-wrapper > ul > li > ul > li').click(function () {
-	if($(this).children('ul').length > 0) {
-		$(this).addClass('open');
-		$(this).children('ul').show('fast');
-		$(this).siblings().removeClass('open');
-		$(this).siblings().children('ul').hide('fast');
+jQuery('.dashboard-control-wrapper > ul > li > ul > li').click(function () {
+	if(jQuery(this).children('ul').length > 0) {
+		jQuery(this).addClass('open');
+		jQuery(this).children('ul').show('fast');
+		jQuery(this).siblings().removeClass('open');
+		jQuery(this).siblings().children('ul').hide('fast');
 	}
 })
 
-$('.dashboard-viewer-tabs > ul > li').click(function () {
-	$(this).addClass('active-tab');
-	$(this).siblings().removeClass('active-tab');
-	var index = $(this).index();
-	var dataShow = $('.document-container-content > div:nth-child('+(index + 1)+')')
+jQuery('.dashboard-viewer-tabs > ul > li').click(function () {
+	jQuery(this).addClass('active-tab');
+	jQuery(this).siblings().removeClass('active-tab');
+	var index = jQuery(this).index();
+	var dataShow = jQuery('.document-container-content > div:nth-child('+(index + 1)+')')
 	dataShow.siblings().removeClass('open');
 	dataShow.addClass('open');
 });
 
 
-$('.has-dropdown').click(function () {
-	if($(this).children('.dropdown-list').hasClass('opened')) {
-		$(this).children('.dropdown-list').hide('fast');
-		$(this).children('.dropdown-list').removeClass('opened');
+jQuery('.has-dropdown').click(function () {
+	if(jQuery(this).children('.dropdown-list').hasClass('opened')) {
+		jQuery(this).children('.dropdown-list').hide('fast');
+		jQuery(this).children('.dropdown-list').removeClass('opened');
 	} else {
-		$('.has-dropdown').children('.dropdown-list').removeClass('opened');
-		$('.has-dropdown').children('.dropdown-list').hide('fast');
-		$(this).children('.dropdown-list').addClass('opened');
-		$(this).children('.dropdown-list').show('fast');
+		jQuery('.has-dropdown').children('.dropdown-list').removeClass('opened');
+		jQuery('.has-dropdown').children('.dropdown-list').hide('fast');
+		jQuery(this).children('.dropdown-list').addClass('opened');
+		jQuery(this).children('.dropdown-list').show('fast');
 	}
 });
 
-$('.app-close-popups').click(function () {
-	$(this).parents('.files-container-list').slideUp('fast');
+jQuery('.app-close-popups').click(function () {
+	jQuery(this).parents('.files-container-list').slideUp('fast');
 })
 
-$('.showshare').click(function () {
-	$('#share-popup').addClass('open');
+jQuery('.showshare').click(function () {
+	jQuery('#share-popup').addClass('open');
 })
 
-$('.stats-wrapper > ul > li').click(function () {
-	if($(this).children('ul').length > 0) {
-		$(this).addClass('open');
-		$(this).children('ul').show('fast');
-		$(this).siblings().removeClass('open');
-		$(this).siblings().children('ul').hide('fast');
+jQuery('.stats-wrapper > ul > li').click(function () {
+	if(jQuery(this).children('ul').length > 0) {
+		jQuery(this).addClass('open');
+		jQuery(this).children('ul').show('fast');
+		jQuery(this).siblings().removeClass('open');
+		jQuery(this).siblings().children('ul').hide('fast');
 	}
 })
 
 //Added by Santosh
-$('#tabs-nav li:first-child').addClass('active');
-$('.app-content-wrap').hide();
-$('.app-content-wrap:first').show();
+jQuery('#tabs-nav li:first-child').addClass('active');
+jQuery('.app-content-wrap').hide();
+jQuery('.app-content-wrap:first').show();
 
 // Click function
-$('#tabs-nav li').click(function(){
-$('#tabs-nav li').removeClass('active');
-$(this).addClass('active');
-$('.app-content-wrap').hide();
+jQuery('#tabs-nav li').click(function(){
+jQuery('#tabs-nav li').removeClass('active');
+jQuery(this).addClass('active');
+jQuery('.app-content-wrap').hide();
 
-var activeTab = $(this).find('a').attr('href');
-$(activeTab).fadeIn();
+var activeTab = jQuery(this).find('a').attr('href');
+jQuery(activeTab).fadeIn();
 return false;
 });
 // header icon tab
-$('.app-icon-tab').on('click', function(evt) {
+jQuery('.app-icon-tab').on('click', function(evt) {
 	evt.preventDefault();
-	$('.app-icon-tab').removeClass('active');
-	$(this).addClass('active');
+	jQuery('.app-icon-tab').removeClass('active');
+	jQuery(this).addClass('active');
 	var sel = this.getAttribute('data-toggle-target');
-	$('.right-tab-content').removeClass('active').filter(sel).addClass('active');
+	jQuery('.right-tab-content').removeClass('active').filter(sel).addClass('active');
 });
 //right sharing tab
-$('.app-summary-tab-section > ul > li.tab-icon').click(function () {
-if($(this).children('ul').length > 0) {
-$(this).addClass('open');
-$(this).children('ul').show('fast');
-$(this).siblings().removeClass('open');
-$(this).siblings().children('ul').hide('fast');
+jQuery('.app-summary-tab-section > ul > li.tab-icon').click(function () {
+if(jQuery(this).children('ul').length > 0) {
+jQuery(this).addClass('open');
+jQuery(this).children('ul').show('fast');
+jQuery(this).siblings().removeClass('open');
+jQuery(this).siblings().children('ul').hide('fast');
 }
 });
 //  contact form submit 
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
 	// Your key-value object
 	const countryOptions = {
 	     "+91" :  "IND(+91)" ,
@@ -451,13 +451,13 @@ $(document).ready(function() {
 
 	// Function to set options in the dropdown
 	function setDropdownOptions(options) {
-	    const dropdown = $("#countryCode");
+	    const dropdown = jQuery("#countryCode");
 
 	    // Clear existing options
 	    dropdown.empty();
 
 	    // Iterate through the object and append options
-	    $.each(options, function(key, value) {
+	    jQuery.each(options, function(key, value) {
 	        dropdown.append('<option value="' + key + '">' + value + '</option>');
 	    });
 	}
@@ -466,30 +466,68 @@ $(document).ready(function() {
 	setDropdownOptions(countryOptions);
 
 	const formDataJson = {};
-    $("#submitBtn").click(function() {
-        // Get form data
-        var formData = $("#contactusform").serialize();
-        const formDataJsonString = JSON.stringify(formDataJson);
+    jQuery("#submitBtn").click(function() {
 
-        if (validateForm()) {
-        	alert(formDataJsonString)
+    	jQuery("#submitBtn").attr("disabled", true);
+    	jQuery("#submitBtn").css("background-color","#808080");
+
+
+        // Get form data
+        var formData = jQuery("#contactusform").serialize();
+        console.log('formData>'+ formData)
+
+        if (validateForm()) {        	
+        	const formDataJsonString = JSON.stringify(formDataJson);	
+        	console.log('formDataJsonString>'+ formDataJsonString)
+
+        	jQuery('#validationmsg').html('');
+        	jQuery('#validationmsg').addClass('loader');
+            
             // Perform an AJAX POST request
-	        $.ajax({
+	        jQuery.ajax({
 	            type: "POST",
-	            url: "http://204.236.168.121:9090/v1/create-user",
+	            url: "https://alpha-api.simpleo.ai/v1/create-user",
 	            data: formDataJsonString,
 	            contentType: "application/json",
 	            success: function(response) {
-	                // Handle the success response from the server
-	                console.log(response);
-	                alert("Registration successful!");
+	            	// Handle the success response from the server
+	                console.log(response.status);
+	                //remove the loader
+	                jQuery('#validationmsg').removeClass('loader');
+	            	if(response.status == 200){
+	            		jQuery('#validationmsg').html('Thank you for getting in touch. We will get back to you shortly!');
+	            		jQuery("#validationmsg").show();
+						jQuery('#contactusform').trigger("reset");
+						
+						setTimeout(function() {
+							jQuery("#validationmsg").hide();
+							jQuery('#validationmsg').html('');
+							jQuery('#demo-popup').removeClass('open');
+						}, 3000);
+	            	} else {
+	            		jQuery("#validationmsg").show();
+            			jQuery("#validationmsg").html(response.message);
+	            	}
+	              	jQuery('#submitBtn').removeAttr("disabled");
+	              	jQuery("#submitBtn").css("background-color", "var(--button-red)");
+	              	
 	            },
 	            error: function(error) {
 	                // Handle errors
 	                console.error(error);
-	                alert("Registration failed. Please try again.");
+	                
+	                jQuery('#validationmsg').removeClass('loader');
+	                jQuery("#validationmsg").show();
+            		jQuery("#validationmsg").html("Some issue in registering the user, please try after some time.");
+
+            		jQuery('#submitBtn').removeAttr("disabled");
+            		jQuery("#submitBtn").css("background-color", "var(--button-red)");
+            		
 	            }
 	        });
+        } else {
+        	jQuery('#submitBtn').removeAttr("disabled");
+        	jQuery("#submitBtn").css("background-color", "var(--button-red)");
         }
 
         
@@ -499,51 +537,62 @@ $(document).ready(function() {
         // Add your validation logic here
         var isValid = true;
 
+		jQuery("#validationmsg").hide();
         // Example validation: Check if Name is not empty
-        var userName = $("#userName").val();
+        var userName = jQuery("#userName").val();
         formDataJson['userName'] = userName.trim();
         if (userName.trim() === "") {
-            alert("Name is required");
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Name is required");
             return false;
         }
 
         // Example validation: Check if Email is valid
-        var email = $("#emailId").val();
+        var email = jQuery("#emailId").val();
         formDataJson['emailId'] = email.trim();
         if (!isValidEmail(email)) {
-            alert("Invalid Email "+email);
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Invalid Email "+email);
             return false;
         }
 
-		var countryCode = $("#countryCode").val();
+		var countryCode = jQuery("#countryCode").val();
 		formDataJson['countryCode'] = countryCode.trim();
 		if (countryCode.trim() === "") {
-            alert("Country code is required");
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Country code is required");
             return false;
         }
 
         // Example validation: Check if Name is not empty
-        var phone = $("#phone").val();
+        var phone = jQuery("#phone").val();
         formDataJson['phone'] = phone.trim();
         if (phone.trim() === "") {
-            alert("Phone number is required");
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Phone number is required");
             return false;
         }
 
         // Example validation: Check if Name is not empty
-        var companyName = $("#companyName").val();
+        var companyName = jQuery("#companyName").val();
         formDataJson['companyName'] = companyName.trim();
         if (companyName.trim() === "") {
-            alert("Company Name is required");
+            jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Company Name is required");
             return false;
         }
 
 		// Example validation: Check if Terms checkbox is checked
-		formDataJson['terms'] = $("#terms").is(":checked");
-        if (!$("#terms").is(":checked")) {
-            alert("Please agree to the Terms of service and Privacy Policy");
+		var isChecked = jQuery("#demoterms").is(":checked");
+		console.log(isChecked);
+		if(isChecked || isChecked == 'on'){
+			formDataJson['terms'] = true;	
+		} else {
+			formDataJson['terms'] = false;
+			jQuery("#validationmsg").show();
+            jQuery("#validationmsg").html("Please agree to the Terms of service and Privacy Policy");
             return false;
-        }
+		}
 
         return isValid;
     }
