@@ -24,7 +24,7 @@
 		margin: auto;
 		height: 100%;
 		overflow-y: auto;
-		overflow-x:hidden;
+		overflow-x: hidden;
 		padding-right: 10px;
 		padding-bottom: 100px;
 	
@@ -42,33 +42,47 @@
 	}
 }
 .report-card{
-	background: var(--comments-background-color);
+	background: var(--white);
 	padding: 10px;
 	width:100%;
 } 
 .table-outer-wrapper {
-    border:1px solid #ccc;
-    max-width:700px;
+    // border:1px solid #ccc;
+    max-width:1100px;
+	min-width: 900px;
 	position: relative;
 }
 
 .scrolling-lock-table-wrapper {
     overflow-x:scroll;
-    overflow-y:visible;
+    overflow-y:auto;
     width:100%;
     padding-left: 410px;
+	&::-webkit-scrollbar {
+		background-color: transparent;
+		height: 8px;
+	}
+	&:hover::-webkit-scrollbar {
+		height: 8px;
+   }
+   &:hover::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 24px;
+	}
 }
 table.report-info-list{
 	border-collapse: 0;
 	padding: 10px;
 }
 table.report-info-list td, table.report-info-list th {
-    padding: 5px 20px;
+    padding: 8px 20px;
     text-align:left;
     white-space: nowrap;
     text-align:left;
 	font-size: size(12);
 	background: transparent;
+	min-height: 36px;
+	background: var(--tab-bg);
 }
 table.report-info-list th:nth-of-type(1), table.report-info-list td:nth-of-type(1) {
     position: absolute;
@@ -89,11 +103,41 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
     left: 160px;
     width: 250px;
 	background: #fff;
+
 }
 
 .td-info{
 	max-width: 100%;
-	background: red;
+	background: #fff;
 	white-space: normal;
 	display: block;
+	line-height: 1.5;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pagination-sec{
+	padding: 10px 0 10px 24px;
+	margin-top: 10px;
+}
+.pagination{
+	display: flex;
+	ul{
+		padding: 0;
+		margin: 0;
+		li{
+			list-style: none;
+			display: inline-flex;
+			height: 20px;
+			width: 36px;
+			line-height: 1;
+			justify-content: center;
+			align-items: center;
+			border-left:1px solid #C7D6DB;
+			&.active{
+				font-weight: bold;
+			}
+		}
+	}
+
 }
