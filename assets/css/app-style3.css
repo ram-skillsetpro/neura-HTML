@@ -3727,6 +3727,47 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   background-color: #fff1b9;
 }
 
+.wizard-editor .text-widget:hover .collapsed-btn {
+  display: flex;
+}
+
+.collapsed-btn {
+  position: absolute;
+  bottom: -13px;
+  background-color: var(--logo-color);
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  cursor: pointer;
+}
+.collapsed-btn .any-ic {
+  width: 12px;
+  height: 12px;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #fff;
+  display: inline-block;
+}
+.collapsed-btn .plus-ic {
+  --icon-file: url("../images/plus-icon.svg");
+}
+
 .popup-container {
   width: 100vw;
   height: 100vh;
