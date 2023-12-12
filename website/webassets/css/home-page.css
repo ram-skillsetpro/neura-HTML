@@ -1108,6 +1108,19 @@ body {
   margin-top: 48px;
   box-shadow: 0 24px 34px rgba(0, 0, 0, 0.25);
 }
+
+.slide-roller .scroller .scroller-image .scroller-image-container dotlottie-player {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  z-index: 100;
+  position: relative;
+  margin-top: 48px;
+  box-shadow: 0 24px 34px rgba(0, 0, 0, 0.25);
+}
+
 @media (max-width: 1024px) {
   .slide-roller .scroller .scroller-image .scroller-image-container img {
     margin-top: 0;
