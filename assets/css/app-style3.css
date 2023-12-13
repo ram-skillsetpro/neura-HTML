@@ -3416,6 +3416,7 @@ table.search-info-list tr td.name, table.search-info-list tr th.name {
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
+  padding-left: 400px;
 }
 .scrolling-lock-table-wrapper::-webkit-scrollbar {
   background-color: transparent;
@@ -3434,9 +3435,14 @@ table.report-info-list {
   padding: 10px;
 }
 
+table.report-info-list th {
+  text-transform: uppercase;
+}
+
 table.report-info-list td, table.report-info-list th {
-  padding: 8px 8px;
+  padding: 0 8px;
   text-align: left;
+  height: 42px;
   white-space: nowrap;
   text-align: left;
   font-size: 0.75rem;
@@ -3447,16 +3453,34 @@ table.report-info-list td, table.report-info-list th {
 }
 
 table.report-info-list th:nth-of-type(1), table.report-info-list td:nth-of-type(1) {
+  position: absolute;
+  left: 0;
+  top: auto;
+  display: inline-flex;
+  align-items: center;
+  height: 42px;
   width: 40px;
   background: #fff;
 }
 
 table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(2) {
+  position: absolute;
+  left: 40px;
+  top: auto;
+  display: inline-flex;
+  align-items: center;
+  height: 42px;
   width: 120px;
   background: #fff;
 }
 
 table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(3) {
+  position: absolute;
+  left: 160px;
+  top: auto;
+  display: inline-flex;
+  align-items: center;
+  height: 42px;
   width: 250px;
   background: #fff;
 }
@@ -3478,11 +3502,12 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 }
 
 .pagination {
-  display: flex;
+  position: relative;
 }
 .pagination ul {
   padding: 0;
   margin: 0;
+  display: flex;
 }
 .pagination ul li {
   list-style: none;
@@ -3496,6 +3521,11 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 }
 .pagination ul li.active {
   font-weight: bold;
+}
+
+.per-page {
+  border-left: 1px solid #C7D6DB;
+  padding-left: 8px;
 }
 
 .Select-columns-modal {
@@ -3644,6 +3674,51 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%) !important;
   width: 10px;
   padding: 8px 0 !important;
+}
+
+.table-search-data {
+  display: flex;
+  justify-content: flex-end;
+}
+.table-search-data input[type=search] {
+  border-radius: 6px;
+  -webkit-appearance: none;
+  display: block;
+  background-color: #E3E3E3;
+  border: 1px solid #E3E3E3;
+  height: 38px;
+  font-size: 0.875rem;
+  color: var(--default-font-color);
+  padding: 12px 48px 12px 12px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+.table-search-data .src-btn {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  mask-size: 26px 26px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 26px 26px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  background-color: #555B65;
+  --background: url(../images/search-icon.svg);
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+}
+.table-search-data .table-search {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .word-count p {
