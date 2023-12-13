@@ -263,26 +263,37 @@
 					</div>
 					<section>
 						<div class="report-card rounded-6">
+							<div class="table-search-data">
+								<form>
+									<div class="table-search">
+										<input tabindex="1" type="search" value="" placeholder="Search inside table" />
+										<button class="src-btn"></button>
+									</div>
+									
+								</form>
+							</div>
+
 								<div class="table-outer-wrapper">
 									<div class="scrolling-lock-table-wrapper">
 										<table class="report-info-list" cellspacing="0">
 											<thead>
 												<tr>
-													<th>
+													<th style="padding:8px 0 0 8px">
 														<div class="flex items-center w-20 h-20">
 														<input type="checkbox">
 														</div>
 													</th>
 													<th>Code</th>
 													<th>Name</th>
-													<th class="td-gradient" width="10px">
-														&nbsp;
+													<th class="td-gradient">
+														<div  style="width:10px;"></div>
 													</th>
 													<th>Type</th>
 													<th>First Party</th>
 													<th>Second Party</th>
 													<th>Max Liability</th>
 													<th>Effective Date</th>
+													<th><button class="icon-option-dot"></button></th>
 												</tr>
 											</thead>
 											<tbody>
@@ -310,6 +321,7 @@
 													<td>Delivery Limited</td>
 													<td>INR 20,200</td>
 													<td>23rd Jan 2021</td>
+													<td><button class="icon-option-dot"></button></td>
 												</tr>
 												<tr>
 													<td>
@@ -328,7 +340,7 @@
 														<div class="td-info">Addendum-Shell - B2B 13-12-2022 12:25:36.pdf</div>
 
 													</td>
-													<td class="td-gradient" width="10px">
+													<td class="td-gradient">
 														&nbsp;
 													</td>
 
@@ -337,6 +349,8 @@
 													<td>Delivery Limited</td>
 													<td>INR 20,200</td>
 													<td>23rd Jan 2021</td>
+													<td><button class="icon-option-dot"></button></td>
+
 												</tr>
 												<tr>
 													<td>
@@ -355,7 +369,7 @@
 														<div class="td-info">Addendum-Shell - B2B 13-12-2022 12:25:36.pdf</div>
 
 													</td>
-													<td class="td-gradient" width="10px">
+													<td class="td-gradient">
 														&nbsp;
 													</td>
 
@@ -364,6 +378,8 @@
 													<td>Delivery Limited</td>
 													<td>INR 20,200</td>
 													<td>23rd Jan 2021</td>
+													<td><button class="icon-option-dot"></button></td>
+
 												</tr>
 												<tr>
 													<td>
@@ -382,13 +398,15 @@
 														<div class="td-info">Addendum-Shell - B2B 13-12-2022 12:25:36.pdf</div>
 
 													</td>
-													<td class="td-gradient" width="10px">&nbsp;</td>
+													<td class="td-gradient"></td>
 
 													<td>Ammendment Agreement</td>
 													<td>Standard Chartered Research</td>
 													<td>Delivery Limited</td>
 													<td>INR 20,200</td>
 													<td>23rd Jan 2021</td>
+													<td><button class="icon-option-dot"></button></td>
+
 												</tr>																																				
 											</tbody>
 										</table>
@@ -398,18 +416,23 @@
 						<div class="pagination-sec">
 							<div class="flex fs12 justify-between">
 								<div class="flex items-center">
-									<div class="mr-4">Page 1 of 22</div>
+									<div class="mr-4">Page <strong>1 of 22</strong></div>
 									<div class="pagination">
 										<ul>
 											<li class="active">1</li>
+											<li>
+												<div class="w-20 h-20">
+													<img src="assets/images/icon-more-horizontal-dark.svg">
+												</div>
+											</li>
 											<li>2</li>
 											<li>3</li>
 										</ul>
 									</div>
 								</div>
 
-								<div class="flex items-center">
-									Per Page 20
+								<div class="flex items-center per-page">
+									Per Page <strong class="ml-2"> 20</strong>
 								</div>
 						</div>
 					</div>	
