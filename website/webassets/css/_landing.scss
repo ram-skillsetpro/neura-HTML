@@ -704,6 +704,30 @@
 		text-decoration: none;
 	}
 }
+.social-sec{
+	ul{
+		padding: 0;
+		margin: 0;
+		display: flex;
+		li{
+		width: 26px;
+		img{
+			display: block;
+			max-width: 26px;
+			height: auto;
+		}
+		a{
+			text-decoration: none;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+		&:not(:last-child){
+			margin-right: 12px;
+		}
+		}
+	}
+}
 .content-outer-wrap{
 	display: flex;
 	column-gap: 10%;

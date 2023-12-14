@@ -865,6 +865,29 @@ body {
   text-decoration: none;
 }
 
+.social-sec ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.social-sec ul li {
+  width: 26px;
+}
+.social-sec ul li img {
+  display: block;
+  max-width: 26px;
+  height: auto;
+}
+.social-sec ul li a {
+  text-decoration: none;
+}
+.social-sec ul li a:hover {
+  opacity: 0.8;
+}
+.social-sec ul li:not(:last-child) {
+  margin-right: 12px;
+}
+
 .content-outer-wrap {
   display: flex;
   -moz-column-gap: 10%;
@@ -1478,4 +1501,12 @@ input[type=checkbox], input[type=radio] {
 
 label {
   margin-bottom: 4px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
 }/*# sourceMappingURL=home-page.css.map */

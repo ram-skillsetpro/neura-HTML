@@ -3416,7 +3416,7 @@ table.search-info-list tr td.name, table.search-info-list tr th.name {
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
-  padding-left: 400px;
+  padding-left: 408px;
 }
 .scrolling-lock-table-wrapper::-webkit-scrollbar {
   background-color: transparent;
@@ -3482,6 +3482,17 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   align-items: center;
   height: 42px;
   width: 250px;
+  background: #fff;
+}
+
+table.report-info-list th:nth-of-type(4), table.report-info-list td:nth-of-type(4) {
+  position: absolute;
+  left: 410px;
+  top: auto;
+  display: inline-flex;
+  align-items: center;
+  height: 42px;
+  width: 10px;
   background: #fff;
 }
 
