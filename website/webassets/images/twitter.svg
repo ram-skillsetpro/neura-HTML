@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>social-icons/twitter@2x</title>
+    <g id="social-icons/twitter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons8-twitterx">
+            <path d="M23.1111111,26 L2.88888889,26 C1.2935,26 0,24.7065 0,23.1111111 L0,2.88888889 C0,1.2935 1.2935,0 2.88888889,0 L23.1111111,0 C24.7065,0 26,1.2935 26,2.88888889 L26,23.1111111 C26,24.7065 24.7065,26 23.1111111,26 Z" id="Path" fill="#212121"></path>
+            <path d="M21,20 L16.2733993,20 L6,6 L10.7266007,6 L21,20 Z M16.8365968,18.8128 L18.7185725,18.8128 L10.1634032,7.1872 L8.28142745,7.1872 L16.8365968,18.8128 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="6.54672291 20 12 13.9113937 11.2868267 13 5 20"></polygon>
+            <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="13 11.9985572 13.6251439 13 19 6 17.6184665 6"></polygon>
+        </g>
+    </g>
+</svg>
