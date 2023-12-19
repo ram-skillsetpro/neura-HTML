@@ -56,27 +56,27 @@ $base-size: 16;
 //Function to convert px value into rem
 @function size($target, $context: $base-size) {
 	@return calc($target / $context) * 1rem;
-  }
-  $base-font-size: size($base-size);
+}
+$base-font-size: size($base-size);
 //styles   
 *{
 	box-sizing: border-box;
 	padding: 0;
-	margin: 0; 
-  }
-  ul,ol{
+	margin: 0;
+}
+ul,ol{
 	list-style: none;
-  }
+}
 html{
 	// overflow-y: scroll; 
 	font-size:15px;
 	line-height: 1.5;
 	background: var(--comments-header-background-color);
 }
-html, body {    
-    scroll-behavior: smooth;
+html, body {
+	scroll-behavior: smooth;
 	// overflow: hidden;
-} 
+}
 
 body {
 	font-family: $font-family-primary;
@@ -94,14 +94,14 @@ body {
 	width: 100vw;
 	height: 100vh;
 	min-height: 600px;
-	position: fixed; 
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	background-color: rgba(0, 0, 0, .5);
 	display: flex;
-	align-items: center; 
+	align-items: center;
 	justify-content: center;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
@@ -114,7 +114,7 @@ body {
 		display: flex;
 		overflow: hidden;
 	}
-	
+
 	.popup {
 		// min-width: 860px;
 		// max-width: 960px;
@@ -126,8 +126,8 @@ body {
 		// width: 60vw;
 		// position: relative;
 		// padding: 0px;
-		
-		
+
+
 		.close-popups {
 			cursor: pointer;
 			position: absolute;
@@ -137,44 +137,44 @@ body {
 			height: 24px;
 			border-radius: 100%;
 			background-color: var(--logo-color);
-			background-image: url(../images/icon-cross.svg);
+			background-image: url(images/icon-cross.svg);
 			background-size: 16px;
 			background-position: center center;
 			background-repeat: no-repeat;
 			transition: all .3s;
 			z-index: 999;
-			
+
 			&:hover {
 				transform: rotate(90deg);
 			}
 		}
-		
-		
-		
+
+
+
 		.files-share-list {
 			width: 100%;
 			min-height: 480px;
-			max-height: 80vh; 
+			max-height: 80vh;
 			overflow: scroll;
-			
+
 			.wrapper {
 				padding: 12px 2%;
 				width: 96%;
-				
+
 				&.sticky {
-					position: sticky; 
+					position: sticky;
 					padding-top: 24px;
-					top: 0; 
+					top: 0;
 					background-color: #fff;
 					box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
 				}
 			}
-			
+
 			.file-item  {
 				width: 100%;
-				
+
 			}
-			
+
 			input[type=search] {
 				padding: 12px;
 				width: 75%;
@@ -192,10 +192,10 @@ input[type=checkbox],input[type=radio]{
 }
 
 .button {
-    margin: 0 0 0 6px;
-    font-weight: bold;
-    padding: 6px 24px;
-    cursor: pointer;
+	margin: 0 0 0 6px;
+	font-weight: bold;
+	padding: 6px 24px;
+	cursor: pointer;
 	font-size: size(15);
 	text-transform: uppercase;
 	font-family: var(--default-font);
@@ -203,7 +203,7 @@ input[type=checkbox],input[type=radio]{
 }
 
 label {
-    margin-bottom: 4px;
+	margin-bottom: 4px;
 
 }
 .flex{
