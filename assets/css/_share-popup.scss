@@ -93,10 +93,18 @@
    }
 }
 .shared-user-list{
+   // max-height: 200px;
+   // overflow-y: auto;
+   // padding-right: 8px;
+   // &::-webkit-scrollbar {
+   //    background-color: rgba(0, 0, 0, .2);
+   //    width: 8px;
+   //    border-radius: 24px;
+   // }
    ul{
       li{
-         margin-bottom: 3px;
-         padding: 4px 0;
+         // margin-bottom: 3px;
+         padding: 6px 0;
          &:not(:last-child){
             border-bottom: 1px solid var(--border-color2);
          }
@@ -163,4 +171,178 @@
    width: 100%;
    gap: 20px;
 }
+.shared-suggestion-list{
+   background: var(--app-navigation-background-color);
+   box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2);
+   padding: 12px;
+   border-radius: 0 0 12px 12px;
+   position: absolute;
+   z-index: 1;
+   top: 43px;
+   left: 20px;
+   width: 80%;
+   ul{
+      max-height: 200px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+         background-color: rgba(0, 0, 0, .2);
+         width: 8px;
+         border-radius: 24px;
+      }
+      li{
+         &:not(:last-child){
+            margin-bottom: 12px;
+         }
+         a{
+            color: var(--default-font-color);
+            padding: 4px 0;
+            &:hover{
+               background: var(--comments-background-color);
+            }
+         }
+         .shared-user-img{
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            min-width: 26px;
+            border-radius: 100%;
+            background:#CD6E58;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:size(12);
+            font-weight: 700;
+            color: var(--white);
+            img{
+               width: 26px;
+               height: 26px;
+               object-fit: cover;
+            }
+         }
+      }
+   }
+}
+.shared-chips-sec{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+   margin-top: 8px;
+   margin-left: 12px;
+   .shared-chips{
+      padding: 6px 8px;
+      border-radius: 16px;
+      background: var(--comments-background-color);
+      font-size: size(12);
+      display: inline-flex;
+      align-items: center;
+      border:1px solid var(--border-color2);
+      .remove-btn{
+         cursor: pointer;
+         margin-left: 4px;
+         width: 16px;
+         height: 16px;
+         display: inline-flex;
+         mask-size: 16px 16px;
+         mask-repeat: no-repeat;
+         mask-position: center center;
+         mask-image: var(--background);
+         -webkit-mask-size: 16px 16px;
+         -webkit-mask-repeat: no-repeat;
+         -webkit-mask-position: center center;
+         -webkit-mask-image: var(--background);
+         background-size: cover;
+         background-color: var(--icon-dark-color);
+         --background: url(../images/icon-cross-dark.svg);
+      }
+   }
+}
+.eula-outer-wrap{
+   width:640px;
+   box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2);
+   background: var(--white);
+   padding: 0 0 20px 0;
+   margin: auto;
+   border-radius: 6px;
 
+}
+.eula-heading-bg{
+   background: var(--comment-bg1);
+   padding: 20px;
+}
+.content-body{
+   margin: 0 20px;
+   height: 400px;
+   overflow: auto;
+}
+.eula-body-text{
+   font-size: size(12);
+   line-height: 1.5;
+   color: var(--default-font-color);
+   p{
+      margin-bottom: 24px;
+      font-size: size(12);
+      line-height: 1.5;
+   }
+}
+.points-text{
+   font-size: size(12);
+   line-height: 1.5;
+   color: var(--default-font-color);
+   margin-bottom: 4px;
+   p{
+      margin-bottom: 4px;
+      font-size: size(12);
+      line-height: 1.5;
+   }
+}
+.orderlist{
+// ol { counter-reset: item }
+// li{ display: block;margin-bottom: 24px;}
+// li:before { content: counters(item, ".") " "; counter-increment: item }
+
+// ol {
+//    list-style: none;
+//    counter-reset: my-awesome-counter;
+//  }
+//  ol li {
+//    counter-increment: my-awesome-counter;
+//  }
+//  ol li::before {
+//    content: counter(my-awesome-counter) ". ";
+//    color: red;
+//    font-weight: bold;
+//  }
+
+ol {
+   list-style-type: none;
+   counter-reset: item;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ ol > li {
+   display: table;
+   counter-increment: item;
+   margin-bottom: 0.6em;
+ }
+ 
+ ol > li:before {
+   content: counters(item, ".") ". ";
+   display: table-cell;
+   padding-right: 0.6em; 
+   color: red;
+   font-weight: bold;   
+ }
+ 
+ li ol > li {
+   margin: 0;
+ }
+ 
+ li ol > li:before {
+   content: counters(item, ".") " ";
+ }
+
+
+
+}
