@@ -2260,7 +2260,7 @@ p {
   height: auto;
   display: block;
 }
-.folder-sec .folder-card .folder-img .folder-img-color1, .folder-sec .folder-card .folder-img .folder-img-color2, .folder-sec .folder-card .folder-img .folder-img-color3, .folder-sec .folder-card .folder-img .folder-img-color4 {
+.folder-sec .folder-card .folder-img .folder-img-color, .folder-sec .folder-card .folder-img .folder-img-color1, .folder-sec .folder-card .folder-img .folder-img-color2, .folder-sec .folder-card .folder-img .folder-img-color3, .folder-sec .folder-card .folder-img .folder-img-color4 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
   min-width: 70px;
   min-height: 70px;
@@ -2276,6 +2276,10 @@ p {
   background-size: cover;
   mask-image: var(--background);
   -webkit-mask-image: var(--background);
+}
+.folder-sec .folder-card .folder-img .folder-img-color {
+  background-color: #F1C62D;
+  --background: url(../images/folder.svg);
 }
 .folder-sec .folder-card .folder-img .folder-img-color1 {
   background-color: #fff;
