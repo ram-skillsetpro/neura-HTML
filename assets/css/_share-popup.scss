@@ -103,8 +103,8 @@
    // }
    ul{
       li{
-         margin-bottom: 3px;
-         padding: 4px 0;
+         // margin-bottom: 3px;
+         padding: 6px 0;
          &:not(:last-child){
             border-bottom: 1px solid var(--border-color2);
          }
