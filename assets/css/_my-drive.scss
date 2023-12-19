@@ -329,16 +329,55 @@ width: 100%;
       max-width:32%;
       position: relative;
       .folder-img{
-         margin-right: 6px;
+         margin-right: 10px;
          width: 70px;
          height:70px;
          display: flex;
          align-items: center;
+         .icon-option-dot{
+            position: absolute;
+            left: 6px;
+            top:20px;
+            z-index: 2;
+         }
          img{
             max-width: 70px;
             width:100%;
             height: auto;
             display: block;
+         }
+         .folder-img-color1,.folder-img-color2,.folder-img-color3,.folder-img-color4{
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+            min-width: 70px;
+            min-height: 70px;
+            width:70px;
+            height: auto;
+            display: flex;
+            mask-size: 70px 70px;
+            mask-repeat: no-repeat;
+            mask-position: center center;
+            -webkit-mask-size: 70px 70px;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center center;         
+            background-size: cover; 
+            mask-image: var(--background);
+            -webkit-mask-image: var(--background); 
+         }
+         .folder-img-color1{
+            background-color:#fff ;
+            --background: url(../images/folder.svg);
+           }
+           .folder-img-color2{
+            background-color:#C4D8E0;
+            --background: url(../images/folder.svg);
+         }
+         .folder-img-color3{
+            background-color:#D6DDC7;
+            --background: url(../images/folder.svg);
+         }
+         .folder-img-color4{
+            background-color:#E3DDD8;
+            --background: url(../images/folder.svg);
          }
       }
       .file-title{
@@ -376,4 +415,51 @@ width: 100%;
       transition:0.3s;
    }
    }
+}
+.folder-action{
+   position: relative;
+}
+.folder-action .dropdown-container {
+   left: 4px;
+   width: 120px;
+   z-index: 4;
+   position: absolute;
+   background: #fff;
+   top: 48px;
+   box-shadow: 0 6px 12px rgba(0,0,0,.2);
+   border-radius: 8px;
+}
+.folder-action .dropdown-container .dropdown-box {
+   position: absolute;
+   width: 120px;
+   background: #fff;
+   z-index: 5;
+   box-shadow: 0 6px 12px rgba(0,0,0,.2);
+   border-radius: 8px;
+   font-size: 12px;
+   color: #232323;
+}
+.folder-action .dropdown-container ul {
+   list-style: none;
+   margin: 0;
+   padding: 8px 0;
+}
+.folder-action .dropdown-container ul li {
+   text-align: left;
+   padding: 8px 12px;
+   user-select: none;
+   &:not(:last-child){
+      border-bottom: 1px solid #e3e3e3;
+   }
+}
+.folder-action .dropdown-container .notch {
+   background: #fff;
+   position: absolute;
+   top: -4px;
+   left: 8px;
+   width: 12px;
+   height: 12px;
+   z-index: 2;
+   transform: rotate(45deg);
+   box-shadow: 0 0px 21px 3px rgba(0,0,0,.2);
 }
