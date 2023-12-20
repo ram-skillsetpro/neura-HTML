@@ -2646,6 +2646,7 @@ p {
 .eula-heading-bg {
   background: var(--comment-bg1);
   padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .content-body {
@@ -2653,6 +2654,7 @@ p {
   height: 400px;
   overflow-y: auto;
   padding-right: 8px;
+  padding-bottom: 20px;
 }
 .content-body::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.2);
@@ -2666,9 +2668,13 @@ p {
   color: var(--default-font-color);
 }
 .eula-body-text p {
-  margin-bottom: 24px;
+  margin-bottom: 6px;
   font-size: 0.75rem;
   line-height: 1.5;
+}
+.eula-body-text a {
+  color: var(--text-light-color);
+  text-decoration: underline;
 }
 
 .points-text {
@@ -2712,6 +2718,7 @@ p {
 .eula-footer-bg {
   background: var(--comment-bg1);
   padding: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .eula-sm-text {
@@ -3689,7 +3696,7 @@ table.search-info-list tr td.name, table.search-info-list tr th.name {
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
-  padding-left: 408px;
+  padding-left: 368px;
 }
 .scrolling-lock-table-wrapper::-webkit-scrollbar {
   background-color: transparent;
@@ -3727,18 +3734,7 @@ table.report-info-list td, table.report-info-list th {
 
 table.report-info-list th:nth-of-type(1), table.report-info-list td:nth-of-type(1) {
   position: absolute;
-  left: 0;
-  top: auto;
-  display: inline-flex;
-  align-items: center;
-  height: 42px;
-  width: 40px;
-  background: #fff;
-}
-
-table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(2) {
-  position: absolute;
-  left: 40px;
+  left: 0px;
   top: auto;
   display: inline-flex;
   align-items: center;
@@ -3747,9 +3743,9 @@ table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(
   background: #fff;
 }
 
-table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(3) {
+table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(2) {
   position: absolute;
-  left: 160px;
+  left: 120px;
   top: auto;
   display: inline-flex;
   align-items: center;
@@ -3758,9 +3754,9 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   background: #fff;
 }
 
-table.report-info-list th:nth-of-type(4), table.report-info-list td:nth-of-type(4) {
+table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(3) {
   position: absolute;
-  left: 410px;
+  left: 370px;
   top: auto;
   display: inline-flex;
   align-items: center;
