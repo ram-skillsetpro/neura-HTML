@@ -60,7 +60,7 @@
     overflow-x:auto;
     overflow-y:hidden;
     width:100%;
-    padding-left: 408px;
+    padding-left: 368px;
 	&::-webkit-scrollbar {
 		background-color: transparent;
 		height: 8px;
@@ -93,20 +93,20 @@ table.report-info-list td, table.report-info-list th {
 	background: var(--tab-bg);
 	border-bottom: 1px solid #E3E3E3;
 }
+// table.report-info-list th:nth-of-type(1), table.report-info-list td:nth-of-type(1) {
+//     position: absolute;
+//     left: 0;
+// 	top: auto;
+// 	display: inline-flex;
+// 	align-items: center;
+// 	height: 42px;
+//     width: 40px;
+// 	background: #fff;
+// }
+
 table.report-info-list th:nth-of-type(1), table.report-info-list td:nth-of-type(1) {
     position: absolute;
-    left: 0;
-	top: auto;
-	display: inline-flex;
-	align-items: center;
-	height: 42px;
-    width: 40px;
-	background: #fff;
-}
-
-table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(2) {
-    position: absolute;
-    left: 40px;
+    left: 0px;
 	top: auto;
 	display: inline-flex;
 	align-items: center;
@@ -115,9 +115,9 @@ table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(
 	background: #fff;
 }
 
-table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(3) {
+table.report-info-list th:nth-of-type(2), table.report-info-list td:nth-of-type(2) {
     position: absolute;
-    left: 160px;
+    left: 120px;
 	top: auto;
 	display: inline-flex;
 	align-items: center;
@@ -125,9 +125,9 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
     width: 250px;
 	background: #fff;
 }
-table.report-info-list th:nth-of-type(4), table.report-info-list td:nth-of-type(4) {
+table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(3) {
     position: absolute;
-    left: 410px;
+    left: 370px;
 	top: auto;
 	display: inline-flex;
 	align-items: center;
