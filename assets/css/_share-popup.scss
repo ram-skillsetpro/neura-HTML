@@ -25,26 +25,27 @@
 			position: relative;			
 			width: 100%;
 			box-sizing: border-box;			
-			border-radius: 19px 0 0 19px;
+			border-radius: 19px;
          &:focus{
             outline: none;
          }
 		
 		}
-      .share-button{
-         background: var(--logo-color);
-         display: flex;
-         border: none;
-         height: 38px;
-         line-height: 38px;
-         color: var(--white);
-         font-weight: 700;
-         border-radius: 0 19px 19px 0;
-         padding:0 20px;
-           cursor: pointer;
-         font-size: size(12);
-      }
 
+
+   }
+   .share-button{
+      background: var(--logo-color);
+      display: flex;
+      border: none;
+      height: 30px;
+      line-height: 30px;
+      color: var(--white);
+      font-weight: 700;
+      border-radius: 19px;
+      padding:0 20px;
+        cursor: pointer;
+      font-size: size(12);
    }
    .remove-button{
       background: var(--border-color2);

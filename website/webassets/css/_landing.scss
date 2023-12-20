@@ -841,13 +841,19 @@
 	}
 	
 	.wrapper {
-		max-width: 1440px;
-		width: auto;
-		padding: 120px 0;
+		max-width: 1280px;
+		padding: 120px 20px;
+		@media(min-width:1440px){
+			max-width: 1440px;
+		}
+		margin: auto;
+		// max-width: 1440px;
+		// width: auto;
+		// padding: 120px 0;
 		.inner-wrapper {
 			max-width: 920px;
 			padding: 0;
-			margin: 0 auto 0 90px;
+			// margin: 0 auto 0 90px;
 		}
 	}
 }
