@@ -234,14 +234,17 @@
 	display: inline-block;
 	border-radius: 8px;
 	border: 1px solid #ccc;
-	height: 45px;
+	height: 42px;
 	width: 110px;
 	flex: 0 0 auto;
 	font-size: 14px;
 	color: var(--default-font-color);
-	padding: 12px;
+	padding: 0 12px;
 	box-sizing: border-box;
 	margin-right: 8px;
+	@media all and (max-height: 720px) {
+		height: 36px;
+	}
   }
   .mobileField input[type=tel]{
 	flex: 1;
