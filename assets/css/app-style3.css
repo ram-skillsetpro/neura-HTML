@@ -1830,6 +1830,18 @@ p {
   color: var(--default-font-color);
   position: relative;
 }
+.comment-sec .received-card p, .comment-sec .send-card p {
+  margin-bottom: 16px;
+}
+.comment-sec .received-card ul, .comment-sec .send-card ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: square;
+}
+.comment-sec .received-card ul li, .comment-sec .send-card ul li {
+  margin-left: 16px;
+  margin-bottom: 4px;
+}
 .comment-sec .send-message {
   display: flex;
   flex-direction: row-reverse;
@@ -2953,15 +2965,15 @@ input[type=checkbox]:checked {
   justify-content: space-between;
 }
 .dash-content-sec .dash-content-left {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
 }
 .dash-content-sec .dash-right-sec {
-  flex: 1 1 426px;
-  min-width: 426px;
-  max-width: 426px;
-  margin-left: 44px;
+  flex: 1 1 406px;
+  min-width: 406px;
+  max-width: 406px;
+  margin-left: 24px;
 }
 
 .dashboard-card {
@@ -3222,10 +3234,10 @@ input[type=checkbox]:checked {
   margin: auto;
 }
 .admin-setting-sec .admin-setting-right-sec {
-  flex: 1 1 426px;
-  min-width: 426px;
-  max-width: 426px;
-  margin-left: 44px;
+  flex: 1 1 406px;
+  min-width: 406px;
+  max-width: 406px;
+  margin-left: 24px;
 }
 
 .admin-setting-section {
@@ -3336,6 +3348,63 @@ input[type=checkbox]:checked {
   text-transform: uppercase;
 }
 
+.setting-action {
+  position: relative;
+}
+
+.admin-setting-section .dropdown-container .notch {
+  box-shadow: none;
+}
+
+.dropdown-container {
+  font-size: 0.75rem;
+  width: 120px;
+  z-index: 1;
+  right: 0;
+  position: absolute;
+  background: #fff;
+  top: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.dropdown-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+}
+.dropdown-container ul li {
+  text-align: left;
+  padding: 8px 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.dropdown-container ul li:hover {
+  background: #f2f2f2;
+}
+.dropdown-container .border-bottom {
+  border-bottom: 1px solid #e3e3e3;
+}
+.dropdown-container .notch {
+  background: #fff;
+  position: absolute;
+  top: -4px;
+  right: 11px;
+  width: 12px;
+  height: 12px;
+  z-index: 2;
+  transform: rotate(45deg);
+  box-shadow: 0 0px 21px 3px rgba(0, 0, 0, 0.2);
+}
+.dropdown-container .dropdown-box {
+  position: absolute;
+  width: 120px;
+  background: #ffffff;
+  z-index: 5;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
 .user-upload-img input[type=file] {
   opacity: 0;
   position: absolute;
@@ -3358,6 +3427,12 @@ input[type=checkbox]:checked {
 }
 .setting-alert .icons-sec .calender-status:not(:last-child) {
   margin-right: 8px;
+}
+
+.user-img-sec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .ml-2 {
@@ -3646,7 +3721,6 @@ table.search-info-list tr td.name, table.search-info-list tr th.name {
 
 .content-sec .left-section.left-divider-sec .report-section-inner {
   max-width: 1000px;
-  margin: initial;
 }
 .content-sec .left-section.left-divider-sec .report-inner-sticky {
   max-width: 100%;
@@ -3944,11 +4018,10 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   -webkit-mask-position: center center;
   -webkit-mask-image: var(--background);
   background-size: cover;
-  background-color: #555B65;
+  background-color: #80AB88;
   --background: url(../images/tick-apply.svg);
   cursor: pointer;
 }
-
 .td-gradient {
   background: rgb(2, 0, 36) !important;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%) !important;

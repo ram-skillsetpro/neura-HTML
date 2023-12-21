@@ -68,6 +68,19 @@
 		width: 305px;
 		color: var(--default-font-color);
 		position: relative;
+		p{
+			margin-bottom: 16px;
+		  }
+		  ul{
+			padding: 0;
+			margin: 0;
+			 list-style-type: square;
+	  
+			li{
+			  margin-left: 16px;
+			  margin-bottom: 4px;
+			}
+		  }
 	  }
 	  .send-message{		
 		display: flex;
