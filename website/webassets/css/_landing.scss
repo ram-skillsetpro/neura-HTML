@@ -95,6 +95,7 @@
 	height: 34px;
     display: flex;
     align-items: center;
+	justify-content: center;
 	@media(max-width:600px){
 		padding: 0px 10px;
 		font-size: size(14);
@@ -118,6 +119,7 @@
 	height: 34px;
     display: flex;
     align-items: center;
+	justify-content: center;
 	@media(max-width:600px){
 		padding: 0px 10px;
 		font-size: size(14);

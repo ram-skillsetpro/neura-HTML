@@ -3217,7 +3217,7 @@ input[type=checkbox]:checked {
   justify-content: space-between;
 }
 .admin-setting-sec .admin-setting-left {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
 }

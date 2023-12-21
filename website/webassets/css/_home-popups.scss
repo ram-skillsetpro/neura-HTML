@@ -2,8 +2,8 @@
 
 .popup-container {
 	width: 100vw;
-	height: 100vh;
-	min-height: 600px;
+	// height: 100vh;
+	// min-height: 600px;
 	position: fixed; 
 	top: 0;
 	left: 0;
@@ -11,15 +11,20 @@
 	bottom: 0;
 	background-color: rgba(0, 0, 0, .5);
 	display: flex;
-	align-items: center; 
+	// align-items: center; 
 	justify-content: center;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	z-index: 999;
 	display: none;
-	overflow: scroll;
+	overflow-y: scroll;
 	font-family: var(--default-font);
-	
+	@media (min-width: 1024px) and (min-height: 650px) {
+		.popup-container {
+		  align-items: center;
+		}
+	  }
+	  
 	&.open {
 		display: flex;
 	}
@@ -48,11 +53,11 @@
 		}
 	}
 	.popup {
-		min-width: 860px;
 		max-width: 960px;
-		height: auto;
+		/* height: auto;
+		overflow: hidden; */
 		border-radius: 12px;
-		overflow: hidden;
+		// overflow: hidden;
 		
 		ul, ol {
 			list-style: none;
@@ -75,6 +80,8 @@
 		
 		.wrapper {
 			position: relative;
+			border-radius: 12px;
+			overflow: hidden;
 			.close-popups {
 				cursor: pointer;
 				position: absolute;
@@ -106,7 +113,7 @@
 			width: 50%;
 			background-color: #111111; //var(--default-background-color);
 			color: #fff;
-			padding: 24px 6%;
+			padding: 24px;
 			
 			&-image {
 				width: auto;
@@ -140,7 +147,7 @@
 			width: 50%;
 			background-color: var(--form-background-color);
 			color: var(--default-dark-font-color);
-			padding: 24px 4% 12px 4%;
+			padding: 24px;
 			text-align: center;
 			
 			a {
@@ -153,7 +160,7 @@
 			}
 			
 			.logo {
-				background-image: url(images/simpleo-ai-logo@4x.png);
+				background-image: url(../images/simpleo-ai-logo@4x.png);
 				background-repeat: no-repeat;
 				background-position: center center;
 				background-size: contain;
@@ -180,7 +187,66 @@
 #demo-popup, #login-popup, #signup-popup {
 	
 }
+@media (max-width: 767px) {
+	.popup-container .popup {
+	  padding: 20px;
+	  width: 100%;
+	  height: fit-content;
+	}
+  }
+  @media (max-width: 767px) {
+	.popup-container .popup .wrapper .inner-wrapper {
+	  display: block;
+	  align-items: inherit;
+	  justify-content: inherit;
+	}
+  }
+  @media (max-width: 767px) {
+	.popup-container .popup-slide {
+	  width: inherit;
+	}
+}
+@media (max-width: 767px) {
+	.popup-container .popup-form {
+	  width: inherit;
+	}
+  }
+  
+@media (max-width: 767px) {
+	.popup-container .popup-form-wrapper {
+	  padding: 0px;
+	}
+  }
+  .popup-container .popup-form-wrapper input[type=text],
+  .popup-container .popup-form-wrapper input[type=email],
+  .popup-container .popup-form-wrapper input[type=password],
+  .popup-container .popup-form-wrapper input[type=tel],
+  .popup-container .popup-form-wrapper input[type=submit],
+  .popup-container .popup-form-wrapper input[type=button] {
+	width: 100%;
+  }
 
+.mobileField{
+	display: flex;
+	margin-bottom: 8px;
+  }
+  .mobileField .countryCode {
+	display: inline-block;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	height: 45px;
+	width: 110px;
+	flex: 0 0 auto;
+	font-size: 14px;
+	color: var(--default-font-color);
+	padding: 12px;
+	box-sizing: border-box;
+	margin-right: 8px;
+  }
+  .mobileField input[type=tel]{
+	flex: 1;
+	margin-bottom: 0;
+  }
 // #signup-popup {
 // 	display: block;
 // }
