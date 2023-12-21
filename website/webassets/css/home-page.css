@@ -173,6 +173,7 @@ body {
   height: 34px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 600px) {
   .demo-button, a.demo-button {
@@ -199,6 +200,7 @@ body {
   height: 34px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 600px) {
   .vd-button, a.vd-button {
@@ -1145,8 +1147,6 @@ body {
 
 .popup-container {
   width: 100vw;
-  height: 100vh;
-  min-height: 600px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1154,14 +1154,18 @@ body {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
   justify-content: center;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 999;
   display: none;
-  overflow: scroll;
+  overflow-y: scroll;
   font-family: var(--default-font);
+}
+@media (min-width: 1024px) and (min-height: 650px) {
+  .popup-container .popup-container {
+    align-items: center;
+  }
 }
 .popup-container.open {
   display: flex;
@@ -1185,11 +1189,10 @@ body {
   margin-top: 0;
 }
 .popup-container .popup {
-  min-width: 860px;
   max-width: 960px;
-  height: auto;
+  /* height: auto;
+  overflow: hidden; */
   border-radius: 12px;
-  overflow: hidden;
 }
 .popup-container .popup ul, .popup-container .popup ol {
   list-style: none;
@@ -1211,6 +1214,8 @@ body {
 }
 .popup-container .popup .wrapper {
   position: relative;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .popup-container .popup .wrapper .close-popups {
   cursor: pointer;
@@ -1239,7 +1244,7 @@ body {
   width: 50%;
   background-color: #111111;
   color: #fff;
-  padding: 24px 6%;
+  padding: 24px;
 }
 .popup-container .popup-slide-image {
   width: auto;
@@ -1266,7 +1271,7 @@ body {
   width: 50%;
   background-color: var(--form-background-color);
   color: var(--default-dark-font-color);
-  padding: 24px 4% 12px 4%;
+  padding: 24px;
   text-align: center;
 }
 .popup-container .popup-form a {
@@ -1277,7 +1282,7 @@ body {
   padding: 12px 24px;
 }
 .popup-container .popup-form .logo {
-  background-image: url(images/simpleo-ai-logo@4x.png);
+  background-image: url(../images/simpleo-ai-logo@4x.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -1293,6 +1298,69 @@ body {
 }
 .popup-container .popup-form-container form {
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .popup-container .popup {
+    padding: 20px;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 767px) {
+  .popup-container .popup .wrapper .inner-wrapper {
+    display: block;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+}
+@media (max-width: 767px) {
+  .popup-container .popup-slide {
+    width: inherit;
+  }
+}
+@media (max-width: 767px) {
+  .popup-container .popup-form {
+    width: inherit;
+  }
+}
+@media (max-width: 767px) {
+  .popup-container .popup-form-wrapper {
+    padding: 0px;
+  }
+}
+.popup-container .popup-form-wrapper input[type=text],
+.popup-container .popup-form-wrapper input[type=email],
+.popup-container .popup-form-wrapper input[type=password],
+.popup-container .popup-form-wrapper input[type=tel],
+.popup-container .popup-form-wrapper input[type=submit],
+.popup-container .popup-form-wrapper input[type=button] {
+  width: 100%;
+}
+
+.mobileField {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.mobileField .countryCode {
+  display: inline-block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 45px;
+  width: 110px;
+  flex: 0 0 auto;
+  font-size: 14px;
+  color: var(--default-font-color);
+  padding: 12px;
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.mobileField input[type=tel] {
+  flex: 1;
+  margin-bottom: 0;
 }
 
 a {
@@ -1416,8 +1484,6 @@ input[type=checkbox]:checked {
 
 .popup-container {
   width: 100vw;
-  height: 100vh;
-  min-height: 600px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1448,7 +1514,7 @@ input[type=checkbox]:checked {
   height: 24px;
   border-radius: 100%;
   background-color: var(--logo-color);
-  background-image: url(images/icon-cross.svg);
+  background-image: url(../images/icon-cross.svg);
   background-size: 16px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1513,4 +1579,26 @@ label {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 10px;
+  height: 10px; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#contactusform {
+  max-width: 360px;
 }/*# sourceMappingURL=home-page.css.map */
