@@ -202,4 +202,9 @@ $(this).siblings().children('ul').hide('fast');
 }
 })
 
-//
+//Added by shubham
+$('.identify-btn').click(function(){
+$(this).siblings('.filter-menu-card').toggleClass('active');
+$(this).parents().siblings().children('.filter-menu-card').removeClass('active');
+});
+

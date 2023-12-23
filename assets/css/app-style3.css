@@ -4354,6 +4354,219 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   --icon-file: url("../images/plus-icon.svg");
 }
 
+.heading-collpase {
+  display: flex;
+  align-items: center;
+}
+.heading-collpase img {
+  width: auto;
+  margin-left: 8px;
+}
+
+.box-component {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.box-component .box-heading {
+  background-color: #dfe4eb;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px;
+}
+.box-component .box-content {
+  background-color: #fff;
+  padding: 15px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.box-component .box-btn {
+  background-color: #5c677d;
+  padding: 7px 20px;
+  border: none;
+  display: inline-block;
+  margin: 20px 0 0;
+  position: relative;
+}
+.box-component .box-btn .input-file {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.box-component .box-btn .input-file input[type=file] {
+  height: 100%;
+  cursor: pointer;
+}
+.box-component .pink-btn {
+  background-color: #ff6868;
+}
+.box-component .bright-bg {
+  background-color: #fff;
+}
+.box-component .yellow-bg {
+  background-color: #fffad6;
+}
+.box-component .grey-bg {
+  background-color: #dfe4eb;
+}
+
+.identify-attr {
+  display: flex;
+  position: relative;
+}
+.identify-attr .identify-btn {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e7eef5;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px 0 0 4px;
+  padding: 10px 5px 10px 18px;
+}
+.identify-attr .identify-btn span {
+  flex-grow: 1;
+  padding-top: 3px;
+  text-align: left;
+}
+.identify-attr .identify-btn img {
+  width: 22px;
+  color: #555b65;
+}
+.identify-attr .filter-menu-card .truncate-line1 {
+  width: 100%;
+}
+.identify-attr .filter-menu-card .options {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+}
+.identify-attr .filter-menu-card.active {
+  display: block;
+  height: auto;
+}
+.identify-attr .identify-btn-data {
+  background-color: #fff;
+  width: 55%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.4;
+}
+
+.custom-tooltip {
+  position: relative;
+}
+.custom-tooltip .icon-info {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -130%);
+  background-color: #ff6868;
+  width: 150px;
+  white-space: initial;
+  padding: 8px 10px;
+}
+.custom-tooltip .icon-info:before {
+  top: auto;
+  bottom: -5px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #ff6868;
+  border-bottom: none;
+}
+.custom-tooltip .icon-info strong {
+  display: block;
+  font-size: 12px;
+}
+
+.red-outlined {
+  background-color: #feb1b1;
+  font-weight: 600;
+}
+
+.grey-tooltip .icon-info {
+  background-color: #333e4f;
+}
+.grey-tooltip .icon-info:before {
+  border-top: 8px solid #333e4f;
+}
+
+.wizard-editor .text-widget:hover .edit-widget {
+  display: block;
+}
+.wizard-editor .text-widget:hover .edit-widget ul li:nth-child(2), .wizard-editor .text-widget:hover .edit-widget ul li:nth-child(3), .wizard-editor .text-widget:hover .edit-widget ul li:nth-child(4) {
+  display: none;
+}
+.wizard-editor .text-widget.active:hover .edit-widget {
+  display: block;
+}
+.wizard-editor .text-widget.active:hover .edit-widget ul li {
+  display: flex;
+}
+
+.wizard-elements .txt-standard {
+  width: 100%;
+  font-size: 14px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.wizard-elements .textarea-f {
+  margin-bottom: 10px;
+}
+
+.no-access-data {
+  display: none;
+}
+
+.no-access {
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-access .no-access-data {
+  display: block;
+  position: relative;
+  z-index: 11;
+  text-align: center;
+}
+.no-access .no-access-data .h4 {
+  font-size: 15px;
+  color: #838383;
+}
+.no-access .no-access-data span {
+  font-size: 12px;
+  color: #838383;
+}
+.no-access p, .no-access .edit-widget {
+  display: none;
+}
+.no-access:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ededed;
+}
+.no-access:hover .edit-widget, .no-access:hover .collapsed-btn {
+  display: none !important;
+}
+
 .popup-container {
   width: 100vw;
   height: 100vh;
