@@ -113,6 +113,9 @@ body {
 	&.open {
 		display: flex;
 		overflow: hidden;
+		@media(max-width:767px){
+			overflow: scroll;
+		}
 	}
 
 	.popup {
@@ -234,5 +237,11 @@ label {
   
   #contactusform{
 	max-width: 360px;
+	margin: auto;
+  }
+  @media(max-width:767px){
+	.popup-container .popup-slide-image-container img{
+		display: none;
+	}
   }
   
