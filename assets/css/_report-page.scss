@@ -319,11 +319,11 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 	-webkit-mask-position: center center;
 	-webkit-mask-image: var(--background);
 	background-size: cover;
-	background-color:#80AB88;
+	background-color:#555B65;
 	--background: url(../images/tick-apply.svg);
 	cursor: pointer;
 	&.active{
-		
+		background-color:#80AB88;
 	}
  }
  .td-gradient{

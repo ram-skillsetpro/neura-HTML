@@ -47,32 +47,7 @@
         cursor: pointer;
       font-size: size(12);
    }
-   .remove-button{
-      background: var(--border-color2);
-      display: flex;
-      border: none;
-      height: 24px;
-      line-height: 24px;
-      color: var(--white);
-      font-weight: 700;
-      border-radius: 12px;
-      padding:0 12px;
-      cursor: pointer; 
-      font-size: size(10);
-   }
-   .green-button{
-      background: var(--success-bg);
-      display: flex;
-      border: none;
-      height: 24px;
-      line-height: 24px;
-      color: var(--white);
-      font-weight: 700;
-      border-radius: 12px;
-      padding:0 12px;
-      cursor: pointer; 
-      font-size: size(10);
-   }
+ 
    .view-button{
       background:transparent;
       display: flex;
@@ -92,6 +67,32 @@
       padding-bottom: 5px;
       margin-bottom: 5px;
    }
+}
+.remove-button{
+   background: var(--border-color2);
+   display: flex;
+   border: none;
+   height: 24px;
+   line-height: 25px;
+   color: var(--white);
+   font-weight: 700;
+   border-radius: 12px;
+   padding:0 12px;
+   cursor: pointer; 
+   font-size: size(10);
+}
+.green-button{
+   background: var(--success-bg);
+   display: flex;
+   border: none;
+   height: 24px;
+   line-height: 25px;
+   color: var(--white);
+   font-weight: 700;
+   border-radius: 12px;
+   padding:0 12px;
+   cursor: pointer; 
+   font-size: size(10);
 }
 .shared-user-list{
    // max-height: 200px;
@@ -271,6 +272,7 @@
    background: var(--comment-bg1);
    padding: 20px;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   border-radius: 6px 6px 0 0;
 }
 .content-body{
    margin: 0 20px;
@@ -320,8 +322,10 @@ ol {
  ol > li {
    display: table;
    counter-increment: item;
-   margin-bottom: 12px;
+   margin-bottom: 8px;
    color: var(--default-font-color);
+   font-size: size(12);
+   line-height: 1.5;
  }
  
  ol > li:before {
@@ -333,7 +337,7 @@ ol {
  }
  
  li ol > li {
-   margin: 0;
+   margin-bottom: 8px;
  }
  
  li ol > li:before {
@@ -344,6 +348,7 @@ ol {
    background: var(--comment-bg1);
    padding: 20px; 
    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+   border-radius: 0 0 6px 6px;
 }
 .eula-sm-text{
    color:var(--text-light-color);
@@ -352,4 +357,92 @@ ol {
       color:var(--text-light-color);
       text-decoration: underline;
    }
+}
+.verification-outer-wrap{
+   width:640px;
+   box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2);
+   background: var(--white);
+   padding:0;
+   margin: auto;
+   border-radius: 6px;
+   color: var(--default-font-color);
+
+}
+.email-content-body{
+   margin: 0 20px;
+   // height: 400px;
+   // overflow-y: auto;
+   padding-right: 8px;
+   padding-bottom: 20px;
+   // &::-webkit-scrollbar {
+   //    background-color: rgba(0, 0, 0, .2);
+   //    width: 8px;
+   //    border-radius: 24px;
+   // }
+}
+.email-body-text{
+   font-size: size(14);
+   line-height: 1.5;
+   color: var(--default-font-color);
+   p{
+      font-size: size(14);
+      line-height: 1.5; 
+      margin-bottom: 16px;
+   }
+}
+.email-body-text1{
+   font-size: size(12);
+   line-height: 1.5;
+   color: var(--default-font-color);
+   p{
+      font-size: size(12);
+      line-height: 1.5; 
+      margin-bottom: 16px;
+   }
+}
+.pop-header-bg{
+   background: var(--comment-bg1);
+   padding: 20px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   border-radius: 6px 6px 0 0;
+}
+.p-5{
+   padding: 20px;
+}
+.simpleo-logo-popup{
+   max-width: 120px;
+   margin: auto;
+}
+.v-icons{
+   max-width: 140px;
+   margin: auto;
+}
+a.link{
+   color:var(--link-color);
+}
+a.link-underline{
+   color:var(--link-color);
+   text-decoration: underline;
+}
+.verify-btn, a.verify-btn{
+   border: 1px solid var(--logo-color);
+   background-color: var(--logo-color);
+   color: #fff;
+   padding: 10px 12px;
+    font-size: size(14);
+    font-weight: 600;
+    font-family: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+}
+.email-w-max{
+   max-width: 370px;
+}
+.email-full-sec{
+   border-top:1px solid #D8D8D8;
+   border-bottom:1px solid #D8D8D8;
+   padding: 20px;
 }
