@@ -9,7 +9,7 @@
      
       &:not(:last-child){
          border-bottom: 1px solid var(--border-color2);
-         margin-bottom: 3px;
+         // margin-bottom: 3px;
       }
       .file-list-checkbox-sec{
          width:30px;
@@ -466,4 +466,14 @@ width: 100%;
    z-index: 2;
    transform: rotate(45deg);
    box-shadow: 0 0px 21px 3px rgba(0,0,0,.2);
+}
+.added-new-file-row{
+   background: var(--yellow-light-bg);
+   padding: 6px 12px!important;
+   margin: 0 -12px;
+.new-file-upload{
+   color: var(--logo-color);
+   margin-right: 3px;
+   font-weight: 600;
+}
 }

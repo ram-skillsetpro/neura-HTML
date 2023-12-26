@@ -36,6 +36,7 @@
   --light-text:#7E8BA3;
   --yellow-light:#f9e076;
   --light-gray:#9199A8;
+  --yellow-light-bg:#FFFCE3;
 }
 
 * {
@@ -1432,8 +1433,6 @@ p {
   display: block;
 }
 .forward-arrow::after {
-  background: url(../images/forward-icon.svg) no-repeat;
-  background-size: 16px;
   position: absolute;
   z-index: 2;
   content: "";
@@ -1442,6 +1441,16 @@ p {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
+  mask-size: 16px 16px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 16px 16px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #555B65;
+  --icon-file: url("../images/forward-icon.svg");
 }
 
 .sec-2 {
@@ -1583,6 +1592,28 @@ p {
 }
 .file-processing-wrap:hover .tool-file-error {
   display: block;
+}
+
+.file-upload-success {
+  background: var(--yellow-light-bg);
+}
+
+.file-upload-error {
+  background: var(--logo-color);
+  color: var(--white) !important;
+}
+.file-upload-error a.text-defaul-color {
+  color: var(--white) !important;
+}
+.file-upload-error .forward-arrow::after {
+  background-color: var(--white);
+}
+
+.dot-w {
+  background: var(--white);
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
 }
 
 .content-sec {
@@ -1954,7 +1985,6 @@ p {
 }
 .file-list-card .file-list-row:not(:last-child) {
   border-bottom: 1px solid var(--border-color2);
-  margin-bottom: 3px;
 }
 .file-list-card .file-list-row .file-list-checkbox-sec {
   width: 30px;
@@ -2395,6 +2425,17 @@ p {
   z-index: 2;
   transform: rotate(45deg);
   box-shadow: 0 0px 21px 3px rgba(0, 0, 0, 0.2);
+}
+
+.added-new-file-row {
+  background: var(--yellow-light-bg);
+  padding: 6px 12px !important;
+  margin: 0 -12px;
+}
+.added-new-file-row .new-file-upload {
+  color: var(--logo-color);
+  margin-right: 3px;
+  font-weight: 600;
 }
 
 .share-outer-wrap {
