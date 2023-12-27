@@ -3575,6 +3575,43 @@ input[type=checkbox]:checked {
   flex-direction: column;
 }
 
+.recent-activity-row {
+  display: flex;
+  width: 100%;
+  padding: 6px 0;
+  align-items: center;
+}
+.recent-activity-row:not(:last-child) {
+  border-bottom: 1px solid var(--border-color2);
+}
+.recent-activity-row .recent-activity-col1 {
+  width: 40%;
+  min-width: 394px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.recent-activity-row .recent-activity-col2 {
+  width: 30%;
+  min-width: 140px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: right;
+}
+.recent-activity-row .recent-activity-col3 {
+  width: 20%;
+  min-width: 86px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: right;
+}
+.recent-activity-row .recent-activity-col4 {
+  width: 10%;
+  min-width: 86px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .ml-2 {
   margin-left: 8px;
 }
