@@ -3585,31 +3585,24 @@ input[type=checkbox]:checked {
   border-bottom: 1px solid var(--border-color2);
 }
 .recent-activity-row .recent-activity-col1 {
-  width: 40%;
+  width: 65%;
   min-width: 394px;
   font-size: 0.75rem;
   line-height: 1.5;
 }
 .recent-activity-row .recent-activity-col2 {
-  width: 30%;
+  width: 20%;
   min-width: 140px;
   font-size: 0.75rem;
   line-height: 1.5;
   text-align: right;
 }
 .recent-activity-row .recent-activity-col3 {
-  width: 20%;
+  width: 15%;
   min-width: 86px;
   font-size: 0.75rem;
   line-height: 1.5;
   text-align: right;
-}
-.recent-activity-row .recent-activity-col4 {
-  width: 10%;
-  min-width: 86px;
-  font-size: 0.75rem;
-  line-height: 1.5;
-  text-align: center;
 }
 
 .ml-2 {
