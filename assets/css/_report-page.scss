@@ -322,10 +322,24 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 	background-color:#555B65;
 	--background: url(../images/tick-apply.svg);
 	cursor: pointer;
+	border: none;
 	&.active{
 		background-color:#80AB88;
 	}
  }
+ .filter-reset{
+	width:26px;
+	height:26px;
+	cursor: pointer;
+    border-radius: 100%;
+    background-color: var(--logo-color);
+    background-image: url(../images/icon-cross.svg);
+    background-size: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+	border: none;
+	}
  .td-gradient{
 	background: rgb(2,0,36)!important;
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)!important;
