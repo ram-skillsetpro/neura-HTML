@@ -77,6 +77,10 @@ ul.app-tab-style{
 	margin-bottom: 12px;
 	border-bottom:1px solid #AEB7C0;
 	margin-left:12px;
+	&.border-b{
+		border-bottom: 0;
+		margin-bottom: 0;
+	}
 }
  
 

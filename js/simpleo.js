@@ -208,3 +208,13 @@ $(this).siblings('.filter-menu-card').toggleClass('active');
 $(this).parents().siblings().children('.filter-menu-card').removeClass('active');
 });
 
+//right sharing tab
+// header icon tab
+$('.heading-collapse').on('click', function(evt) {
+	evt.preventDefault();
+	$('.heading-collapse').removeClass('arrow-down');
+	$(this).addClass('arrow-down');
+	var sel = this.getAttribute('data-toggle-target');
+	$('.box-component').removeClass('active').filter(sel).addClass('active');
+});
+
