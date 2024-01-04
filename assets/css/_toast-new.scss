@@ -38,7 +38,6 @@ a {
 		--icon-file: url("../images/forward-icon.svg");
 	}
 }
-
 .toast-body{
 	font-size: 0.6875rem;
 	line-height: 1.5;
@@ -48,12 +47,8 @@ a {
 		margin: 0;		
 	}
 }
-.mb-1{
-	margin-bottom: 4px;
-}
-.t-success{
-	background: #FFFCE3;
-}
+.mb-1{margin-bottom: 4px;}
+.t-success{background: #FFFCE3;}
 .toast.t-error{
 	background: #ff6868;
 	color: #fff;
