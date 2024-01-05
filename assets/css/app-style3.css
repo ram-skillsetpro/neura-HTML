@@ -1568,6 +1568,12 @@ p {
   background-color: var(--logo-color);
   --background: url(../images/process-icon.svg);
 }
+.file-processing .icon-pro.processing {
+  animation-name: r;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 .file-processing .tool-file-error {
   font-size: 0.6875rem;
   display: none;
@@ -1596,6 +1602,22 @@ p {
   z-index: 2;
 }
 
+@keyframes r {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes r1 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 .file-processing-wrap {
   cursor: pointer;
 }

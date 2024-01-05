@@ -609,6 +609,12 @@ p{padding:0;margin:0;}
       background-size: cover;
       background-color:var(--logo-color) ;
       --background: url(../images/process-icon.svg);
+      &.processing{
+         animation-name: r;
+         animation-duration: 5000ms;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+      }
      }
      .tool-file-error{
       font-size: size(11);
@@ -642,6 +648,25 @@ p{padding:0;margin:0;}
    
    }
 }
+@keyframes r {
+   from {
+     transform: rotate(0deg);
+   }
+ 
+   to {
+     transform: rotate(360deg);
+   }
+ }
+ 
+ @keyframes r1 {
+   from {
+     transform: rotate(360deg);
+   }
+ 
+   to {
+     transform: rotate(0deg);
+   }
+ }
 .file-processing-wrap{
 	cursor: pointer;
 	&:hover{
