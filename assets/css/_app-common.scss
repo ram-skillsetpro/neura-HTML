@@ -611,7 +611,7 @@ p{padding:0;margin:0;}
       --background: url(../images/process-icon.svg);
       &.processing{
          animation-name: r;
-         animation-duration: 5000ms;
+         animation-duration: 3000ms;
          animation-iteration-count: infinite;
          animation-timing-function: linear;
       }
