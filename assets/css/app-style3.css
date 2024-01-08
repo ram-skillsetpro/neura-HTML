@@ -1570,7 +1570,7 @@ p {
 }
 .file-processing .icon-pro.processing {
   animation-name: r;
-  animation-duration: 5000ms;
+  animation-duration: 3000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -1608,14 +1608,6 @@ p {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes r1 {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }
 .file-processing-wrap {
