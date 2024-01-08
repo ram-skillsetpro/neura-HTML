@@ -1610,14 +1610,6 @@ p {
     transform: rotate(360deg);
   }
 }
-@keyframes r1 {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
 .file-processing-wrap {
   cursor: pointer;
 }
