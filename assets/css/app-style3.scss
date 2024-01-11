@@ -97,18 +97,24 @@ body {
 	// display: flex;
 	// flex-direction: column;
 }
-@import 'tooltip';
-@import 'barchart';
-@import 'app-main';
+
+
+//main structure scss file
 @import 'app-header';
 @import 'app-common';
 @import 'middle-outer';
+@import 'sidebar-menu';
+@import 'app-main';
+@import 'app-controls';
+//dashboard chart
+@import 'tooltip';
+@import 'barchart';
+
+
 @import 'right-sharing-tab';
 @import 'right-comments-tab';
-@import 'sidebar-menu';
 @import 'my-drive';
 @import 'share-popup';
-@import 'app-controls';
 @import 'dashboard-user';
 @import 'admin-setting';
 @import 'prompt-chat';

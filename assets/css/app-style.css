@@ -710,7 +710,7 @@ input[type=checkbox]:checked {
 }
 .document-container-content .content-block .markers .comment .icon {
   background-image: url(images/icon-add-comment.svg);
-  background-color: #ffd1d1;
+  background-color: #FFB2B2;
 }
 .document-container-content .content-block .markers .highlight .icon {
   background-image: url(images/icon-add-comment.svg);
@@ -784,10 +784,10 @@ input[type=checkbox]:checked {
   display: inline;
 }
 .document-container-content .notice.commented {
-  background-color: #ffd1d1;
+  background-color: #FFB2B2;
 }
 .document-container-content .notice.highlighted {
-  background-color: #ede6bc;
+  background-color: #FFECB2;
 }
 
 .dashboard-controller {
