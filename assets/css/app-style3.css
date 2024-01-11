@@ -4607,30 +4607,6 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   font-size: 12px;
   line-height: 1.5;
 }
-.box-component .box-btn {
-  background-color: #5c677d;
-  padding: 7px 20px;
-  border: none;
-  display: inline-block;
-  margin: 20px 0 0;
-  position: relative;
-}
-.box-component .box-btn .input-file {
-  position: absolute;
-  opacity: 0;
-  left: -72px;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  cursor: pointer;
-}
-.box-component .box-btn .input-file input[type=file] {
-  height: 100%;
-  cursor: pointer;
-}
-.box-component .pink-btn {
-  background-color: #ff6868;
-}
 .box-component .bright-bg {
   background-color: #fff;
 }
@@ -4639,6 +4615,32 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 }
 .box-component .grey-bg {
   background-color: #dfe4eb;
+}
+
+.box-btn {
+  background-color: #5c677d;
+  padding: 7px 20px;
+  border: none;
+  display: inline-block;
+  margin: 20px 0 0;
+  position: relative;
+}
+.box-btn .input-file {
+  position: absolute;
+  opacity: 0;
+  left: -72px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.box-btn .input-file input[type=file] {
+  height: 100%;
+  cursor: pointer;
+}
+
+.pink-btn {
+  background-color: #ff6868;
 }
 
 .identify-attr {
@@ -4922,6 +4924,139 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   height: 20px;
   background: red;
   border-radius: 100%;
+}
+
+.wizard-search .wizard-search-inner {
+  position: relative;
+}
+.wizard-search .wizard-search-inner input[type=search] {
+  border-radius: 4px;
+  -webkit-appearance: none;
+  display: block;
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  height: 36px;
+  font-size: 0.875rem;
+  color: var(--default-font-color);
+  padding: 12px 48px 12px 12px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 19px;
+}
+.wizard-search .wizard-search-inner input[type=search]:focus + .wizard-auto-list {
+  display: block;
+}
+.wizard-search .wizard-search-inner input[type=search]::-webkit-search-cancel-button {
+  display: none;
+}
+.wizard-search .wizard-search-inner .wizard-auto-list {
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 92%;
+  margin: 0 4%;
+  max-height: 300px;
+  z-index: 5;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.wizard-search .wizard-search-inner .wizard-auto-list::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.wizard-search .wizard-search-inner .wizard-auto-list:hover::-webkit-scrollbar {
+  width: 8px;
+}
+.wizard-search .wizard-search-inner .wizard-auto-list:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+}
+.wizard-search .wizard-search-inner .wizard-auto-list ul li {
+  font-size: 0.75rem;
+  background-color: #fff;
+  padding: 15px 12px;
+  border-bottom: 1px solid #c6cdd4;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.wizard-search .wizard-search-inner .wizard-auto-list ul li:hover {
+  background-color: #dfe4eb;
+  transition: 0.3s;
+}
+
+.wizard-inner {
+  padding-left: 12px;
+}
+
+.upload-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 24px;
+  align-items: center;
+  color: #232323;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.or-sec {
+  position: relative;
+  text-align: center;
+  width: 96%;
+  height: 18px;
+  margin: auto;
+  margin-bottom: 12px;
+}
+.or-sec .or-text {
+  font-size: 11px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #525252;
+  font-weight: 700;
+}
+.or-sec::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #E3E3E3;
+  z-index: 1;
+}
+
+.upload-success-sec {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.next-button {
+  background: var(--success-bg);
+  display: flex;
+  border: none;
+  height: 24px;
+  line-height: 25px;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 0.75rem;
 }
 
 .toast {
