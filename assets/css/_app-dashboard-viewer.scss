@@ -182,7 +182,7 @@
 				}
 				.comment .icon {
 					background-image: url(images/icon-add-comment.svg);
-					background-color: #ffd1d1;					
+					background-color: #FFB2B2;					
 				}
 				
 				.highlight .icon {
@@ -278,11 +278,11 @@
 			display: inline;
 			
 			&.commented {
-				background-color: #ffd1d1;
+				background-color: #FFB2B2;
 			}
 			
 			&.highlighted{
-				background-color: #ede6bc;
+				background-color: #FFECB2;
 			}
 		}	
 	}
