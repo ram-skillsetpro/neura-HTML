@@ -3018,7 +3018,7 @@ div:hover > .tooltip {
   text-decoration: underline;
 }
 
-.verification-outer-wrap {
+.verification-outer-wrap, .pop-outer-wrap {
   width: 640px;
   box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2);
   background: var(--white);
@@ -3116,6 +3116,24 @@ a.link-underline {
 }
 .show-tooltips:hover .dropdown-container {
   display: block;
+}
+
+.p-border-top {
+  border-top: 1px solid var(--border-color2);
+}
+
+.p-btn-wrap {
+  min-width: 80px;
+}
+
+.btn-status-wrap {
+  min-width: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input, button {
+  font-family: var(--default-font);
 }
 
 .content-sec .left-section.left-divider-sec .left-section-inner {
@@ -4589,31 +4607,46 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   border-radius: 6px;
   overflow: hidden;
 }
-.box-component.tab-upload-file, .box-component.tab-question-list {
+.box-component.tab-upload-file, .box-component.tab-question-list, .box-component.tab-search-list {
   display: none;
 }
 .box-component.active {
   display: block;
 }
-.box-component .box-heading {
-  background-color: #dfe4eb;
-  font-weight: 600;
-  font-size: 0.75rem;
-  padding: 15px 12px;
-}
-.box-component .box-content {
+
+.box-content {
   background-color: #fff;
   padding: 12px;
   font-size: 12px;
   line-height: 1.5;
 }
-.box-component .bright-bg {
+.box-content.p-0 {
+  padding: 0;
+}
+.box-content.bg-none {
+  background: transparent;
+}
+
+.box-heading {
+  background-color: #dfe4eb;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 15px 12px;
+}
+
+.bright-bg {
   background-color: #fff;
 }
-.box-component .yellow-bg {
+
+.yellow-bg {
   background-color: #fffad6;
 }
-.box-component .grey-bg {
+
+.grey-bg {
+  background-color: #dfe4eb;
+}
+
+.box-card-bg1 {
   background-color: #dfe4eb;
 }
 
@@ -4624,6 +4657,7 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   display: inline-block;
   margin: 20px 0 0;
   position: relative;
+  overflow: hidden;
 }
 .box-btn .input-file {
   position: absolute;
@@ -4636,7 +4670,11 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 }
 .box-btn .input-file input[type=file] {
   height: 100%;
+  width: 100%;
   cursor: pointer;
+}
+.box-btn.mt-0 {
+  margin-top: 0;
 }
 
 .pink-btn {
@@ -4930,6 +4968,7 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   position: relative;
 }
 .wizard-search .wizard-search-inner input[type=search] {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.38);
   border-radius: 4px;
   -webkit-appearance: none;
   display: block;
@@ -4944,6 +4983,9 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   width: 100%;
   box-sizing: border-box;
   border-radius: 19px;
+}
+.wizard-search .wizard-search-inner input[type=search]:focus {
+  outline: 0;
 }
 .wizard-search .wizard-search-inner input[type=search]:focus + .wizard-auto-list {
   display: block;
@@ -5057,6 +5099,56 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   padding: 0 20px;
   cursor: pointer;
   font-size: 0.75rem;
+}
+
+.wizard-pagination {
+  padding-left: 12px;
+  display: flex;
+  gap: 8px;
+  font-weight: 500;
+}
+.wizard-pagination .wizard-step1 {
+  border: 1px solid #232323;
+  height: 20px;
+  background: transparent;
+  font-size: 0.625rem;
+  color: #232323;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+}
+.wizard-pagination .wizard-page {
+  border: 1px solid #8F9BA5;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  font-size: 0.625rem;
+  color: #8F9BA5;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wizard-pagination .wizard-page.active {
+  border: 1px solid #232323;
+  color: #232323;
+}
+
+.text-light-color {
+  color: var(--text-light-color);
+}
+
+.signature-img-sec {
+  height: 100px;
+  margin: 12px 0;
+  display: flex;
+}
+.signature-img-sec img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .toast {
@@ -5232,6 +5324,6 @@ a {
   width: 75%;
 }
 
-input {
+input, button {
   font-family: var(--default-font);
 }/*# sourceMappingURL=app-style3.css.map */
