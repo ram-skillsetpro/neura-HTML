@@ -272,6 +272,9 @@ body {
 .app-header .app-right-inner .app-icon-w .prompt-ic {
   --icon-file: url("../images/prompt.svg");
 }
+.app-header .app-right-inner .app-icon-w .help-ic {
+  --icon-file: url("../images/help.svg");
+}
 .app-header .app-right-inner .app-user {
   width: 28px;
   height: 28px;
