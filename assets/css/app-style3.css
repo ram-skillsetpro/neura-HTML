@@ -4318,7 +4318,6 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 
 .word-count p {
   font-size: 0.75rem;
-  margin-right: 15px;
   color: #232323;
 }
 
@@ -4655,7 +4654,7 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 
 .box-btn {
   background-color: #5c677d;
-  padding: 7px 20px;
+  padding: 0px 12px;
   border: none;
   display: inline-block;
   margin: 20px 0 0;
