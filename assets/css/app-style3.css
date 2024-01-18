@@ -5153,6 +5153,33 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   height: auto;
 }
 
+.ck-editor-sec {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ck-editor-sec .editor-inner-content {
+  background: var(--app-navigation-background-color);
+  padding: 40px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: var(--default-font-color);
+  line-height: 1.5;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  margin-bottom: 12px;
+}
+.ck-editor-sec .editor-inner-content h3 {
+  margin: 0;
+}
+.ck-editor-sec .editor-inner-content a {
+  color: var(--logo-color);
+}
+.ck-editor-sec .notice.commented {
+  background-color: #FFB2B2;
+}
+
 .toast {
   font-family: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
   padding: 12px;
