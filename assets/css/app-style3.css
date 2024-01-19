@@ -5168,7 +5168,6 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   line-height: 1.5;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
   height: 100%;
-  margin-bottom: 12px;
 }
 .ck-editor-sec .editor-inner-content h3 {
   margin: 0;
