@@ -2236,6 +2236,7 @@ div:hover > .tooltip {
   width: 30%;
 }
 .file-list-card .file-list-row .file-list-action {
+  position: relative;
   width: 48px;
   flex: 0 0 48px;
   justify-content: right;
