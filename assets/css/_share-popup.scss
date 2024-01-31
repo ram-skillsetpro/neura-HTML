@@ -73,7 +73,7 @@
    display: flex;
    border: none;
    height: 24px;
-   line-height: 25px;
+   line-height: 24px;
    color: var(--white);
    font-weight: 700;
    border-radius: 12px;
@@ -86,7 +86,7 @@
    display: flex;
    border: none;
    height: 24px;
-   line-height: 25px;
+   line-height: 24px;
    color: var(--white);
    font-weight: 700;
    border-radius: 12px;
@@ -470,3 +470,136 @@ a.link-underline{
 input,button{
 	font-family: var(--default-font);
 }
+
+
+//popup
+
+.popup-breadcrum{
+   width: 100%;
+      ul{
+         &.breadcrum-ul{
+            display: flex;
+            li{              
+               display: flex;
+               align-items: center;
+              &.list{
+               list-style: none;
+               font-size: size(11);
+               margin-bottom: 2px;             
+               &:not(:last-child){
+                  margin-right: 12px;
+               }               
+               a{
+                  color: var(--text-light-color);
+                  padding:0px 24px 0px 0;
+                  font-size: size(12);
+                  font-weight: 400;
+                  line-height: 1.1;
+                  display: block;
+                  position: relative;
+                  transition: all 0.3s ease-in;
+                  &::after{
+                     content:'';
+                     position: absolute;
+                     top:50%;
+                     transform: translateY(-50%);
+                     right:0;
+                     background-color:#555B65;
+                     width:20px;
+                     height: 20px;
+                     display: flex;
+                     mask-size: 20px 20px;
+                     mask-repeat: no-repeat;
+                     mask-position: center center;
+                     mask-image: var(--background);
+                     -webkit-mask-size: 20px 20px;
+                     -webkit-mask-repeat: no-repeat;
+                     -webkit-mask-position: center center;
+                     -webkit-mask-image: var(--background);
+                     background-size: cover;
+                     --background:url(../images/forward-icon.svg);
+                  }
+                  &.active{
+                     font-weight: 700;
+                  }
+               }
+               &:last-child{
+                  a{
+                     &::after{
+                        display: none;
+                     }
+                  }
+               }
+              }
+            }
+         }   
+      
+      }
+   }
+   .move-folder-list{
+      .folder-img{
+         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+         min-width: 26px;
+         min-height: 26px;
+         width:26px;
+         height: auto;
+         display: flex;
+         mask-size: 26px 26px;
+         mask-repeat: no-repeat;
+         mask-position: center center;
+         -webkit-mask-size: 26px 26px;
+         -webkit-mask-repeat: no-repeat;
+         -webkit-mask-position: center center;         
+         background-size: cover; 
+         mask-image: var(--background);
+         -webkit-mask-image: var(--background);
+         background-color:#F1C62D ;
+         --background: url(../images/folder.svg); 
+      }
+      .forward-btn{
+         border: none;
+         cursor: pointer;
+         width: 26px;
+         height: 26px;
+            display: inline-block;
+            mask-size: 26px 26px;
+            mask-repeat: no-repeat;
+            mask-position: center center;
+            mask-image: var(--icon-file);
+            -webkit-mask-size: 26px 26px;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center center;
+            -webkit-mask-image: var(--icon-file);
+            background-color: #3D586D;
+            --icon-file: url("../images/forward-icon.svg");
+      }
+      .move-button{
+         background: var(--border-color2);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border: none;
+         height: 24px;
+         color: var(--white);
+         font-weight: 400;
+         border-radius: 12px;
+         padding:0 12px;
+         cursor: pointer; 
+         font-size: size(10);
+         transition: 0.3s all;
+         &:hover{
+            background: var(--success-bg);
+
+         }
+         }
+      
+      ul{
+         li{
+            font-size: size(12);
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid var(--border-color2);
+          }
+      }
+   }
