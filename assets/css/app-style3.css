@@ -2706,6 +2706,9 @@ div:hover > .tooltip {
   box-sizing: border-box;
   border-radius: 19px;
 }
+.share-inner .share-input input.bdr6 {
+  border-radius: 6px;
+}
 .share-inner .share-input input:focus {
   outline: none;
 }
