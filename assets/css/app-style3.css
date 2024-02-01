@@ -2706,6 +2706,9 @@ div:hover > .tooltip {
   box-sizing: border-box;
   border-radius: 19px;
 }
+.share-inner .share-input input.bdr6 {
+  border-radius: 6px;
+}
 .share-inner .share-input input:focus {
   outline: none;
 }
@@ -5227,6 +5230,7 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   display: flex;
   gap: 8px;
   font-weight: 500;
+  letter-spacing: normal;
 }
 .wizard-pagination .wizard-step1 {
   border: 1px solid #232323;
@@ -5251,7 +5255,6 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 0;
 }
 .wizard-pagination .wizard-page.active {
   border: 1px solid #232323;

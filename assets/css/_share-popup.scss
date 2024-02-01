@@ -26,6 +26,9 @@
 			width: 100%;
 			box-sizing: border-box;			
 			border-radius: 19px;
+         &.bdr6{
+            border-radius: 6px;
+         }
          &:focus{
             outline: none;
          }
