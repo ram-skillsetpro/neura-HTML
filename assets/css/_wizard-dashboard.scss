@@ -832,6 +832,7 @@ padding-left: 12px;
     display: flex;
     gap: 8px;
     font-weight: 500;
+    letter-spacing: normal;
     .wizard-step1{
         border:1px solid #232323;
         height: 20px;
@@ -856,7 +857,6 @@ padding-left: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
-        letter-spacing: 0;
         &.active{
             border:1px solid #232323; 
             color: #232323;
