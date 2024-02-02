@@ -465,6 +465,10 @@ body {
   color: var(--default-font-color);
 }
 
+.text-light-color {
+  color: var(--text-light-color);
+}
+
 .text-defaul-color {
   color: var(--default-font-color);
 }
@@ -620,6 +624,10 @@ p {
 
 .pt-3 {
   padding-top: 12px;
+}
+
+.max-w-200 {
+  max-width: 200px;
 }
 
 .truncate-line1 {
@@ -3261,6 +3269,48 @@ input, button {
   border-top: 1px solid var(--border-color2);
 }
 
+.external-user-info {
+  width: 100%;
+}
+.external-user-info .external-user-col {
+  display: flex;
+  gap: 12px;
+}
+.external-user-info input {
+  height: 36px;
+  -webkit-appearance: none;
+  display: block;
+  background-color: var(--border-color2);
+  border: 1px solid var(--border-color2);
+  height: 38px;
+  font-size: 0.75rem;
+  color: var(--default-font-color);
+  padding: 12px 12px 12px 12px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.external-user-info input:focus {
+  outline: none;
+}
+.external-user-info .mobile-field-sec {
+  width: 60%;
+  display: flex;
+  gap: 8px;
+}
+.external-user-info .mobile-field-sec .countryCode {
+  max-width: 100px;
+  background-color: var(--border-color2);
+  border: 1px solid var(--border-color2);
+  border-radius: 6px;
+}
+
+.w-half {
+  width: 50%;
+}
+
 .content-sec .left-section.left-divider-sec .left-section-inner {
   max-width: 100%;
   margin: initial;
@@ -5416,6 +5466,165 @@ a {
 
 .inline-block {
   display: inline-block;
+}
+
+.ld-top-sec {
+  display: flex;
+  gap: 12px;
+}
+.ld-top-sec .box-card {
+  flex: 1 1 33.33%;
+  height: 200px;
+  background: var(--comment-bg);
+  border-radius: 6px;
+  padding: 16px 12px;
+}
+.ld-top-sec .box-card:last-child {
+  width: 250px;
+  max-width: 250px;
+}
+.ld-top-sec .box-card .card-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  font-size: 0.75rem;
+  color: var(--default-font-color);
+}
+.ld-top-sec .box-card .card-info-numb {
+  font-size: 1.75rem;
+}
+
+.card-info-title {
+  font-size: 1rem;
+  color: var(--default-font-color);
+}
+
+.show-complete {
+  background-color: var(--white);
+  border-radius: 20px;
+  position: relative;
+  height: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.show-complete-done {
+  background: var(--logo-color);
+  border-radius: 20px;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  transition: 1s ease 0.3s;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.sec-row {
+  display: flex;
+  gap: 12px;
+  min-height: 300px;
+}
+.sec-row .col-50 {
+  flex: 1 1 50%;
+}
+.sec-row .inner-card {
+  background: var(--comment-bg);
+  border-radius: 6px;
+  padding: 16px 12px;
+}
+
+.dash-file-img {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.dash-file-img img {
+  max-width: 48px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.dash-sm-img {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.dash-sm-img img {
+  max-width: 22px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  height: auto;
+}
+
+.dash-file-list ul li {
+  padding: 6px 4px;
+}
+.dash-file-list ul li:last-child {
+  margin-bottom: 6px;
+}
+.dash-file-list ul li:hover {
+  background: var(--white);
+  border-radius: 6px;
+}
+
+.data-box-row {
+  display: flex;
+  gap: 12px;
+  height: 100px;
+}
+.data-box-row .data-box-col {
+  flex: 1 1 33.33%;
+  max-width: 33.33%;
+  background: var(--comment-bg);
+  border-radius: 6px;
+  padding: 12px;
+}
+.data-box-row .data-box-col .data-box-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.data-box-row .data-box-col .data-box-num {
+  font-size: 30px;
+}
+
+.dash-user-list ul li {
+  padding: 6px 4px;
+}
+.dash-user-list ul li:last-child {
+  margin-bottom: 6px;
+}
+.dash-user-list ul li:hover {
+  background: var(--white);
+  border-radius: 6px;
+}
+.dash-user-list ul li .dash-user-img {
+  width: 36px;
+  height: 36px;
+}
+.dash-user-list ul li .dash-user-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-light-color {
+  color: var(--text-light-color);
 }
 
 .popup-container {
