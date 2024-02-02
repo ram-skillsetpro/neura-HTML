@@ -606,3 +606,45 @@ input,button{
           }
       }
    }
+   .external-user-info{
+      width: 100%;
+      .external-user-col{
+         display: flex;
+         gap: 12px;
+      }
+      input {
+			height: 36px;
+			-webkit-appearance: none;
+			display: block; 
+			background-color: var(--border-color2);
+			border: 1px solid  var(--border-color2);
+			height: 38px;
+			font-size: size(12);
+			color: var(--default-font-color);
+			padding: 12px 12px 12px 12px;
+			box-sizing: border-box;
+			position: relative;			
+			width: 100%;
+			box-sizing: border-box;			
+         border-radius: 6px;
+        &:focus{
+            outline: none;
+         }
+		
+		}
+      .mobile-field-sec{
+         width:60%;
+         display:flex;
+         gap:8px;
+         .countryCode{
+            max-width:100px;
+            background-color: var(--border-color2);
+            border: 1px solid  var(--border-color2);
+            border-radius: 6px;
+         }
+
+      }
+   }
+   .w-half{
+      width:50%
+   }
