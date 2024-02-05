@@ -209,14 +209,32 @@
 							<div class="col-50">
 								<div class="flex h-full">
 									<div class="inner-card w-full">
+									<div>
 										<div class="flex mb-4">
 											<div class="card-info-title font-bold">
 												Recent Contracts
 											</div>
 											<span class="grow"></span>
 											<div class="fs10">
-												Sort by <strong>Newest</strong>
-											</div>
+												<div class="sorting-menu-modal relative">
+													Sort by <Button class="sorting-btn down-icon cursor-pointer">Newest</Button>
+													<div class="sorting-menu-card rounded-6">
+														<ul>
+															<li>
+																<div class="truncate-line1">Monthly</div> 
+																<div class="ch-box"><input type="checkbox"></div>
+															</li>
+															<li>
+																<div class="truncate-line1">Daily</div>
+																<div class="ch-box"><input type="checkbox"></div>	 
+															</li>
+															<li>
+																<div class="truncate-line1">Weekly</div>
+																<div class="ch-box"><input type="checkbox"></div>	 
+															</li>						
+														</ul>
+													</div>
+												</div>											</div>
 										</div>
 										<div class="dash-file-list">
 											<ul>
@@ -294,6 +312,7 @@
 												</li>												
 											</ul>
 										</div>
+									</div>
 										<div>
 											<button class="view-all-btn">
 												All Contracts	
@@ -411,10 +430,106 @@
 						</div>
 					</section>
 					<section class="relative mb-3">
+						<div class="dash-team-row">
+							<div class="col-50">
+								<div class="team-alert-sec">
+									<div class="team-alert-col">
+										<div class="alert-inner-card rounded-6 h-full">
+											<div>
+												<div class="font-semibold fs14 mb-3">Notifications</div>
+												<div class="fs10 mb-3">2 Unread message</div>
+												<div class="dash-notification">
+													<div class="notification-inner-card active">
+														<img src="images/harry.jpg" class="rounded-full">
+													</div>
+													<div class="notification-inner-card">
+														<img src="images/harry.jpg" class="rounded-full">
+													</div>
+													<div class="notification-inner-card">
+														<img src="images/harry.jpg" class="rounded-full">
+													</div>
+												</div>
+											</div>
+
+											<div>
+												<button class="view-all-btn">
+													All Expiring Contracts	
+												</button>
+											</div>
+										</div>
+
+									</div>
+									<div class="team-alert-col">
+										<div class="ta-inner-card rounded-6 h-full">
+											<div class="font-semibold fs14 mb-3">Teams</div>
+											<div class="dash-team">
+												<div class="team-info-row">
+													<span>
+														Legal
+													</span>
+													<span class="grow"></span>
+													<span>
+														29
+													</span>
+												</div>
+												<div class="team-info-row" style="width: 70%;">
+													<span>
+														Marketing
+													</span>
+													<span class="grow"></span>
+													<span>
+														12
+													</span>
+												</div>
+												<div class="team-info-row" style="width: 40%;">
+													<span>
+														Trial
+													</span>
+													<span class="grow"></span>
+													<span>
+														5
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-50">
+								<div class="dash-team-inner-card w-full h-full">
+									<div class="body-text font-semibold fs14 mb-3">Folders</div>
+									<div class="folder-chips-sec">
+										<div class="folder-chips">
+											<button class="plush-btn">+</button> Target
+										</div>
+										<div class="folder-chips">
+											<button class="plush-btn">+</button> CCNT
+										</div>
+										<div class="folder-chips">
+											<button class="plush-btn">+</button> Demo Folder
+										</div>
+										<div class="folder-chips">
+											<button class="plush-btn">+</button> Target
+										</div>
+										<div class="folder-chips">
+											<button class="plush-btn">+</button> CCNT
+										</div>
+										<div class="folder-chips">
+											<button class="plush-btn">+</button> Demo Folder
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</section>					
+					<section class="relative mb-3">
 						<div class="sec-row">
 							<div class="col-50">
 								<div class="flex h-full">
 									<div class="inner-card w-full">
+										<div>
 										<div class="flex mb-4">
 											<div class="card-info-title font-bold">
 												Recent Contracts
@@ -452,14 +567,99 @@
 												</li>												
 											</ul>
 										</div>
+										</div>
 										<div>
 											<button class="view-all-btn">
-												All Contracts	
+												All Users	
 											</button>
 										</div>
 									</div>
-								</div>							</div>
-							<div class="col-50">22222</div>
+								</div>
+							</div>
+							<div class="col-50">
+								<div class="flex h-full">
+									<div class="inner-card w-full">
+										<div>
+										<div class="flex mb-4">
+											<div class="card-info-title font-bold">
+												Contract By Type
+											</div>
+											<span class="grow"></span>
+											<div class="fs10">
+												<div class="sorting-menu-modal relative">
+													Sort by <Button class="sorting-btn down-icon cursor-pointer">Weekly</Button>
+													<div class="sorting-menu-card rounded-6">
+														<ul>
+															<li>
+																<div class="truncate-line1">Monthly</div> 
+																<div class="ch-box"><input type="checkbox"></div>
+															</li>
+															<li>
+																<div class="truncate-line1">Daily</div>
+																<div class="ch-box"><input type="checkbox"></div>	 
+															</li>
+															<li>
+																<div class="truncate-line1">Weekly</div>
+																<div class="ch-box"><input type="checkbox"></div>	 
+															</li>						
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="relative">
+											<div class="contract-type-sec">
+												<div class="flex items-center">
+													<div class="contract-fill-box mr-3" style="background: #488FCE;"></div>MSA
+												</div>
+												<span class="grow"></span>
+												<div class="fill-num-sec font-bold">
+													<div class="contract-fill-num flex items-center justify-center rounded-6" style="width:23%;background: #488FCE;">23</div>
+												</div>
+											</div>
+											<div class="contract-type-sec">
+												<div class="flex items-center">
+													<div class="contract-fill-box mr-3" style="background: #3f2be2;"></div>NDA
+												</div>
+												<span class="grow"></span>
+												<div class="fill-num-sec font-bold">
+													<div class="contract-fill-num flex items-center justify-center rounded-6" style="width:50%;background: #3f2be2;">74</div>
+												</div>
+											</div>
+											<div class="contract-type-sec">
+												<div class="flex items-center">
+													<div class="contract-fill-box mr-3" style="background: #812be2;"></div>Franchise Agreement
+												</div>
+												<span class="grow"></span>
+												<div class="fill-num-sec font-bold">
+													<div class="contract-fill-num flex items-center justify-center rounded-6" style="width:100%;background: #812be2;">100</div>
+												</div>
+											</div>
+											<div class="contract-type-sec">
+												<div class="flex items-center">
+													<div class="contract-fill-box mr-3" style="background: #c82be2;"></div>Consultant Agreement
+												</div>
+												<span class="grow"></span>
+												<div class="fill-num-sec font-bold">
+													<div class="contract-fill-num flex items-center justify-center rounded-6" style="width:60%;background: #c82be2;">60</div>
+												</div>
+											</div>
+											<div class="contract-type-sec">
+												<div class="flex items-center">
+													<div class="contract-fill-box mr-3"></div>Sales Agreement
+												</div>
+												<span class="grow"></span>
+												<div class="fill-num-sec font-bold">
+													<div class="contract-fill-num flex items-center justify-center rounded-6" style="width:40%;">40</div>
+												</div>
+											</div>											
+										</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
 					</section>
 				</div>
 			</div>
