@@ -5373,6 +5373,26 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   outline: 0;
 }
 
+.contract-name-wrap .input-name {
+  background: var(--border-color3);
+  font-size: 0.875rem !important;
+  border: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 4px;
+  border-radius: 0;
+  color: var(--default-font-color);
+  transition: all 0.3s ease-in;
+}
+.contract-name-wrap .input-name:hover {
+  background: var(--border-color2);
+}
+.contract-name-wrap .input-name:focus-visible {
+  border-bottom: 1px solid var(--link-color);
+  outline: 0;
+  color: #000;
+  background: var(--border-color2);
+}
+
 .toast {
   font-family: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
   padding: 12px;
@@ -5603,6 +5623,21 @@ a {
   font-size: 24px;
 }
 
+.dash-user-list {
+  height: 200px;
+  overflow: auto;
+}
+.dash-user-list::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.dash-user-list:hover::-webkit-scrollbar {
+  width: 8px;
+}
+.dash-user-list:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+}
 .dash-user-list ul li {
   padding: 6px 4px;
 }

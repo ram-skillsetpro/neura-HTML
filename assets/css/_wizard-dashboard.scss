@@ -928,3 +928,25 @@ padding-left: 12px;
     }
     }
 }
+.contract-name-wrap{
+        .input-name{
+            background:var(--border-color3);
+            font-size:size(14)!important;
+            border:0;
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 4px;
+            border-radius: 0;
+            color: var(--default-font-color);
+            transition: all 0.3s ease-in;
+            &:hover{
+              background:var(--border-color2);
+            }
+            &:focus-visible{
+                border-bottom: 1px solid var(--link-color);
+                outline: 0;
+                color: #000;
+                background:var(--border-color2);
+    
+            }
+        }
+}
