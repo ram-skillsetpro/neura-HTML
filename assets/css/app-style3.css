@@ -1277,6 +1277,63 @@ p {
   border-radius: 100%;
 }
 
+.raise-wrap {
+  background: #f1f1f1;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.raise-wrap:hover .raised-help-sec {
+  display: block;
+}
+
+.raised-help-sec {
+  display: none;
+  padding: 12px;
+  background: var(--white);
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 300px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+.raised-help-sec p {
+  margin-bottom: 0 !important;
+}
+.raised-help-sec::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background: #fff;
+  padding: 5px;
+  right: 12px;
+  transform: rotate(45deg);
+}
+
+.raise-btn {
+  width: 26px;
+  height: 26px;
+  display: block;
+  mask-size: 26px 26px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 26px 26px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #7C828D;
+  --icon-file: url("../images/HandPalm.svg");
+}
+.raise-btn.raised {
+  background-color: #444488;
+}
+
 .content-sec {
   position: relative;
   width: 100%;
@@ -5899,6 +5956,96 @@ a {
 
 .text-light-color {
   color: var(--text-light-color);
+}
+
+div.other-files-view > div > table {
+  margin: 4px auto;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  border-left: none;
+  border-right: none;
+  border-collapse: collapse;
+  text-align: left;
+}
+div.other-files-view > div > table.compact {
+  font-size: 0.8em;
+  border-collapse: collapse;
+}
+div.other-files-view > div > table.compact p {
+  padding: 6px 12px;
+}
+div.other-files-view > div > table tr td, div.other-files-view > div > table tr th {
+  border-top: 1px solid #e3e3e3;
+}
+div.other-files-view > div > table tr td:first-child, div.other-files-view > div > table tr th:first-child {
+  border-left: none;
+}
+div.other-files-view > div > table tr td:last-child, div.other-files-view > div > table tr th:last-child {
+  border-right: none;
+}
+div.other-files-view > div > table tr td.number, div.other-files-view > div > table tr th.number {
+  text-align: right;
+  width: 15%;
+}
+div.other-files-view > div > table tr td.name, div.other-files-view > div > table tr th.name {
+  width: 27.5%;
+}
+div.other-files-view > div > table.files-table {
+  border-top: none;
+  border-bottom: none;
+  margin: 0px auto;
+}
+div.other-files-view > div > table.files-table thead tr.file-row:first-child th, div.other-files-view > div > table.files-table thead tr.file-row:first-child td {
+  border-top: none;
+}
+div.other-files-view > div > table.files-table tbody tr.file-row:last-child th, div.other-files-view > div > table.files-table tbody tr.file-row:last-child td {
+  border-bottom: none;
+}
+div.other-files-view > div > table.files-table tr.file-row th, div.other-files-view > div > table.files-table tr.file-row td {
+  border-left: none;
+  border-right: none;
+}
+div.other-files-view > div > table.files-table tr.file-row:hover th, div.other-files-view > div > table.files-table tr.file-row:hover td {
+  color: #000000;
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+
+.file-row-fileName > span {
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+
+th > span {
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+
+.other-files-view .file-row-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.file-action {
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.files-table th {
+  cursor: cell;
+  padding: 8px;
+  text-align: left;
+}
+
+.files-table td {
+  padding: 8px;
+}
+
+.file-list-action {
+  margin: auto;
 }
 
 .popup-container {

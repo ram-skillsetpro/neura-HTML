@@ -285,88 +285,52 @@
 						<div class="flex view-all-header mb-3">
 						<h2 class="fs10 text-defaul-color font-normal tracking-wider uppercase ml-3">My Drafts</h2>
 					</div>
-						<div class="file-list-card rounded-6">
-							<div class="file-list-row">
-								<div class="file-list-checkbox-sec fs10 uppercase">
-									<input type="checkbox">
-								</div>
-								<div class="file-list-name fs10 uppercase left-space tracking-wider">
-									Name
-								</div>
-								<div class="file-list-modified fs10 uppercase tracking-wider">
-									Stage
-								</div>
-								<div class="file-list-modified fs10 uppercase tracking-wider">
-									Last Modified
-								</div>
-								<div class="file-list-shared fs10 uppercase tracking-wider">
-									Shared with
-								</div>
-								<div class="file-list-action tracking-wider">
-									<button class="icon-option-dot"></button>
-								</div>
-							</div>
-							<!--Content New file added row start here-->
-							<div class="file-list-row">
-								<div class="file-list-checkbox-sec fs12">
-									<input type="checkbox">
-								</div>
-								<div class="file-list-name fs12">
-									<div class="flex items-center">
-										<i class="w-20 h-20 mr-4"><img src="assets/images/icon-word.svg" /></i>
-										Paradigm Shift NDA 
+					<div class="wrapper file-list-card rounded-6 other-files-view"><div>
+						<table cellspacing="0" class="files-table datatable" id="myTable">
+							<thead>
+							<tr class="file-row">
+								<th class="file-row-fileSelector ">
+									<span>
+										<div class="file-item-selector"><input type="checkbox"></div></span></th><th class="file-row-preContractName "><span>Name</span></th><th class="file-row-state "><span>Stage</span></th>
+						<th class="file-row-createdOn">
+							<span>Last Modified</span>
+						</th>
+						<th class="file-row-createdOn">
+							<span>Owner</span>
+						</th>
+						<th class="file-row-sharedWith "><span>Shared With</span></th>
+						<th class="file-row-action "><span><div class="file-list-action"><span class="file-action">Action</span></div></span>
+						</th>
+					</tr>
+				</thead>
+						<tbody>
+						<tr class="file-row ">
+							<td class="file-row-fileSelector"><div class="file-item-selector"><input type="checkbox"></div></td><td class="file-row-preContractName"><div class="file-list-name fs12 flex items-center">										<i class="w-20 h-20 mr-4"><img src="assets/images/icon-word.svg" /></i>
+							<div class="flex items-center file-title-table inline-block overflow-hidden truncate-line1 lh1 rounded-6" data-fulltext="12-dec-a-1">12-dec-a-1</div></div></td>
+							<td class="file-row-state"><div class="file-list-modified fs12">Draft</div></td>
+							<td class="file-row-createdOn">
+								<div class="file-list-modified fs12">12th Feb 2024</div>
+							</td>
+							<td class="file-row-createdOn">
+								<div class="file-list-shared fs12"><div class="flex"><div class="sharing-members li-overlap"><ul><li><div class="ic-member tool-tip-wrap" style="background-color: rgb(254, 109, 115);">AJ<div class="tool-tip-card rounded-6"><div class="block font-bold">Ajay</div></div></div></li></ul></div></div></div>
+							</td>
+							<td class="file-row-sharedWith">
+								<div class="file-list-shared fs12"><div class="flex"><div class="sharing-members li-overlap"><ul><li><div class="ic-member tool-tip-wrap" style="background-color: rgb(254, 109, 115);">AJ<div class="tool-tip-card rounded-6"><div class="block font-bold">Ajay</div></div></div></li><li><div class="ic-member tool-tip-wrap" style="background-color: rgb(85, 166, 48);">AN<div class="tool-tip-card rounded-6"><div class="block font-bold">Anil</div></div></div></li><li><div class="ic-member tool-tip-wrap" style="background-color: rgb(251, 139, 36);">KU<div class="tool-tip-card rounded-6"><div class="block font-bold">Kunal</div></div></div></li><li><div class="ic-member tool-tip-wrap" style="background-color: rgb(60, 110, 113);">VA<div class="tool-tip-card rounded-6"><div class="block font-bold">Varun</div></div></div></li></ul></div></div></div>
+							</td>
+							<td class="file-row-action">
+								<div class="file-list-action"><button class="icon-option-dot"></button></div></td>
+						</tr>
+						
+						
+					</tbody>
+				</table>
+				</div>
+				<div>
+						<div id="myTable_info" role="status" aria-live="polite"></div>
+						<div class="dataTables_paginate paging_simple_numbers" id="myTable_paginate"><div class="mt-3 mb-2 flex justify-end"><button class="load-more-btn paginate_button next ">Load More</button></div></div>
+					</div>
+				</div>
 
-									</div>
-
-								</div>
-								<div class="file-list-modified fs12">
-									Approval
-								</div>
-								<div class="file-list-modified fs12">
-									23rd Jan 2022
-								</div>
-								<div class="file-list-shared fs12">
-									<div class="flex">							
-									<div class="sharing-members li-overlap">
-										<ul>
-											<li>
-												<div class="ic-member tool-tip-wrap">
-													<img src="images/harry.jpg" />
-													<div class="tool-tip-card rounded-6">
-														<div class="block font-bold">Santosh Thakur</div>
-														Dew Solutions Team
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="ic-member tool-tip-wrap" style="background:#ff0000">
-													YT
-													<div class="tool-tip-card rounded-6">
-														<div class="block font-bold">YT</div>
-														Dew Solutions Team
-													</div>
-												</div>		
-											</li>
-																		
-											</ul>					
-									
-											
-
-									</div>
-														
-								</div>
-								</div>
-								<div class="file-list-action">
-									<button class="icon-option-dot"></button>
-								</div>
-							</div>
-							<!--Content first row start here-->
-														
-							<div class="mt-3 mb-2 flex justify-center">
-								<button class="load-more-btn paginate_button next ">Load More</button>
-							</div>
-							
-						</div>
 					</section>
 					<!--Draft folders section start here-->
 					<section class="mb-5">
