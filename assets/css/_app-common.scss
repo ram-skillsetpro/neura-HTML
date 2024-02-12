@@ -687,3 +687,62 @@ p{padding:0;margin:0;}
    height:11px;
    border-radius: 100%;
 }
+.raise-wrap{
+  background: #f1f1f1; 
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  &:hover{
+   .raised-help-sec{
+      display: block;
+
+   }
+  }
+}
+.raised-help-sec{
+   display: none;
+   padding: 12px;
+   background: var(--white);
+   position: absolute;
+   top:calc(100% + 6px);
+   right:0;
+   width:300px;
+   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+   p{
+      margin-bottom: 0!important;
+   }
+   &::before{
+      content: '';
+      position: absolute;
+      top:-6px;
+      border-top:1px solid transparent;
+      border-left:1px solid transparent;
+      background: #fff;
+      padding: 5px;
+      right:12px;
+      transform: rotate(45deg);
+   }
+}
+.raise-btn{
+   width: 26px;
+      height: 26px;
+      display: block;
+      mask-size: 26px 26px;
+      mask-repeat: no-repeat;
+      mask-position: center center;
+      mask-image: var(--icon-file);
+      -webkit-mask-size: 26px 26px;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center center;
+      -webkit-mask-image: var(--icon-file);
+      background-color: #7C828D;
+      --icon-file: url("../images/HandPalm.svg");
+
+   &.raised{
+      background-color: #444488;
+
+   }
+}
