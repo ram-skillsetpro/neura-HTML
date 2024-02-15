@@ -1298,6 +1298,7 @@ p {
   top: calc(100% + 6px);
   right: 0;
   width: 300px;
+  z-index: 2;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 .raised-help-sec p {
@@ -1328,7 +1329,7 @@ p {
   -webkit-mask-position: center center;
   -webkit-mask-image: var(--icon-file);
   background-color: #7C828D;
-  --icon-file: url("../images/HandPalm.svg");
+  --icon-file: url("../images/hand.svg");
 }
 .raise-btn.raised {
   background-color: #444488;
@@ -5448,6 +5449,24 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   outline: 0;
   color: #000;
   background: var(--border-color2);
+}
+
+.wizard-comment {
+  padding-top: 6px;
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 120px;
+}
+.wizard-comment::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.wizard-comment:hover::-webkit-scrollbar {
+  width: 8px;
+}
+.wizard-comment:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
 }
 
 .toast {

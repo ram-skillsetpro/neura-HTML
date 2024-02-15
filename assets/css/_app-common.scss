@@ -710,6 +710,7 @@ p{padding:0;margin:0;}
    top:calc(100% + 6px);
    right:0;
    width:300px;
+   z-index: 2;
    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
    p{
       margin-bottom: 0!important;
@@ -739,7 +740,7 @@ p{padding:0;margin:0;}
       -webkit-mask-position: center center;
       -webkit-mask-image: var(--icon-file);
       background-color: #7C828D;
-      --icon-file: url("../images/HandPalm.svg");
+      --icon-file: url("../images/hand.svg");
 
    &.raised{
       background-color: #444488;
