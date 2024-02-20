@@ -967,3 +967,29 @@ padding-left: 12px;
 }
     padding-bottom: 120px;
 }
+.sig-wrap{
+    width: 83px;
+    height: 103px;
+    display: flex;
+    border: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.doc-sig-position{
+    margin-top: 16px;
+    display: flex;
+    gap:16px;
+    justify-content: space-between;
+}
+.sig-bottom{
+    background: url(../images/bottom-active.svg);
+
+}
+.sig-slide{
+    background: url(../images/sides.svg);
+}
+.sig-slide-bottom{
+    background: url(../images/bottom-sides.svg);
+
+}
