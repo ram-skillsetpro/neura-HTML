@@ -5470,12 +5470,12 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 }
 
 .sig-wrap {
-  width: 83px;
+  width: 85px;
   height: 103px;
   display: flex;
   border: 0;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 85px 103px;
 }
 
 .doc-sig-position {
@@ -5486,15 +5486,15 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 }
 
 .sig-bottom {
-  background: url(../images/bottom-active.svg);
+  background-image: url(../images/bottom-active.svg);
 }
 
 .sig-slide {
-  background: url(../images/sides.svg);
+  background-image: url(../images/sides.svg);
 }
 
 .sig-slide-bottom {
-  background: url(../images/bottom-sides.svg);
+  background-image: url(../images/bottom-sides.svg);
 }
 
 .toast {
