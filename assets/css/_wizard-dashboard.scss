@@ -968,12 +968,12 @@ padding-left: 12px;
     padding-bottom: 120px;
 }
 .sig-wrap{
-    width: 83px;
+    width: 85px;
     height: 103px;
     display: flex;
     border: 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 85px 103px;
 
 }
 .doc-sig-position{
@@ -983,13 +983,13 @@ padding-left: 12px;
     justify-content: space-between;
 }
 .sig-bottom{
-    background: url(../images/bottom-active.svg);
+    background-image: url(../images/bottom-active.svg);
 
 }
 .sig-slide{
-    background: url(../images/sides.svg);
+    background-image: url(../images/sides.svg);
 }
 .sig-slide-bottom{
-    background: url(../images/bottom-sides.svg);
+    background-image: url(../images/bottom-sides.svg);
 
 }
