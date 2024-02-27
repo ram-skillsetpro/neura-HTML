@@ -5476,6 +5476,32 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   border: 0;
   background-repeat: no-repeat;
   background-size: 85px 103px;
+  position: relative;
+}
+.sig-wrap.sig-selected .apply-icon, .sig-wrap:hover .apply-icon {
+  display: block;
+}
+.sig-wrap .apply-icon {
+  display: none;
+  --icon-file: url(../images/tick-apply.svg);
+  background-color: #80AB88;
+  mask-size: 38px 38px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 38px 38px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
 }
 
 .doc-sig-position {
@@ -5486,7 +5512,7 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 }
 
 .sig-bottom {
-  background-image: url(../images/bottom-active.svg);
+  background-image: url(../images/bottom.svg);
 }
 
 .sig-slide {
