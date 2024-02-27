@@ -5598,7 +5598,7 @@ a {
 }
 .ld-top-sec .box-card {
   flex: 1 1 33.33%;
-  height: 200px;
+  min-height: 150px;
   background: var(--comment-bg);
   border-radius: 6px;
   padding: 16px 12px;
