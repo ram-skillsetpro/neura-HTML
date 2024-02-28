@@ -1335,6 +1335,74 @@ p {
   background-color: #444488;
 }
 
+.pre-ques-sec {
+  background: red;
+}
+.pre-ques-sec:hover .prompt-pre-question {
+  width: 100%;
+  position: absolute;
+  display: block;
+  height: auto;
+  bottom: 100%;
+}
+
+.pre-ques-btn {
+  width: 24px;
+  height: 24px;
+  display: block;
+  mask-size: 24px 24px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 24px 24px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #7C828D;
+  --icon-file: url("../images/help.svg");
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 8px;
+}
+.pre-ques-btn:hover {
+  background-color: var(--logo-color);
+}
+
+.prompt-pre-question {
+  width: 100%;
+  display: none;
+  height: 0;
+}
+.prompt-pre-question ul {
+  background: var(--comment-bg);
+  padding: 0 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.prompt-pre-question ul li {
+  padding: 12px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+.prompt-pre-question ul li:hover {
+  background: #f1f1f1;
+}
+.prompt-pre-question ul li a {
+  color: var(--default-font-color);
+  text-decoration: none;
+}
+.prompt-pre-question ul li:not(:last-child) {
+  border-bottom: 1px solid var(--border-color1);
+}
+
+textarea {
+  font-family: var(--default-font);
+}
+
 .content-sec {
   position: relative;
   width: 100%;
@@ -2223,6 +2291,9 @@ div:hover > .tooltip {
 }
 .comment-sec .received-card p, .comment-sec .send-card p {
   margin-bottom: 16px;
+}
+.comment-sec .received-card p:last-child, .comment-sec .send-card p:last-child {
+  margin-bottom: 0;
 }
 .comment-sec .received-card ul, .comment-sec .send-card ul {
   padding: 0;
@@ -3894,6 +3965,7 @@ input, button {
 
 .prompt-right-wrap {
   padding-right: 10px;
+  height: 100%;
 }
 
 .scroll-custom {
