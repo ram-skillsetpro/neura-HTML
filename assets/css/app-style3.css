@@ -1372,7 +1372,16 @@ p {
   list-style: none;
   border-radius: 6px;
   margin-bottom: 8px;
-  overflow: hidden;
+  overflow: auto;
+  max-height: 250px;
+}
+.prompt-pre-question ul::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.prompt-pre-question ul::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
 }
 .prompt-pre-question ul li {
   padding: 12px;
