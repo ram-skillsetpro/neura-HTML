@@ -1023,3 +1023,102 @@ padding-left: 12px;
     background-image: url(../images/bottom-sides.svg);
 
 }
+.custom-select {
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    background: var(--icon-bg);
+    outline: none;
+    border: solid 1px #ccc;
+    color: #232323;
+    min-width: 269px;
+    font-weight: 600;
+    font-size: .875rem;
+    padding: 4px;
+    cursor: pointer;
+    font-family: var(--default-font)
+}
+.add-filed-form{
+    background: var(--icon-bg);
+    padding: 12px;
+    border-radius: 6px;
+    label{
+        margin:0;
+        font-size: size(12);
+        padding-right: 8px;
+        min-width: 100px;
+        width: 100px;
+    }
+    .fl-input{
+        flex-grow: 1;
+        position: relative;
+        font-size: size(12);
+    }
+    .add-field-auto-list{
+        background: #fff;
+        border-radius:0 0 6px 6px;
+        position: absolute;
+        top:37px;
+        left: 0;
+        width: 100%;
+        margin:0;
+        max-height: 250px;
+        z-index: 5;
+        overflow-y: auto;
+        overflow-x:hidden;
+        &::-webkit-scrollbar {
+            background-color:transparent;
+            width: 8px;
+        }
+        &:hover::-webkit-scrollbar {
+            width: 8px;
+       }
+       &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, .2);
+        border-radius: 24px;
+   }
+        ul{
+
+            li{
+                font-size:size(12); 
+                padding: 8px 12px;
+                cursor: pointer;
+                text-transform: capitalize;
+                transition:0.3s;
+                &:not(:last-child){
+                    border-bottom: 1px solid #c6cdd4; 
+                }
+                // &:hover{
+                // background-color: #dfe4eb;   
+                // transition:0.3s; 
+                // }
+                }
+        }
+      
+    }
+    input{
+        margin-right: 0;
+        background: transparent;
+    }
+    .filed-row{
+        display: flex;
+        align-items: center;
+
+    }
+    .sl-select {
+        height: 36px;
+        border: none;
+        min-width: 248px;
+
+        border-radius: 4px;
+        background: var(--icon-bg);
+        outline: none;
+        border: solid 1px #ccc;
+        color: #232323;
+        font-size:size(12);
+        padding: 4px;
+        cursor: pointer;
+        font-family: var(--default-font)
+    }
+
+}

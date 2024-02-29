@@ -18,7 +18,11 @@ a {
 		background-color: #ccc;
 		color: #fff; //inherit;
 	}
-	
+	&-green {
+		border: 1px solid var(--success-bg);
+		background-color: var(--success-bg);
+		color: #fff;
+	}
 	&-red {
 		border: 1px solid var(--logo-color);
 		background-color: var(--logo-color);

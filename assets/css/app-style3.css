@@ -642,6 +642,7 @@ p {
   resize: none;
   background: #fff;
   font-size: 0.875rem;
+  font-family: var(--default-font);
 }
 
 .w-20 {
@@ -1803,6 +1804,11 @@ a {
 .button-flat, .button.disabled {
   border: 1px solid #ccc;
   background-color: #ccc;
+  color: #fff;
+}
+.button-green {
+  border: 1px solid var(--success-bg);
+  background-color: var(--success-bg);
   color: #fff;
 }
 .button-red {
@@ -5593,6 +5599,96 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 
 .sig-slide-bottom {
   background-image: url(../images/bottom-sides.svg);
+}
+
+.custom-select {
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  background: var(--icon-bg);
+  outline: none;
+  border: solid 1px #ccc;
+  color: #232323;
+  min-width: 269px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 4px;
+  cursor: pointer;
+  font-family: var(--default-font);
+}
+
+.add-filed-form {
+  background: var(--icon-bg);
+  padding: 12px;
+  border-radius: 6px;
+}
+.add-filed-form label {
+  margin: 0;
+  font-size: 0.75rem;
+  padding-right: 8px;
+  min-width: 100px;
+  width: 100px;
+}
+.add-filed-form .fl-input {
+  flex-grow: 1;
+  position: relative;
+  font-size: 0.75rem;
+}
+.add-filed-form .add-field-auto-list {
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  max-height: 250px;
+  z-index: 5;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.add-filed-form .add-field-auto-list::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.add-filed-form .add-field-auto-list:hover::-webkit-scrollbar {
+  width: 8px;
+}
+.add-filed-form .add-field-auto-list:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+}
+.add-filed-form .add-field-auto-list ul li {
+  font-size: 0.75rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.add-filed-form .add-field-auto-list ul li:not(:last-child) {
+  border-bottom: 1px solid #c6cdd4;
+}
+.add-filed-form input {
+  margin-right: 0;
+  background: transparent;
+}
+.add-filed-form .filed-row {
+  display: flex;
+  align-items: center;
+}
+.add-filed-form .sl-select {
+  height: 36px;
+  border: none;
+  min-width: 248px;
+  border-radius: 4px;
+  background: var(--icon-bg);
+  outline: none;
+  border: solid 1px #ccc;
+  color: #232323;
+  font-size: 0.75rem;
+  padding: 4px;
+  cursor: pointer;
+  font-family: var(--default-font);
 }
 
 .toast {

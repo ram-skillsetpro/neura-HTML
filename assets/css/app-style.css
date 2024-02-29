@@ -46,6 +46,11 @@ a {
   background-color: #ccc;
   color: #fff;
 }
+.button-green {
+  border: 1px solid var(--success-bg);
+  background-color: var(--success-bg);
+  color: #fff;
+}
 .button-red {
   border: 1px solid var(--logo-color);
   background-color: var(--logo-color);
