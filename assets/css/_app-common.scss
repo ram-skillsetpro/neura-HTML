@@ -99,6 +99,8 @@ p{padding:0;margin:0;}
          width: 16px;
    }
 }
+
+button:disabled {opacity: 0.5;cursor: not-allowed;}
 .button-gray{
    background: var(--comment-bg1);
    padding:5px 10px;
@@ -816,3 +818,25 @@ p{padding:0;margin:0;}
   textarea{
    font-family: var(--default-font);
   }
+.trash-btn{
+   border: 0;
+   width: 24px;
+      height: 24px;
+      display: block;
+      mask-size: 24px 24px;
+      mask-repeat: no-repeat;
+      mask-position: center center;
+      mask-image: var(--icon-file);
+      -webkit-mask-size: 24px 24px;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center center;
+      -webkit-mask-image: var(--icon-file);
+      background-color: #7C828D;
+      --icon-file: url("../images/trash-icons.svg");
+     cursor: pointer;
+     &:hover{
+      background-color:var(--logo-color);
+     }
+
+
+}
