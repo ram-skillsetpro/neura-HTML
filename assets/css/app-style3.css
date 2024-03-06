@@ -1430,6 +1430,32 @@ textarea {
   background-color: var(--logo-color);
 }
 
+.download-file {
+  padding-right: 18px;
+  position: relative;
+  display: block;
+}
+.download-file::after {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  width: 16px;
+  height: 16px;
+  mask-size: 16px 16px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 16px 16px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #444488;
+  --icon-file: url("../images/upload-icon.svg");
+}
+
 .content-sec {
   position: relative;
   width: 100%;

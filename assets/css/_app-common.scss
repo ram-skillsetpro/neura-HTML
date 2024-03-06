@@ -99,7 +99,7 @@ p{padding:0;margin:0;}
          width: 16px;
    }
 }
-
+.link-disable{opacity: 0.5!important;cursor: not-allowed!important;}
 button:disabled {opacity: 0.5;cursor: not-allowed;}
 .button-gray{
    background: var(--comment-bg1);
@@ -780,7 +780,7 @@ button:disabled {opacity: 0.5;cursor: not-allowed;}
    // display: none;
    // height: 0;	
 	ul{
-		background: var(--comment-bg);
+		background: var(--comment-bg1);
 		padding: 0 0;
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 		list-style: none;
@@ -837,6 +837,32 @@ button:disabled {opacity: 0.5;cursor: not-allowed;}
      &:hover{
       background-color:var(--logo-color);
      }
+}
 
+.download-file{
+   padding-right:18px;
+   position: relative;
+   display: block;
+   &::after{
+      position: absolute;
+      z-index:2;
+      content: '';
+      right:0;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+      width: 16px;
+      height: 16px;
+      // display: flex;
+      mask-size: 16px 16px;
+      mask-repeat: no-repeat;
+      mask-position: center center;
+      mask-image: var(--icon-file);
+      -webkit-mask-size: 16px 16px;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center center;
+      -webkit-mask-image: var(--icon-file);
+      background-color: #444488;
+      --icon-file: url("../images/upload-icon.svg");
 
+   }
 }
