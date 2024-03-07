@@ -44,6 +44,12 @@ img{width: 100%; height: auto;}
    line-height: 1;
    cursor: pointer;
 }
+.xl-button{ 
+   padding: 9px 12px;
+   font-size: size(18);
+   font-family: $font-family-primary;
+   cursor: pointer;
+}
 .xs-button{ 
    padding: 0px 12px;
    font-size: size(10);
@@ -100,7 +106,7 @@ p{padding:0;margin:0;}
    }
 }
 .link-disable{opacity: 0.5!important;cursor: not-allowed!important;}
-button:disabled {opacity: 0.5;cursor: not-allowed;}
+button:disabled {background:#E3E3E3;border:1px solid #E3E3E3;cursor: not-allowed;}
 .button-gray{
    background: var(--comment-bg1);
    padding:5px 10px;

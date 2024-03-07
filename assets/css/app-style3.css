@@ -516,6 +516,13 @@ img {
   cursor: pointer;
 }
 
+.xl-button {
+  padding: 9px 12px;
+  font-size: 1.125rem;
+  font-family: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
+  cursor: pointer;
+}
+
 .xs-button {
   padding: 0px 12px;
   font-size: 0.625rem;
@@ -683,8 +690,14 @@ p {
   width: 16px;
 }
 
+.link-disable {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
 button:disabled {
-  opacity: 0.5;
+  background: #E3E3E3;
+  border: 1px solid #E3E3E3;
   cursor: not-allowed;
 }
 
@@ -1372,7 +1385,7 @@ button:disabled {
   width: 100%;
 }
 .prompt-pre-question ul {
-  background: var(--comment-bg);
+  background: var(--comment-bg1);
   padding: 0 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   list-style: none;
@@ -3700,7 +3713,7 @@ input, button {
 }
 .file-upload-link input[type=file] {
   opacity: 0;
-  width: 100;
+  width: 100%;
   height: 100%;
   padding-left: 180px;
   cursor: pointer;
@@ -5741,6 +5754,11 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
   padding: 4px;
   cursor: pointer;
   font-family: var(--default-font);
+}
+
+.c-padding .right-top-sec {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .toast {
