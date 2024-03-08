@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SimpleO.ai - The Future of Contract Management is here</title>
+		
+		<!-- insert og here --> 
+
+		<link rel="stylesheet" type="text/css" href="assets/css/app-style3.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			.loader-section{
+				display: flex;
+				height: 100vh;
+				width: 100vw;
+				align-items: center;
+				justify-content: center;
+			}
+			.circle-wrap{
+				width:200px;
+				height: 200px;
+				border-radius: 100%;
+				position: relative;
+				overflow: hidden;
+				background-color: #fff;
+				margin: auto;
+			}
+			.circle-1,.circle-2,.circle-3,.circle-4{
+				position: absolute;
+				width:100px;
+				height: 100px;
+				background: #ff6868;
+				
+			}
+			.circle-1{				
+				top:0;
+				left: 0;				
+			}
+			
+			.circle-2{			
+				top:100px;
+				left: 0;				
+			}
+			.circle-3{				
+				top:100px;
+				right: 0;				
+			}
+			.circle-4{				
+				top:0;
+				right: 0;			
+			}
+
+#loader-4 div{
+  opacity: 0;
+}
+
+#loader-4 div:nth-child(1){
+  animation: opacitychange1 2.5s ease-in-out infinite;
+}
+
+ #loader-4 div:nth-child(2){
+  animation: opacitychange2 2.5s ease-in-out 0.45s infinite;
+}
+
+#loader-4 div:nth-child(3){
+  animation: opacitychange3 2.5s ease-in-out 1.30s infinite;
+}
+#loader-4 div:nth-child(4){
+  animation: opacitychange4 2.5s ease-in-out 2s infinite;
+}
+
+
+@keyframes opacitychange1{
+  0%{
+    opacity: 0;
+  }  
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes opacitychange2{
+  0%{
+    opacity: 0;
+  }  
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes opacitychange3{
+  0%{
+    opacity: 0;
+  }  
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes opacitychange4{
+  0%{
+    opacity: 0;
+  }  
+  100%{
+    opacity: 1;
+  }
+}
+		</style>
+	</head>
+	<body>
+		<div class="app-bg">
+
+			<div class="loader-section">
+			<div class="circle-wrap" id="loader-4">
+				<div class="circle-1"></div>
+				<div class="circle-2"></div>
+				<div class="circle-3"></div>
+				<div class="circle-4"></div>
+			</div>
+
+		</div>
+	</div>
+	</body>
+</html>
