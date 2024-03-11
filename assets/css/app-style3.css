@@ -1469,6 +1469,32 @@ textarea {
   --icon-file: url("../images/upload-icon.svg");
 }
 
+.pageBack-btn {
+  width: 20px;
+  height: 20px;
+  background: transparent !important;
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+}
+.pageBack-btn .icon-img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  background-color: var(--icon-dark-color);
+  --background: url(../images/back-icon.svg);
+}
+
 .content-sec {
   position: relative;
   width: 100%;
