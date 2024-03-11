@@ -27,14 +27,10 @@ html, body {
    align-items: center;
    justify-content: center;
    background: rgba(0, 0, 0, 0.3);
+   flex-direction: column;
 }
-.loading{font-size: 80px;display: flex;color: #232323;}
-.loader {
-width: 0px;
-aspect-ratio: 1;
-border-radius: 50%;
-border: 40px solid #ff6868;
-animation:
+.loading{font-size: 16px;font-size:16px;display: flex;color: #232323;}
+.loader {width: 0px;aspect-ratio: 1;border-radius: 50%;border: 40px solid #ff6868;animation:
 l20-1 0.8s infinite linear alternate,
 l20-2 1.6s infinite linear;
 }
@@ -53,13 +49,40 @@ l20-2 1.6s infinite linear;
 50%   {transform:scaleY(-1) rotate(0deg)}
 100%  {transform:scaleY(-1) rotate(-135deg)}
 }
-		</style>
+span[class^="dot-"]{opacity: 0;}
+.dot-one{animation: dot-one 2s infinite linear}
+.dot-two{animation: dot-two 2s infinite linear}
+.dot-three{animation: dot-three 2s infinite linear}
+@keyframes dot-one{
+  0%{opacity: 0;}
+  15%{opacity: 0;}
+  25%{opacity: 1;}
+  100%{opacity: 1;}
+}
+@keyframes dot-two{
+  0%{opacity: 0;}
+  25%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 1;}
+}
+@keyframes dot-three{
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  75%{opacity: 1;}
+  100%{opacity: 1;}
+}
+</style>
 	</head>
 	<body>
 		<div class="app-bg">
 
 			<div class="loader-section">
-				<div class="loading tracking-wider">L<div class="loader"></div>ading</div>
+				<div class="loader"></div>
+				<div class="loading font-bold mt-3">Loading
+					<span class="dot-one"> .</span>
+					<span class="dot-two"> .</span>
+					<span class="dot-three"> .</span>
+				</div>
 		</div>
 	</div>
 	</body>
