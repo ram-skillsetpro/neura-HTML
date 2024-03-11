@@ -20,20 +20,29 @@ html, body {
     min-height: 100vh;
 }
 
-.loader-section{
+/* .loader-section{
    display: flex;
    height: 100vh;
    width: 100vw;
    align-items: center;
    justify-content: center;
-   background: rgba(0, 0, 0, 0.3);
-}
-.loading{font-size: 80px;display: flex;color: #232323;}
+   flex-direction: column;
+} */
+.loading{font-size: 24px;display:inline-flex;color: #232323;}
 .loader {
 width: 0px;
 aspect-ratio: 1;
 border-radius: 50%;
-border: 40px solid #ff6868;
+border: 12px solid #ff6868;
+animation:
+l20-1 0.8s infinite linear alternate,
+l20-2 1.6s infinite linear;
+}
+.loader1 {
+width: 0px;
+aspect-ratio: 1;
+border-radius: 50%;
+border: 12px solid #ff6868;
 animation:
 l20-1 0.8s infinite linear alternate,
 l20-2 1.6s infinite linear;
@@ -58,9 +67,22 @@ l20-2 1.6s infinite linear;
 	<body>
 		<div class="app-bg">
 
-			<div class="loader-section">
-				<div class="loading tracking-wider">L<div class="loader"></div>ading</div>
-		</div>
+			<div style="padding:50px; text-align: center;margin: auto;">
+				<h2 class="mb-6">Section Loader</h2>
+				<div class="loading	 tracking-wider">L<div class="loader"></div>ading</div>
+				<br/>
+			</div>
+			<div class="flex" style="padding:50px; text-align: center;margin: auto;">
+				<h2>Button Loader</h2>
+
+				<button class="button-dark-gray rounded-12 sm-button tracking-wider font-bold uppercase cursor-pointer ml-3">
+				Save
+				</button>
+				<button class="button-dark-gray rounded-12 sm-button tracking-wider font-bold uppercase cursor-pointer ml-3">
+					<div class="loader" style="border: 8px solid #ff6868;
+					"></div>
+				</button>
+			</div>
 	</div>
 	</body>
 </html>
