@@ -118,12 +118,12 @@ body {
 
 
 //main structure scss file
-@import 'app-header';
-@import 'app-common';
+@import 'header';
+@import 'common';
 @import 'middle-outer';
 @import 'sidebar-menu';
 // @import 'app-main';
-@import 'app-controls';
+@import 'controls';
 @import 'dashboard';
 
 
