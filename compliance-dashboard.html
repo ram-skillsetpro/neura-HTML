@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Compliance Dashboard</title>
+		<title>SimpleO.ai - The Future of Contract Management is here</title>
 		
 		<!-- insert og here --> 
 
-		<link rel="stylesheet" type="text/css" href="./css/compliance-dashboard.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/app-style3.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	</head>
@@ -17,14 +17,14 @@
 				<div class="app-left-inner">				
 					<div class="app-logo">
 						<a href="#">
-							<img src="images/simpleo-ai-logo.svg" alt="" />
+							<img src="assets/images/simpleo-ai-logo.svg" alt="" />
 						</a>
 					</div>
 					<div class="app-search">
-						<div class="app-search-inner">
+						<div class="app-search-inner" style="margin: initial;">
 						<form>
 							<input tabindex="1" type="search" value="" placeholder="Search for anything and we will figure it out" />
-							<button class="src-btn"><img src="images/search-icon.svg" /></button>
+							<button class="src-btn"><img src="assets/images/search-icon.svg" /></button>
 						</form>
 						<div class="search-suggestion-list" style="display: none;">
 							<ul>
@@ -62,14 +62,9 @@
 			<div class="app-right-sec">
 					<div class="app-right-inner">
 						<div class="app-icon-sec">
-							
+							<!--without icons-->
 						</div>
 						<div class="app-user-sec">
-							<div class="prompt-icon-sec">
-								<i class="prompt-icon icon-img">
-
-								</i>
-							</div>
 							<div class="app-alert drop-down-modal">
 								<span class="alert-text">4</span>
 								<i class="app-bell-icon icon-img"></i>
@@ -104,17 +99,7 @@
 									<img src="images/harry.jpg" />
 								</i>
 								<div class="menu-card rounded-6">
-									<ul>
-										<li>
-											<div class="fs12 mb-1 max-w-200">
-												<div class="font-semibold">
-													Santosht
-												</div>
-												<div class="truncate-line1">
-													santosht@dewsolutions.in
-												</div>
-											</div>
-										</li>										
+									<ul>										
 										<li>
 											<a href="#" class="forward-arrow">
 												My Account
@@ -179,7 +164,7 @@
 					<div class="card-bg mb-8">
 						<div class="user-profile-sec items-center">
 							<div class="user-img mr-3">
-								<img src="images/UserCircle.svg" /> 
+								<img src="assets/images/UserCircle.svg" /> 
 							</div>
 							<div class="text-light-color">Upload your profile picture</div>
 							<span class="grow"></span>
@@ -194,7 +179,7 @@
 								<div class="card-heading"><h2>Open Vulnerabilities <span class="card-alert-box ml-3">10</span></h2></div>
 								<span class="grow"></span>
 								<div class="card-ic-w">
-									<img src="images/SealQuestion.svg" />
+									<img src="assets/images/SealQuestion.svg" />
 								</div>
 							</div>
 							<div class="card-b-sec">
@@ -220,7 +205,7 @@
 								<div class="card-heading"><h2>Audit in Progress <span class="card-alert-box ml-3">24</span></h2></div>
 								<span class="grow"></span>
 								<div class="card-ic-w">
-									<img src="images/VideoCamera.svg" />
+									<img src="assets/images/VideoCamera.svg" />
 								</div>
 							</div>
 							<div class="card-b-sec">
@@ -246,7 +231,7 @@
 								<div class="card-heading"><h2>Risk <span class="card-alert-box ml-3">10</span></h2></div>
 								<span class="grow"></span>
 								<div class="card-ic-w">
-									<img src="images/UsersFour.svg" />
+									<img src="assets/images/UsersFour.svg" />
 								</div>
 							</div>
 							<div class="card-b-sec">
@@ -274,7 +259,7 @@
 							</div>
 							<span class="grow"></span>
 							<div class="card-ic-w">
-								<img src="images/SealQuestion.svg" />
+								<img src="assets/images/SealQuestion.svg" />
 							</div>
 						</div>
 						<div class="escalated-b-sec">
@@ -322,36 +307,72 @@
 												<div><input type="checkbox"></div>
 											</th>
 											<th>
-												<div class="flex">
-												<div class="uppercase">Name</div>
-												<div class="sorting-btn">
-													<img src="images/sorting-ic.png" />
+												<div class="flex items-center">
+													<div class="uppercase">Name</div>
+													<div class="table-sorting-btn">
+														<img src="assets/images/sorting-ic.png" />
+													</div>
+												</div>
+											</th>
+											<th>
+												<div class="flex items-center">
+													<div class="uppercase">Risk Type</div>
+													<div class="table-sorting-btn">
+														<img src="assets/images/sorting-ic.png" />
+													</div>
+												</div>												
+											</th>
+											<th>
+												<div class="flex items-center">
+													<div class="uppercase">Spoc</div>
+													<div class="table-sorting-btn">
+														<img src="assets/images/sorting-ic.png" />
+													</div>
+												</div>												
+											</th>
+											<th>
+												<div class="flex items-center">
+													<div class="uppercase">Department</div>
+													<div class="table-sorting-btn">
+														<img src="assets/images/sorting-ic.png" />
+													</div>
+												</div>												
+											</th>
+											<th>
+												<div class="flex items-center">
+													<div class="uppercase">Impact</div>
+													<div class="table-sorting-btn">
+														<img src="assets/images/sorting-ic.png" />
+													</div>
+												</div>
+											</th>
+											<th>
+												<div class="flex items-center">
+													<div class="uppercase">Likelihood</div>
+													<div class="table-sorting-btn">
+														<img src="assets/images/sorting-ic.png" />
+													</div>
+												</div>
+											</th>
+											<th>
+												<div class="flex items-center">
+													<div class="uppercase">Risk Category
+													</div>
+													<div class="table-sorting-btn">
+														<img src="assets/images/sorting-ic.png" />
+													</div>
+												</div>												
 
-												</div>
-											</div>
 											</th>
 											<th>
-												<div class="uppercase">Risk Type</div>
-											</th>
-											<th>
-												<div class="uppercase">Spoc</div>
-											</th>
-											<th>
-												<div class="uppercase">Department</div>
-											</th>
-											<th>
-												<div class="uppercase">Impact</div>
-											</th>
-											<th>
-												<div class="uppercase">Likelihood</div>
-											</th>
-											<th>
-												<div class="uppercase">Risk Category
-												</div>
-											</th>
-											<th>
-												<div class="uppercase">Days elapsed
-												</div>
+												<div class="flex items-center">
+													<div class="uppercase">Days elapsed
+													</div>
+													<div class="table-sorting-btn">
+														<img src="assets/images/sorting-ic.png" />
+													</div>
+												</div>												
+
 											</th>
 									</tr>
 								</thead>
@@ -369,7 +390,7 @@
 											<td>
 											<div class="flex items-center">
 												<div class="use-img mr-3">
-													<img src="images/harry.jpg" />
+													<img src="assets/images/harry.jpg" />
 												</div>
 												<div>R K Sharma</div>
 											</div>	
@@ -404,7 +425,7 @@
 											<td>
 											<div class="flex items-center">
 												<div class="use-img mr-3">
-													<img src="images/harry.jpg" />
+													<img src="assets/images/harry.jpg" />
 												</div>
 												<div>R K Sharma</div>
 											</div>	
@@ -439,7 +460,7 @@
 											<td>
 											<div class="flex items-center">
 												<div class="use-img mr-3">
-													<img src="images/harry.jpg" />
+													<img src="assets/images/harry.jpg" />
 												</div>
 												<div>R K Sharma</div>
 											</div>	
@@ -494,7 +515,7 @@
 						</div>
 						<div class="chart-sec">
 							<div class="chart-img">
-								<img src="images/chart.png" />
+								<img src="assets/images/chart.png" />
 							</div>
 						</div>	
 
@@ -529,7 +550,7 @@
 								</div>
 								<div class="chart-sec">
 									<div class="chart-img">
-										<img src="images/chart1.png" />
+										<img src="assets/images/chart1.png" />
 									</div>
 								</div>
 							</div>
@@ -561,7 +582,7 @@
 								</div>
 								<div class="chart-sec">
 									<div class="chart-img">
-										<img src="images/chart3.png" />
+										<img src="assets/images/chart3.png" />
 									</div>
 								</div>								
 							</div>
@@ -570,7 +591,7 @@
 					<section class="mb-8 card-bg p-6">
 						<div class="chart-sec">
 							<div class="chart-img">
-								<img src="images/calender.png" />
+								<img src="assets/images/calender.png" />
 							</div>
 						</div>
 					</section>
@@ -579,5 +600,7 @@
 		</main>
 	</div>
 	</body>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="js/simpleo.js"></script>
 
 </html>

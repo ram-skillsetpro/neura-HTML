@@ -897,3 +897,12 @@ button:disabled {background:#E3E3E3;border:1px solid #E3E3E3;cursor: not-allowed
    --background: url(../images/back-icon.svg);
   }
 }
+
+h1,.h1{font-size:size(24); font-family: var(--default-font); color: var(--default-font-color);}
+.h2,h2{font-size: size(20);line-height: 1.5;}
+.text-high-color{color: var(--high-color);}
+.text-moderate-color{color: var(--moderate-color);}
+.text-low-color{color: var(--low-color);}
+.text-lighter-color{color: var(--lighter-text);}
+.p-6{padding: 24px;}
+.mb-8{margin-bottom: 32px;}
