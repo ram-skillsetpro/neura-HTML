@@ -143,12 +143,12 @@
 				<div class="navigation-sec">
 					<div class="navigation-vertical">
 						<ul>
-							<li><a href="#" class="dash-ic active">Dashboard</a></li>
+							<li><a href="dashboard.html" class="dash-ic active">Dashboard</a></li>
 
 							<li><a href="#" class="contract-ic">Contracts</a></li>
 							<li><a href="#" class="obligation-ic">Obligation</a></li>
-							<li><a href="report.html" class="playbook-ic">Playbook</a></li>
-							<li><a href="recent.html" class="analytics-ic">Analytics</a></li>
+							<li><a href="#" class="playbook-ic">Playbook</a></li>
+							<li><a href="#" class="analytics-ic">Analytics</a></li>
 							<li><a href="#" class="schedules-ic">Schedules</a></li>
 							<li><a href="#" class="history-ic">History</a></li>
 							<li><a href="#" class="approval-ic">Approval</a></li>
@@ -270,7 +270,7 @@
 					<section class="card-bg compliance-escalated mb-8 relative">
 						<div class="escalated-t">
 							<div class="card-heading">
-								<h2>Escalated Contracts </h2>
+								<h2 class="text-default-color">Escalated Contracts </h2>
 							</div>
 							<span class="grow"></span>
 							<div class="card-ic-w">
@@ -280,32 +280,36 @@
 						<div class="escalated-b-sec">
 							<div class="w-full mb-6">
 								<div class="escalated-filter-sec">
-									<div>
-										<input type="date" /> 
+									<div class="col-w">
+										<input type="date" class="inpt-style" /> 
 									</div>
-									<div >
+									<div class="col-w">
 										<select class="compliance-select w-full p-2">
 											<option value="34">SPOC</option>
 										</select>
 									</div>
-									<div>
+									<div class="col-w">
 										<select class="compliance-select w-full p-2">
 											<option value="34">Department</option>
 										</select>
 									</div>
-									<div>
+									<div class="col-w">
 										<select class="compliance-select w-full p-2">
 											<option value="34">Contract Type</option>
 										</select>
 									</div>
-									<div>
+									<div class="col-w">
 										<select class="compliance-select w-full p-2">
 											<option value="34">Risk Type</option>
 										</select>
 									</div>
-									<span class="grow"></span>
-									<div>
-										<button class="upload-btn">Upload</button>
+									<div class="">
+										<button class="icon-btn mr-3">
+											<i class="upload-ic"></i>
+										</button>
+										<button class="icon-btn mr-3">
+											<i class="print-ic"></i>
+										</button>
 									</div>
 									
 								</div>
@@ -456,14 +460,118 @@
 							</div>
 						</div>
 					</section>
+					<section class="card-bg department-sec mb-8 relative">
+						<div class="mb-6 flex">
+							<div class="card-heading">
+								<h2>Department / Function</h2>
+							</div>
+							<span class="grow"></span>
+							<div class="sorting-menu-modal relative">
+							<button class="sorting-btn down-icon cursor-pointer">Weekly</button>
+								<div class="sorting-menu-card rounded-6">
+									<ul>
+										<li>
+											<div class="truncate-line1">Monthly</div> 
+											<div class="ch-box"><input type="checkbox"></div>
+										</li>
+										<li>
+											<div class="truncate-line1">Daily</div>
+											<div class="ch-box"><input type="checkbox"></div>	 
+										</li>
+										<li>
+											<div class="truncate-line1">Weekly</div>
+											<div class="ch-box"><input type="checkbox"></div>	 
+										</li>						
+									</ul>
+								</div>
+							</div>					
+						</div>
+						<div class="chart-sec">
+							<div class="chart-img">
+								<img src="images/chart.png" />
+							</div>
+						</div>	
+
+					</section>
+					<section class="mb-8">
+						<div class="compliance-sec-row">
+							<div class="col-50 card-bg p-6">
+								<div class="mb-6 flex">
+									<div class="card-heading">
+										<h2 class="text-default-color">Complaince Type</h2>
+									</div>
+									<span class="grow"></span>
+									<div class="sorting-menu-modal relative">
+									<button class="sorting-btn down-icon cursor-pointer">Weekly</button>
+										<div class="sorting-menu-card rounded-6">
+											<ul>
+												<li>
+													<div class="truncate-line1">Monthly</div> 
+													<div class="ch-box"><input type="checkbox"></div>
+												</li>
+												<li>
+													<div class="truncate-line1">Daily</div>
+													<div class="ch-box"><input type="checkbox"></div>	 
+												</li>
+												<li>
+													<div class="truncate-line1">Weekly</div>
+													<div class="ch-box"><input type="checkbox"></div>	 
+												</li>						
+											</ul>
+										</div>
+									</div>					
+								</div>
+								<div class="chart-sec">
+									<div class="chart-img">
+										<img src="images/chart1.png" />
+									</div>
+								</div>
+							</div>
+							<div class="col-50 card-bg p-6">
+								<div class="mb-6 flex">
+									<div class="card-heading">
+										<h2 class="text-default-color">Risk Impact</h2>
+									</div>
+									<span class="grow"></span>
+									<div class="sorting-menu-modal relative">
+									<button class="sorting-btn down-icon cursor-pointer">Weekly</button>
+										<div class="sorting-menu-card rounded-6">
+											<ul>
+												<li>
+													<div class="truncate-line1">Monthly</div> 
+													<div class="ch-box"><input type="checkbox"></div>
+												</li>
+												<li>
+													<div class="truncate-line1">Daily</div>
+													<div class="ch-box"><input type="checkbox"></div>	 
+												</li>
+												<li>
+													<div class="truncate-line1">Weekly</div>
+													<div class="ch-box"><input type="checkbox"></div>	 
+												</li>						
+											</ul>
+										</div>
+									</div>					
+								</div>
+								<div class="chart-sec">
+									<div class="chart-img">
+										<img src="images/chart3.png" />
+									</div>
+								</div>								
+							</div>
+						</div>
+					</section>
+					<section class="mb-8 card-bg p-6">
+						<div class="chart-sec">
+							<div class="chart-img">
+								<img src="images/calender.png" />
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
 		</main>
 	</div>
 	</body>
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-	<script src="js/simpleo.js"></script>
-	<script>
-	
-	</script>
+
 </html>

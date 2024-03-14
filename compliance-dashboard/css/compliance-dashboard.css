@@ -593,6 +593,10 @@ p {
   margin: 0;
 }
 
+.p-6 {
+  padding: 24px;
+}
+
 .pb-1 {
   padding-bottom: 4px;
 }
@@ -1942,6 +1946,124 @@ input[type=checkbox]:checked {
   transform: rotate(90deg);
 }
 
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.button {
+  margin: 0 0 0 6px;
+  font-weight: bold;
+  padding: 6px 18px;
+  cursor: pointer;
+}
+.button-flat {
+  border-radius: 34px;
+  border: 1px solid #ffffff;
+}
+.button-red {
+  border-radius: 34px;
+  border: 1px solid var(--button-red);
+  background-color: var(--button-red);
+}
+.button-red-outline {
+  border-radius: 34px;
+  border: 1px solid var(--button-red);
+  color: var(--button-red);
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid var(--button-red);
+}
+
+span.forgot-password {
+  text-align: right;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+@media all and (max-height: 720px) {
+  label {
+    margin: 2px 0px;
+    font-size: 10px;
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+.controls span {
+  flex-grow: 4;
+}
+
+.checkbox-label {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=tel] {
+  -webkit-appearance: none;
+  display: inline-block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 42px;
+  width: 360px;
+  font-size: 14px;
+  color: var(--default-font-color);
+  padding: 12px;
+  box-sizing: border-box;
+}
+@media all and (max-height: 720px) {
+  input[type=text], input[type=email], input[type=password], input[type=tel] {
+    height: 36px;
+  }
+}
+
+input[type=submit], input[type=button] {
+  -webkit-appearance: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--button-red);
+  border: 1px solid var(--button-red);
+  height: 42px;
+  width: 360px;
+}
+@media all and (max-height: 720px) {
+  input[type=submit], input[type=button] {
+    height: 36px;
+  }
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #999;
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+  margin-right: 6px;
+  margin-top: -1px;
+}
+input[type=checkbox]:checked {
+  background-color: var(--button-red);
+  border-color: var(--button-red);
+}
+
 .content-sec .left-section .compliance-section-inner {
   max-width: 100%;
   margin: auto;
@@ -2104,16 +2226,52 @@ input[type=checkbox]:checked {
 
 .compliance-select {
   background: transparent;
-  padding: 6px 12px;
+  padding: 8px 12px;
   border: 1px solid #9CB1C6;
+  border-radius: 4px;
 }
 
-.upload-btn {
-  padding: 10px;
+.inpt-style {
+  width: 100%;
+  border: 0;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.icon-btn {
+  min-width: 48px;
   border: 1px solid var(--border-color4);
   height: 32px;
   line-height: 1;
   background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.upload-ic, .print-ic {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  mask-size: 16px 16px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 16px 16px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  background-color: #232323;
+}
+
+.upload-ic {
+  --background: url(../images/UploadSimple.svg);
+}
+
+.print-ic {
+  --background: url(../images/Printer.svg);
 }
 
 .table-shorting {
@@ -2167,6 +2325,42 @@ input[type=checkbox]:checked {
   display: flex;
   gap: 24px;
 }
+.escalated-filter-sec .col-w {
+  flex: 1 0 auto;
+}
+
+.department-sec {
+  padding: 24px;
+}
+.department-sec .chart-sec {
+  position: relative;
+}
+
+.chart-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.compliance-sec-row {
+  display: flex;
+  gap: 12px;
+  min-height: 300px;
+}
+.compliance-sec-row .col-50 {
+  flex: 1 1 50%;
+  width: 100%;
+  max-width: 100%;
+}
+.compliance-sec-row .inner-card {
+  background: var(--comment-bg);
+  border-radius: 6px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .high-bg {
   background: var(--high-bg);
@@ -2216,6 +2410,100 @@ input[type=checkbox]:checked {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.sorting-btn {
+  background: transparent;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.sorting-btn.down-icon {
+  position: relative;
+  padding-right: 30px;
+}
+.sorting-btn.down-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  right: 10px;
+  width: 12px;
+  height: 12px;
+  background: url(../images/forward-icon.svg);
+  background-size: cover;
+}
+
+.sorting-menu-modal {
+  position: relative;
+}
+.sorting-menu-modal:hover .sorting-menu-card {
+  display: block;
+  height: auto;
+}
+
+.sorting-menu-card {
+  transition: all 0.3s ease-in;
+  display: none;
+  height: 0;
+  background: var(--app-navigation-background-color);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  position: absolute;
+  z-index: 9;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  right: 0px;
+  top: calc(100% + 2px);
+}
+.sorting-menu-card::before {
+  content: "";
+  position: absolute;
+  border-bottom: 10px solid var(--app-navigation-background-color);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -6px;
+  right: 10px;
+  z-index: 2;
+}
+.sorting-menu-card ul {
+  list-style: none;
+}
+.sorting-menu-card ul li {
+  font-size: 0.6875rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.4;
+  padding: 8px 0px 8px 0;
+  color: var(--default-font-color);
+}
+.sorting-menu-card ul li:not(:last-child) {
+  border-bottom: 1px solid var(--border-color2);
+}
+.sorting-menu-card ul li a {
+  display: block;
+  color: var(--default-font-color);
+  position: relative;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+}
+.sorting-menu-card ul li a:hover {
+  color: var(--default-font-color);
+}
+.sorting-menu-card ul li .ch-box {
+  width: 20px;
+  margin-left: 12px;
+}
+.sorting-menu-card ul li .ch-box input[type=checkbox] {
+  background: var(--check-bg);
+  border-color: var(--check-bg);
+  cursor: pointer;
+}
+.sorting-menu-card ul li .ch-box input[type=checkbox]:checked {
+  background-color: var(--logo-color);
+  border-color: var(--logo-color);
 }
 
 .popup-container {

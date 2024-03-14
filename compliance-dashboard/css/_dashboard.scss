@@ -137,16 +137,43 @@
 }
 .compliance-select{
 	background: transparent;
-	padding: 6px 12px;
+	padding: 8px 12px;
 	border: 1px solid #9CB1C6;
-
+	border-radius: 4px;
 }
-.upload-btn{
-	padding: 10px;
+.inpt-style{width: 100%;border:0; border-radius: 6px;padding: 5px;}
+.icon-btn{
+	min-width: 48px;
+	// padding: 10px;
 	border:1px solid var(--border-color4);
 	height: 32px;
 	line-height: 1;
 	background: transparent;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+}
+.upload-ic,.print-ic{
+	width:16px;
+	height: 16px;
+	display: flex;
+	mask-size: 16px 16px;
+	mask-repeat: no-repeat;
+	mask-position: center center;
+	mask-image: var(--background);
+	-webkit-mask-size: 16px 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center center;
+	-webkit-mask-image: var(--background);
+	background-size: cover;
+	background-color:#232323 ;
+}
+.upload-ic{
+	--background: url(../images/UploadSimple.svg);
+}
+.print-ic{
+	--background: url(../images/Printer.svg);
 }
 .table-shorting{
 	display: flex;
@@ -199,8 +226,46 @@
 .escalated-filter-sec{
 	display: flex;
 	gap: 24px;
+	.col-w{
+		flex: 1 0 auto;
+	}
 	
 }
+.department-sec{
+	padding: 24px;
+	.chart-sec{
+		position: relative;		
+	}
+}
+.chart-img{
+	img{
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+}
+.compliance-sec-row{
+	display: flex;
+	gap: 12px;
+	min-height: 300px;
+ 
+	.col-50{
+	   flex: 1 1 50%;
+	   width: 100%;
+	   max-width: 100%;
+	}
+ 
+	.inner-card{
+	   background: var(--comment-bg);
+	   border-radius: 6px;
+	   padding: 16px 12px;
+	   display: flex;
+	   flex-direction: column;
+	   justify-content: space-between;
+ 
+	}
+	
+ }
 .high-bg{background: var(--high-bg);color: var(--white);}
 .moderate-bg{background: var(--moderate-bg);color: var(--white);}
 .medium-bg{background: var(--medium-bg);color: var(--white);}
@@ -212,3 +277,101 @@
 .alert-btn-size{
 	border-radius: 12px;height: 20px;padding: 0 8px;font-size:size(12);display: inline-flex;justify-content: center;align-items: center;	
 }
+.sorting-btn{
+	background: transparent;
+	padding: 10px 10px;
+	border:none;
+	border-radius: 4px;
+	font-size:size(12);
+	line-height: 1;
+ &.down-icon{
+	position: relative;
+	padding-right: 30px;
+	&::after{
+	   content:'';
+	   position: absolute;
+	   top:50%;
+	   transform: translateY(-50%) rotate(90deg);
+	   right: 10px;
+	   width:12px;
+	   height:12px;
+	   background: url(../images/forward-icon.svg);
+	   background-size: cover;
+ 
+	}
+ }
+ }
+.sorting-menu-modal{
+	position: relative;
+	 &:hover{
+		.sorting-menu-card{
+		   display: block;
+	
+		   height:auto;
+		}
+	   
+	 }
+  }
+.sorting-menu-card{
+	transition: all 0.3s ease-in;
+	display: none;
+	height:0;
+	background: var(--app-navigation-background-color);
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.50 );
+	padding:10px;
+	position: absolute;
+	z-index:9;
+ max-width: fit-content;
+	right:0px;
+	top:calc(100% + 2px);
+	&::before{
+	   content:'';
+	   position: absolute;
+	   border-bottom:10px solid var(--app-navigation-background-color);
+	   border-left: 8px solid transparent;
+	   border-right: 8px solid transparent;
+	   top:-6px;
+	   right:10px;
+	   z-index: 2;
+			// transform: rotate(45deg);
+	   // background: red;
+	}
+	ul{
+	   list-style: none;
+	   li{
+		  font-size: size(11);
+		  display: flex;
+		  justify-content: space-between;
+		  line-height: 1.4;
+		  padding:8px 0px 8px 0;
+		  color: var(--default-font-color);
+		  &:not(:last-child){
+			 border-bottom: 1px solid var(--border-color2);
+		  }         
+		  a{
+			 display: block;
+			 color: var(--default-font-color);
+			 position: relative;
+			 font-size: size(11);
+			 line-height: 1.4;
+			 &:hover{
+				color: var(--default-font-color);
+			 }           
+		  }
+	   .ch-box{
+		  width: 20px;
+		  margin-left: 12px;
+		  input[type=checkbox]{
+			 background: var(--check-bg);
+			 border-color: var(--check-bg);
+			 cursor: pointer;
+		  }
+		  input[type=checkbox]:checked{
+			 background-color: var(--logo-color);
+			 border-color: var(--logo-color);
+		  }
+	   }
+ 
+	   }
+	}
+ }
