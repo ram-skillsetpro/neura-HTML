@@ -2506,6 +2506,16 @@ input[type=checkbox]:checked {
   border-color: var(--logo-color);
 }
 
+.sorting-btn {
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+}
+.sorting-btn img {
+  max-width: 100%;
+  height: auto;
+}
+
 .popup-container {
   width: 100vw;
   height: 100vh;

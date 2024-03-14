@@ -45,6 +45,24 @@ $font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 	--yellow-light:#f9e076;
 	--light-gray:#9199A8;
 	--yellow-light-bg:#FFFCE3;
+
+	--menu-active:#E4E9EE;
+	--lighter-text:#A1A1AA;
+	--high-color:#FF0000;
+	--moderate-color:#FFB800;
+	--low-color:#00D400;
+	--high-bg:#F5365C;
+	--moderate-bg:#FF8A00;
+	--medium-bg:#F9E100;
+	--low-bg:#9CB1C6;
+	--light-high-bg:#FED8E5;
+	--light-moderate-bg:#FEFCE8;
+	--light-medium-bg:#FEFDF4;
+	--light-low-bg:#F2F9FF;
+	--alert-number-bg:#F4F4F5;
+	--alert-number-color:#71717A;
+	--border-color4:rgba(17, 17, 17, 0.15);
+
 }
 
 $base-size: 16;
@@ -131,9 +149,8 @@ body {
 // @import 'app-dashboard-filelister';
 // @import 'dataTables';
 @import 'table-row-card';
+@import '_compliance-dash';
 
-// @import 'boilerplate';
-// @import 'popups';
 
 .popup-container {
 	width: 100vw;
