@@ -193,12 +193,26 @@
 		border-collapse: collapse;
 		tr.first-row{
 			background: var(--alert-number-bg);
-			th:first-child{
+			border-bottom: 0;
+
+			th:first-chilclear-btnd{
 				border-radius: 12px 0 0 12px;
 			}
 			th:last-child{
 				border-radius: 0 12px 12px 0;
 			}
+			&:hover{background: var(--alert-number-bg);}
+		}
+		tr{
+			&:not(:last-child){
+				border-bottom: 1px solid var(--border-color4);
+			}
+			&:hover{
+				background: #EFF5FA;
+				cursor: pointer;
+				
+			}
+
 		}
 		th{
 			text-align: left;
@@ -211,9 +225,9 @@
 		td{
 			text-align: left;
 			padding: 12px;
-			border-bottom: 1px solid var(--border-color4);
 			font-size: size(14);
 			color: var(--default-font-color);
+
 
 		}
 	}
@@ -323,3 +337,59 @@ img {max-width: 100%; height: auto;}
 		}
 		}	
 }
+.clear-btn{background: transparent;color: var(--logo-color);font-size:size(14);border: 0;}
+//obligation
+.obligation-inner-sec{
+	display: flex;
+	gap: 24px;
+	.obligation-left{
+		padding: 24px;
+		min-width: 400px;
+		input[type=search] {
+			border-radius: 4px;
+			-webkit-appearance: none;
+			display: block; 
+			border: 1px solid var(--border-color4);
+			height: 42px;
+			font-size: size(14);
+			color: var(--default-font-color);
+			padding: 12px;
+			box-sizing: border-box;
+			position: relative;			
+			width: 100%;
+			box-sizing: border-box;			
+			border-radius: 6px;
+			background: transparent;
+			&:focus-visible{
+				outline: 1px solid var(--border-color4);
+			}
+		
+		}
+	}
+	.obligation-right{
+		flex-grow: 1;
+	}
+}
+.obligation-raised-box{
+	padding: 12px;
+	border: 1px solid var(--border-color5);
+	border-radius: 6px;
+	&.active{
+	background: var(--box-bg);
+	border: 1px solid var(--box-bg);
+	}
+	.ob-issue-ic{
+		min-width: 24px;
+		width:24px;
+		height: 24px;
+		img{
+			width:24px;
+			height: 24px;
+			object-fit: cover;
+		}
+	}
+}
+.ob-btn-size{
+	border-radius: 12px;height: 24px;padding: 0 8px;font-size:size(12);display: inline-flex;justify-content: center;align-items: center;
+}
+.ob-active{background: var(--low-color);color: var(--white);}

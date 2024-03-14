@@ -55,6 +55,8 @@
   --alert-number-color:#71717A;
   --border-color4:rgba(17, 17, 17, 0.15);
   --chips-text-color:#4F4F4F;
+  --box-bg:#EFF5FA;
+  --border-color5:rgba(13, 13, 13, 0.1);
 }
 
 * {
@@ -6667,12 +6669,23 @@ th > span {
 }
 .table-shorting table tr.first-row {
   background: var(--alert-number-bg);
+  border-bottom: 0;
 }
-.table-shorting table tr.first-row th:first-child {
+.table-shorting table tr.first-row th:first-chilclear-btnd {
   border-radius: 12px 0 0 12px;
 }
 .table-shorting table tr.first-row th:last-child {
   border-radius: 0 12px 12px 0;
+}
+.table-shorting table tr.first-row:hover {
+  background: var(--alert-number-bg);
+}
+.table-shorting table tr:not(:last-child) {
+  border-bottom: 1px solid var(--border-color4);
+}
+.table-shorting table tr:hover {
+  background: #EFF5FA;
+  cursor: pointer;
 }
 .table-shorting table th {
   text-align: left;
@@ -6684,7 +6697,6 @@ th > span {
 .table-shorting table td {
   text-align: left;
   padding: 12px;
-  border-bottom: 1px solid var(--border-color4);
   font-size: 0.875rem;
   color: var(--default-font-color);
 }
@@ -6834,6 +6846,80 @@ th > span {
 }
 .comp-filter-sec .comp-chips-box .close-chips:hover {
   background-color: #232323;
+}
+
+.clear-btn {
+  background: transparent;
+  color: var(--logo-color);
+  font-size: 0.875rem;
+  border: 0;
+}
+
+.obligation-inner-sec {
+  display: flex;
+  gap: 24px;
+}
+.obligation-inner-sec .obligation-left {
+  padding: 24px;
+  min-width: 400px;
+}
+.obligation-inner-sec .obligation-left input[type=search] {
+  border-radius: 4px;
+  -webkit-appearance: none;
+  display: block;
+  border: 1px solid var(--border-color4);
+  height: 42px;
+  font-size: 0.875rem;
+  color: var(--default-font-color);
+  padding: 12px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: transparent;
+}
+.obligation-inner-sec .obligation-left input[type=search]:focus-visible {
+  outline: 1px solid var(--border-color4);
+}
+.obligation-inner-sec .obligation-right {
+  flex-grow: 1;
+}
+
+.obligation-raised-box {
+  padding: 12px;
+  border: 1px solid var(--border-color5);
+  border-radius: 6px;
+}
+.obligation-raised-box.active {
+  background: var(--box-bg);
+  border: 1px solid var(--box-bg);
+}
+.obligation-raised-box .ob-issue-ic {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+}
+.obligation-raised-box .ob-issue-ic img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ob-btn-size {
+  border-radius: 12px;
+  height: 24px;
+  padding: 0 8px;
+  font-size: 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ob-active {
+  background: var(--low-color);
+  color: var(--white);
 }
 
 .popup-container {
