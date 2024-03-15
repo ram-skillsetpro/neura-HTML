@@ -65,6 +65,9 @@ $font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 	--chips-text-color:#4F4F4F;
 	--box-bg:#EFF5FA;
 	--border-color5:rgba(13, 13, 13, 0.1);
+	--obligation-inactive-bg:#F31260;
+	--obligation-active-bg:#17C964;
+
 }
 
 $base-size: 16;
@@ -152,6 +155,7 @@ body {
 // @import 'dataTables';
 @import 'table-row-card';
 @import '_compliance-dash';
+@import 'record-obligation';
 
 
 .popup-container {
