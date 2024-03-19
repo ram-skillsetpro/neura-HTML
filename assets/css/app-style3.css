@@ -6907,16 +6907,17 @@ th > span {
 .obligation-info-card {
   background: var(--box-bg);
   border-radius: 12px;
-  overflow: hidden;
 }
 .obligation-info-card .card-t {
   background: var(--menu-active);
   padding: 16px 24px;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
+  border-radius: 12px 12px 0 0;
 }
 .obligation-info-card .card-middle {
   padding: 16px 24px;
+  border-top: 1px solid var(--border-color5);
 }
 
 .obligation-raised-box {
@@ -6958,6 +6959,203 @@ th > span {
 .ob-Inactive {
   background: var(--obligation-inactive-bg);
   color: var(--white);
+}
+
+.note-pencil-ic, .drop-pencil-ic {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  mask-size: 16px 16px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 16px 16px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  background-color: #232323;
+}
+
+.note-pencil-ic {
+  --background: url(../images/NotePencil.svg);
+}
+
+.drop-pencil-ic {
+  --background: url(../images/CaretDown.svg);
+}
+
+.text-light-color1 {
+  color: #8E8E8E;
+}
+
+.mr-2 {
+  margin-right: 8px;
+}
+
+.flex-inline {
+  display: inline-block;
+}
+
+.obligation-status-sec {
+  display: flex;
+  justify-content: space-between;
+}
+.obligation-status-sec .obligation-status-card {
+  flex: 1 0 33.33%;
+  max-width: 100%;
+}
+.obligation-status-sec .obligation-status-card .obligation-status-ic {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+}
+.obligation-status-sec .obligation-status-card .obligation-status-ic img {
+  max-width: 32px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.obligation-group-card {
+  display: flex;
+  gap: 24px;
+}
+.obligation-group-card .obligation-group-left {
+  flex: 1 0 56%;
+  max-width: 56%;
+}
+.obligation-group-card .obligation-group-right {
+  flex: 1 0 40%;
+  max-width: 40%;
+}
+
+.periorty-icon {
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+}
+.periorty-icon img {
+  max-width: 16px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ob-card-type-sec {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.ob-card-type-sec .ob-detail-card {
+  flex: 1 0 45%;
+  max-width: 100%;
+}
+.ob-card-type-sec .ob-detail-card .detail-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+.ob-card-type-sec .ob-detail-card .detail-card-row:not(:last-child) {
+  margin-bottom: 24px;
+}
+.ob-card-type-sec .ob-detail-card .detail-card-row .col-heading {
+  min-width: 160px;
+  margin-right: 16px;
+}
+.ob-card-type-sec .ob-detail-card .detail-card-row .col-status {
+  flex-grow: 1;
+}
+
+.people-info-deail {
+  font-size: 0.875rem;
+}
+.people-info-deail:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.watch-num {
+  background: #E4E9EE;
+  padding: 8px 12px;
+}
+
+.obligation-tag-sec {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.obligation-tag-sec .tag-chips-box {
+  border-radius: 16px;
+  background: var(--menu-active);
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--alert-number-color);
+}
+
+.obligation-description, .obligation-description p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--default-font-color);
+}
+.obligation-description p:not(:last-child), .obligation-description p p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+ul.ob-acc {
+  display: flex;
+  gap: 24px;
+}
+ul.ob-acc li {
+  padding: 0 10px;
+  position: relative;
+  color: #9A9AA6;
+  cursor: pointer;
+}
+ul.ob-acc li.active {
+  color: var(--logo-color);
+}
+ul.ob-acc li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--logo-color);
+}
+
+.task-radio-sec {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  color: #2F469C;
+  font-weight: 600;
+}
+.task-radio-sec:not(:last-child) {
+  margin-bottom: 12px;
+}
+.task-radio-sec input[type=radio] {
+  margin-right: 8px;
+}
+.task-radio-sec input[type=radio]:checked {
+  accent-color: #2F469C;
+}
+
+.pay-img {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+}
+.pay-img img {
+  max-width: 24px;
+  max-height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
 }
 
 .obligation-modal-wrap {
