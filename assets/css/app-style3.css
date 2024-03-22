@@ -1551,6 +1551,67 @@ h1, .h1 {
   margin-bottom: 32px;
 }
 
+.content-sec .left-section.expand-view .left-section-inner {
+  max-width: 100%;
+  margin: inherit;
+}
+.content-sec .left-section.expand-view + .right-section {
+  display: none;
+}
+
+.content-sec .left-section.expand-view + .right-section {
+  display: none;
+}
+
+.hide-side-panel-btn {
+  cursor: pointer;
+  background: var(--logo-color);
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hide-side-panel-btn .drop-arrow-ic {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  mask-size: 24px 24px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 24px 24px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  background-color: #fff;
+  --background: url(../images/CaretDown.svg);
+  transform: rotate(-90deg);
+}
+
+.button-tool-tip:hover .button-info {
+  display: block;
+}
+
+.button-info {
+  background: var(--tool-tip-bg);
+  font-size: 0.6875rem;
+  white-space: nowrap;
+  padding: 8px;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  border-radius: 4px;
+  color: var(--white);
+  display: none;
+  z-index: 2;
+}
+
 .content-sec {
   position: relative;
   width: 100%;
@@ -5657,7 +5718,7 @@ table.report-info-list th:nth-of-type(3), table.report-info-list td:nth-of-type(
 }
 
 .contract-name-wrap .input-name {
-  background: var(--border-color3);
+  background: transparent;
   font-size: 0.875rem !important;
   border: 0;
   border-bottom: 1px solid var(--border-color);
@@ -7239,6 +7300,7 @@ ul.ob-acc li.active::after {
 }
 .record-obligation .record-field .inpt-style {
   background: transparent;
+  font-size: 0.875rem;
 }
 .record-obligation .record-field .ob-textarea {
   min-height: 120px;
@@ -7468,6 +7530,43 @@ ul.ob-acc li.active::after {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
+}
+
+.error-box {
+  background: #FDD0DF;
+  border: 1px solid var(--border-color4);
+  padding: 12px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--logo-color);
+  border-radius: 6px;
+}
+
+.record-field input[type=radio] {
+  margin-right: 4px;
+  margin-top: 2px;
+}
+.record-field input[type=radio]:checked {
+  accent-color: #009D9C;
+}
+
+.upload-file-box {
+  border: 1px solid var(--border-color4);
+  padding: 12px;
+  color: var(--logo-color);
+  display: flex;
+  border-radius: 6px;
+  min-height: 60px;
+}
+.upload-file-box .file-type {
+  font-size: 0.625rem;
+  color: #658A99;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+  margin-top: 12px;
 }
 
 .popup-container {
