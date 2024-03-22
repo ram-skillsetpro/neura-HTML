@@ -51,6 +51,7 @@
 		}
 		.inpt-style{
 			background: transparent;
+			font-size: size(14);
 		}
 		.ob-textarea{
 			min-height: 120px;
@@ -274,5 +275,42 @@ img{max-width: 60px;max-height: 60px;}
 	margin-bottom: 20px;
 	.pay-img{min-width: 24px;width: 24px; height: 24px;
 		img{max-width: 24px;max-height: 24px;object-fit: cover;border-radius: 100%;}
+	}
+}
+//22 march
+.error-box{
+	background: #FDD0DF;
+	border: 1px solid var(--border-color4);
+	padding: 12px;
+	font-size: size(14);
+	line-height: 1.5;
+	color: var(--logo-color);
+	border-radius: 6px;	
+}
+.record-field{
+	input[type=radio]{
+		margin-right:4px;
+		margin-top: 2px;
+	}
+	input[type=radio]:checked{
+		accent-color: #009D9C;
+	}
+}
+.upload-file-box{
+	border: 1px solid var(--border-color4);
+	padding: 12px;
+	color: var(--logo-color);
+	display: flex;
+	border-radius: 6px;
+	min-height: 60px;
+	.file-type{
+		font-size: size(10);
+		color: #658A99;
+		position: absolute;
+		width: 100%;
+		bottom: 10px;
+		left: 0;
+		text-align: center;
+		margin-top: 12px;
 	}
 }

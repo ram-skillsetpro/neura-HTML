@@ -906,3 +906,68 @@ h1,.h1{font-size:size(24); font-family: var(--default-font); color: var(--defaul
 .text-lighter-color{color: var(--lighter-text);}
 .p-6{padding: 24px;}
 .mb-8{margin-bottom: 32px;}
+.content-sec .left-section{
+   &.expand-view{
+      .left-section-inner{
+         max-width: 100%;
+         margin: inherit;
+      }
+      + .right-section{
+         display: none;
+      }
+   }
+ 
+}
+.content-sec .left-section.expand-view + .right-section{
+   display: none;
+}
+
+.hide-side-panel-btn{
+   cursor: pointer;
+   background: var(--logo-color);
+   width:40px;
+   height: 40px;
+   position: fixed;
+   bottom: 100px;
+   right: 0;
+   border-radius: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   .drop-arrow-ic{
+      width:24px;
+      height: 24px;
+      display: flex;
+      mask-size: 24px 24px;
+      mask-repeat: no-repeat;
+      mask-position: center center;
+      mask-image: var(--background);
+      -webkit-mask-size: 24px 24px;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center center;
+      -webkit-mask-image: var(--background);
+      background-size: cover;
+      background-color:#fff ;
+      --background: url(../images/CaretDown.svg);
+      transform: rotate(-90deg);
+   }
+
+}
+.button-tool-tip:hover .button-info {
+   display: block
+}
+
+.button-info {
+   background: var(--tool-tip-bg);
+   font-size: .6875rem;
+   white-space: nowrap;
+   padding: 8px;
+   position: absolute;
+   top: calc(100% + 4px);
+   right: 0;
+   border-radius: 4px;
+   color: var(--white);
+   display: none;
+   z-index: 2
+}
+
