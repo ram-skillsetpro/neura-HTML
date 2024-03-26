@@ -1565,7 +1565,7 @@ h1, .h1 {
 
 .hide-side-panel-btn {
   cursor: pointer;
-  background: var(--logo-color);
+  background: var(--card-bg);
   width: 40px;
   height: 40px;
   position: fixed;
@@ -1575,6 +1575,7 @@ h1, .h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9;
 }
 .hide-side-panel-btn .drop-arrow-ic {
   width: 24px;
@@ -1592,6 +1593,10 @@ h1, .h1 {
   background-color: #fff;
   --background: url(../images/CaretDown.svg);
   transform: rotate(-90deg);
+  transition: all 0.3s ease-in-out;
+}
+.hide-side-panel-btn.r90 .drop-arrow-ic {
+  transform: rotate(90deg);
 }
 
 .button-tool-tip:hover .button-info {
@@ -6971,18 +6976,18 @@ th > span {
 }
 .obligation-info-card .card-t {
   background: var(--menu-active);
-  padding: 16px 24px;
+  padding: 12px;
   font-size: 1rem;
   font-weight: 700;
   border-radius: 12px 12px 0 0;
 }
 .obligation-info-card .card-middle {
-  padding: 16px 24px;
+  padding: 16px;
   border-top: 1px solid var(--border-color5);
 }
 
 .obligation-raised-box {
-  padding: 16px;
+  padding: 12px;
   border: 1px solid var(--border-color5);
   border-radius: 6px;
 }

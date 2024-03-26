@@ -379,19 +379,19 @@ img {max-width: 100%; height: auto;}
 	border-radius: 12px;
 	.card-t{
 		background: var(--menu-active);
-		padding: 16px 24px;
+		padding: 12px;
 		font-size: size(16);
 		font-weight: 700;
 		border-radius: 12px 12px 0 0;
 	}
 	.card-middle{
-		padding: 16px 24px;
+		padding: 16px;
 		border-top: 1px solid var(--border-color5);
 
 	}
 }
 .obligation-raised-box{
-	padding: 16px;
+	padding: 12px;
 	border: 1px solid var(--border-color5);
 	border-radius: 6px;
 	&.active{
