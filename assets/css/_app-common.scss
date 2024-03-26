@@ -906,6 +906,8 @@ h1,.h1{font-size:size(24); font-family: var(--default-font); color: var(--defaul
 .text-lighter-color{color: var(--lighter-text);}
 .p-6{padding: 24px;}
 .mb-8{margin-bottom: 32px;}
+
+//right side bar expand css
 .content-sec .left-section{
    &.expand-view{
       .left-section-inner{
@@ -924,7 +926,7 @@ h1,.h1{font-size:size(24); font-family: var(--default-font); color: var(--defaul
 
 .hide-side-panel-btn{
    cursor: pointer;
-   background: var(--logo-color);
+   background: var(--card-bg);
    width:40px;
    height: 40px;
    position: fixed;
@@ -934,6 +936,7 @@ h1,.h1{font-size:size(24); font-family: var(--default-font); color: var(--defaul
    display: flex;
    align-items: center;
    justify-content: center;
+   z-index: 9;
    .drop-arrow-ic{
       width:24px;
       height: 24px;
@@ -950,8 +953,13 @@ h1,.h1{font-size:size(24); font-family: var(--default-font); color: var(--defaul
       background-color:#fff ;
       --background: url(../images/CaretDown.svg);
       transform: rotate(-90deg);
+      transition: all 0.3s ease-in-out;
    }
-
+   &.r90{
+      .drop-arrow-ic{
+         transform: rotate(90deg);
+      }
+   }
 }
 .button-tool-tip:hover .button-info {
    display: block
