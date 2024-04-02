@@ -1476,17 +1476,17 @@ textarea {
   right: 0;
   top: 50%;
   transform: translateY(-50%) rotate(180deg);
-  width: 16px;
-  height: 16px;
-  mask-size: 16px 16px;
+  width: 12px;
+  height: 12px;
+  mask-size: 12px 12px;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-image: var(--icon-file);
-  -webkit-mask-size: 16px 16px;
+  -webkit-mask-size: 12px 12px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
   -webkit-mask-image: var(--icon-file);
-  background-color: #444488;
+  background-color: #555B65;
   --icon-file: url("../images/upload-icon.svg");
 }
 
@@ -1615,6 +1615,38 @@ h1, .h1 {
   color: var(--white);
   display: none;
   z-index: 2;
+}
+
+.download-icon-btn {
+  background: var(--white);
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.download-icon-btn .dw-ic {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  mask-size: 16px 16px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 16px 16px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #5C677D;
+  --icon-file: url("../images/download-icons.svg");
+}
+
+.menu-card.w-auto {
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 .content-sec {
