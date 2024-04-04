@@ -1649,6 +1649,30 @@ h1, .h1 {
   min-width: max-content;
 }
 
+.truncate-pop-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 380px;
+}
+
+.select-default {
+  background: url(../images/select-arrow1.png) no-repeat 96% center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 6px 40px 6px 12px;
+  border: 0;
+  border-radius: 4px;
+  font-family: var(--default-font);
+  background-color: var(--icon-bg);
+  font-size: 0.75rem;
+  color: var(--default-font-color);
+}
+.select-default:focus-visible {
+  outline: 1px solid #9CB1C6;
+}
+
 .content-sec {
   position: relative;
   width: 100%;
@@ -3134,7 +3158,7 @@ div:hover > .tooltip {
 }
 
 .remove-button {
-  background: var(--border-color2);
+  background: var(--button-red);
   display: flex;
   border: none;
   height: 24px;
@@ -3689,6 +3713,27 @@ input, button {
 
 .w-half {
   width: 50%;
+}
+
+.shared-user-list-scroll {
+  max-height: 278px;
+  overflow-y: auto;
+  margin-right: -16px;
+  margin-left: -16px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.shared-user-list-scroll::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 8px;
+  border-radius: 24px;
+}
+.shared-user-list-scroll:hover::-webkit-scrollbar {
+  width: 8px;
+}
+.shared-user-list-scroll:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
 }
 
 .content-sec .left-section.left-divider-sec .left-section-inner {

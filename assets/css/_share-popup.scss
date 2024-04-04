@@ -72,7 +72,7 @@
    }
 }
 .remove-button{
-   background: var(--border-color2);
+   background: var(--button-red);
    display: flex;
    border: none;
    height: 24px;
@@ -648,3 +648,24 @@ input,button{
    .w-half{
       width:50%
    }
+
+   .shared-user-list-scroll {
+      max-height: 278px;
+      overflow-y: auto;
+      margin-right: -16px;
+      margin-left: -16px;
+      padding-right: 16px;
+      padding-left: 16px;
+      &::-webkit-scrollbar {
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 8px;
+        border-radius: 24px;
+      }
+      &:hover::-webkit-scrollbar {
+        width: 8px;
+      }
+      &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 24px;
+      }
+    }

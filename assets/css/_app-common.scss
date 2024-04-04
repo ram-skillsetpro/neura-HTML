@@ -1010,3 +1010,22 @@ h1,.h1{font-size:size(24); font-family: var(--default-font); color: var(--defaul
       min-width: max-content;
    }
 }
+
+.truncate-pop-text{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 380px;}
+
+.select-default{
+	background:url(../images/select-arrow1.png) no-repeat 96% center;
+	appearance: none;
+	padding: 6px 40px 6px 12px;
+	border: 0;
+	border-radius: 4px;
+	font-family: var(--default-font);
+	background-color: var(--icon-bg);
+	font-size: size(12);
+   color: var(--default-font-color);
+	&:focus-visible{
+		// border: 2px solid #9CB1C6;
+		outline: 1px solid #9CB1C6;
+
+	}
+}
