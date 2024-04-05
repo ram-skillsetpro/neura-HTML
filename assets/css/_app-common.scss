@@ -1029,3 +1029,107 @@ h1,.h1{font-size:size(24); font-family: var(--default-font); color: var(--defaul
 
 	}
 }
+.hm-menu{
+   background: transparent;
+   width: 36px;
+   height: 36px;
+   border-radius: 100%;
+   border: none;
+   margin-right: 12px;
+   cursor: pointer;
+   position: relative;
+   &:hover{
+      background: var(--white);
+   }
+   span{
+      width: 24px;
+      height: 2px;
+      background: var(--logo-color);
+      margin: auto;
+      display: block;
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      transition: all 0.3s ease-in;
+
+      &:nth-child(1){
+         top:10px;
+      }
+      &:nth-child(2){
+         top:17px;
+      }
+      &:nth-child(3){
+         top:24px;
+      }
+   }
+   &.open{
+      background: var(--white);
+
+     span{
+      &:nth-child(1){
+         transform: rotate(45deg);
+         top:17px;
+         left:0px;
+      }
+      &:nth-child(3){
+         transform: rotate(-45deg);
+         top:17px;
+         left:0px;
+      }
+      &:nth-child(2){
+         display: none;
+      }
+     } 
+   }
+}
+.leftMenuHide{display: none;}
+.aside-bar-menu{transition: all 0.3s ease-in;}
+//
+.loader-section{
+   // display: flex;
+   // height: 100vh;
+   // width: 100vw;
+}
+.loading{font-size: 14px;display: flex;color: #232323;}
+.loader-sec {width: 0px;aspect-ratio: 1;border-radius: 50%;border: 24px solid #ff6868;animation:
+l20-1 0.8s infinite linear alternate,
+l20-2 1.6s infinite linear;
+}
+@keyframes l20-1{
+0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
+}
+@keyframes l20-2{ 
+0%    {transform:scaleY(1)  rotate(0deg)}
+49.99%{transform:scaleY(1)  rotate(135deg)}
+50%   {transform:scaleY(-1) rotate(0deg)}
+100%  {transform:scaleY(-1) rotate(-135deg)}
+}
+span[class^="dot-"]{opacity: 0;}
+.dot-one{animation: dot-one 2s infinite linear}
+.dot-two{animation: dot-two 2s infinite linear}
+.dot-three{animation: dot-three 2s infinite linear}
+@keyframes dot-one{
+  0%{opacity: 0;}
+  15%{opacity: 0;}
+  25%{opacity: 1;}
+  100%{opacity: 1;}
+}
+@keyframes dot-two{
+  0%{opacity: 0;}
+  25%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 1;}
+}
+@keyframes dot-three{
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  75%{opacity: 1;}
+  100%{opacity: 1;}
+}
