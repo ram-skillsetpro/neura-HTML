@@ -1,0 +1,9 @@
+.p-card{
+	background: var(--white);
+	width: 100%;
+	padding: 12px;
+}
+.playbook-list-add{
+	&:not(:last-child){border-bottom: 1px solid var(--border-color4);}
+	padding:4px 0;
+}

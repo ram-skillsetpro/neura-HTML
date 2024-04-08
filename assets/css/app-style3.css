@@ -6737,7 +6737,7 @@ th > span {
 
 .other-files-view .file-row-action {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .file-action {
@@ -7824,6 +7824,19 @@ ul.ob-acc li.active::after {
   left: 0;
   text-align: center;
   margin-top: 12px;
+}
+
+.p-card {
+  background: var(--white);
+  width: 100%;
+  padding: 12px;
+}
+
+.playbook-list-add {
+  padding: 4px 0;
+}
+.playbook-list-add:not(:last-child) {
+  border-bottom: 1px solid var(--border-color4);
 }
 
 .popup-container {
