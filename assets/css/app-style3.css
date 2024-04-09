@@ -7839,6 +7839,30 @@ ul.ob-acc li.active::after {
   border-bottom: 1px solid var(--border-color4);
 }
 
+.playbook-search {
+  background: var(--icon-bg);
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.playbook-search .custom-select {
+  width: 275px;
+}
+.playbook-search input[type=search] {
+  background: transparent;
+  border: solid 1px #ccc;
+  font-size: 0.875rem;
+  min-width: 250px;
+}
+
+.font-normal {
+  font-weight: 400 !important;
+}
+
 .popup-container {
   width: 100vw;
   height: 100vh;
