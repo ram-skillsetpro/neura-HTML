@@ -25,3 +25,14 @@
 	}
 }
 .font-normal{font-weight: 400!important;}
+.playbook-outer-wrap{
+	width:640px;
+	box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2);
+	background: var(--white);
+	padding: 20px;
+	margin: auto;
+	border-radius: 6px;
+ }
+ .playbook-inner{
+	position: relative;
+ }
