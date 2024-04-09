@@ -7876,6 +7876,40 @@ ul.ob-acc li.active::after {
   position: relative;
 }
 
+.playbook-info {
+  position: relative;
+  padding-right: 60px;
+}
+
+.playbook-checkbox {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.playbook-checkbox input.custom-checkbox {
+  width: 32px;
+  height: 32px;
+}
+
+.playbook-frm {
+  width: 100%;
+  display: flex;
+}
+.playbook-frm.no-lable {
+  padding-left: 100px;
+}
+.playbook-frm label {
+  min-width: 100px;
+  display: block;
+  margin-bottom: 6px;
+}
+.playbook-frm .play-input {
+  background: transparent;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
 .popup-container {
   width: 100vw;
   height: 100vh;
