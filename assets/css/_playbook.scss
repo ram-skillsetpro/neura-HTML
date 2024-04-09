@@ -36,3 +36,30 @@
  .playbook-inner{
 	position: relative;
  }
+ // 9April
+
+ .playbook-info{
+	position: relative;
+	padding-right: 60px;
+	
+ }
+ .playbook-checkbox{
+	position: absolute;
+	top:50%;
+	right:0;
+	transform: translateY(-50%);
+	input.custom-checkbox {
+		width: 32px;
+		height: 32px;
+	}
+ }
+ 
+ .playbook-frm{
+	width: 100%;
+	display: flex;
+&.no-lable{
+	padding-left: 100px;
+}
+label{min-width:100px;display: block;margin-bottom:6px;}
+.play-input{background: transparent;width: 100%;margin-bottom: 12px;}
+}
