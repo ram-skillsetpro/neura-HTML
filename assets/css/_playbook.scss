@@ -57,9 +57,21 @@
  .playbook-frm{
 	width: 100%;
 	display: flex;
+	position: relative;
+	&:hover{
+		.rm-ques{display: block;}
+		.play-input{border: 1px solid #232323;}
+	}
 &.no-lable{
 	padding-left: 100px;
 }
 label{min-width:100px;display: block;margin-bottom:6px;}
-.play-input{background: transparent;width: 100%;margin-bottom: 12px;}
+.play-input{background: transparent;width: 100%;margin-bottom: 12px; padding-right: 30px;outline: none;border: 1px solid #ccc;}
+
 }
+.rm-ques{
+	position: absolute;
+	right: 10px;
+	top:5px;
+	display: none;
+}   
