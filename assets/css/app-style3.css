@@ -7895,6 +7895,13 @@ ul.ob-acc li.active::after {
 .playbook-frm {
   width: 100%;
   display: flex;
+  position: relative;
+}
+.playbook-frm:hover .rm-ques {
+  display: block;
+}
+.playbook-frm:hover .play-input {
+  border: 1px solid #232323;
 }
 .playbook-frm.no-lable {
   padding-left: 100px;
@@ -7908,6 +7915,16 @@ ul.ob-acc li.active::after {
   background: transparent;
   width: 100%;
   margin-bottom: 12px;
+  padding-right: 30px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.rm-ques {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: none;
 }
 
 .popup-container {
