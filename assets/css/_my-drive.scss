@@ -325,14 +325,15 @@ width: 100%;
    flex-wrap: wrap;
    gap: 12px;
    .folder-card{
-      flex: 1 1 32%;
-      min-width:32%;
-      max-width:32%;
+      flex:0 0 128px;
+      min-width:128px;
+      max-width:128px;
       position: relative;
       .folder-img{
-         margin-right: 10px;
-         width: 70px;
-         height:70px;
+         // margin-right: 10px;
+         width: 60px;
+         height:60px;
+         margin-bottom: 4px;
          display: flex;
          align-items: center;
          .icon-option-dot{
@@ -349,15 +350,15 @@ width: 100%;
          }
          .folder-img-color,.folder-img-color1,.folder-img-color2,.folder-img-color3,.folder-img-color4{
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
-            min-width: 70px;
-            min-height: 70px;
-            width:70px;
+            min-width: 60px;
+            min-height: 60px;
+            width:60px;
             height: auto;
             display: flex;
-            mask-size: 70px 70px;
+            mask-size: 60px 60px;
             mask-repeat: no-repeat;
             mask-position: center center;
-            -webkit-mask-size: 70px 70px;
+            -webkit-mask-size: 60px 60px;
             -webkit-mask-repeat: no-repeat;
             -webkit-mask-position: center center;         
             background-size: cover; 
@@ -481,4 +482,7 @@ width: 100%;
 .mytips-fix{
    position: fixed;
    height: 30px;
+}
+.folder-col{
+position: relative;
 }
