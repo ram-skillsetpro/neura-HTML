@@ -67,6 +67,13 @@ $font-family-primary:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
 	--border-color5:rgba(13, 13, 13, 0.1);
 	--obligation-inactive-bg:#F31260;
 	--obligation-active-bg:#17C964;
+	--dark-green:#5E7F84;
+	--darker-green:#83A7AD;
+	--light-green:#81C2CD;
+	--dark-orange:#FFA968;
+	--light-orange:#FFC89F;
+	--dual-red:#FF7368;
+	--light-red:#FFA8A8;
 
 }
 
@@ -157,6 +164,8 @@ body {
 @import '_compliance-dash';
 @import 'record-obligation';
 @import 'playbook';
+@import 'fin-dashboard';
+
 
 
 .popup-container {
