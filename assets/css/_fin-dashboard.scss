@@ -28,6 +28,7 @@
 	background: var(--white);
 	color: var(--text-light-color);
 	border-radius: 4px;
+	overflow: hidden;
 }
 .fin-row-contract{
 	display: flex;
@@ -86,3 +87,4 @@
 .rounded-0{border-radius: 0!important;}
 .max-w-full{max-width: 100%!important;}
 .mb-8{margin-bottom: 32px;}
+.text-light-color{color: var(--text-light-color)!important;}
