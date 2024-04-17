@@ -485,6 +485,41 @@ input,button{
             li{              
                display: flex;
                align-items: center;
+               .breadcrum-btn{
+                  background: transparent;
+                  border: none;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 30px;
+                  height: 17px;
+                  padding-right: 16px;
+                  &::after{
+                     content:'';
+                     position: absolute;
+                     top:50%;
+                     transform: translateY(-50%);
+                     right:0;
+                     background-color:#555B65;
+                     width:20px;
+                     height: 20px;
+                     display: flex;
+                     mask-size: 20px 20px;
+                     mask-repeat: no-repeat;
+                     mask-position: center center;
+                     mask-image: var(--background);
+                     -webkit-mask-size: 20px 20px;
+                     -webkit-mask-repeat: no-repeat;
+                     -webkit-mask-position: center center;
+                     -webkit-mask-image: var(--background);
+                     background-size: cover;
+                     --background:url(../images/forward-icon.svg);
+                  }
+                  img{
+                     display: block;
+                     height: 17px;
+                  }
+               }
               &.list{
                list-style: none;
                font-size: size(11);

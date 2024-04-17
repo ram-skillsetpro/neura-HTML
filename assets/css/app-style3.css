@@ -3122,7 +3122,7 @@ div:hover > .tooltip {
   z-index: 2;
 }
 .folder-sec .folder-card .folder-img img {
-  max-width: 70px;
+  max-width: 32px;
   width: 100%;
   height: auto;
   display: block;
@@ -3169,7 +3169,7 @@ div:hover > .tooltip {
   line-height: 1.2;
   color: var(--default-font-color);
   font-weight: 600;
-  margin-bottom: 2px;
+  margin-bottom: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3836,6 +3836,41 @@ input, button {
 .popup-breadcrum ul.breadcrum-ul li {
   display: flex;
   align-items: center;
+}
+.popup-breadcrum ul.breadcrum-ul li .breadcrum-btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 17px;
+  padding-right: 16px;
+}
+.popup-breadcrum ul.breadcrum-ul li .breadcrum-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: #555B65;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  --background:url(../images/forward-icon.svg);
+}
+.popup-breadcrum ul.breadcrum-ul li .breadcrum-btn img {
+  display: block;
+  height: 17px;
 }
 .popup-breadcrum ul.breadcrum-ul li.list {
   list-style: none;
@@ -8115,15 +8150,19 @@ ul.ob-acc li.active::after {
 }
 
 .fin-box {
-  height: 56px;
+  height: 62px;
 }
 
 .content-inner {
   position: relative;
 }
+.content-inner .truncate1 {
+  max-width: 96%;
+}
 
 .content-inner .fin-key {
   position: absolute;
+  width: 100%;
   color: #fff;
   left: 0px;
   top: 50%;
@@ -8133,6 +8172,9 @@ ul.ob-acc li.active::after {
 .content-outer {
   display: flex;
   align-items: center;
+}
+.content-outer .truncate1 {
+  max-width: 200px;
 }
 
 .fin-key {
@@ -8158,6 +8200,16 @@ ul.ob-acc li.active::after {
 
 .text-light-color {
   color: var(--text-light-color) !important;
+}
+
+.truncate1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mb-12 {
+  margin-bottom: 48px;
 }
 
 .popup-container {
