@@ -3338,7 +3338,7 @@ div:hover > .tooltip {
 }
 .src-sec .folder-suggestion-list ul {
   list-style: none;
-  height: 200px;
+  max-height: 200px;
   overflow-y: auto;
 }
 .src-sec .folder-suggestion-list ul::-webkit-scrollbar {
@@ -6393,7 +6393,7 @@ a {
   gap: 12px;
 }
 .ld-top-sec .box-card {
-  flex: 1 1 33.33%;
+  flex: 1 1 25%;
   min-height: 150px;
   background: var(--comment-bg);
   border-radius: 6px;
@@ -6413,6 +6413,10 @@ a {
 }
 .ld-top-sec .box-card .card-info-numb {
   font-size: 1.75rem;
+}
+
+.card-h {
+  height: 230px;
 }
 
 .card-info-title {
@@ -6507,8 +6511,8 @@ a {
   height: 100px;
 }
 .data-box-row .data-box-col {
-  flex: 1 1 33.33%;
-  max-width: 33.33%;
+  flex: 1 1 50%;
+  max-width: 50%;
   background: var(--comment-bg);
   border-radius: 6px;
   padding: 12px;

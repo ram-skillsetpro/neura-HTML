@@ -2,7 +2,7 @@
    display: flex;
    gap: 12px;
    .box-card{
-      flex: 1 1 33.33%;
+      flex: 1 1 25%;
       min-height:150px;
       background: var(--comment-bg);
       border-radius: 6px;
@@ -25,6 +25,7 @@
       }
    }
 }
+.card-h{height: 230px;}
 .card-info-title{
    font-size: size(16);
    color: var(--default-font-color);
@@ -121,8 +122,8 @@ align-items: center;
    gap: 12px;
    height: 100px;
    .data-box-col{
-      flex: 1 1 33.33%;
-      max-width: 33.33%;
+      flex: 1 1 50%;
+      max-width: 50%;
       background: var(--comment-bg);
       border-radius: 6px;
       padding: 12px;
