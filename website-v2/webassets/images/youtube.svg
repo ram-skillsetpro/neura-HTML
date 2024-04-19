@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>social-icons/youtube@2x</title>
+    <g id="social-icons/youtube" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons8-youtube" transform="translate(1, 4)" fill-rule="nonzero">
+            <path d="M23.4613466,14.94 C23.2219451,16.2 22.2044888,17.16 20.9476309,17.34 C18.9725686,17.64 15.680798,18 11.9700748,18 C8.319202,18 5.02743142,17.64 2.9925187,17.34 C1.73566085,17.16 0.718204489,16.2 0.478802993,14.94 C0.239401496,13.56 0,11.52 0,9 C0,6.48 0.239401496,4.44 0.478802993,3.06 C0.718204489,1.8 1.73566085,0.84 2.9925187,0.66 C4.96758105,0.36 8.25935162,0 11.9700748,0 C15.680798,0 18.9127182,0.36 20.9476309,0.66 C22.2044888,0.84 23.2219451,1.8 23.4613466,3.06 C23.7007481,4.44 24,6.48 24,9 C23.9401496,11.52 23.7007481,13.56 23.4613466,14.94 Z" id="Path" fill="#FF3D00"></path>
+            <polygon id="Path" fill="#FFFFFF" points="10 13 10 5 17 9"></polygon>
+        </g>
+    </g>
+</svg>
