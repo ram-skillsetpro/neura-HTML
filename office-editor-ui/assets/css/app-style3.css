@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+	--default-font:'Open Sans','Helvetica Neue', 'Verdana', sans-serif;
+	--default-background-color: #dce1e6;
+	--comments-background-color: #f4f6f9;
+	--comments-header-background-color: #c6cdd4;
+	--default-font-color: #232323;
+	--app-navigation-background-color: #ffffff;
+	--logo-color: #ff6868;
+	--button-red: #ef4747;
+	--form-background-color: #dfe8eb
+
+}
+
+  
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0; 
+  }
+  ul,ol{
+	list-style: none;
+  }
+
+html, body {    
+    scroll-behavior: smooth;
+	overflow: hidden;
+} 
+.app-bg{
+	background-color: var(--comments-header-background-color);
+	width: 100%;
+	min-height: 100vh;
+}
+
+body {
+	font-family: var(--default-font);
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+    color: var(--default-font-color);
+}
+.form-container{
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--form-background-color);
+    color: var(--default-dark-font-color);
+    padding: 24px 4% 24px 4%;
+    border-radius: 12px;
+    margin: auto;
+    box-shadow: 0 18px 24px rgba(0,0,0,.2);
+
+}
+input[type=submit], input[type=button], .btn {
+    -webkit-appearance: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--button-red);
+    border: 1px solid var(--button-red);
+    height: 36px;
+    width: 100%;
+    cursor: pointer;
+}
+.mb-3{margin-bottom: 12px;}
+.mb-6{margin-bottom: 24px;}
+.mt-6{margin-top: 24px;}
+
+.flex{display: flex;}
+.tracking-wider{letter-spacing: .2em;}
+.mt-3{margin-top: 12px;}
+.text-center{text-align: center;}
+.body-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.logo{max-height: 36px;width: auto; margin: auto;text-align: center;margin-bottom: 16px;}
+.logo img{max-height: 36px;margin: auto;}
+.form-container label {
+    margin: 0px 0 6px 6px;
+    font-size: 12px;
+   text-align: left;
+}
+.forgot-password{font-size: 12px;}
+.d-block{display: block;}
+input[type=text], input[type=email], input[type=password], input[type=tel] {
+    -webkit-appearance: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    height: 36px;
+    font-size: 14px;
+    color: var(--default-font-color);
+    padding: 12px;
+    box-sizing: border-box;
+}
+.form-container input[type=text], .form-container input[type=email], .form-container input[type=password], .form-container input[type=tel] {
+    width: 100%;
+}
+.error-message{
+    color: var(--button-red);
+    font-size: 13px;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+.forgot-sec{display: flex;justify-content: space-between;font-size: 14px;}
