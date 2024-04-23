@@ -220,7 +220,10 @@ h1,.h1{
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 95px;
-
+@media (max-width:1024px){
+	flex-direction: column;
+	gap: 32px;
+}
 	.info-left{
 		max-width: 620px;
 		.info-para{
@@ -243,12 +246,24 @@ h1,.h1{
 	gap:16px;
 	border-bottom: 1px solid var(--divider-footer);
 	padding-bottom: 54px;
+	@media (max-width:1024px){
+		flex-wrap: wrap;
+		gap:0;
+
+	}
 	.col4{
 		flex: 0 1 25%;
 		max-width: 25%;
 		transition: all .3s ease;
 		padding: 16px;
-
+		@media (max-width:1024px){
+			flex: 0 1 50%;
+			max-width: 50%;
+		}
+		@media (max-width:767px){
+			flex: 0 1 100%;
+			max-width: 100%;
+		}
 		.readmore-link{
 			opacity: 0;
 		}
@@ -365,11 +380,19 @@ input[type=checkbox] {
 		gap: 42px;
 		padding: 32px 0;
 		border-bottom: 1px solid var(--divider-footer);
+		@media(max-width:1024px){
+			gap: 0;
+			flex-wrap: wrap;
+		}
 	.wh-col{
 		flex: 0 1 33.33%;
 		width: 100%;
 		transition: all .3s ease;
 		padding: 16px;
+		@media(max-width:767px){
+			flex: 0 1 100%;
+			width: 100%;		
+		}
 		.readmore-link{
 			opacity: 0;
 			margin-top: 10px;
@@ -449,6 +472,9 @@ input[type=checkbox] {
 	min-height: 400px;
 	display: flex;
 	align-items: center;
+	@media (max-width:1200px){
+		overflow-x: auto;
+	}
 	// background: red;
 	ul{
 		display: flex;
@@ -456,6 +482,7 @@ input[type=checkbox] {
 		margin: 0;
 		width: 100%;
 		justify-content: space-between;	
+
 		li{
 			
 			width: 150px;
@@ -691,6 +718,7 @@ input[type=checkbox] {
 .integration-sec{
 	display: flex;
 	gap: 32px;
+	
 	.integration-left{
 		flex: 0 1 60%;
 		width: 60%;
@@ -698,6 +726,14 @@ input[type=checkbox] {
 	.integration-right{
 		flex: 0 1 40%;
 		width: 40%;
+	}
+	@media(max-width:1024px){
+		flex-direction: column;
+		.integration-left,.integration-right{
+			flex: 0 1 100%;
+			width: 100%;
+			// max-width: 600px;
+		}
 	}
 	.integration-info{
 		ul{
@@ -738,11 +774,9 @@ input[type=checkbox] {
 	padding-bottom: 30px;
 	border-bottom:1px solid var(--divider-footer);
 	display: flex;
-	@media(max-width:1024px){
-		flex-direction: column-reverse;
-		// border-bottom:0;
-		// border-top:1px solid var(--divider-footer);
-	}
+	// @media(max-width:1024px){
+	// 	flex-direction: column-reverse;
+	// }
 	.ft-address-sec{
 		width: 200px;
 		border-right:1px solid var(--divider-footer);
@@ -763,15 +797,15 @@ input[type=checkbox] {
 				line-height: 1.4;
 			}
 		}
-		@media(max-width:1024px){
-			width: 100%;
-			border-right:0;
-			padding-right: 0;
-			margin-right: 0;
-			border-top:1px solid var(--divider-footer);
-			padding-top: 20px;
-			margin-top: 20px;
-		}
+		// @media(max-width:1024px){
+		// 	width: 100%;
+		// 	border-right:0;
+		// 	padding-right: 0;
+		// 	margin-right: 0;
+		// 	border-top:1px solid var(--divider-footer);
+		// 	padding-top: 20px;
+		// 	margin-top: 20px;
+		// }
 
 	}
 	.ft-logo-sec{
