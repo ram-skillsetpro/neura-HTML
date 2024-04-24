@@ -432,6 +432,9 @@ input[type=checkbox] {
 		label{
 			color: var(--button-red)!important;
 		}
+		input{
+			border: 1px solid var(--button-red)!important;
+		}
 	}
 	input{
 		transition: all .3s ease;
@@ -462,12 +465,25 @@ input[type=checkbox] {
 //   font-size: 11px;
 //   top: -5px
 // }
-.form-item input:focus + label,.form-item.filled input + label{
-	color: #666;
-	top:-16px;
+.form-item input:focus + label,.form-item.filled input + label,.form-item input:valid + label{
+	color: var(--logo-color);
+	top:-18px;
 	font-size: 12px;
+	left: 4px;
   }
-
+//   .form-item input:valid {
+// 	background-color: red;
+	
+//   }
+.integration-img{
+	max-width:650px;
+	img{
+		height: auto;
+	object-fit: cover;
+	width: 100%;
+	margin: auto;
+	}
+}
   .cms-items{
 	min-height: 400px;
 	display: flex;

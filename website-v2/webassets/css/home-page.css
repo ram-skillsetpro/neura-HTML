@@ -569,6 +569,9 @@ input[type=checkbox]:checked {
 .form-item.error-state label {
   color: var(--button-red) !important;
 }
+.form-item.error-state input {
+  border: 1px solid var(--button-red) !important;
+}
 .form-item input {
   transition: all 0.3s ease;
   padding: 0 15px;
@@ -589,10 +592,22 @@ input[type=checkbox]:checked {
   transition: all 0.3s ease;
 }
 
-.form-item input:focus + label, .form-item.filled input + label {
-  color: #666;
-  top: -16px;
+.form-item input:focus + label, .form-item.filled input + label, .form-item input:valid + label {
+  color: var(--logo-color);
+  top: -18px;
   font-size: 12px;
+  left: 4px;
+}
+
+.integration-img {
+  max-width: 650px;
+}
+.integration-img img {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  margin: auto;
 }
 
 .cms-items {
