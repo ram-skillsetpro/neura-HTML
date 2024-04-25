@@ -259,7 +259,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1260px;
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;
@@ -666,7 +666,14 @@ input[type=checkbox]:checked {
   transition: all 0.3s ease;
 }
 
-.form-item input:focus + label, .form-item.filled input + label, .form-item input:valid + label {
+.form-control:not(:-moz-placeholder-shown) ~ label {
+  color: var(--logo-color);
+  top: -18px;
+  font-size: 12px;
+  left: 4px;
+}
+
+.form-item input:focus + label, .form-control:not(:placeholder-shown) ~ label, .form-item.filled input + label, .form-item input:valid + label {
   color: var(--logo-color);
   top: -18px;
   font-size: 12px;
@@ -702,10 +709,13 @@ input[type=checkbox]:checked {
   justify-content: space-between;
 }
 .cms-items ul li {
-  width: 150px;
+  width: 120px;
   position: relative;
   height: 132px;
   transition: all 0.3s ease-in;
+}
+.cms-items ul li:hover {
+  width: 240px;
 }
 .cms-items ul li:hover .cms-info-box {
   background: #fff;
@@ -749,7 +759,7 @@ input[type=checkbox]:checked {
   line-height: 1.25;
   color: #666;
   position: absolute;
-  padding: 8px 1px 4px 12px;
+  padding: 8px 12px 4px 12px;
   width: 188px;
   left: 12px;
   top: -64px;
@@ -776,14 +786,16 @@ input[type=checkbox]:checked {
   align-items: center;
 }
 .cms-items ul li:nth-last-child(2) {
-  max-width: 200px;
-  width: 200px;
+  max-width: 210px;
+  width: 210px;
 }
 .cms-items ul li:nth-child(even) {
   padding-top: 33px;
 }
 .cms-items ul li:nth-child(even) .cms-info-box {
   top: 121px;
+  text-align: right;
+  left: -142px;
 }
 .cms-items ul li:nth-child(even):hover .cms-info-box {
   margin-top: -6px;
@@ -791,10 +803,6 @@ input[type=checkbox]:checked {
 .cms-items ul li:last-child {
   width: 66px;
 }
-.cms-items ul li:last-child .cms-info-box {
-  left: -110px;
-}
-
 .default-color {
   color: var(--default-font-color);
 }
@@ -1097,7 +1105,7 @@ a.readmore-link, .readmore-link {
 }
 
 .footer-wrap {
-  max-width: 1200px;
+  max-width: 1260px;
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;

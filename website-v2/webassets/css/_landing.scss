@@ -199,7 +199,7 @@ padding-bottom: 95px;
 }
  }
  .container{
-	max-width: 1200px;
+	max-width: 1260px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin: auto;
@@ -479,6 +479,7 @@ input[type=checkbox] {
 		flex-direction: column;
 	}
 }
+
 .form-item{
 	flex: 1 1 50%;max-width: 50%;width: 100%;  position: relative;
 	@media(max-width:767px){
@@ -520,6 +521,11 @@ input[type=checkbox] {
 		color: #BEBEBE;
 		transition: all .3s ease
 	}
+	// .form-control:not(:placeholder-shown) ~ label {
+	// 	top:-8px;
+	// 	font-size:13px;
+	// 	color: yellow;
+	//   }
 }
 
 .get-in-touch{
@@ -530,7 +536,7 @@ input[type=checkbox] {
 //   font-size: 11px;
 //   top: -5px
 // }
-.form-item input:focus + label,.form-item.filled input + label,.form-item input:valid + label{
+.form-item input:focus + label,.form-control:not(:placeholder-shown) ~ label,.form-item.filled input + label,.form-item input:valid + label{
 	color: var(--logo-color);
 	top:-18px;
 	font-size: 12px;
@@ -566,11 +572,13 @@ input[type=checkbox] {
 
 		li{
 			
-			width: 150px;
+			width: 120px;
 			position: relative;
 			height: 132px;
 			transition: all 0.3s ease-in;
 			&:hover{
+				width: 240px;
+
 				.cms-info-box{
 					background: #fff;
 					font-size: 15px;
@@ -615,7 +623,7 @@ input[type=checkbox] {
 				color: #666;
 				// background: red;
 				position: absolute;
-				padding: 8px 1px 4px 12px;
+				padding: 8px 12px 4px 12px;
 				width: 188px;
 				left: 12px;
 				top:-64px;
@@ -629,14 +637,15 @@ input[type=checkbox] {
 			.hs-line{height: 1px;width:74px;background: var(--divider-footer);flex-grow: 1;}
 			.box-m-line{display: flex;align-items: center;}
 			&:nth-last-child(2){
-				max-width: 200px;
-				width: 200px;
+				max-width: 210px;
+				width: 210px;
 			}
 			&:nth-child(even){
 				padding-top: 33px;
 				.cms-info-box{
 					top:121px;
-
+					text-align: right;
+					left: -142px;
 				}
 				&:hover{
 					.cms-info-box{
@@ -649,7 +658,7 @@ input[type=checkbox] {
 			&:last-child{
 				width: 66px;
 				.cms-info-box{
-					left: -110px;
+					// left: -140px;
 
 				}
 			}
@@ -923,7 +932,7 @@ input[type=checkbox] {
 
 }
 .footer-wrap{
-	max-width: 1200px;
+	max-width: 1260px;
 	padding-left: 20px;
 	padding-right: 20px;
 	// @media(min-width:1440px){
