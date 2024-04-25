@@ -174,7 +174,6 @@ body {
 }
 @media (max-width: 600px) {
   .form-button {
-    padding: 0px 10px;
     font-size: 14px;
     margin: 0 10px 0 0;
   }
@@ -253,18 +252,18 @@ body {
   padding-top: 140px;
   padding-bottom: 95px;
 }
+@media (max-width: 767px) {
+  .cont-sec {
+    padding-top: 50px;
+  }
+}
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;
   position: relative;
-}
-@media (min-width: 1367px) {
-  .container {
-    max-width: 1440px;
-  }
 }
 
 .main-wrap {
@@ -612,12 +611,24 @@ input[type=checkbox]:checked {
   width: 100%;
   margin-bottom: 32px;
 }
+@media (max-width: 767px) {
+  .form-group {
+    flex-direction: column;
+  }
+}
 
 .form-item {
   flex: 1 1 50%;
   max-width: 50%;
   width: 100%;
   position: relative;
+}
+@media (max-width: 767px) {
+  .form-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 .form-item input[type=text], .form-item input[type=email], .form-item input[type=password], .form-item input[type=tel] {
   width: 100%;
@@ -1066,6 +1077,15 @@ a.readmore-link, .readmore-link {
 .ft-pt {
   padding-top: 30px;
 }
+@media (max-width: 767px) {
+  .ft-pt .flex.justify-between {
+    flex-direction: column;
+  }
+  .ft-pt .ft-copywrite {
+    display: flex;
+    width: 100%;
+  }
+}
 
 .footer-bg {
   padding: 52px 0 85px 0;
@@ -1077,15 +1097,10 @@ a.readmore-link, .readmore-link {
 }
 
 .footer-wrap {
-  max-width: 1280px;
+  max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;
-}
-@media (min-width: 1440px) {
-  .footer-wrap {
-    max-width: 1440px;
-  }
 }
 
 .footer-top-sec {
@@ -1154,12 +1169,24 @@ a.readmore-link, .readmore-link {
 }
 
 .ft-copywrite {
-  font-size: size(14);
+  font-size: 14px;
   line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .ft-copywrite {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
 }
 .ft-copywrite a {
   color: var(--default-font-color);
   text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .ft-copywrite a {
+    display: inline-block;
+    font-size: 10px;
+  }
 }
 
 .social-sec ul {
