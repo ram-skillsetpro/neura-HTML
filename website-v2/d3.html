@@ -8,18 +8,20 @@
 body,html{
   overflow: hidden;
   height: 100vh;
+  font-family: "trebuchet MS", sans-serif;
+  background-color: #E6EEF6;
 }
 .link {
-        stroke: yellow;
+        stroke: #ccc;
     }
     .node text {
-        stroke: #333;
+        fill: #999;
         cursor: pointer;
     }
     .node circle {
-        stroke: #fff;
-        stroke-width: 3px;
-        fill: red;
+        stroke: #dee5ec;
+        stroke-width: 1px;
+        fill: #fff;
     }
     .card{
         width: 900px;
@@ -37,6 +39,10 @@ body,html{
 
 </div>
 <script>
+    function random(min, max) { // min and max included 
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    
     var width = 700,
         height = 600
 
@@ -44,72 +50,87 @@ body,html{
         .attr("width", width)
         .attr("height", height);
 
-    var force = d3.layout.force()
-        .distance(200)
-        .charge(-3000)
-        .size([width, height]);
+    
 
     var json = {
         "nodes": [{
-            "name": "simpleo-ai-logo.svg"
-        }, {
-            "name": "Facebook"
-        }, {
-            "name": "node3"
-        }, {
-            "name": "node4"
-        }, {
-            "name": "node5"
-        }, {
-            "name": "node6"
+            "name": "SimpleO",
+            "image": "d3-icon-simpleo",
+            "r": 260
+        }, 
+        {
+            "name": "Teams",
+            "image": "d3-icon-teams",
+            "r": 150
+        },
+        {
+            "name": "Slaes Force",
+            "image": "d3-icon-salesforce",
+            "r": 180
+        },
+        {
+            "name": "Microsoft",
+            "image": "d3-icon-ms",
+            "r": 120
+        }, 
+        {
+            "name": "Hubspot",
+            "image": "d3-icon-hubspot",
+            "r": 150
+        },
+        {
+            "name": "Google",
+            "image": "d3-icon-01",
+            "r": 170
+        }, 
+        {
+            "name": "DropBox",
+            "image": "d3-icon-02",
+            "r": 130
+        }, 
+        {
+            "name": "DropBox",
+            "image": "d3-icon-03",
+            "r": 190
         }
-        , {
-            "name": "node7"
-        }
-        , {
-            "name": "node8"
-        }
-        , {
-            "name": "node9"
-        }
+        
         
     ],
         "links": [{
             "source": 0,
             "target": 1
-        }, {
+        },{
             "source": 0,
             "target": 2
-        }, {
+        },{
             "source": 0,
             "target": 3
-        }, {
+        },{
             "source": 0,
             "target": 4
-        }, {
+        },{
             "source": 0,
             "target": 5
-        }
-        , {
+        },{
             "source": 0,
             "target": 6
-        }
-        , {
+        },{
             "source": 0,
             "target": 7
-        }
-        , {
-            "source": 0,
-            "target": 8
-        }
-    ]
+        }]
     };
-
-    force
-        .nodes(json.nodes)
+    
+    var force = d3.layout.force()
+        .distance(250)
+        .linkDistance(30)
+        .charge(-1350)
+        .linkStrength(.001)
+        .size([width, height]);
+        
+    force.nodes(json.nodes)
         .links(json.links)
         .start();
-
+        
     var link = svg.selectAll(".link")
         .data(json.links)
         .enter().append("line")
@@ -123,14 +144,33 @@ body,html{
         .call(force.drag);
 
     node.append("circle")
-        .attr("r", 50);
-
-    node.append("text")
-        .attr("dx", 0)
-        .attr("dy", "-.35em")
-        .text(function(d) {
-            return d.name
+        .attr("r", function(d) {
+            return (d.r/5)
         });
+        
+    node.append("image")
+        .attr("xlink:href", function(d) {
+            return "webassets/images/"+d.image+".png"
+        })
+        .attr("x", function(d) {
+            return (d.r/5*-1)
+        })
+        .attr("y", function(d) {
+            return (d.r/5*-1)
+        })
+        .attr("width", function(d) {
+            return (d.r/2.5)
+        })
+        .attr("height", function(d) {
+            return (d.r/2.5)
+        });
+
+    // node.append("text")
+    //     .attr("dx", 20)
+    //     .attr("dy", "20")
+    //     .text(function(d) {
+    //         return d.name
+    //     });
 
     force.on("tick", function() {
         link.attr("x1", function(d) {
