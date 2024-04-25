@@ -26,7 +26,7 @@ body,html{
     .card{
         width: 900px;
         height: 600px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
  </style>
  <script src="https://d3js.org/d3.v2.min.js?2.9.3"></script>
@@ -62,7 +62,7 @@ body,html{
         {
             "name": "Teams",
             "image": "d3-icon-teams",
-            "r": 150,
+            "r": 180,
             "d": 250
         },
         {
@@ -74,32 +74,38 @@ body,html{
         {
             "name": "Microsoft",
             "image": "d3-icon-ms",
-            "r": 120,
+            "r": 180,
             "d": 250
         }, 
         {
             "name": "Hubspot",
             "image": "d3-icon-hubspot",
-            "r": 150,
+            "r": 180,
             "d": 50
         },
         {
             "name": "Google",
             "image": "d3-icon-01",
-            "r": 170,
+            "r": 180,
             "d": 250
         }, 
         {
             "name": "DropBox",
             "image": "d3-icon-02",
-            "r": 130,
+            "r": 180,
             "d": 400
         }, 
         {
             "name": "Some Other",
             "image": "d3-icon-03",
-            "r": 190,
+            "r": 180,
             "d": 250
+        }, 
+        {
+            "name": "Slack",
+            "image": "d3-icon-slack",
+            "r": 180,
+            "d": 50
         }
         
         
@@ -125,6 +131,9 @@ body,html{
         },{
             "source": 0,
             "target": 7
+        },{
+            "source": 0,
+            "target": 8
         }]
     };
     
@@ -133,7 +142,7 @@ body,html{
               return (d.d)
           })
         .linkDistance(10)
-        .charge(-1650)
+        .charge(-1450)
         .linkStrength(.001)
         .size([width, height]);
         
