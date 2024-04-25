@@ -57,7 +57,7 @@
 							</div>
 						</div>
 						<div class="icon-right">
-							<i class="contracts-ic-r"></i>
+							<i class="img-w" id='image'></i>
 						</div>
 					</div>
 					<div class="contract-row">
@@ -649,4 +649,20 @@ Contract Management
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="webassets/js/simpleo.js"></script>
+<script>
+	var myElement = document.getElementById('image'),
+    imgList = [
+  "./webassets/images/slide-img/sign1.svg",
+  "./webassets/images/slide-img/bot.svg",
+  "./webassets/images/slide-img/clock.svg",
+  "./webassets/images/slide-img/storage-secure.svg",
+];
+function changeImage (myElement, imgList) {
+  setInterval(function(){
+    randomImage = Math.floor( Math.random() * imgList.length);
+    myElement.style.backgroundImage = "url('" + imgList[randomImage] + "')";
+  }, 1000);
+}
+changeImage(myElement, imgList);
+</script>
 </html>

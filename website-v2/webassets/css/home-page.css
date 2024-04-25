@@ -663,7 +663,9 @@ input[type=checkbox]:checked {
   font-weight: bold;
   padding: 0 10px;
   color: #BEBEBE;
-  transition: all 0.3s ease;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
 
 .form-control:not(:-moz-placeholder-shown) ~ label {
@@ -1218,6 +1220,15 @@ a.readmore-link, .readmore-link {
 }
 .social-sec ul li:not(:last-child) {
   margin-right: 12px;
+}
+
+.img-w {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./webassets/images/slide-img/sign1.svg");
 }
 
 .popup-container {
