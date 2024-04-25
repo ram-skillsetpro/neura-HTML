@@ -57,7 +57,7 @@
 							</div>
 						</div>
 						<div class="icon-right">
-							<i class="contracts-ic-r"></i>
+							<i class="img-w" id='image'></i>
 						</div>
 					</div>
 					<div class="contract-row">
@@ -483,7 +483,10 @@ Contract Management
 									Integrations
 								</h2>
 								<div class="integration-img">
-									<img src="./webassets/images/integrations-d3-chart.png" alt="" />
+									<div id="d3_demo" class="card">
+
+									</div>
+									<!-- <img src="./webassets/images/integrations-d3-chart.png" alt="" /> -->
 								</div>
 							</div>
 							<div class="integration-right">
@@ -646,7 +649,175 @@ Contract Management
 
 	</div>
 </body>
-<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-<script src="webassets/js/simpleo.js"></script>
+<script src="https://d3js.org/d3.v2.min.js?2.9.3"></script>
+
+<script>
+    function random(min, max) { // min and max included 
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    
+    var width = 650,
+        height = 600
+
+    var svg = d3.select("#d3_demo").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    
+
+    var json = {
+        "nodes": [{
+            "name": "SimpleO",
+            "image": "d3-icon-simpleo",
+            "r": 260
+        }, 
+        {
+            "name": "Teams",
+            "image": "d3-icon-teams",
+            "r": 150
+        },
+        {
+            "name": "Slaes Force",
+            "image": "d3-icon-salesforce",
+            "r": 180
+        },
+        {
+            "name": "Microsoft",
+            "image": "d3-icon-ms",
+            "r": 120
+        }, 
+        {
+            "name": "Hubspot",
+            "image": "d3-icon-hubspot",
+            "r": 150
+        },
+        {
+            "name": "Google",
+            "image": "d3-icon-01",
+            "r": 170
+        }, 
+        {
+            "name": "DropBox",
+            "image": "d3-icon-02",
+            "r": 130
+        }, 
+        {
+            "name": "DropBox",
+            "image": "d3-icon-03",
+            "r": 190
+        }
+        
+        
+    ],
+        "links": [{
+            "source": 0,
+            "target": 1
+        },{
+            "source": 0,
+            "target": 2
+        },{
+            "source": 0,
+            "target": 3
+        },{
+            "source": 0,
+            "target": 4
+        },{
+            "source": 0,
+            "target": 5
+        },{
+            "source": 0,
+            "target": 6
+        },{
+            "source": 0,
+            "target": 7
+        }]
+    };
+    
+    var force = d3.layout.force()
+        .distance(250)
+        .linkDistance(30)
+        .charge(-1350)
+        .linkStrength(.001)
+        .size([width, height]);
+        
+    force.nodes(json.nodes)
+        .links(json.links)
+        .start();
+        
+    var link = svg.selectAll(".link")
+        .data(json.links)
+        .enter().append("line")
+        .attr("class", "link")
+        .style("stroke-width", 2);
+
+    var node = svg.selectAll(".node")
+        .data(json.nodes)
+        .enter().append("g")
+        .attr("class", "node")
+        .call(force.drag);
+
+    node.append("circle")
+        .attr("r", function(d) {
+            return (d.r/5)
+        });
+        
+    node.append("image")
+        .attr("xlink:href", function(d) {
+            return "webassets/images/"+d.image+".png"
+        })
+        .attr("x", function(d) {
+            return (d.r/5*-1)
+        })
+        .attr("y", function(d) {
+            return (d.r/5*-1)
+        })
+        .attr("width", function(d) {
+            return (d.r/2.5)
+        })
+        .attr("height", function(d) {
+            return (d.r/2.5)
+        });
+
+    // node.append("text")
+    //     .attr("dx", 20)
+    //     .attr("dy", "20")
+    //     .text(function(d) {
+    //         return d.name
+    //     });
+
+    force.on("tick", function() {
+        link.attr("x1", function(d) {
+                return d.source.x;
+            })
+            .attr("y1", function(d) {
+                return d.source.y;
+            })
+            .attr("x2", function(d) {
+                return d.target.x;
+            })
+            .attr("y2", function(d) {
+                return d.target.y;
+            });
+
+        node.attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
+    });
+</script>
+<script>
+	var myElement = document.getElementById('image'),
+    imgList = [
+  "./webassets/images/slide-img/sign1.svg",
+  "./webassets/images/slide-img/bot.svg",
+  "./webassets/images/slide-img/clock.svg",
+  "./webassets/images/slide-img/storage-secure.svg",
+];
+function changeImage (myElement, imgList) {
+  setInterval(function(){
+    randomImage = Math.floor( Math.random() * imgList.length);
+    myElement.style.backgroundImage = "url('" + imgList[randomImage] + "')";
+  }, 1000);
+}
+changeImage(myElement, imgList);
+</script>
 </html>
