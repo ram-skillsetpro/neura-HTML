@@ -43,7 +43,7 @@ body,html{
       return Math.floor(Math.random() * (max - min + 1) + min);
     }
     
-    var width = 700,
+    var width = 900,
         height = 600
 
     var svg = d3.select("#d3_demo").append("svg")
@@ -121,7 +121,7 @@ body,html{
     };
     
     var force = d3.layout.force()
-        .distance(250)
+        .distance(350)
         .linkDistance(30)
         .charge(-1350)
         .linkStrength(.001)

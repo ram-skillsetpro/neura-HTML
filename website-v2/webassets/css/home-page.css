@@ -1231,6 +1231,25 @@ a.readmore-link, .readmore-link {
   background-image: url("./webassets/images/slide-img/sign1.svg");
 }
 
+.link {
+  stroke: #ccc;
+}
+
+.node text {
+  fill: #999;
+  cursor: pointer;
+}
+
+.node circle {
+  stroke: #dee5ec;
+  stroke-width: 1px;
+  fill: #fff;
+}
+
+.card {
+  height: 600px;
+}
+
 .popup-container {
   width: 100vw;
   position: fixed;

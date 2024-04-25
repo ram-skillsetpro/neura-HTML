@@ -1073,3 +1073,20 @@ input[type=checkbox] {
 	background-size: cover;
 	background-image:url("./webassets/images/slide-img/sign1.svg")
   }
+//d3 chart related
+  .link {
+	stroke: #ccc;
+}
+.node text {
+	fill: #999;
+	cursor: pointer;
+}
+.node circle {
+	stroke: #dee5ec;
+	stroke-width: 1px;
+	fill: #fff;
+}
+.card{
+	// width: 900px;
+	height: 600px;
+}
