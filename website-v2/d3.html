@@ -56,42 +56,50 @@ body,html{
         "nodes": [{
             "name": "SimpleO",
             "image": "d3-icon-simpleo",
-            "r": 260
+            "r": 260,
+            "d": 30
         }, 
         {
             "name": "Teams",
             "image": "d3-icon-teams",
-            "r": 150
+            "r": 150,
+            "d": 250
         },
         {
             "name": "Slaes Force",
             "image": "d3-icon-salesforce",
-            "r": 180
+            "r": 180,
+            "d": 50
         },
         {
             "name": "Microsoft",
             "image": "d3-icon-ms",
-            "r": 120
+            "r": 120,
+            "d": 250
         }, 
         {
             "name": "Hubspot",
             "image": "d3-icon-hubspot",
-            "r": 150
+            "r": 150,
+            "d": 50
         },
         {
             "name": "Google",
             "image": "d3-icon-01",
-            "r": 170
+            "r": 170,
+            "d": 250
         }, 
         {
             "name": "DropBox",
             "image": "d3-icon-02",
-            "r": 130
+            "r": 130,
+            "d": 400
         }, 
         {
-            "name": "DropBox",
+            "name": "Some Other",
             "image": "d3-icon-03",
-            "r": 190
+            "r": 190,
+            "d": 250
         }
         
         
@@ -121,9 +129,11 @@ body,html{
     };
     
     var force = d3.layout.force()
-        .distance(350)
-        .linkDistance(30)
-        .charge(-1350)
+        .distance(function(d) {
+              return (d.d)
+          })
+        .linkDistance(10)
+        .charge(-1650)
         .linkStrength(.001)
         .size([width, height]);
         
