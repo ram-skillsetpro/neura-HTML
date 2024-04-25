@@ -519,7 +519,9 @@ input[type=checkbox] {
 		font-weight: bold;
 		padding: 0 10px;
 		color: #BEBEBE;
-		transition: all .3s ease
+		 transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
 	}
 	// .form-control:not(:placeholder-shown) ~ label {
 	// 	top:-8px;
@@ -1061,4 +1063,30 @@ input[type=checkbox] {
 		}
 		}
 	}
+}
+
+.img-w {
+	display: flex;
+	width:160px;
+	height:160px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url("./webassets/images/slide-img/sign1.svg")
+  }
+//d3 chart related
+  .link {
+	stroke: #ccc;
+}
+.node text {
+	fill: #999;
+	cursor: pointer;
+}
+.node circle {
+	stroke: #dee5ec;
+	stroke-width: 1px;
+	fill: #fff;
+}
+.card{
+	// width: 900px;
+	height: 600px;
 }
