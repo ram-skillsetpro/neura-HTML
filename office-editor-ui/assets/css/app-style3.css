@@ -9,7 +9,10 @@
 	--app-navigation-background-color: #ffffff;
 	--logo-color: #ff6868;
 	--button-red: #ef4747;
-	--form-background-color: #dfe8eb
+	--form-background-color: #dfe8eb;
+  --tool-tip-bg:#333E4F;
+  --white:#fff;
+  --text-light-color:#525252
 
 }
 
@@ -273,7 +276,48 @@ input[type=text], input[type=email], input[type=password], input[type=tel] {
     color: #232323;
 
 }
-.font-bold{font-weight: 700;}
+.text-light-color {
+  color: var(--text-light-color);
+}
+.justify-center{justify-content: center;}
+.justify-end{justify-content: flex-end;}
+.justify-between{justify-content: space-between;}
+.items-center{align-items: center;}
+.uppercase{text-transform: uppercase;}
+.font-normal{font-weight: 400;}
+.font-semibold{font-weight:600;}
+.font-bold{font-weight:700;}
+.mr-3{margin-right: 12px;}
+.mt-3{margin-top: 12px;}
+.mb-2{margin-bottom: 8px;}
+.truncate-line1{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.overflow-hidden{overflow: hidden;}
+.file-title-table {
+  max-width: 200px;
+}
+
+/* .inline-block {
+  display: inline-block;
+} */
+.lh1 {
+  line-height: 1.2;
+}
+.load-more-btn {
+  background: transparent;
+  display: flex;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid var(--button-red);
+  color: var(--button-red);
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.load-more-btn:hover {
+  background: var(--button-red);
+  border: 1px solid var(--button-red);
+  color: var(--white);
+}
 .text-area{
   width: 100%;height: 100px;resize: none;background: #fff;
   font-size: 14px;
@@ -301,4 +345,191 @@ input[type=text], input[type=email], input[type=password], input[type=tel] {
   border-radius: 24px;
   min-width: 140px;
 
+}
+.w-20.h-20{width:20px;height:20px;min-width: 20px;}
+.mr-4{margin-right: 16px;}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.file-list-card {
+  background: var(--comments-background-color);
+  padding: 12px;
+  width: 100%;
+}
+.rounded-6{border-radius: 6px;}
+.fs12{font-size: 12px;}
+.sharing-members {
+  position: relative;
+}
+.sharing-members.file-img-fix {
+  width: 28px;
+  position: absolute;
+  right: 0;
+  top: calc(100% - 26px);
+}
+.sharing-members.li-overlap ul li:not(:last-child) {
+  margin-right: -4px;
+}
+.sharing-members ul {
+  display: flex;
+  list-style: none;
+}
+.sharing-members ul li {
+  width: 26px;
+  height: 26px;
+  position: relative;
+}
+.sharing-members ul li:not(:last-child) {
+  margin-right: 4px;
+}
+.sharing-members ul li .ic-member {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  font-size: 11px;
+  color: var(--white);
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+}
+.sharing-members ul li .ic-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tool-tip-wrap {
+  cursor: pointer;
+}
+.tool-tip-wrap:hover .tool-tip-card {
+  display: block;
+}
+.tool-tip-card {
+  font-size: 11px;
+  display: none;
+  background: var(--tool-tip-bg);
+  padding: 6px 12px;
+  color: var(--app-navigation-background-color);
+  /* min-width: 132px; */
+  width: max-content;
+  position: absolute;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.2;
+  right: 50%;
+  transform: translateX(50%);
+  top: 30px;
+  z-index: 1;
+}
+.tool-tip-card::before {
+  content: '';
+  position: absolute;
+  border-bottom: 10px solid var(--tool-tip-bg);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -6px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 2;
+}
+.table-outer-wrapper {
+  overflow-x:auto;
+}
+.table-outer-wrapper::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+}
+.table-outer-wrapper::-webkit-scrollbar {
+  width: 6px;
+ }
+ .table-outer-wrapper::-webkit-scrollbar-thumb {
+background-color: rgba(0, 0, 0, .2);
+border-radius: 24px;
+}
+div.other-files-view > div > table {
+  margin: 4px auto;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  border-left: none;
+  border-right: none;
+  border-collapse: collapse;
+  text-align: left;
+}
+div.other-files-view > div > table.compact {
+  font-size: 0.8em;
+  border-collapse: collapse;
+}
+div.other-files-view > div > table.compact p {
+  padding: 6px 12px;
+}
+div.other-files-view > div > table tr td, div.other-files-view > div > table tr th {
+  border-top: 1px solid #e3e3e3;
+}
+div.other-files-view > div > table tr td:first-child, div.other-files-view > div > table tr th:first-child {
+  border-left: none;
+}
+div.other-files-view > div > table tr td:last-child, div.other-files-view > div > table tr th:last-child {
+  border-right: none;
+}
+div.other-files-view > div > table tr td.number, div.other-files-view > div > table tr th.number {
+  text-align: right;
+  width: 15%;
+}
+div.other-files-view > div > table tr td.name, div.other-files-view > div > table tr th.name {
+  width: 27.5%;
+}
+div.other-files-view > div > table.files-table {
+  border-top: none;
+  border-bottom: none;
+  margin: 0px auto;
+}
+div.other-files-view > div > table.files-table thead tr.file-row:first-child th, div.other-files-view > div > table.files-table thead tr.file-row:first-child td {
+  border-top: none;
+}
+div.other-files-view > div > table.files-table tbody tr.file-row:last-child th, div.other-files-view > div > table.files-table tbody tr.file-row:last-child td {
+  border-bottom: none;
+}
+div.other-files-view > div > table.files-table tr.file-row th, div.other-files-view > div > table.files-table tr.file-row td {
+  border-left: none;
+  border-right: none;
+}
+div.other-files-view > div > table.files-table tr.file-row:hover th, div.other-files-view > div > table.files-table tr.file-row:hover td {
+  color: #000000;
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+.file-row-fileName > span {
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+th > span {
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+.other-files-view .file-row-action {
+  display: flex;
+  justify-content: center;
+}
+.file-action {
+  display: inline-block;
+  margin-top: 7px;
+}
+.files-table th {
+  cursor: cell;
+  padding: 8px;
+  text-align: left;
+  white-space:nowrap;
+}
+.files-table td {
+  padding: 8px;
+}
+.file-list-action {
+  margin: auto;
 }
