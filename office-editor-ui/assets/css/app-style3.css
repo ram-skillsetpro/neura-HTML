@@ -438,6 +438,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel] {
 }
 .table-outer-wrapper {
   overflow-x:auto;
+  padding-bottom: 40px;
 }
 .table-outer-wrapper::-webkit-scrollbar {
   background-color: transparent;
@@ -532,4 +533,69 @@ th > span {
 }
 .file-list-action {
   margin: auto;
+}
+
+  .icon-option-dot {
+    cursor: pointer;
+    border: none;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-image: var(--background);
+    -webkit-mask-size: 20px 20px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    -webkit-mask-image: var(--background);
+    background: url(../images/icon-more-vertical-dark.svg);
+    background-size: cover;
+}
+.file-list-action {
+  position: relative;
+}
+.file-list-action .dropdown-container ul li {
+  text-align: left;
+  padding: 8px 12px;
+}
+.file-list-action .dropdown-container {
+  right: -7px;
+  width: 120px;
+  z-index: 1;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  top: 26px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px;
+  border-radius: 8px;
+}
+.file-list-action .dropdown-container .dropdown-box {
+  position: absolute;
+  width: 120px;
+  background: rgb(255, 255, 255);
+  z-index: 5;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: rgb(35, 35, 35);
+}
+.file-list-action .dropdown-container ul {
+  list-style: none;
+  margin: 0px;
+  padding: 8px 0px;
+}
+.file-list-action .dropdown-container ul li:not(:last-child) {
+  border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.file-list-action .dropdown-container .notch {
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: -4px;
+  right: 11px;
+  width: 12px;
+  height: 12px;
+  z-index: 2;
+  transform: rotate(45deg);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 21px 3px;
 }
