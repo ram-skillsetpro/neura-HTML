@@ -438,6 +438,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel] {
 }
 .table-outer-wrapper {
   overflow-x:auto;
+  padding-bottom: 40px;
 }
 .table-outer-wrapper::-webkit-scrollbar {
   background-color: transparent;
