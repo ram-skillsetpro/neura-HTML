@@ -652,9 +652,7 @@ Contract Management
 <script src="https://d3js.org/d3.v2.min.js?2.9.3"></script>
 
 <script>
-    function random(min, max) { // min and max included 
-      return Math.floor(Math.random() * (max - min + 1) + min);
-    }
+   
     
     var width = 650,
         height = 600
@@ -812,6 +810,9 @@ Contract Management
   "./webassets/images/slide-img/clock.svg",
   "./webassets/images/slide-img/storage-secure.svg",
 ];
+function random(min, max) { // min and max included 
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
 function changeImage (myElement, imgList) {
   setInterval(function(){
     randomImage = Math.floor( Math.random() * imgList.length);
