@@ -1797,10 +1797,6 @@ h1, .h1 {
     transform: scaleY(-1) rotate(-135deg);
   }
 }
-span[class^=dot-] {
-  opacity: 0;
-}
-
 .dot-one {
   animation: dot-one 2s infinite linear;
 }
@@ -8058,9 +8054,6 @@ ul.ob-acc li.active::after {
   margin: -1px -1px 0 -1px;
   transform: rotate(45deg) translate(-50%, -50%);
   z-index: 2;
-}
-.playbook-checkbox input.custom-checkbox[type=checkbox]:before {
-  content: "";
 }
 
 .playbook-frm {
