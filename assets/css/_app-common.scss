@@ -1111,7 +1111,7 @@ l20-2 1.6s infinite linear;
 50%   {transform:scaleY(-1) rotate(0deg)}
 100%  {transform:scaleY(-1) rotate(-135deg)}
 }
-span[class^="dot-"]{opacity: 0;}
+// span[class^="dot-"]{opacity: 0;}
 .dot-one{animation: dot-one 2s infinite linear}
 .dot-two{animation: dot-two 2s infinite linear}
 .dot-three{animation: dot-three 2s infinite linear}
