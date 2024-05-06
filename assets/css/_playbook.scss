@@ -122,4 +122,37 @@ label{min-width:100px;display: block;margin-bottom:6px;}
 	right: 10px;
 	top:5px;
 	display: none;
+}
+.expand-toggle-btn{
+	background:#5C677D;
+	border: 0;
+	border-radius: 12px;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: -30px;
+	top:6px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.open{
+		.arrow-down{
+			transform: rotate(-136deg);
+			-webkit-transform: rotate(-136deg);
+			margin-top: 3px;
+		}
+	}
+	.arrow-down{
+		border: solid #fff;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		margin-top: -3px;
+		transition: 0.2s all ease-in;
+
+
+	}
 }   
