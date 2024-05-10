@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 	<head>
 		<title>SimpleO.ai - The Future of Contract Management is here</title>
 		
@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="app-bg">
-
+			<button onclick="darkMode()">Theme change</button>
 		<div class="flex" style="height: 100vh;">
 
 		<div class="obligation-modal-wrap">
@@ -76,5 +76,19 @@
 	</body>
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script src="js/simpleo.js"></script>
+	<script>
+		var isOn = false;
+
+function darkMode () {
+    if(!isOn) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        isOn = true;
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        isOn = false;
+    }
+}
+	</script>
 
 </html>
