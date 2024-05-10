@@ -61,6 +61,18 @@ h2{
   padding: 4px 8px;
   border-radius: 6px;
 }
+.hoverAnimation{
+			animation: lg 0.3s alternate;
+		}
+	@keyframes lg{
+			from{
+				transform: scale(1);	
+			}
+
+			to{
+				transform: scale(1.2);
+			}
+		}
 </style>
 </head>
 <body>
@@ -68,7 +80,7 @@ h2{
         <div class="link-box">
           <ol>
             <li>
-              <a href="finance-dashboard.html" target="_blank">
+              <a href="finance-dashboard.html" class="hoverAnimation" target="_blank">
               Finance Dashboard
               </a>
             </li>
