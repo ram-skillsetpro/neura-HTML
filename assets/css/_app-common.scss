@@ -1133,20 +1133,7 @@ l20-2 1.6s infinite linear;
   75%{opacity: 1;}
   100%{opacity: 1;}
 }
-.playbook-info-card{
-   background: #fff;
-   padding: 12px;
-   border-radius: 0 6px 6px 6px;
-}
-.playbook-info-item{
-   padding: 8px 0;
- 
-   // margin-bottom: 6px;
-   &:not(:last-child){
-      border-bottom: 1px solid var(--border-color4);
-   }
-}
-.playbook-top-space{margin-top: 10px;}
+
 .loader-insideBtn {
    width: 0px;
    aspect-ratio: 1;
