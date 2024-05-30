@@ -63,21 +63,41 @@ h2{
   padding: 4px 8px;
   border-radius: 6px;
 }
-.hoverAnimation{
-			animation: lg 0.3s alternate;
-		}
-	@keyframes lg{
-			from{
-				transform: scale(1);	
-			}
+.loader{
+  width:300px;
+  height: 300px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner{
+  width: 100px;
+  aspect-ratio: 1;
+  background: transparent;
+  border-radius: 100%;
+  border: 4px solid rgb(148, 148, 118);
+  border-right-color: black;
+  animation: rotateM 1s infinite linear;
+}
 
-			to{
-				transform: scale(1.2);
-			}
-		}
+@keyframes rotateM {
+  0% {
+    transform: rotate(0);
+
+  }
+  100%{
+    transform: rotate(360deg);
+
+  }
+}
 </style>
 </head>
 <body>
+    <div class="loader">
+        <div class="inner"></div>
+    </div>
+  
     <div>
         <div class="link-box">
 

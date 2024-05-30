@@ -7,7 +7,9 @@
 
 		<link rel="stylesheet" type="text/css" href="assets/css/app-style3.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<style>
+			.hide{display: none;}
+		</style>
 	</head>
 	<body>
 		<div class="app-bg">
@@ -16,6 +18,11 @@
 			<div class="app-left-sec">
 				<div class="app-left-inner">				
 					<div class="app-logo">
+						<button class="hamburger" id="hamburger-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
 						<a href="#">
 							<img src="assets/images/simpleo-ai-logo.svg" alt="" />
 						</a>
@@ -194,6 +201,8 @@
 										<li>
 											<div class="truncate-line1">SHA</div> 
 											<div class="ch-box"><input type="checkbox"></div>
+											Only my teams
+											Only my teams
 										</li>
 										<li>
 											<div class="truncate-line1">NDA</div>
@@ -830,8 +839,7 @@
 										<button class="icon-option-dot"></button>
 					
 									</div>
-									<div>							<!--Folder 4 HTML-->
-
+									<div>
 										<div class="file-title">SCOTUS</div>
 										<div class="file-info">
 											71 Files, <span class="font-bold">3 New</span>										</div>
@@ -949,11 +957,19 @@
 				</div>
 				
 			</div>
-			</div>			
+		</div>			
 		</main>
 	</div>
 	</body>
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script src="js/simpleo.js"></script>
-
-</html>
+	<script>
+		let btnMenu=document.getElementById('hamburger-menu');
+		let sideMenu= document.querySelector('.aside-bar-menu');
+		btnMenu.addEventListener('click', handlerClick)
+		function handlerClick(){
+			//alert("Click Btn")
+			btnMenu.classList.toggle('open')
+			sideMenu.classList.toggle('hide')
+		}
+	</script>
