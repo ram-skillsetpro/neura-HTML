@@ -1910,6 +1910,41 @@ h1, .h1 {
   animation: l20-1 0.8s infinite linear alternate, l20-2 1.6s infinite linear;
 }
 
+.view-icon {
+  margin-right: 6px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #5C677D;
+  --icon-file: url("../images/view-eye.svg");
+  cursor: pointer;
+}
+.view-icon.ic-w {
+  background-color: #fff;
+}
+
+.page-data-sec {
+  background-color: var(--comment-bg1);
+  padding: 6px 12px;
+}
+.page-data-sec .page-row {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+.page-data-sec .page-row:not(:last-child) {
+  margin-bottom: 6px;
+}
+
 .content-sec {
   position: relative;
   width: 100%;
@@ -2293,6 +2328,26 @@ ul.app-tab-style li:not(:last-child) {
 }
 .error-tool-tip.enable-tip::before {
   border-bottom: 10px solid var(--dark-blue);
+}
+
+.playbook-edit-inner {
+  background: var(--app-navigation-background-color);
+  padding: 24px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: var(--default-font-color);
+  line-height: 1.5;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+.playbook-edit-inner h3 {
+  margin: 0 0 16px 0;
+}
+.playbook-edit-inner a {
+  color: var(--logo-color);
+}
+.playbook-edit-inner p {
+  margin-bottom: 16px;
 }
 
 a {
