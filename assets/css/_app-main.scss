@@ -254,3 +254,22 @@ ul.app-tab-style{
 	 }
 
 }
+
+
+.playbook-edit-inner{
+	background: var(--app-navigation-background-color);
+	padding: 24px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	font-size: size(14);
+	color: var(--default-font-color);
+	line-height: 1.5;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+	h3{margin: 0 0 16px 0;}
+	a{
+		color:var(--logo-color);
+	}
+	p{
+		margin-bottom: 16px;
+	}
+}
