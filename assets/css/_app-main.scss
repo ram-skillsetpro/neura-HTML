@@ -260,16 +260,66 @@ ul.app-tab-style{
 	background: var(--app-navigation-background-color);
 	padding: 24px;
 	box-sizing: border-box;
-	margin-top: 10px;
+	margin-bottom: 24px;
 	font-size: size(14);
 	color: var(--default-font-color);
 	line-height: 1.5;
 	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
-	h3{margin: 0 0 16px 0;}
+	position: relative;
+	h2{
+		font-size: size(14);
+		color: var(black);
+	}
+	h3{
+		margin: 0 0 16px 0;
+		font-size: size(14);
+
+	}
 	a{
 		color:var(--logo-color);
 	}
 	p{
 		margin-bottom: 16px;
 	}
+}
+
+.select-clause{
+    background-color:#fff7d9;
+    
+.h4{
+color:#7e8ba3;
+font-size:size(16);
+}    
+.add-more-rule{
+    position: absolute;
+    bottom:-12px;
+    background-color: var(--logo-color);
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+    border-radius: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border:none;
+   
+    cursor: pointer;
+    .any-ic{
+    width: 12px;
+    height: 12px;
+    // display: flex;
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-image: var(--icon-file);
+    -webkit-mask-size: 20px 20px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    -webkit-mask-image: var(--icon-file);
+    background-color: #fff;
+    display: inline-block;
+}
+.plus-ic {
+    --icon-file: url("../images/plus-icon.svg");
+}
+}
 }

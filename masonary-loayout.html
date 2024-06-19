@@ -19,25 +19,19 @@
 			min-width: 978px;
 			margin: auto;
 			max-width: 1680px;
-			background: black;
+			background: #000000;
 			padding:0 24px;
 		}
-		main { 
+		.grid {
   display: grid;
-  grid-template-columns: 14ch repeat(auto-fill, minmax(28ch, 1fr)) 14ch;
-  grid-template-rows: masonry;
-  gap: 20px;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gird-template-rows:1fr;
 }
-.item{
-	background: red;
-}
-.grid {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 200px minmax(100px, 400px);
 
-  
+.grid > div {
+  height: 100px;
+  background: red;
 }
 		</style>
 
@@ -45,16 +39,15 @@
 	<body>
 		<div class="app-bg">
 			<div class="grid">
-				<div class="item" style="block-size: 2em;">111</div>
-				<div class="item" style="block-size: 3em;">2222</div>
-				<div class="item" style="block-size: 1.6em;">3333</div>
-				<div class="item" style="block-size: 4em;">44444</div>
-				<div class="item positioned" style="block-size: 3.2em;">positioned.</div>
-				<div class="item" style="block-size: 3em;">5555</div>
-				<div class="item" style="block-size: 4.5em;">6666</div>
-				<div class="item" style="block-size: 1em;">77777</div>
-				<div class="item" style="block-size: 3.5em;">8888</div>
-				<div class="item" style="block-size: 2.8em;">999999</div>
+				<div class="item">222</div>
+				<div class="item">3333</div>
+				<div class="item">4444</div>
+				<div class="item">positioned.</div>
+				<div class="item">555</div>
+				<div class="item">6666</div>
+				<div class="item">7777</div>
+				<div class="item">8888</div>
+				<div class="item">999999</div>
 			  </div>
 			
 	</div>
