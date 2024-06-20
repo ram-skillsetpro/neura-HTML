@@ -172,48 +172,69 @@
 							<i class="icon-img"></i>
 							<!-- <img src="assets/images/back-icon.svg" /> -->
 						</button>
-						<i class="breadcrumb-ic"><img src="assets/images/icon-pdf.svg" /></i>
-						<span class="fs12 font-bold">Paradigm Shift NDA Version 1.0 copy 28/12/22</span>
+						
+						<span class="fs12 font-bold">Playbook - Supply Template 1</span>
 					</div>
-					<div class="flex items-center">
-						<ul class="app-tab-style" id="tabs-nav">
-							<li><a href="#tab1">Undo</a></li>
-							<li><a href="#tab1">Edit</a></li>
-							</ul>
+					<div class="flex items-center mb-2">						
 						  <span class="grow"></span>
-						  <div class="relative word-count">
-						<p class="inline-block">Words <strong>2400</strong>, Pages <strong>12 - Autosaved 12:45PM</strong></p>
-						<button class="button-dark-gray rounded-12 sm-button tracking-wider font-bold uppercase cursor-pointer ml-3">save</button>
-						<button class="button-dark-gray rounded-12 sm-button tracking-wider font-bold uppercase cursor-pointer ml-3">Test as Template</button>
+						  <div class="relative">
+							<button class="button-ob rounded-12 sm-button tracking-wider font-bold uppercase cursor-pointer">Save Draft</button>
+							<button class="green-button uppercase tracking-wider flex-inline">Save &amp; Publish</button>
+							<button class="button-dark-gray rounded-12 sm-button tracking-wider font-bold uppercase">Add Section</button>
 					</div>
 					</div>
 				</div>
 
 					<div id="tabs-content">
-					  <div class="playbook-edit-inner">
-							<h3>Scope of Agreement</h3>
-							<div>
-								<p>This Agreement, including the Schedules and any other written agreements that the Parties have agreed form part of the understanding herein, constitutes the entire understanding between the Parties and supersedes all prior agreements and understandings, both written and oral, with respect to the subject matter hereof. The Agreement shall come into effect from the Effective Date upon due execution by the Parties and shall continue to be in force unless terminated as prescribed under this Agreement.</p>
-								<p>In the event of termination, any Product Schedule or Purchase Order that is still in force or has not expired shall remain valid, and the General Terms and Conditions (GTC) shall continue to apply to such Product Schedule or Purchase Order for its remaining term, notwithstanding the termination or expiry of the Agreement.
-								</p> 
+					  <div class="playbook-edit-inner relative">
+						<h2>Clause name is Clause 1 
+							<div class="playbook-checkbox">
+								<input type="checkbox" checked class="custom-checkbox">
 							</div>
+						</h2>							
 					  </div>
-					  <div class="playbook-edit-inner">
-						<h3>Scope of Agreement</h3>
+					  <div class="playbook-edit-inner select-clause add-more-rule">
+						<div>
+							<h3>How long this agreement is valid?</h3>
 						<div>
 							<p>This Agreement, including the Schedules and any other written agreements that the Parties have agreed form part of the understanding herein, constitutes the entire understanding between the Parties and supersedes all prior agreements and understandings, both written and oral, with respect to the subject matter hereof. The Agreement shall come into effect from the Effective Date upon due execution by the Parties and shall continue to be in force unless terminated as prescribed under this Agreement.</p>
 							<p>In the event of termination, any Product Schedule or Purchase Order that is still in force or has not expired shall remain valid, and the General Terms and Conditions (GTC) shall continue to apply to such Product Schedule or Purchase Order for its remaining term, notwithstanding the termination or expiry of the Agreement.
 							</p> 
 						</div>
-				  </div>
-				  <div class="playbook-edit-inner">
-					<h3>Scope of Agreement</h3>
-					<div>
-						<p>This Agreement, including the Schedules and any other written agreements that the Parties have agreed form part of the understanding herein, constitutes the entire understanding between the Parties and supersedes all prior agreements and understandings, both written and oral, with respect to the subject matter hereof. The Agreement shall come into effect from the Effective Date upon due execution by the Parties and shall continue to be in force unless terminated as prescribed under this Agreement.</p>
-						<p>In the event of termination, any Product Schedule or Purchase Order that is still in force or has not expired shall remain valid, and the General Terms and Conditions (GTC) shall continue to apply to such Product Schedule or Purchase Order for its remaining term, notwithstanding the termination or expiry of the Agreement.
-						</p> 
-					</div>
-			  </div>
+						</div>
+						
+						<div class="playbook-frm"><label>Rule 1</label><input type="text" class="play-input" value="Does the given clause state that the Agreement, including the Schedules and any other written agreements, constitutes the entire understanding between the Parties and supersedes all prior agreements and understandings, both written and oral?"><div class="rm-ques"><button class="trash-btn" type="button"></button></div></div>
+
+						<div class="playbook-frm"><label>Rule 2</label><input type="text" class="play-input" value="Does the given clause specify that the Agreement shall come into effect from the Effective Date upon due execution by the Parties?"><div class="rm-ques"><button class="trash-btn" type="button"></button></div></div>
+						<div class="playbook-frm"><label>Rule 3</label><input type="text" class="play-input" value="Does the given clause mention that the Agreement shall continue to be in force unless terminated as prescribed under the Agreement?"><div class="rm-ques"><button class="trash-btn" type="button"></button></div></div>
+						<div class="playbook-frm"><label>Rule 4</label><input type="text" class="play-input" value="Does the given clause state that in the event of termination, any Product Schedule or Purchase Order that is still in force or has not expired shall remain valid?"><div class="rm-ques"><button class="trash-btn" type="button"></button></div></div>
+						<div class="edit-playbook">
+							<ul>
+								<li>								
+									<i class="edit-ic playbook-ic"></i>
+								</li>
+								<li>	
+									<i class="delete-ic playbook-ic"></i>
+								</li>							
+							</ul>
+						   </div>
+						<button class="add-more-rule"> <i class="plus-ic any-ic"></i></button>
+
+				  	  </div>
+						  <div class="playbook-edit-inner">
+							<h2>Clause name is Clause 2
+								<div class="playbook-checkbox">
+									<input type="checkbox" checked class="custom-checkbox">
+								</div>
+							</h2>							
+						  </div>
+						  <div class="playbook-edit-inner">
+							<h2>Clause name is Clause 3
+								<div class="playbook-checkbox">
+									<input type="checkbox" checked class="custom-checkbox">
+								</div>
+							</h2>							
+						  </div>				  
 				
 					</div> <!-- END tabs-content -->
 				  </div> <!-- END tabs -->
@@ -221,9 +242,18 @@
 			</div>
 			<div class="right-section">
 				<div class="right-section-inner">
-					<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal ml-3 wizard-txt"><div class="flex items-center">Wizard</div></h4>
+					<h4 class="fs10 uppercase text-defaul-color tracking-wider font-normal ml-3 wizard-txt"><div class="flex items-center"></div></h4>
 					<div class="right-content-sec c-padding">
-						<h4>Introduction - Add details for this clause</h4>
+						<div class="fs12 font-bold text-defaul-color ml-3 mb-2">Introduction - Add details for this clause							
+						</div>
+						<div>
+							<div class="mb-3">
+								<input type="text" value="How long this agreement is valid?" class="font-semibold" style="width: 100%;" />
+							</div>
+						</div> 
+						<div>
+							<textarea placeholder="Add vertbatim answer" class="text-area rounded-6"></textarea>
+						</div>
 					</div>
 				</div>
 				</div>

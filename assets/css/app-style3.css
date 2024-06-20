@@ -2334,20 +2334,115 @@ ul.app-tab-style li:not(:last-child) {
   background: var(--app-navigation-background-color);
   padding: 24px;
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-bottom: 24px;
   font-size: 0.875rem;
   color: var(--default-font-color);
   line-height: 1.5;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.playbook-edit-inner h2 {
+  font-size: 0.875rem;
+  color: var(black);
 }
 .playbook-edit-inner h3 {
   margin: 0 0 16px 0;
+  font-size: 0.875rem;
 }
 .playbook-edit-inner a {
   color: var(--logo-color);
 }
 .playbook-edit-inner p {
   margin-bottom: 16px;
+}
+
+.select-clause {
+  background-color: #fff7d9;
+}
+.select-clause .h4 {
+  color: #7e8ba3;
+  font-size: 1rem;
+}
+.select-clause .add-more-rule {
+  position: absolute;
+  bottom: -12px;
+  background-color: var(--logo-color);
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+  border-radius: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  cursor: pointer;
+}
+.select-clause .add-more-rule .any-ic {
+  width: 12px;
+  height: 12px;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #fff;
+  display: inline-block;
+}
+.select-clause .add-more-rule .plus-ic {
+  --icon-file: url("../images/plus-icon.svg");
+}
+.select-clause .edit-playbook {
+  background-color: #fff;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2px;
+  border-radius: 100px;
+}
+.select-clause .edit-playbook ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.select-clause .edit-playbook ul li {
+  display: flex;
+  position: relative;
+  text-align: center;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+.select-clause .edit-playbook ul li:hover, .select-clause .edit-playbook ul li.active {
+  background-color: #e0e4e7;
+  transition: 0.3s;
+}
+.select-clause .edit-playbook ul li .playbook-ic {
+  width: 20px;
+  height: 20px;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #7c828d;
+  display: inline-block;
+}
+.select-clause .edit-playbook ul li .edit-ic {
+  --icon-file: url("../images/edit-icon.svg");
+}
+.select-clause .edit-playbook ul li .delete-ic {
+  --icon-file: url("../images/trash-icons.svg");
 }
 
 a {
