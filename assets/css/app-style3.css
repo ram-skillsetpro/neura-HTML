@@ -2393,6 +2393,57 @@ ul.app-tab-style li:not(:last-child) {
 .select-clause .add-more-rule .plus-ic {
   --icon-file: url("../images/plus-icon.svg");
 }
+.select-clause .edit-playbook {
+  background-color: #fff;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2px;
+  border-radius: 100px;
+}
+.select-clause .edit-playbook ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.select-clause .edit-playbook ul li {
+  display: flex;
+  position: relative;
+  text-align: center;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+.select-clause .edit-playbook ul li:hover, .select-clause .edit-playbook ul li.active {
+  background-color: #e0e4e7;
+  transition: 0.3s;
+}
+.select-clause .edit-playbook ul li .playbook-ic {
+  width: 20px;
+  height: 20px;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #7c828d;
+  display: inline-block;
+}
+.select-clause .edit-playbook ul li .edit-ic {
+  --icon-file: url("../images/edit-icon.svg");
+}
+.select-clause .edit-playbook ul li .delete-ic {
+  --icon-file: url("../images/trash-icons.svg");
+}
 
 a {
   text-decoration: none;

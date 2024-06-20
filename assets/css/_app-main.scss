@@ -322,4 +322,62 @@ font-size:size(16);
     --icon-file: url("../images/plus-icon.svg");
 }
 }
+
+.edit-playbook{
+    background-color: #fff;
+    position: absolute;
+    right:-10px;
+    top:50%;
+    transform: translateY(-50%);
+    padding:2px;
+    border-radius: 100px;
+    // display: none;
+ul{
+list-style-type: none;
+margin:0;
+padding:0;
+li{
+display:flex;
+position: relative;
+text-align: center;
+border-radius: 100px;
+width:30px;
+height:30px;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin: 3px 0;
+transition:0.3s;
+&:hover,
+&.active{
+    background-color: #e0e4e7;
+    transition:0.3s;
+}
+   
+.playbook-ic{
+    width: 20px;
+    height: 20px;
+    // display: flex;
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-image: var(--icon-file);
+    -webkit-mask-size: 20px 20px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    -webkit-mask-image: var(--icon-file);
+    background-color: #7c828d;
+    display: inline-block;
+} 
+.edit-ic {
+    --icon-file: url("../images/edit-icon.svg");
+}
+.delete-ic {
+    --icon-file: url("../images/trash-icons.svg");
+}
+
+}
+}
+}
+
 }
