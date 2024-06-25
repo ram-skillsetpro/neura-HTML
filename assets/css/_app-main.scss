@@ -354,27 +354,6 @@ transition:0.3s;
     transition:0.3s;
 }
    
-.playbook-ic{
-    width: 20px;
-    height: 20px;
-    // display: flex;
-    mask-size: 20px 20px;
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-image: var(--icon-file);
-    -webkit-mask-size: 20px 20px;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center center;
-    -webkit-mask-image: var(--icon-file);
-    background-color: #7c828d;
-    display: inline-block;
-} 
-.edit-ic {
-    --icon-file: url("../images/edit-icon.svg");
-}
-.delete-ic {
-    --icon-file: url("../images/trash-icons.svg");
-}
 
 }
 }

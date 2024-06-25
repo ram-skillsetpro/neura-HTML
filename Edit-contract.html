@@ -600,26 +600,10 @@
 											<div class="button-info">Edit Clasue</div>
 										</div>
 										
-										<div class="button-tool-tip trash-fix-right">
-											<i class="view-icon"></i>
-											<div class="button-info">View in Contract</div>
-										</div>
+										
 
 									</h4>
-									<div class="page-data-sec" style="display: none;">
-										<div class="page-row fs12 flex items-center mb-2">
-										Page 1 
-										<span class="grow"></span>
-										<button class="button-dark-gray rounded-12 sm-button font-bold">									<i class="view-icon ic-w"></i>
-											View in Contract</button>
-										</div>
-										<div class="page-row">
-											Page 7
-											<span class="grow"></span>
-											<button class="button-dark-gray rounded-12 sm-button font-bold">									<i class="view-icon ic-w"></i>
-												View in Contract</button>
-											</div>
-									</div>
+
 									<ul style="display:block">
 										<li>
 											<div class="info-row">
@@ -676,7 +660,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="info-row">
+											<div class="info-row relative">
 												<div class="info-row-left font-bold">
 													<span class="block"><input type="text" class="edit-input" value="Contract Type"></span>
 												</div>
@@ -684,6 +668,15 @@
 													<p><input type="text" class="edit-input" value="Non-Disclosure Agreement"> 
 													</p>		
 												</div>
+												
+											</div>
+											
+										</li>
+										<li>
+											<div class="flex justify-center pt-2">
+												<button class="button-dark-gray rounded-12 sm-button tracking-wider font-bold uppercase mr-2-5">Add Rule</button>
+												<button class="button-green rounded-12 sm-button tracking-wider font-bold uppercase">Save</button>
+												<div class="button-tool-tip relative"><button class="trash-btn ml-3" type="button"></button><div class="button-info">Discard</div></div>
 											</div>
 										</li>
 									</ul>
@@ -824,12 +817,23 @@
 																				
 									</ul>
 								</li>													<li class="tab-icon open">
-									<h4 class="flex relative">New Clasue 
-									</h4>
+								
+									<div class="clause-edit-heading">
+										<div class="pb-2">
+											<select class="custom-select w-full p-2">
+												<option value="">GENERAL</option>
+												<option value="">LIFECYCLE</option>
+											</select>
+										</div>
+										<div class="pb-2">
+											<input type="text" class="edit-input" value="New Clasue Heading">
+										</div>
+									</div>
+								
 									
 									<ul style="display:block">
 										<li>
-											<div class="info-row">
+											<div class="info-row items-center">
 												<div class="info-row-left font-bold">
 													<span class="block"><input type="text" class="edit-input" value="Key"></span>
 													
@@ -840,12 +844,14 @@
 														
 													</p>
 												</div>
+												<div class="button-tool-tip relative"><button class="trash-btn" type="button"></button><div class="button-info">Discard</div></div>
 											</div>
 										</li>		
 										<li>
 											<div class="flex justify-center pt-2">
 												<button class="button-dark-gray rounded-12 sm-button tracking-wider font-bold uppercase mr-2-5">Add Rule</button>
 												<button class="button-green rounded-12 sm-button tracking-wider font-bold uppercase">Save</button>
+												<div class="button-tool-tip relative"><button class="trash-btn ml-3" type="button"></button><div class="button-info">Discard</div></div>
 											</div>
 										</li>
 									</ul>
