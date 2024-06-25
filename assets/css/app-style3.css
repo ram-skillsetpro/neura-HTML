@@ -1945,6 +1945,90 @@ h1, .h1 {
   margin-bottom: 6px;
 }
 
+.contract-change-wrap {
+  background: #fff;
+  display: flex;
+  border-radius: 12px;
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.next-contract-btn {
+  font-size: 12px;
+  border: none;
+  background: transparent;
+  color: var(--default-font-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  padding: 0 4px;
+}
+.next-contract-btn:hover {
+  color: var(--logo-color);
+}
+.next-contract-btn:disabled {
+  background: transparent;
+  opacity: 0.6;
+  border: 0;
+}
+.next-contract-btn .next-btn, .next-contract-btn .pre-btn {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  mask-size: 24px 24px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 24px 24px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: var(--logo-color);
+  --icon-file: url("../images/forward-icon.svg");
+}
+.next-contract-btn .pre-btn {
+  transform: rotate(-180deg);
+}
+
+.playbook-ic {
+  width: 20px;
+  height: 20px;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: #7c828d;
+  display: inline-block;
+}
+
+.edit-ic {
+  --icon-file: url("../images/edit-icon.svg");
+}
+
+.delete-ic {
+  --icon-file: url("../images/trash-icons.svg");
+}
+
+.edit-input {
+  width: 100%;
+  min-width: auto !important;
+}
+
+.clause-edit-heading {
+  background: var(--comment-bg);
+  padding: 12px 12px 0 12px;
+}
+
+.pb-2 {
+  padding-bottom: 8px;
+}
+
 .content-sec {
   position: relative;
   width: 100%;
@@ -2423,26 +2507,6 @@ ul.app-tab-style li:not(:last-child) {
 .select-clause .edit-playbook ul li:hover, .select-clause .edit-playbook ul li.active {
   background-color: #e0e4e7;
   transition: 0.3s;
-}
-.select-clause .edit-playbook ul li .playbook-ic {
-  width: 20px;
-  height: 20px;
-  mask-size: 20px 20px;
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-image: var(--icon-file);
-  -webkit-mask-size: 20px 20px;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center center;
-  -webkit-mask-image: var(--icon-file);
-  background-color: #7c828d;
-  display: inline-block;
-}
-.select-clause .edit-playbook ul li .edit-ic {
-  --icon-file: url("../images/edit-icon.svg");
-}
-.select-clause .edit-playbook ul li .delete-ic {
-  --icon-file: url("../images/trash-icons.svg");
 }
 
 a {
