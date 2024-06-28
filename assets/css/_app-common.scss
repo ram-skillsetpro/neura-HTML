@@ -1252,7 +1252,11 @@ l20-2 1.6s infinite linear;
 }
 
 .clause-edit-heading{
-  background: var(--comment-bg);
-  padding: 12px 12px 0 12px;
+  background: #fff;
+  padding: 12px 12px 12px 12px;
+  border-radius: 6px;
+  ul li{
+   border-bottom: 0!important;
+  }
 }
 .pb-2{padding-bottom: 8px;}
