@@ -19,36 +19,51 @@
 			min-width: 978px;
 			margin: auto;
 			max-width: 1680px;
-			background: #000000;
+			/* background: #000000; */
 			padding:0 24px;
 		}
-		.grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gird-template-rows:1fr;
-}
-
-.grid > div {
-  height: 100px;
+		.grid-c{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 32px;
+			padding: 40px;
+			background: #fff;
+		}
+		.grid-item{
+			min-height: 200px;
+			font-size: 30px;
+			background: #f3f3f3;
+			border: 1px solid #ccc;
+		}
+		.grid-item div{
+			font-weight: 700;
+			background: #fff;
+			
+		}
+		.item1{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
   background: red;
-}
+
+		}
+
+		Grid is a two dimensional layout system.
 		</style>
 
 	</head>
 	<body>
 		<div class="app-bg">
-			<div class="grid">
-				<div class="item">222</div>
-				<div class="item">3333</div>
-				<div class="item">4444</div>
-				<div class="item">positioned.</div>
-				<div class="item">555</div>
-				<div class="item">6666</div>
-				<div class="item">7777</div>
-				<div class="item">8888</div>
-				<div class="item">999999</div>
-			  </div>
+			<div class="grid-c">
+				<div class="grid-item item1"><div>1</div></div>
+				<div class="grid-item">2</div>
+				<div class="grid-item">3</div>
+				<div class="grid-item">4</div>
+				<div class="grid-item">5</div>
+				<div class="grid-item">6</div>
+				
+			</div>	
 			
 	</div>
 	</body>

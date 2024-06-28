@@ -66,6 +66,16 @@
   --light-orange:#FFC89F;
   --dual-red:#FF7368;
   --light-red:#FFA8A8;
+  --primary-color: #ff6868;
+}
+
+:root {
+  --primary-color: yellow;
+}
+
+.primary-btn {
+  padding: 4px 24px;
+  background-color: var(--primary-color);
 }
 
 * {
@@ -2021,8 +2031,12 @@ h1, .h1 {
 }
 
 .clause-edit-heading {
-  background: var(--comment-bg);
-  padding: 12px 12px 0 12px;
+  background: #fff;
+  padding: 12px 12px 12px 12px;
+  border-radius: 6px;
+}
+.clause-edit-heading ul li {
+  border-bottom: 0 !important;
 }
 
 .pb-2 {
