@@ -1216,8 +1216,7 @@ l20-2 1.6s infinite linear;
       -webkit-mask-position: center center;
       -webkit-mask-image: var(--icon-file);
       background-color: var(--logo-color);
-      --icon-file: url("../images/forward-icon.svg");
-    
+      --icon-file: url("../images/forward-icon.svg");    
       }
       .pre-btn{
          transform: rotate(-180deg);
@@ -1260,3 +1259,70 @@ l20-2 1.6s infinite linear;
   }
 }
 .pb-2{padding-bottom: 8px;}
+
+.more-link-btn{
+   background: #fff;
+   border: 0;
+   padding: 4px;
+   border-radius: 6px;
+   cursor: pointer;
+   position: relative;
+}
+.iconSize{
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   vertical-align: middle;
+   mask-size: 16px 16px;
+   mask-repeat: no-repeat;
+   mask-position: center center;
+   mask-image: var(--icon-file);
+   -webkit-mask-size: 16px 16px;
+   -webkit-mask-repeat: no-repeat;
+   -webkit-mask-position: center center;
+   -webkit-mask-image: var(--icon-file);
+}
+.three-dot{
+   background-color: var(--logo-color);
+   --icon-file: url("../images/three-dots.svg");
+   }
+
+   .setting-ic{      
+      background-color: var(--logo-color);
+      --icon-file: url("../images/setting-icon.svg");
+      }
+      .sub-obligation-btn{
+         background: #fff;
+         border: 0;
+         width: 16px;
+         height: 16px;
+         line-height: 16px;
+         border-radius: 3px;
+         cursor: pointer;
+         position: relative;
+         display: inline-flex;
+         justify-content: center;
+         align-items: center;
+         .ic-inner{
+            width: 10px;
+            height: 10px;
+            display: flex;
+            mask-size: 10px 10px;
+            mask-repeat: no-repeat;
+            mask-position: center center;
+            mask-image: var(--icon-file);
+            -webkit-mask-size: 10px 10px;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center center;
+            -webkit-mask-image: var(--icon-file); 
+            background-color: var(--logo-color);
+            &.hide-info{
+          
+               --icon-file: url("../images/plus-icon.svg");
+            }
+            &.expand-info{
+               --icon-file: url("../images/minus-icon.svg");
+            }
+         }  
+        
+      }
