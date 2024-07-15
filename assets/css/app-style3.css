@@ -66,16 +66,6 @@
   --light-orange:#FFC89F;
   --dual-red:#FF7368;
   --light-red:#FFA8A8;
-  --primary-color: #ff6868;
-}
-
-:root {
-  --primary-color: yellow;
-}
-
-.primary-btn {
-  padding: 4px 24px;
-  background-color: var(--primary-color);
 }
 
 * {
@@ -2041,6 +2031,74 @@ h1, .h1 {
 
 .pb-2 {
   padding-bottom: 8px;
+}
+
+.more-link-btn {
+  background: #fff;
+  border: 0;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.iconSize {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  mask-size: 16px 16px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 16px 16px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+}
+
+.three-dot {
+  background-color: var(--logo-color);
+  --icon-file: url("../images/three-dots.svg");
+}
+
+.setting-ic {
+  background-color: var(--logo-color);
+  --icon-file: url("../images/setting-icon.svg");
+}
+
+.sub-obligation-btn {
+  background: #fff;
+  border: 0;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-obligation-btn .ic-inner {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  mask-size: 10px 10px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--icon-file);
+  -webkit-mask-size: 10px 10px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--icon-file);
+  background-color: var(--logo-color);
+}
+.sub-obligation-btn .ic-inner.hide-info {
+  --icon-file: url("../images/plus-icon.svg");
+}
+.sub-obligation-btn .ic-inner.expand-info {
+  --icon-file: url("../images/minus-icon.svg");
 }
 
 .content-sec {
@@ -7564,6 +7622,15 @@ th > span {
 .alert-btn-size {
   border-radius: 12px;
   height: 20px;
+  padding: 0 8px;
+  font-size: 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-btn-size1 {
+  height: 22px;
   padding: 0 8px;
   font-size: 0.75rem;
   display: inline-flex;
