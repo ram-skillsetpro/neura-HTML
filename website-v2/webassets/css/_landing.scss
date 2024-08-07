@@ -85,7 +85,7 @@
 	margin: 0 20px 0 0;
 	font-size: 13px;
 	font-weight: bold;
-	padding: 0px 18px;
+	padding: 9px 18px;
 	cursor: pointer;
 	border-radius: 24px;
 	border: 1px solid var(--logo-color);
@@ -95,8 +95,7 @@
 	text-transform: uppercase;
 	font-family: var(--default-font);
 	// letter-spacing: 0.2em;
-	height: 32px;
-	line-height: 1px;
+	line-height: 1;
     display: flex;
     align-items: center;
 	justify-content: center;

@@ -5,6 +5,7 @@
 			overflow-y: auto;
 			overflow-x:hidden;
 			padding-right: 10px;
+			
 
 			&::-webkit-scrollbar {
 				background-color: transparent;
@@ -302,7 +303,9 @@
 .alert-btn-size{
 	border-radius: 12px;height: 20px;padding: 0 8px;font-size:size(12);display: inline-flex;justify-content: center;align-items: center;	
 }
-
+.alert-btn-size1{
+	height: 22px;padding: 0 8px;font-size:size(12);display: inline-flex;justify-content: center;align-items: center;	
+}
 .table-sorting-btn{display: inline-flex;padding:0 8px;
 img {max-width: 100%; height: auto;}
 }

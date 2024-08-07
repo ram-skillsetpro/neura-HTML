@@ -32,40 +32,34 @@
 				</nav>
 			</header>
 			<div class="content-sec">
-		<div class="accrodian-sec">
-			<div class="acc-wrap">	
-				<div class="a-heading">
-					General Information
-				</div>
-				<div class="a-content-body">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in augue et dui accumsan lacinia quis et sem. Integer convallis mattis lacinia. Quisque nec tellus at nisl fringilla convallis. Aliquam eget ultricies tortor. Nulla in risus id dui aliquam efficitur at quis ante. In sit amet tempor enim. Quisque bibendum sapien eros.
-
-
-					</p>
-				</div>
-			</div>
-			<div class="acc-wrap">	
-				<div class="a-heading">
-					General Information
-				</div>
-				<div class="a-content-body">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in augue et dui accumsan lacinia quis et sem. Integer convallis mattis lacinia. Quisque nec tellus at nisl fringilla convallis. Aliquam eget ultricies tortor. Nulla in risus id dui aliquam efficitur at quis ante. In sit amet tempor enim. Quisque bibendum sapien eros.
-
-
-					</p>
-					<div class="mb-2">
-						<textarea placeholder="Add suggestion " class="text-area rounded-6"></textarea>
-					</div>
-					<div>
-						<button class="button-red">Add</button>
-					</div>
-				</div>
-			</div>
-
-				</div>
-
+		<div>
+			<div class="wrapper file-list-card rounded-6 other-files-view">
+				<div class="table-outer-wrapper">
+					<table cellspacing="0" class="files-table datatable" id="myTable">
+						<thead>
+							<tr class="file-row">
+								<th class="file-row-preContractName "><span>Name</span></th><th class="file-row-state "><span>Stage</span></th><th class="file-row-createdOn "><span>Last Modified</span></th><th class="file-row-draftOwner "><span>Owner</span></th><th class="file-row-sharedWith "><span>Shared With</span></th><th class="file-row-action "><span><div class="file-list-action"><span class="file-action">Action</span></div></span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="file-row "><td class="file-row-preContractName"><div class="file-list-name fs12 flex items-center"><i class="w-20 h-20 mr-4"><img src="./assets/images/icon-word.svg"></i><div class="flex items-center file-title-table inline-block overflow-hidden truncate-line1 lh1 rounded-6" data-fulltext="Genrative-AI">Genrative-AI</div></div></td><td class="file-row-state"><div class="file-list-modified fs12">Compose</div></td><td class="file-row-createdOn"><div class="file-list-modified fs12">10th April, 2024</div></td>
+								<td class="file-row-draftOwner"><div class="file-list-shared fs12"><div class="flex"><div class="sharing-members li-overlap"><ul><li><div class="ic-member tool-tip-wrap" style="background-color: rgb(60, 110, 113);">RK<div class="tool-tip-card rounded-6"><div class="block font-bold">Rishabh Kumar</div></div></div></li></ul></div></div></div></td>
+								<td class="file-row-sharedWith">
+									<div class="file-list-shared fs12"><div class="flex"><div class="sharing-members li-overlap"><ul><li><div class="ic-member tool-tip-wrap" style="background-color: rgb(254, 109, 115);">AJ<div class="tool-tip-card rounded-6"><div class="block font-bold">Ajay</div></div></div></li><li><div class="ic-member tool-tip-wrap" style="background-color: rgb(85, 166, 48);">AN<div class="tool-tip-card rounded-6"><div class="block font-bold">Anil</div></div></div></li><li><div class="ic-member tool-tip-wrap" style="background-color: rgb(251, 139, 36);">KU<div class="tool-tip-card rounded-6"><div class="block font-bold">Kunal</div></div></div></li></ul></div></div></div>
+								</td>
+								
+								<td class="file-row-action">
+									<div class="file-list-action">
+										<button class="icon-option-dot"></button>
+										<div class="dropdown-container"><div class="dropdown-box"><ul><li class="border-bottom">Open Contract</li><li class="border-bottom">Delete Contract</li></ul></div><div class="notch"></div></div>
+									</div>
+								
+								</td></tr>
+							
+							
+							</tbody></table></div><div><div id="myTable_info" role="status" aria-live="polite"></div><div class="dataTables_paginate paging_simple_numbers" id="myTable_paginate"><div class="flex justify-end"><div class="dataTables_info flex" id="myTable_info" role="status" aria-live="polite"><div class="mt-3 mb-2 flex items-center justify-end"><div class="text-light-color fs12 font-bold mr-3">Page 1 of 10</div></div><div class="mt-3 mb-2 flex justify-center"><button class="load-more-btn paginate_button next ">Load More</button></div></div></div></div></div>
+		</div>
+		</div>
 
 
 			</div>

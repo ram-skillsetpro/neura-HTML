@@ -7,7 +7,6 @@
 
 		<link rel="stylesheet" type="text/css" href="assets/css/app-style3.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	</head>
 	<body>
 		<div class="app-bg">
@@ -154,38 +153,10 @@
 			<!--Left section start here-->
 			<div class="left-section left-divider-sec">
 
-				<div class="report-section-inner">
+				<div class="left-section-inner" style="max-width: 100%;margin: initial;">
 					<!--breadcrum and Filter section start here-->
 					<div class="report-inner-sticky pb-1">
-						<div class="page-breadcrum mb-5">
-							<ul class="breadcrum-ul">
-								<li class="list"><a href="#">Drive</a> </li>
-								<li class="list"><a href="#">Folder Name</a> </li>
-								<li>
-								<div class="relative drop-down-modal flex items-center mr-3">
-								<button class="breadcrum-btn flex">
-									<img src="assets/images/icon-more-horizontal-dark.svg">
-								</button>
-								<div class="menu-card rounded-6">
-									<ul>
-										<li>
-											<a href="#"  class="forward-arrow"> from  <span class="font-bold"> SimpleO Wizard</span></a>
-										</li>
-										<li>
-											<a href="#"  class="forward-arrow">Create an  <span class="font-bold"> Ammendment</span></a>
-										</li>
-										<li>
-											<a href="#"  class="forward-arrow">Upload</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							</li>
-								<li class="list"><a href="#">Last level folder</a> </li>
-								<li class="list"><a href="#">Folder Name</a> </li>
 						
-							</ul>
-						</div>
 						<div class="filter-sec">
 							<div class="filter-menu-modal relative">
 								<Button class="file-btn font-bold close-icon cursor-pointer">Type: SHA</Button>
@@ -240,28 +211,15 @@
 							<Button class="apply-btn cursor-pointer"></Button>
 
 							<span class="grow"></span>
-							<div class="Select-columns-modal relative">
-								<Button class="download-select-box font-bold down-icon cursor-pointer">Select Columns to Show</Button>
-								<div class="Select-columns-menu-card rounded-6">
-									<ul>
-										<li>
-											<div class="truncate-line1">Second Party</div> 
-											<div class="ch-box"><input type="checkbox"></div>
-										</li>
-										<li>
-											<div class="truncate-line1">Max Liability	</div>
-											<div class="ch-box"><input type="checkbox"></div>	 
-										</li>
-															
-									</ul>
-								</div>
-							</div>
-							<Button class="download-button cursor-pointer">
-								
+							<!-- <button class="button-dark-gray rounded-12 sm-button tracking-wider font-bold uppercase mr-3">
+								Download History
+							</button> -->
+							<Button class="button-dark-gray rounded-12 sm-button tracking-wider font-bold uppercase">
+								Download Request
 							</Button>
 						</div>
 					</div>
-					<section>
+					<section class="mb-5">
 						<div class="report-card rounded-6">
 							<div class="table-search-data">
 								<form>
@@ -437,14 +395,62 @@
 						</div>
 					</div>	
 					</section>
-				
-				</div>
-			</div>
-			<div class="right-section">
-				<div class="right-section-inner">
+					<section class="relative">
+						<div class="flex view-all-header mb-3 items-center"><h2 class="fs10 text-defaul-color font-normal tracking-wider uppercase ml-3">Download History</h2></div>
+						<div class="report-card rounded-6">
+								<div class="download-history">
+									<table cellspacing="0" class="w-full fs12">
+										<tr>
+											<th>Report Name</th>
+											<th>Request Date</th>
+											<th>Status</th>
+										</tr>
+										<tr>
+											<td>Report Name</td>
+											<td>
+												15th July 2024
+											</td>
+											<td class="text-center">												
+												<div class="file-processing file-processing-wrap"><i class="icon-pro processing"></i><div class="tool-file-error rounded-6" style="right: 80%;">Download is <br/>being processed</div></div>
+												
+											</td>
+											
+										</tr>
+										<tr>
+											<td>Report Name</td>
+											<td>
+												3rd July 2024
+											</td>
+											<td class="text-center">										<div class="flex ml-2">		
+												<button class="download-button cursor-pointer"></button>
+												</div>
+											</td>
+											
+										</tr>
+										<tr>
+											<td>Report Name</td>
+											<td>
+												1st July 2024
+											</td>
+											<td class="text-center">												
+												<div class="flex ml-2">		
+													<button class="download-button cursor-pointer"></button>
+													</div>
+												
+											</td>
+											
+										</tr>
+									</table>
+								</div>
+						</div>
+					</section>
+					<br><br><br><br>
 
 				</div>
 			</div>
+			
+
+			
 		</main>
 	</div>
 	</body>

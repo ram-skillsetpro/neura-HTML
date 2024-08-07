@@ -11,6 +11,8 @@
   }
   html{
     overflow: auto;
+    scrollbar-gutter: auto ;
+
   }
 .link-box{
     background: #fff;
@@ -21,6 +23,27 @@
 .link-box ol {
     padding: 20px;
     margin: 0 0 20px 0;
+}
+input.c-check{
+      outline: 0;
+		  padding: 0 !important;
+		  vertical-align: text-top;
+		  height: 32px;
+		  width: 32px;
+      position: relative;
+}
+input.c-check:checked::before{
+  content: '';
+		position: absolute;
+		right: 50%;
+		top: 50%;
+		width: 4px;
+		height: 10px;
+		border: solid #fff;
+		border-width: 0px 2px 2px 0px;
+		margin: -1px -1px 0 -1px;
+		transform: rotate(45deg) translate(-50%, -50%);
+		z-index: 2;
 }
 .link-box ol li{
    list-style-type: decimal;
@@ -40,14 +63,52 @@ h2{
   padding: 4px 8px;
   border-radius: 6px;
 }
+
 </style>
 </head>
 <body>
+
     <div>
         <div class="link-box">
           <ol>
             <li>
-              <a href="finance-dashboard.html" target="_blank">
+              <a href="./pre-contract.html" target="_blank"> Pre Contract</a>
+            </li>
+            <li>
+              <a href="./app-v3.1.html" target="_blank">
+               Edit Contract detail summary info 
+              </a>
+            </li>
+          
+          </ol>
+          <h2>Playbook </h2>
+          <ol>
+            
+            <li>
+              <a href="./app-v3.1-playbook-tab3.html" target="_blank">
+               Playbook not Created  
+              </a>
+            </li>
+            <li>
+              <a href="./app-v3.1-playbook-tab.html" target="_blank">
+               Show Playbook   
+              </a>
+            </li>
+            <li>
+              <a href="./app-v3.1-playbook-tab2.html" target="_blank">
+               Playbook loader  
+              </a>
+            </li>
+            <li>
+              <a href="./playbook-edit.html" target="_blank">
+               New Playbook Edit 
+              </a>
+            </li>
+          </ol>
+
+          <ol>
+            <li>
+              <a href="finance-dashboard.html" class="hoverAnimation" target="_blank">
               Finance Dashboard
               </a>
             </li>
@@ -66,7 +127,26 @@ h2{
                Home 
               </a>
             </li>
-           
+            <li>
+              <a href="./website-v2/products.html" target="_blank">
+               Product 
+              </a>
+            </li>
+            <li>
+              <a href="./website-v2/simplifAI-grc.html" target="_blank">
+                GRC 
+              </a>
+            </li>
+            <li>
+              <a href="./website-v2/data-room.html" target="_blank">
+                Data Room 
+              </a>
+            </li>
+            <li>
+              <a href="./website-v2/sign.html" target="_blank">
+                Sign 
+              </a>
+            </li>
           </ol>
 
 
@@ -74,6 +154,7 @@ h2{
           <h2>Playbook</h2>
           <ol>
             <li>
+              <!-- <input type="checkbox" class="c-check" /> -->
               <a href="playbook-listing.html" target="_blank">
                Playbook List
               </a>
@@ -357,7 +438,7 @@ Right Side bar Hide
                   </a>
               </li>
               </ol>
-          <h2>Ohter Pages</h2>
+          <h2>Other Pages</h2>
               <ol>
               <li>
                 <a href="report.html" target="_blank">
@@ -381,8 +462,18 @@ Right Side bar Hide
             </li>
           </ol>
         </div>
-        
-       
+        <style>
+          .two-line-truncate{
+            width: 300px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          }
+        </style>
+        <div class="two-line-truncate">
+          In this example the -webkit-line-clamp property is set to 3, which means the text is clamped after three lines. An ellipsis will be shown at the point where the text is clamped.
+        </div>
         </div>
     </div>
     

@@ -93,3 +93,26 @@
 	 }
   }
  
+  //15may
+
+  .playbook-info-card{
+	background: #fff;
+	padding: 12px;
+	border-radius: 0 6px 6px 6px;
+ }
+ .playbook-info-item{
+	padding: 8px 0;
+  
+	// margin-bottom: 6px;
+	&:not(:last-child){
+	   border-bottom: 1px solid var(--border-color4);
+	}
+ }
+ .playbook-top-space{margin-top: 10px;}
+ .playbook-show-name{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width:126px;
+	position: relative;
+	}
