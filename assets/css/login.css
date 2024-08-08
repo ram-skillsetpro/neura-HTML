@@ -402,7 +402,6 @@ select.custom-selectBox::-ms-expand {
   width: 100%;
   align-items: center;
   justify-content: center;
-  line-height: 0;
   cursor: pointer;
 }
 
