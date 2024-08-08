@@ -100,6 +100,7 @@ a.link-text:hover {
   min-height: 350px;
   padding: 0 10px;
   width: 942px;
+  overflow: hidden;
 }
 
 .header-login {
@@ -178,8 +179,20 @@ a.link-text:hover {
 
 .login-form, .signup-form {
   padding: 0 21px;
+  animation: 1s slide-left;
+  width: 922px;
 }
 
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
 .switch-form-tab {
   border-bottom: 1px solid var(--border-c);
   margin-bottom: 42px;
