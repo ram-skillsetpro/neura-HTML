@@ -6,6 +6,9 @@
   --button-red: #ef4747;
   --border-c:#C9D2DB;
   --light-color:#707E8C;
+  --light-color1:#999999;
+  --black:#000;
+  --white:#fff;
 }
 
 * {
@@ -26,135 +29,7 @@ body {
   background: var(--default-background-color);
 }
 
-.login-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.login-content {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.user-login-sec {
-  min-height: 350px;
-  padding: 40px 21px;
-  min-width: 466px;
-}
-
-.login-wrap {
-  background: #ccc;
-  min-height: 100%;
-  height: 100%;
-}
-
-.header-login {
-  width: 100%;
-  margin: auto;
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  height: 69px;
-  padding: 0 21px;
-}
-.header-inner .app-logo img {
-  max-height: 27px;
-  width: 100%;
-}
-
-.footer-login {
-  border: 1px solid var(--border-c);
-  padding: 18px 21px;
-  font-size: 14px;
-  color: #999;
-}
-.footer-login a.f-link {
-  color: #999;
-  text-decoration: underline;
-}
-
-.login-input {
-  font-family: var(--default-font);
-  border-radius: 6px;
-  min-height: 40px;
-  padding: 0 12px;
-  width: 100%;
-  border: none;
-  font-size: 12px;
-  color: #000;
-  background: #fff;
-}
-
-.file-wrap {
-  font-family: var(--default-font);
-  border-radius: 6px;
-  height: 40px;
-  padding-left: 63px;
-  padding-top: 10px;
-  width: 100%;
-  border: none;
-  font-size: 12px;
-  color: #000;
-  background: #fff;
-  position: relative;
-}
-
-.file-upload {
-  height: 30px;
-}
-.file-upload::before {
-  content: "Upload Logo";
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  background: #C3CED9;
-  height: 30px;
-  width: 152px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: var(--default-font);
-}
-
-.body-text {
-  font-size: 12px;
-  line-height: 1.83;
-}
-
-.btn-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.btn-login, input[type=submit], input[type=button] {
-  font-family: var(--default-font);
-  -webkit-appearance: none;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: bold;
-  background-color: var(--logo-color);
-  border: 1px solid var(--logo-color);
-  height: 36px;
-  min-width: 120px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-.btn-login:hover, input[type=submit]:hover, input[type=button]:hover {
-  background-color: var(--button-red);
-  border: 1px solid var(--button-red);
-}
-
+/*** Common **/
 .uppercase {
   text-transform: uppercase;
 }
@@ -169,11 +44,115 @@ body {
 
 .sm-text {
   font-size: 12px;
-  color: #000;
+  color: var(--black);
 }
 
 .mb-5 {
   margin-bottom: 20px;
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.body-text {
+  font-size: 12px;
+  line-height: 1.83;
+}
+
+a.link-text {
+  color: var(--black);
+  text-decoration: underline;
+}
+a.link-text:hover {
+  color: var(--light-color);
+}
+
+.justify-around {
+  justify-content: space-around !important;
+}
+
+/*** main page css **/
+.login-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.login-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.user-login-sec {
+  min-height: 350px;
+  padding: 40px 21px;
+  min-width: 890px;
+}
+
+.header-login {
+  width: 100%;
+  margin: auto;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  height: 69px;
+  padding: 0 21px;
+}
+.header-inner .app-logo {
+  width: 150px;
+}
+.header-inner .app-logo a {
+  display: flex;
+}
+.header-inner .app-logo img {
+  max-height: 27px;
+  width: 100%;
+}
+
+.enterprise-logo {
+  width: 240px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.enterprise-logo img {
+  max-height: 70px;
+  max-width: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-login, input[type=submit], input[type=button] {
+  font-family: var(--default-font);
+  -webkit-appearance: none;
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: bold;
+  background-color: var(--logo-color);
+  border: 1px solid var(--logo-color);
+  height: 36px;
+  min-width: 120px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.btn-login:hover, input[type=submit]:hover, input[type=button]:hover {
+  background-color: var(--button-red);
+  border: 1px solid var(--button-red);
 }
 
 .login-form, .signup-form {
@@ -194,7 +173,7 @@ body {
   width: 50%;
   padding: 12px 0;
   text-align: center;
-  color: #000;
+  color: var(--black);
   font-weight: 600;
   font-size: 12px;
   position: relative;
@@ -211,7 +190,6 @@ body {
 }
 
 .form-two-col {
-  min-width: 890px;
   display: flex;
   gap: 32px;
   width: 100%;
@@ -249,8 +227,52 @@ input[type=checkbox]:checked {
   border-color: var(--logo-color);
 }
 
-.w-full {
+.login-input {
+  font-family: var(--default-font);
+  border-radius: 6px;
+  min-height: 40px;
+  padding: 0 12px;
   width: 100%;
+  border: none;
+  font-size: 12px;
+  color: var(--black);
+  background: var(--white);
+}
+
+.file-wrap {
+  font-family: var(--default-font);
+  border-radius: 6px;
+  height: 40px;
+  padding-left: 63px;
+  padding-top: 10px;
+  width: 100%;
+  border: none;
+  font-size: 12px;
+  color: var(--black);
+  background: var(--white);
+  position: relative;
+}
+
+.file-upload {
+  height: 30px;
+}
+.file-upload::before {
+  content: "Upload Logo";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background: #C3CED9;
+  height: 30px;
+  width: 152px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--default-font);
 }
 
 .form-item {
@@ -265,13 +287,16 @@ input[type=checkbox]:checked {
   font-family: var(--default-font);
   font-size: 12px;
   border: none;
-  color: #000;
+  color: var(--black);
 }
 .form-item.error-state label {
   color: var(--button-red) !important;
 }
 .form-item.error-state input {
-  border: 1px solid var(--button-red) !important;
+  border: 1px solid var(--logo-color) !important;
+}
+.form-item.error-state input:focus-within {
+  outline: 1px solid var(--logo-color) !important;
 }
 .form-item input {
   transition: all 0.3s ease;
@@ -287,7 +312,7 @@ input[type=checkbox]:checked {
   line-height: 1;
   margin: 0;
   padding: 0;
-  color: #000;
+  color: var(--black);
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
@@ -316,7 +341,7 @@ select.custom-selectBox {
   border: 1px solid var(--border-color4);
   border-radius: 4px;
   font-family: var(--default-font);
-  background-color: #fff;
+  background-color: var(--white);
   font-size: 12px;
   height: 40px;
 }
@@ -335,6 +360,49 @@ select.custom-selectBox::-ms-expand {
 
 .custom-selectBox[value=""]:focus ~ label {
   top: 14px;
+}
+
+.footer-login {
+  border: 1px solid var(--border-c);
+  padding: 18px 21px;
+  font-size: 12px;
+  color: var(--light-color1);
+}
+.footer-login a.f-link {
+  color: var(--light-color1);
+  text-decoration: underline;
+}
+.footer-login a.f-link:hover {
+  color: var(--light-color);
+}
+
+.ic-g {
+  max-width: 32px;
+}
+.ic-g svg {
+  width: 32px;
+}
+
+.right-btn-border {
+  border-left: 1px solid var(--border-c);
+  padding-left: 60px;
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 60px);
+  flex-direction: column;
+}
+
+.btn-google {
+  background: var(--white);
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  display: flex;
+  height: 44px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 [data-tab-content] {
