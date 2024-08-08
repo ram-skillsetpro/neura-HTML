@@ -98,8 +98,8 @@ a.link-text:hover {
 
 .user-login-sec {
   min-height: 350px;
-  padding: 40px 21px;
-  width: 890px;
+  padding: 0 10px;
+  width: 942px;
 }
 
 .header-login {
@@ -294,6 +294,7 @@ input[type=checkbox]:checked {
   font-weight: 700;
   text-transform: uppercase;
   font-family: var(--default-font);
+  box-sizing: border-box;
 }
 
 .country-new {
@@ -435,6 +436,7 @@ select.custom-selectBox::-ms-expand {
 .right-btn-border {
   border-left: 1px solid var(--border-c);
   padding-left: 60px;
+  margin-left: 23px;
   display: flex;
   justify-content: center;
   height: calc(100% - 6px);
