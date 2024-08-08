@@ -99,7 +99,7 @@ a.link-text:hover {
 .user-login-sec {
   min-height: 350px;
   padding: 40px 21px;
-  min-width: 890px;
+  width: 890px;
 }
 
 .header-login {
