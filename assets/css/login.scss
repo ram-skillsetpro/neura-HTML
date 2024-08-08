@@ -59,8 +59,9 @@ a.link-text{color: var(--black);text-decoration: underline;
 }
 .user-login-sec{
      min-height: 350px;
-    padding: 40px 21px;
-    width: 890px;   
+    padding:0 10px;
+    width: 942px; 
+    overflow: hidden;  
 
 }
 .header-login {width: 100%;margin: auto;}
@@ -117,7 +118,22 @@ a.link-text{color: var(--black);text-decoration: underline;
 	} 
 }
 .error-text{color: var(--logo-color);font-size: 12px;}
-.login-form,.signup-form{padding: 0 21px;}
+.login-form,.signup-form{
+    padding: 0 21px;
+    animation: 1s slide-left;
+    width: 922px;
+}
+
+@keyframes slide-left {
+    from {
+      margin-left: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-left: 0%;
+      opacity: 1;
+    }
+  }
 .switch-form-tab{
     border-bottom: 1px solid var(--border-c);
     margin-bottom: 42px;
@@ -135,6 +151,7 @@ a.link-text{color: var(--black);text-decoration: underline;
             font-size: 12px;
             position: relative;
             cursor: pointer;
+           
             &.active{
                 &::after{
                     content: '';
@@ -230,6 +247,7 @@ input[type=checkbox] {
         font-weight: 700;
         text-transform: uppercase;
         font-family: var(--default-font);
+        box-sizing: border-box;
     }
 }
 .country-new{
@@ -360,7 +378,8 @@ select.custom-selectBox::-ms-expand {
 }
 .right-btn-border{
     border-left:1px solid var(--border-c);
-    padding-left:60px;
+    padding-left:70px;
+    margin-left: 33px;
     display: flex;
     justify-content: center;
     height: calc(100% - 6px);
