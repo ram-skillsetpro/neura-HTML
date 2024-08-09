@@ -98,7 +98,7 @@ a.link-text:hover {
 
 .user-login-sec {
   min-height: 350px;
-  padding: 0 10px;
+  padding: 0 10px 20px 10px;
   width: 942px;
   overflow: hidden;
 }
@@ -285,6 +285,11 @@ input[type=checkbox]:checked {
   color: var(--black);
   background: var(--white);
   position: relative;
+}
+@-moz-document url-prefix() {
+  .file-wrap {
+    padding-left: 0px;
+  }
 }
 
 .file-upload {
