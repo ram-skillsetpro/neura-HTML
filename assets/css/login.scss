@@ -97,6 +97,7 @@ a.link-text{color: var(--black);text-decoration: underline;
     justify-content: flex-start;
     align-items: center;
 }
+.justify-between{justify-content: space-between!important;}
 .help-text{font-size: 10px;color:var(--light-color1) ;line-height: 1.4;}
 .ft{padding-left: 20px;}
 .btn-login,input[type=submit], input[type=button]{
@@ -109,6 +110,7 @@ a.link-text{color: var(--black);text-decoration: underline;
 	border: 1px solid var(--logo-color);
 	height: 36px;
 	min-width: 120px;
+    padding: 0 16px;
 	box-sizing: border-box;
     cursor: pointer;
 	
@@ -118,6 +120,10 @@ a.link-text{color: var(--black);text-decoration: underline;
 	} 
 }
 .error-text{color: var(--logo-color);font-size: 12px;}
+.forgot-form{
+    padding: 0 21px;
+    width: auto;
+}
 .login-form,.signup-form{
     padding: 0 21px;
     animation: 1s slide-left;
@@ -137,13 +143,15 @@ a.link-text{color: var(--black);text-decoration: underline;
 .switch-form-tab{
     border-bottom: 1px solid var(--border-c);
     margin-bottom: 42px;
+
     ul{
         padding: 0;
         margin: 0;
         width: 100%;
         display: flex;
-        li{
-            width: 50%;
+        li{ 
+            flex: 1 1 50%;
+            width: 100%;
             padding: 12px 0;
             text-align: center;
             color: var(--black);
