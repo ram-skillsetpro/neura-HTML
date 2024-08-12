@@ -21,6 +21,9 @@
   ul,ol{
 	list-style: none;
   }
+  html{
+	overflow-x: hidden; 
+}
 body {
 	font-family: var(--default-font);
 	margin: 0;
@@ -61,7 +64,7 @@ a.link-text{color: var(--black);text-decoration: underline;
      min-height: 350px;
     padding:0 10px 20px 10px;
     width: 942px; 
-    overflow: hidden;  
+    // overflow: hidden;  
 
 }
 .header-login {width: 100%;margin: auto;}
@@ -126,18 +129,30 @@ a.link-text{color: var(--black);text-decoration: underline;
 }
 .login-form,.signup-form{
     padding: 0 21px;
-    animation: 1s slide-left;
+
     width: 922px;
 }
+.signup-form{
+    animation: 0.5s slide-left;
+}
+.login-form{
+    animation: 0.5s slide-right;
 
-@keyframes slide-left {
+}
+@keyframes slide-right {
     from {
-      margin-left: 100%;
-      opacity: 0;
+      margin-left: -120%;
     }
     to {
       margin-left: 0%;
-      opacity: 1;
+    }
+  }
+@keyframes slide-left {
+    from {
+      margin-left: 120%;
+    }
+    to {
+      margin-left: 0%;
     }
   }
 .switch-form-tab{
@@ -369,7 +384,7 @@ select.custom-selectBox::-ms-expand {
     top:14px;
   }
   .footer-login{
-    border: 1px solid var(--border-c);
+    border-top: 1px solid var(--border-c);
     padding: 18px 21px;
     font-size: 12px;
     color: var(--light-color1);
