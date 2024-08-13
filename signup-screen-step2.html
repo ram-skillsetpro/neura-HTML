@@ -20,15 +20,15 @@
 				<div class="user-login-sec">
 					<div class="switch-form-tab">
 						<ul class="uppercase tracking-wider">
-							<li class="active" data-tab-target="#login" class="active tab">
+							<li  data-tab-target="#login" class="tab">
 								Login
 							</li>
-							<li class="tab" data-tab-target="#signup">
+							<li class="tab active" data-tab-target="#signup">
 								Signup
 							</li>
 						</ul>
 					</div>
-					<div class="tab active login-form" id="login" data-tab-content >
+					<div class="tab  login-form" id="login" data-tab-content >
 						<form>
 						<div class="form-two-col">
 							<div class="col-inner">
@@ -77,40 +77,100 @@
 
 					</form>
 					</div>
-					<div class="tab signup-form" id="signup" data-tab-content >
-						<div class="signup-step" id="step1">
+					<div class="tab signup-form active" id="signup" data-tab-content >
+						<div class="signup-step" id="step2">
 							<form>
-								<div class="form-two-col">
-									<div class="col-inner">
-										<div class="form-item">
-											<input type="text" placeholder="" value="Sellers Inc." required id="companyName" autocomplete="off" />
-											<label for="companyName">Company Name</label>
+								<div class="signup-first-row">
+									<div class="form-two-col">
+										<div class="col-inner">	
+											<div class="form-item success">
+												<input type="text" placeholder="" value="Sellers Inc." required id="companyName" autocomplete="off" />
+												<label for="companyName">Company Name</label>
+											</div>
+										</div>
+										<div class="col-inner">	
+											<div class="form-item success">
+												<input type="url" class="login-input" value="www.sellers.com"  required id="website" placeholder="" autocomplete="off" />
+												<label for="website">Website URL</label>
+											</div>
 										</div>
 
 									</div>
-									<div class="col-inner">
+						
+
+								</div>
+								<div class="form-two-col">
+									<div class="col-inner">									
 										<div class="form-item">
-											<input type="url" class="login-input" value="www.sellers.com"  required id="website" placeholder="" autocomplete="off" />
-											<label for="website">Website URL</label>
-										</div>							
-				
-										
+											<input type="text" class="login-input" placeholder="" required id="contractName" autocomplete="off" />
+											<label for="contractName">Contract Name</label>
+										</div>
+										<div class="form-item">
+											<div class="country-new">
+											<select name="countryCode" data-test-id="select-countryCode" class="form-control country-code"><option value="+91">IND(+91)</option><option value="+61">AUS(+61)</option><option value="+1">USA(+1)</option><option value="+44">GBR(+44)</option><option value="+971">ARE(+971)</option>
+											</select>
+											<input type="tel" class="login-input" required id="number" placeholder="" autocomplete="off" />
+											<label for="number">Contact Phone Number</label>
+										</div>
+										</div>
+										<div class="form-item">
+											<input type="url" class="login-input" required id="subdomain" placeholder="" autocomplete="off" />
+											<label for="subdomain">Preferred Subdomain</label>
+										</div>
+									</div>
+									<div class="col-inner">	
+										<div class="form-item">
+											<input type="email" class="login-input" required id="email"  placeholder="" autocomplete="off" />
+											<label for="email">Contact Email Address</label>
+										</div>
+										<div class="form-item">
+											<div class="form-inner-col">
+												<div class="col-inner">
+													<select class="custom-selectBox w-full p-2" class="custom-selectBox w-full p-2" id="selectCtrl" onclick="this.setAttribute('value', this.value);" onchange="this.setAttribute('value', this.value);" value="">
+														<option></option>
+														<option value="1">Region 1</option>
+														<option value="2">Region 2</option>
+														<option value="3">Region 3</option>
+														<option value="4">Region 4</option>
+													</select>
+													<label class="control-label" for="selectCtrl">Region</label>
+
+												</div>
+												<div class="col-inner">
+													
+													<select class="custom-selectBox w-full p-2" id="selectCtrl" onclick="this.setAttribute('value', this.value);" onchange="this.setAttribute('value', this.value);" value="">
+														<option value=""></option>
+														<option value="1">INR</option>
+														<option value="2">USD</option>
+														<option value="3">EUR</option>
+														
+													</select>
+													<label class="control-label" for="selectCtrl">Currency</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-item">
+											<div class="file-wrap">
+												<input type="file" class="file-upload" placeholder="" />
+											</div>
+										</div>
 									</div>
 								</div>
 								<div>
+									<div class="sm-text mb-5">
+										<input type="checkbox" name="remember" id="remember" tabindex="3"><label class="checkbox-label" for="remember">I agree to the Terms and Conditions</label>
+									</div>
 									<div class="mb-3">
 										<button class="btn-login font-bold uppercase tracking-wider">
-											Continue
+											Submit
 										</button>
 									</div>
-									<div class="success-text font-bold">
-										Company name is available on SimpleO
+									<div class="error-text">
+										All fields are mandatory.<strong> Valid “contact email address” required</strong>
 									</div>
-
 								</div>
 							</form>
 						</div>
-					
 					</div>
 				</div>
 

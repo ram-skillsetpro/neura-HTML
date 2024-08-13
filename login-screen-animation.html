@@ -17,41 +17,27 @@
 			</div>
 		</header>
 		<main class="login-content">	
-				<div class="user-login-sec" style="width: 466px;">
-					<!-- <div class="enterprise-logo">
-						<img src="assets/images/timeinternet_logo.png" alt="SimpleO Logo">
-					</div> -->
+				<div class="user-login-sec">
 					<div class="switch-form-tab">
 						<ul class="uppercase tracking-wider">
 							<li class="active" data-tab-target="#login" class="active tab">
-								Reset Password
+								Login
+							</li>
+							<li class="tab" data-tab-target="#signup">
+								Signup
 							</li>
 						</ul>
 					</div>
-					<div class="forgot-form">
-							<form>
-								<div class="form-item">
-									<input type="email" class="login-input"  placeholder="" value="" required id="emailAddress" autocomplete="off" />
-									<label for="emailAddress">Email Address</label>
-								</div>
-								<div class="btn-wrap justify-between mb-3">
-									<div>
-										<button class="btn-login font-bold uppercase tracking-wider">
-											Get Reset Link
-										</button>
-									</div>
-									<div class="sm-text ft">
-										<a href="#" class="link-text"> Back to Login</a>
-									</div>
+					<div class="form-wrap" id="sliderWrap" style="background-color: #fff;width: 1900px;transform: translate(0px);">
+						<div class="login-form1" id="login" data-tab-content >
+							<div style="background: red;">111</div>
+						</div>
 
-								</div>
-								<div class="error-text">
-									Email address is not <strong> registered with simpleo.ai</strong>
-								</div>					
-
-						</form>
+						<div class="signup-form1" id="signup" data-tab-content >
+							<div style="background: yellow;">2222</div>
+						</div>
 					</div>
-
+					
 				</div>
 
 		</main>
@@ -71,14 +57,17 @@ const tabContents = document.querySelectorAll('[data-tab-content]')
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
     const target = document.querySelector(tab.dataset.tabTarget)
-    tabContents.forEach(tabContent => {
+	alert('Click')
+   /** tabContents.forEach(tabContent => {
       tabContent.classList.remove('active')
     })
     tabs.forEach(tab => {
       tab.classList.remove('active')
     })
+	
     tab.classList.add('active')
     target.classList.add('active')
+	  ***/
   })
 })
 			</script>
