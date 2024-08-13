@@ -20,15 +20,15 @@
 				<div class="user-login-sec">
 					<div class="switch-form-tab">
 						<ul class="uppercase tracking-wider">
-							<li class="active" data-tab-target="#login" class="active tab">
+							<li  data-tab-target="#login" class="tab">
 								Login
 							</li>
-							<li class="tab" data-tab-target="#signup">
+							<li class="tab active" data-tab-target="#signup">
 								Signup
 							</li>
 						</ul>
 					</div>
-					<div class="tab active login-form" id="login" data-tab-content >
+					<div class="tab  login-form" id="login" data-tab-content >
 						<form>
 						<div class="form-two-col">
 							<div class="col-inner">
@@ -77,40 +77,67 @@
 
 					</form>
 					</div>
-					<div class="tab signup-form" id="signup" data-tab-content >
-						<div class="signup-step" id="step1">
+					<div class="tab signup-form active" id="signup" data-tab-content >
+						<div class="signup-step" id="step2">
 							<form>
-								<div class="form-two-col">
-									<div class="col-inner">
-										<div class="form-item">
-											<input type="text" placeholder="" value="Sellers Inc." required id="companyName" autocomplete="off" />
-											<label for="companyName">Company Name</label>
+								<div class="signup-first-row">
+									<div class="form-two-col">
+										<div class="col-inner">	
+											<div class="form-item error-state">
+												<input type="text" placeholder="" value="Sellers Inc." required id="companyName" autocomplete="off" />
+												<label for="companyName">Company Name</label>
+											</div>
+										</div>
+										<div class="col-inner">	
+											<div class="form-item error-state">
+												<input type="url" class="login-input" value="www.sellers.com"  required id="website" placeholder="" autocomplete="off" />
+												<label for="website">Website URL</label>
+											</div>
 										</div>
 
-									</div>
-									<div class="col-inner">
+									</div>	
+								</div>
+								<div class="form-two-col">
+									<div class="col-inner">									
 										<div class="form-item">
-											<input type="url" class="login-input" value="www.sellers.com"  required id="website" placeholder="" autocomplete="off" />
-											<label for="website">Website URL</label>
-										</div>							
-				
+											<input type="text" class="login-input" placeholder="" required id="contractName" autocomplete="off" />
+											<label for="contractName">Name</label>
+										</div>
+										<div class="form-item">
+											<div class="country-new">
+											<select name="countryCode" data-test-id="select-countryCode" class="form-control country-code"><option value="+91">IND(+91)</option><option value="+61">AUS(+61)</option><option value="+1">USA(+1)</option><option value="+44">GBR(+44)</option><option value="+971">ARE(+971)</option>
+											</select>
+											<input type="tel" class="login-input" required id="number" placeholder="" autocomplete="off" />
+											<label for="number">Phone Number</label>
+										</div>
+										</div>
+								
+									</div>
+									<div class="col-inner">	
+										<div class="form-item">
+											<input type="email" class="login-input" required id="email"  placeholder="" autocomplete="off" />
+											<label for="email">Email Address</label>
+										</div>
 										
+									
 									</div>
 								</div>
 								<div>
+									<div class="sm-text mb-5">
+										<input type="checkbox" name="remember" id="remember" tabindex="3"><label class="checkbox-label" for="remember">I agree to the Terms and Conditions</label>
+									</div>
 									<div class="mb-3">
 										<button class="btn-login font-bold uppercase tracking-wider">
-											Continue
+											Submit
 										</button>
 									</div>
-									<div class="success-text font-bold">
-										Company name is available on SimpleO
+									<div class="error-text">
+										Company <strong>“www.selllers.com”</strong> is already registered with SimpleO.<strong> Click continue to fill the form and we will notify your Company Admin</strong>
+										
 									</div>
-
 								</div>
 							</form>
-						</div>
-					
+						</div>  
 					</div>
 				</div>
 

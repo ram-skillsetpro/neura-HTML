@@ -12,6 +12,8 @@
     --light-color1:#999999;
     --black:#000;
     --white:#fff;
+    --success:#76AA4F;
+    --medium:#FFB068;
 }
 *{
 	box-sizing: border-box;
@@ -123,6 +125,7 @@ a.link-text{color: var(--black);text-decoration: underline;
 	} 
 }
 .error-text{color: var(--logo-color);font-size: 12px;}
+.success-text{color: var(--success);font-size: 12px;}
 .forgot-form{
     padding: 0 21px;
     width: auto;
@@ -311,24 +314,34 @@ input[type=checkbox] {
 		font-size: 12px;
 		border: none;
 		color: var(--black);
+        font-weight: 600;
         &:focus-visible{
             outline: 0;
         }
 	}
+    &.success{
+        input[type=text], input[type=email], input[type=password],input[type=url], input[type=tel]{
+            color: var(--success);  
+        }
+        
+    }
 	&.error-state{
 		label{
 			color: var(--button-red)!important;
 		}
 		input{
 			border: 1px solid var(--logo-color)!important;
+            color: var(--button-red)!important;
             &:focus-within{
                 outline: 1px solid var(--logo-color)!important;
+                // color: var(--black)!important;
             }
 		}
 	}
 	input{
 		transition: all .3s ease;
 		padding: 0 10px;
+
 	}
 	label{
 		position: absolute;
@@ -423,7 +436,17 @@ select.custom-selectBox::-ms-expand {
     justify-content: center;
      cursor: pointer;
 }
-
+.form-wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    background: #ffff;
+    .login-form1{
+        width: 1000px;
+    }
+    .signup-form1{
+        width: 1000px;
+    }
+}
 
   [data-tab-content] {
     display: none;
@@ -431,4 +454,18 @@ select.custom-selectBox::-ms-expand {
   
   .active[data-tab-content] {
     display: block;
+  }
+  .text-color-medium{
+    color: var(--medium);
+  }
+  .text-color-success{
+    color: var(--success);
+  }
+ .signup-first-row{
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    border-bottom: 1px solid var(--border-c);
+    padding-bottom: 12px;
+    margin-bottom: 32px;
   }
