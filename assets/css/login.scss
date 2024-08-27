@@ -319,6 +319,11 @@ input[type=checkbox] {
             outline: 0;
         }
 	}
+    &.cmp-state{
+        input[type=text], input[type=email], input[type=password],input[type=url], input[type=tel]{
+            color: var(--logo-color);  
+        }  
+    }
     &.success{
         input[type=text], input[type=email], input[type=password],input[type=url], input[type=tel]{
             color: var(--success);  
@@ -378,6 +383,7 @@ select.custom-selectBox{
 	font-family: var(--default-font);
 	background-color:var(--white);
 	font-size:12px;
+    font-weight: 600;
     height: 40px;
 	&:focus-visible{
 		// border: 2px solid #9CB1C6;

@@ -391,6 +391,9 @@ input[type=checkbox]:checked {
 .form-item input[type=text]:focus-visible, .form-item input[type=email]:focus-visible, .form-item input[type=password]:focus-visible, .form-item input[type=url]:focus-visible, .form-item input[type=tel]:focus-visible {
   outline: 0;
 }
+.form-item.cmp-state input[type=text], .form-item.cmp-state input[type=email], .form-item.cmp-state input[type=password], .form-item.cmp-state input[type=url], .form-item.cmp-state input[type=tel] {
+  color: var(--logo-color);
+}
 .form-item.success input[type=text], .form-item.success input[type=email], .form-item.success input[type=password], .form-item.success input[type=url], .form-item.success input[type=tel] {
   color: var(--success);
 }
@@ -449,6 +452,7 @@ select.custom-selectBox {
   font-family: var(--default-font);
   background-color: var(--white);
   font-size: 12px;
+  font-weight: 600;
   height: 40px;
 }
 select.custom-selectBox:focus-visible {
